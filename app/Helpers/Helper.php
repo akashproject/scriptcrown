@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\DB;
 use Jenssegers\Agent\Facades\Agent;
 use Illuminate\Support\Facades\Cache;
 use Spatie\Permission\Models\Permission;
-
+use App\Models\Setting;
 if (! function_exists('check_device')) {
     function check_device($param = null){
         $device = "";
@@ -72,5 +72,32 @@ if (! function_exists('get_theme_setting')) {
     function get_theme_setting($value){
         $media = Setting::where('key',$value)->first();
         return (isset($media->value))?$media->value:"null";
+    }
+}
+
+if (! function_exists('getUtmCampaign')) {
+    function getUtmCampaign($params = null){
+        if(request()->has('utm_campaign')){
+            return request()->get('utm_campaign');
+        }
+        return ($params)?$params:get_theme_setting('utm_campaign');
+    }
+}
+
+if (! function_exists('getUtmSource')) {
+    function getUtmSource($params = null){
+        if(request()->has('utm_source')){
+            return request()->get('utm_source');
+        }
+        return ($params)?$params:get_theme_setting('utm_source');
+    }
+}
+
+if (! function_exists('getCommunicationMedium')) {
+    function getCommunicationMedium($params = null){
+        if(request()->has('lead_type')){
+            return request()->get('lead_type');
+        }
+        return ($params)?$params:get_theme_setting('lead_type');
     }
 }

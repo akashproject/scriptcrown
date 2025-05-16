@@ -1,496 +1,1291 @@
 @extends('layouts.main')
     @section('content')
-    <!-- Navbar & Hero Start -->
-    <div class="container-fluid position-relative p-0">
-        <!-- Carousel Start -->
-        <div class="header-carousel owl-carousel">
-            <div class="header-carousel-item">
-                <img src="{{ url('/assets/frontend/img/slider1.jpg')}}" class="img-fluid w-100" alt="Image">
-                <div class="carousel-caption">
-                    <div class="carousel-caption-content p-3">
-                        <h1 class="display-1 text-capitalize text-white mb-4">GTZ (India) Pvt Ltd</h1>
-                        <h5 class="text-white text-uppercase fw-bold mb-5 fs-5" style="letter-spacing: 3px;">Discover the Magic of chemicals</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Carousel End -->
-    </div>
-    <!-- Navbar & Hero End -->
+    Hero Area
+    <div class="th-hero-wrapper hero-2" id="hero">
+        <div class="slider-area">
+            <div class="swiper th-slider hero-slider-2" id="heroSlider2" data-slider-options='{"autoHeight":"true","effect":"fade","breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"1"},"1200":{"slidesPerView":"1"}}}'>
+                <div class="swiper-wrapper">
 
-    <!-- About Start -->
-    <div class="container-fluid about bg-light py-5">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
-                     <div class="about-img pb-5 ps-5">
-                        <div class="">
-                            <img src="{{ url('/assets/frontend/img/about-cover.webp') }}" class="img-fluid rounded w-100" style="object-fit: cover;" alt="Image">
-                        </div>
-                        <div class="mt-2" style="border: 1px solid #ccc;border-radius: 20px;overflow: hidden;">
-                            <img src="{{ url('/assets/frontend/img/about-main-gate.webp') }}" class="img-fluid w-100 h-100" alt="Image">
-                        </div>
-                        <div class="about-experience">40 years experience</div>
-                    </div>
-                </div>
-                <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
-                    <div class="section-title text-start mb-5">
-                        <h4 class="sub-title pe-3 mb-0">About Us</h4>
-                        <h1 class="display-3 mb-4">The Chemistry of Excellence</h1>
-                        <p class="mb-4">Our determination and commitment to the unrelenting pursuit of excellence is the key to our motivation.</p>
-                        <p class="mb-4">GTZ (India) Pvt Ltd, once the Indian arm of US based trading house GETZ Bros & Co Inc started its operations indenting and trading chemicals in 1936. Committed to the philosophy of exceeding by excellence, the company collaborated with a Fortune 500 company, WITCO Corporation USA, a world leader in speciality chemicals in 1985 and ventured into the production of Metal Finishing Chemicals. Ever since GTZ has been engaged in production of world class finishing solutions.</p>
-                        
-                        <a href="/about-us" class="btn btn-primary rounded-pill text-white py-3 px-5">Discover More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-    <!-- Products Start -->
-    <div class="container-fluid service py-5">
-        <div class="container py-5">
-            <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="sub-style">
-                    <h4 class="sub-title px-3 mb-0">What We Do</h4>
-                </div>
-                <h1 class="display-3 mb-4">Cater To Diverse Industries</h1>
-            </div>
-            <div class="row g-4 justify-content-center">
-                @foreach(allCategories() as $key => $category)
-                <div class="col-md-6 col-lg-4 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item rounded">
-                        <div class="service-img rounded-top">
-                            <img src="{{ getSizedImage($category->featured_image) }}" class="img-fluid rounded-top w-100" alt="">
-                        </div>
-                        <div class="service-content rounded-bottom bg-light pb-4 pt-2 fixed-height">
-                            <div class="course-meta pb-4">
-                                <!-- <span class="course-category bold-font"><i class="fa fa-user"></i> 10.8k Sold</span>
-                                <div class="course-rate ul-li">
-                                    
-                                    <ul>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                        <li><i class="fa fa-star"></i></li>
-                                    </ul>
-                                </div>
-                                <span class="course-category bold-font"> (1.2k) Ratings </span> -->
-                            </div>
-                            <div class="service-content-inner text-center pt-5">
-                                <h4 class="mb-3"> {{ $category->name }}</h4>
-                                
-                                <!-- <p class="mb-4">{!! $category->description !!}</p> -->
-                                <a href="{{ route('view-products',$category->slug) }}" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-               
-                
-                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
-                    <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="{{ url('/products') }}">Check Product Details</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Products End -->
-
-
-    <!-- Feature Start -->
-    <!-- <div class="container-fluid feature py-5">
-        <div class="container py-5">
-            <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="sub-style">
-                    <h4 class="sub-title px-3 mb-0">Why Choose Us</h4>
-                </div>
-                <h1 class="display-3 mb-4">Why Choose Us? Get Your Life Style Back</h1>
-               
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="row-cols-1 feature-item p-4">
-                        <div class="col-12">
-                            <div class="feature-icon mb-4">
-                                <div class="p-3 d-inline-flex bg-white rounded">
-                                    <i class="fas fa-diagnoses fa-4x text-primary"></i>
-                                </div>
-                            </div>
-                            <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-4">Licensed Therapist</h5>
-                                <p class="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="row-cols-1 feature-item p-4">
-                        <div class="col-12">
-                            <div class="feature-icon mb-4">
-                                <div class="p-3 d-inline-flex bg-white rounded">
-                                    <i class="fas fa-briefcase-medical fa-4x text-primary"></i>
-                                </div>
-                            </div>
-                            <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-4">Personalized Treatment</h5>
-                                <p class="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row-cols-1 feature-item p-4">
-                        <div class="col-12">
-                            <div class="feature-icon mb-4">
-                                <div class="p-3 d-inline-flex bg-white rounded">
-                                    <i class="fas fa-hospital-user fa-4x text-primary"></i>
-                                </div>
-                            </div>
-                            <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-4">Therapy Goals</h5>
-                                <p class="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="row-cols-1 feature-item p-4">
-                        <div class="col-12">
-                            <div class="feature-icon mb-4">
-                                <div class="p-3 d-inline-flex bg-white rounded">
-                                    <i class="fas fa-users fa-4x text-primary"></i>
-                                </div>
-                            </div>
-                            <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-4">Practitioners Network</h5>
-                                <p class="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="row-cols-1 feature-item p-4">
-                        <div class="col-12">
-                            <div class="feature-icon mb-4">
-                                <div class="p-3 d-inline-flex bg-white rounded">
-                                    <i class="fas fa-spa fa-4x text-primary"></i>
-                                </div>
-                            </div>
-                            <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-4">Comfortable Center</h5>
-                                <p class="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="row-cols-1 feature-item p-4">
-                        <div class="col-12">
-                            <div class="feature-icon mb-4">
-                                <div class="p-3 d-inline-flex bg-white rounded">
-                                    <i class="fas fa-heart fa-4x text-primary"></i>
-                                </div>
-                            </div>
-                            <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-4">Experienced Stuff</h5>
-                                <p class="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row-cols-1 feature-item p-4">
-                        <div class="col-12">
-                            <div class="feature-icon mb-4">
-                                <div class="p-3 d-inline-flex bg-white rounded">
-                                    <i class="fab fa-pied-piper fa-4x text-primary"></i>
-                                </div>
-                            </div>
-                            <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-4">Therapy Goals</h5>
-                                <p class="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="row-cols-1 feature-item p-4">
-                        <div class="col-12">
-                            <div class="feature-icon mb-4">
-                                <div class="p-3 d-inline-flex bg-white rounded">
-                                    <i class="fas fa-user-md fa-4x text-primary"></i>
-                                </div>
-                            </div>
-                            <div class="feature-content d-flex flex-column">
-                                <h5 class="mb-4">Licensed Therapist</h5>
-                                <p class="mb-0">Dolor, sit amet consectetur adipisicing elit. Soluta inventore cum accusamus,</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
-                    <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">More Details</a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Feature End -->
-    <!-- Modal Video -->
-    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                            allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Book Appointment End -->
-
-    <!-- Team Start -->
-    <div class="container-fluid team py-5">
-        <div class="container py-5">
-            <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="sub-style">
-                    <h4 class="sub-title px-3 mb-0">Under R&D</h4>
-                </div>
-                <h1 class="display-3 mb-4">Products In Pipeline - API </h1>
-               
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item rounded">
-                        
-                        <div class="team-content text-center border border-primary border-top-0 rounded-bottom py-4">
-                            <h5>VONOPRAZAN</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item rounded">
-                        
-                        <div class="team-content text-center border border-primary border-top-0 rounded-bottom py-4">
-                            <h5>BEMPEDOIC ACID</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item rounded">
-                        
-                        <div class="team-content text-center border border-primary border-top-0 rounded-bottom py-4">
-                            <h5>IVACAFTOR</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item rounded">
-                        
-                        <div class="team-content text-center border border-primary border-top-0 rounded-bottom py-4">
-                            <h5>EFINACONAZOLE</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item rounded">
-                        
-                        <div class="team-content text-center border border-primary border-top-0 rounded-bottom py-4">
-                            <h5>METHYLENE BLUE</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item rounded">
-                        
-                        <div class="team-content text-center border border-primary border-top-0 rounded-bottom py-4">
-                            <h5>OZANIMOD</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item rounded">
-                        
-                        <div class="team-content text-center border border-primary border-top-0 rounded-bottom py-4">
-                            <h5>CENOBAMATE</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item rounded">
-                        
-                        <div class="team-content text-center border border-primary border-top-0 rounded-bottom py-4">
-                            <h5>FERUMOXYTOL</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item rounded">
-                        
-                        <div class="team-content text-center border border-primary border-top-0 rounded-bottom py-4">
-                            <h5>LIPOSOMAL MINERALS</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item rounded">
-                        
-                        <div class="team-content text-center border border-primary border-top-0 rounded-bottom py-4">
-                            <h5>VERICIGUAT</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item rounded">
-                        
-                        <div class="team-content text-center border border-primary border-top-0 rounded-bottom py-4">
-                            <h5>FINERENONE</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item rounded">
-                        
-                        <div class="team-content text-center border border-primary border-top-0 rounded-bottom py-4">
-                            <h5>DORZOLAMIDE</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
-    <div class="container team py-5">
-        <div class="row" >
-            <div class="col-md-4">
-                <h4 class="sub-title pe-3 mb-0">Our Footprint</h4>
-                <h1 class="display-3 mb-4">Global Presense</h1>
-            </div>
-            <div class="col-md-8">
-                <img src="{{ url('/assets/frontend/img/location-map.jpg') }}" alt="" class="w-100">
-            </div>
-        </div>
-    </div>
-
-    <!-- Book Appointment Start -->
-    <div class="container-fluid appointment py-5" style="background-image:linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url({{ url('assets/frontend/img/about-cover.webp') }});">
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2">
-                    <div class="section-title text-start">
-                        <h4 class="sub-title pe-3 mb-0">Connect with us</h4>
-                        <h1 class="display-4 mb-4">Get In Touch</h1>
-                        <div class="row g-4">
-                            <div class="col-sm-12">
-                                <div class="d-flex flex-column h-100">
-                                    <div class="mb-4">
-                                        <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Get instant support</h5>
-                                        <p class="mb-0">Connect with our expert for an answer to what you are looking for.</p>
+                    <div class="swiper-slide">
+                        <div class="th-hero-slide">
+                            <div class="th-hero-bg" data-bg-src="assets/frontend/img/hero/hero_bg_2_1.jpg"></div>
+                            <div class="container">
+                                <div class="hero-style2">
+                                    <div class="ripple-shape">
+                                        <span class="ripple-1"></span><span class="ripple-2"></span><span class="ripple-3"></span><span class="ripple-4"></span><span class="ripple-5"></span><span class="ripple-6"></span>
                                     </div>
-                                    <div class="mb-4">
-                                        <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Still have doubts?</h5>
-                                        <p class="mb-0">Let's connect & escalate all the doubts regarding the products!</p>
-                                    </div>
-                                    <div class="text-start mb-4">
-                                        <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">More Details</a>
+                                    <span class="hero-subtitle" data-ani="slideinleft" data-ani-delay="0.1s">SECURE & IT SERVICES</span>
+                                    <h1 class="hero-title" data-ani="slideinleft" data-ani-delay="0.3s">Perfect IT Solution</h1>
+                                    <h1 class="hero-title" data-ani="slideinleft" data-ani-delay="0.5s">For Your Business</h1>
+                                    <p class="hero-text" data-ani="slideinleft" data-ani-delay="0.7s">Energistically harness ubiquitous imperatives without state of the art collaboration and idea-sharing. Monotonectally parallel task cross-unit experiences and front-end.</p>
+                                    <div class="btn-group" data-ani="slideinleft" data-ani-delay="0.9s">
+                                        <a href="about.html" class="th-btn style3">DISCOBER MORE<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                                        <a href="contact.html" class="th-btn style2">CONTACT US<i class="fa-regular fa-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="th-hero-slide">
+                            <div class="th-hero-bg" data-bg-src="assets/frontend/img/hero/hero_bg_2_2.jpg"></div>
+                            <div class="container">
+                                <div class="hero-style2">
+                                    <div class="ripple-shape">
+                                        <span class="ripple-1"></span><span class="ripple-2"></span><span class="ripple-3"></span><span class="ripple-4"></span><span class="ripple-5"></span><span class="ripple-6"></span>
+                                    </div>
+                                    <span class="hero-subtitle" data-ani="slideinleft" data-ani-delay="0.1s">SECURE & IT SERVICES</span>
+                                    <h1 class="hero-title" data-ani="slideinleft" data-ani-delay="0.3s">Webteck Best</h1>
+                                    <h1 class="hero-title" data-ani="slideinleft" data-ani-delay="0.5s">IT Solution 2024</h1>
+                                    <p class="hero-text" data-ani="slideinleft" data-ani-delay="0.7s">Energistically harness ubiquitous imperatives without state of the art collaboration and idea-sharing. Monotonectally parallel task cross-unit experiences and front-end.</p>
+                                    <div class="btn-group" data-ani="slideinleft" data-ani-delay="0.9s">
+                                        <a href="about.html" class="th-btn style3">DISCOBER MORE<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                                        <a href="contact.html" class="th-btn style2">CONTACT US<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="th-hero-slide">
+                            <div class="th-hero-bg" data-bg-src="assets/frontend/img/hero/hero_bg_2_3.jpg"></div>
+                            <div class="container">
+                                <div class="hero-style2">
+                                    <div class="ripple-shape">
+                                        <span class="ripple-1"></span><span class="ripple-2"></span><span class="ripple-3"></span><span class="ripple-4"></span><span class="ripple-5"></span><span class="ripple-6"></span>
+                                    </div>
+                                    <span class="hero-subtitle" data-ani="slideinleft" data-ani-delay="0.1s">SECURE & IT SERVICES</span>
+                                    <h1 class="hero-title" data-ani="slideinleft" data-ani-delay="0.3s">Make The Easiest</h1>
+                                    <h1 class="hero-title" data-ani="slideinleft" data-ani-delay="0.5s">Solution For You</h1>
+                                    <p class="hero-text" data-ani="slideinleft" data-ani-delay="0.7s">Energistically harness ubiquitous imperatives without state of the art collaboration and idea-sharing. Monotonectally parallel task cross-unit experiences and front-end.</p>
+                                    <div class="btn-group" data-ani="slideinleft" data-ani-delay="0.9s">
+                                        <a href="about.html" class="th-btn style3">DISCOBER MORE<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                                        <a href="contact.html" class="th-btn style2">CONTACT US<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
-                    <div class="appointment-form rounded p-5">
-                        @if ($errors->any())
-        					<div class="alert alert-danger">
-        						<ul>
-        							@foreach ($errors->all() as $error)
-        								<li>{{ $error }}</li>
-        							@endforeach
-        						</ul>
-        					</div>
-        				@endif
+            </div>
+            <button data-slider-prev="#heroSlider2" class="slider-arrow style3 slider-prev"><i class="far fa-arrow-left"></i></button>
+            <button data-slider-next="#heroSlider2" class="slider-arrow style3 slider-next"><i class="far fa-arrow-right"></i></button>
+        </div>
 
-        				@if(session()->has('message'))
-        					<div class="alert alert-success">
-        						{{ session()->get('message') }}
-        					</div>
-        				@endif
-                        <!-- <p class="fs-4 text-uppercase text-primary">Get In Touch</p> -->
-                        <form method="post" id="get_in_touch_form" action="{{ route('insert-capture-contact-leads') }}">
-                            @csrf
-                            <div class="row gy-3 gx-4">
-                                <div class="col-xl-6">
-                                    <input type="text" name="name" class="form-control py-3 border-primary bg-transparent" placeholder="Full Name" required >
-                                </div>
-                                <div class="col-xl-6">
-                                    <input type="email" name="email" class="form-control py-3 border-primary bg-transparent" placeholder="Email" required>
-                                </div>
-                                <div class="col-xl-6">
-                                    <input type="phone" name="phone" class="form-control py-3 border-primary bg-transparent" placeholder="Phone" required>
-                                </div>
-                                <div class="col-xl-6">
-                                    <input type="text" name="country" class="form-control py-3 border-primary bg-transparent" placeholder="Country/Location" required>
-                                </div>
-                                <div class="col-xl-6">
-                                    <input type="company" name="company" class="form-control py-3 border-primary bg-transparent" placeholder="Company Name" required>
-                                </div>
-                                <div class="col-xl-6">
-                                    <select name="category" class="form-select py-3 border-primary bg-transparent" aria-label="Default select example" required>
-                                        <option selected>Select Category</option>
-                                        @foreach(allCategories() as $key => $category)
-                                        <option value="{{$category->name}}" >{{$category->name}}</option>
-                                        @endforeach
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea name="comment" class="form-control border-primary bg-transparent" name="text" id="area-text" cols="30" rows="5" placeholder="Write Your Enquiry"></textarea>
-                                </div>
-                                <div class="form-group disclaimer text-left">
-                                    <p style="margin:0">
-                                        <input style="margin-left: 0;width: auto;vertical-align: middle;height: auto;" type="checkbox" class="" checked="">  I agree to receive updates on <i class="fab fa-whatsapp" style="color: green;"></i> whatsapp. 
-                                    </p>
-                                    <p style="margin:0">
-                                    <input style="margin-left: 0;width: auto;vertical-align: middle;height: auto;" type="checkbox" class="" checked="">  I agree to receive promotional and marketing material on Email. 
-                                    </p>
-                                    <p>
-                                        <input style="margin-left: 0;width: auto;vertical-align: middle;height: auto;" type="checkbox" class="" checked=""> I agree to <a href="/privacy-policy" target="_blank">Privacy Policy</a> &amp; overriding DNC/NDNC request for Call/SMS. 
-                                    </p>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-primary text-white w-100 py-3 px-5">SUBMIT NOW</button>
-                                </div>
-                                <div class="col-12">
-                                    <input type="hidden" class="formFieldOtpResponse" value="">
-                                    <input type="hidden" class="lead_id"  name ="lead_id" value="">
-                                    <input type="hidden" name="utm_campaign" value="{{ getUtmCampaign(isset($contentMain->utm_campaign)?$contentMain->utm_campaign:null) }}">
-                                    <input type="hidden" name="utm_source" value="{{ getUtmSource(isset($contentMain->utm_source)?$contentMain->utm_source:null) }}">
-                                    <input type="hidden" name ="LeadType" value="{{ getCommunicationMedium(isset($contentMain->lead_type)?$contentMain->lead_type:null) }}" >
-                                    <input type="hidden" name ="utm_term" value="{{ (isset($_GET['utm_term']))?$_GET['utm_term']:'' }}" >  
-                                    <input type="hidden" name ="utm_device" value="{{ (isset($_GET['utm_device']))?$_GET['utm_device']:'' }}" >  
-                                    <input type="hidden" name ="utm_adgroup" value="{{(isset($_GET['utm_adgroup']))?$_GET['utm_adgroup']:''}}" >  
-                                    <input type="hidden" name ="utm_content" value="{{(isset($_GET['utm_content']))?$_GET['utm_content']:''}}" >   
-                                    <input type="hidden" name ="ref_code" value="{{ (isset($_GET['ref']))?$_GET['ref']:'' }}" >  
-                                    <input type="hidden" name ="source_url" value="{{ url()->current() }}" >
+        <div class="hero-shape1">
+        </div>
+        <div class="hero-shape2">
+            <img src="assets/frontend/img/hero/hero_shape_2_2.png" alt="shape">
+        </div>
+        <div class="hero-shape3">
+            <img src="assets/frontend/img/hero/hero_shape_2_3.png" alt="shape">
+        </div>
+    </div>
+    <!--======== / Hero Section ========--><!--==============================
+    Servce Area  
+    ==============================-->
+    <section class="space-top">
+        <div class="container z-index-common">
+            <div class="slider-area">
+                <div class="swiper th-slider has-shadow" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"3"}}}'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="service-featured">
+                                <div class="service-featured_content">
+                                    <div class="shape-icon">
+                                        <img src="assets/frontend/img/icon/service_featured_1.svg" alt="Icon">
+                                        <span class="dots"></span>
+                                    </div>
+                                    <h3 class="box-title"><a href="service-details.html">IT Management</a></h3>
+                                    <p class="service-featured_text">Conveniently promote transparent materials and stand-alone strategic theme areas.</p>
+                                    <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
                                 </div>
                             </div>
-                        </form>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-featured">
+                                <div class="service-featured_content">
+                                    <div class="shape-icon">
+                                        <img src="assets/frontend/img/icon/service_featured_2.svg" alt="Icon">
+                                        <span class="dots"></span>
+                                    </div>
+                                    <h3 class="box-title"><a href="service-details.html">Cloud Computing</a></h3>
+                                    <p class="service-featured_text">Conveniently promote transparent materials and stand-alone strategic theme areas.</p>
+                                    <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-featured">
+                                <div class="service-featured_content">
+                                    <div class="shape-icon">
+                                        <img src="assets/frontend/img/icon/service_featured_3.svg" alt="Icon">
+                                        <span class="dots"></span>
+                                    </div>
+                                    <h3 class="box-title"><a href="service-details.html">Backup & Recovery</a></h3>
+                                    <p class="service-featured_text">Conveniently promote transparent materials and stand-alone strategic theme areas.</p>
+                                    <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-featured">
+                                <div class="service-featured_content">
+                                    <div class="shape-icon">
+                                        <img src="assets/frontend/img/icon/service_featured_4.svg" alt="Icon">
+                                        <span class="dots"></span>
+                                    </div>
+                                    <h3 class="box-title"><a href="service-details.html">Machine Learning</a></h3>
+                                    <p class="service-featured_text">Conveniently promote transparent materials and stand-alone strategic theme areas.</p>
+                                    <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section><!--==============================
+    About Area  
+    ==============================-->
+    <div class="space" id="about-sec">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 mb-30 mb-xl-0">
+                    <div class="img-box1">
+                        <div class="img1">
+                            <img src="assets/frontend/img/normal/about_1_1.png" alt="About">
+                        </div>
+                        <div class="shape1">
+                            <img src="assets/frontend/img/normal/about_shape_1.png" alt="shape">
+                        </div>
+                        <div class="year-counter">
+                            <h3 class="year-counter_number"><span class="counter-number">25</span></h3>
+                            <p class="year-counter_text">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="ps-xxl-4 ms-xl-3">
+                        <div class="title-area mb-35">
+                            <span class="sub-title">
+                                <div class="icon-masking me-2">
+                                    <span class="mask-icon" data-mask-src="assets/frontend/img/theme-img/title_shape_1.svg"></span>
+                                    <img src="assets/frontend/img/theme-img/title_shape_1.svg" alt="shape">
+                                </div>About Us
+                            </span>
+                            <h2 class="sec-title">We Are Increasing Business Success With <span class="text-theme">IT Solution</span></h2>
+                        </div>
+                        <p class="mt-n2 mb-25">Collaboratively envisioneer user friendly supply chains and cross unit imperative. Authoritativel fabricate competitive resource and holistic synergy. Uniquely generate efficient schemas before future.</p>
+                        <div class="about-feature-wrap">
+                            <div class="about-feature">
+                                <div class="about-feature_icon">
+                                    <img src="assets/frontend/img/icon/about_feature_1_1.svg" alt="Icon">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="about-feature_title">Certified Company</h3>
+                                    <p class="about-feature_text">Best Provide Skills Services</p>
+                                </div>
+                            </div>
+                            <div class="about-feature">
+                                <div class="about-feature_icon">
+                                    <img src="assets/frontend/img/icon/about_feature_1_2.svg" alt="Icon">
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="about-feature_title">Expart Team</h3>
+                                    <p class="about-feature_text">100% Expert Team</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <a href="about.html" class="th-btn">DISCOVER MORE<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                            <div class="call-btn">
+                                <div class="play-btn">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="media-body">
+                                    <span class="btn-text">Call Us On:</span>
+                                    <a href="tel:+19088000393" class="btn-title">+190-8800-0393</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--==============================
+Service Area  
+==============================-->
+    <section class="service-sec space" id="service-sec" data-bg-src="assets/frontend/img/bg/service_bg_1.png">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-7 col-sm-10 px-xl-4">
+                    <div class="title-area text-center">
+                        <span class="sub-title">
+                            <div class="icon-masking me-2">
+                                <span class="mask-icon" data-mask-src="assets/frontend/img/theme-img/title_shape_1.svg"></span>
+                                <img src="assets/frontend/img/theme-img/title_shape_1.svg" alt="shape">
+                            </div>
+                            OUR SERVICES
+                        </span>
+                        <h2 class="sec-title">We Provide Exclusive <span class="text-theme"> Service</span> For Your Business</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gy-4">
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">01</div>
+                        <div class="shape-icon">
+                            <img src="assets/frontend/img/icon/service_card_1.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title"><a href="service-details.html">Web Development</a></h3>
+                        <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive potentialiti. Professionally build progressive users with.</p>
+                        <a href="service-details.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/frontend/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">02</div>
+                        <div class="shape-icon">
+                            <img src="assets/frontend/img/icon/service_card_2.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title"><a href="service-details.html">UI/UX Design</a></h3>
+                        <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive potentialiti. Professionally build progressive users with.</p>
+                        <a href="service-details.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/frontend/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">03</div>
+                        <div class="shape-icon">
+                            <img src="assets/frontend/img/icon/service_card_3.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title"><a href="service-details.html">Digital Marketing</a></h3>
+                        <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive potentialiti. Professionally build progressive users with.</p>
+                        <a href="service-details.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/frontend/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">04</div>
+                        <div class="shape-icon">
+                            <img src="assets/frontend/img/icon/service_card_4.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title"><a href="service-details.html">Business Analysis</a></h3>
+                        <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive potentialiti. Professionally build progressive users with.</p>
+                        <a href="service-details.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/frontend/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">05</div>
+                        <div class="shape-icon">
+                            <img src="assets/frontend/img/icon/service_card_5.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title"><a href="service-details.html">Software Services</a></h3>
+                        <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive potentialiti. Professionally build progressive users with.</p>
+                        <a href="service-details.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/frontend/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">06</div>
+                        <div class="shape-icon">
+                            <img src="assets/frontend/img/icon/service_card_6.svg" alt="Icon">
+                            <span class="dots"></span>
+                        </div>
+                        <h3 class="box-title"><a href="service-details.html">Machine Learning</a></h3>
+                        <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive potentialiti. Professionally build progressive users with.</p>
+                        <a href="service-details.html" class="th-btn">Read More<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape">
+                            <img src="assets/frontend/img/bg/service_card_bg.png" alt="bg">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center mt-5">
+                <a href="service.html" class="th-btn">VIEW ALL SERVICES<i class="fa-regular fa-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+    </section><!--==============================
+Cta Area  
+==============================-->
+    <section class="bg-bottom-right position-relative" data-bg-src="assets/frontend/img/bg/cta_bg_1.png" data-bg-color="#080E1C">
+        <div class="img-half img-left th-video2">
+            <img src="assets/frontend/img/normal/cta_1.jpg" alt="video">
+            <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn popup-video"><i class="fas fa-play"></i></a>
+        </div>
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-xl-5 space">
+                    <div class="title-area mb-35">
+                        <span class="sub-title">
+                            <div class="icon-masking me-2">
+                                <span class="mask-icon" data-mask-src="assets/frontend/img/theme-img/title_shape_1.svg"></span>
+                                <img src="assets/frontend/img/theme-img/title_shape_1.svg" alt="shape">
+                            </div>
+                            GET BEST IT SOLUTION 2024
+                        </span>
+                        <h2 class="sec-title text-white">We Help Businesses To Achieve Their <span class="text-theme">Objectives</span></h2>
+                    </div>
+                    <p class="mt-n2 mb-30 text-white">Authoritatively build ubiquitous models vis-a-vis fully tested mindshare. Conveniently repurpose user friendly paradigms vis-a-vis out-of-the-box portals. Dramatically matrix magnetic schemas for extensive methodologies. Credibly.</p>
+                    <a href="about.html" class="th-btn style3">DISCOVER MORE<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="shape-mockup" data-bottom="0" data-right="0">
+            <div class="particle-1" id="particle-1"></div>
+        </div>
+    </section><!--==============================
+Feature Area  
+==============================-->
+    <div class="space-top" data-bg-src="assets/frontend/img/bg/why_bg_1.png">
+        <div class="container">
+            <div class="row align-items-center flex-row-reverse">
+                <div class="col-xxl-7 col-xl-6 mb-30 mb-xl-0">
+                    <div class="img-box2">
+                        <div class="img1">
+                            <img src="assets/frontend/img/normal/why_1_1.jpg" alt="Why">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-5 col-xl-6">
+                    <div class="title-area mb-35">
+                        <span class="sub-title">
+                            <div class="icon-masking me-2">
+                                <span class="mask-icon" data-mask-src="assets/frontend/img/theme-img/title_shape_1.svg"></span>
+                                <img src="assets/frontend/img/theme-img/title_shape_1.svg" alt="shape">
+                            </div>
+                            WHY CHOOSE US
+                        </span>
+                        <h2 class="sec-title">We Deal With The Aspects Professional <span class="text-theme">IT Services</span></h2>
+                    </div>
+                    <p class="mt-n2 mb-30">Collaboratively envisioneer user friendly supply chains and cross unit imperative. Authoritativel fabricate competitive resource and holistic.</p>
+                    <div class="two-column">
+                        <div class="checklist style2">
+                            <ul>
+                                <li><i class="far fa-check"></i> Big Data Analysis</li>
+                                <li><i class="far fa-check"></i> 24/7 Online Support</li>
+                                <li><i class="far fa-check"></i> Business Improvement</li>
+                            </ul>
+                        </div>
+                        <div class="checklist style2">
+                            <ul>
+                                <li><i class="far fa-check"></i> High Quality Sicurity</li>
+                                <li><i class="far fa-check"></i> 24/7 Support Team</li>
+                                <li><i class="far fa-check"></i> Easy Solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div><!--==============================
+Counter Area  
+==============================-->
+    <div class="space-top" data-pos-for=".team-sec" data-sec-pos="bottom-half">
+        <div class="container z-index-common">
+            <div class="counter-card-wrap" data-bg-src="assets/frontend/img/bg/counter_bg_2.png">
+                <div class="row gy-40 justify-content-between">
+                    <div class="col-6 col-lg-auto">
+                        <div class="counter-card">
+                            <div class="counter-card_icon">
+                                <img src="assets/frontend/img/icon/counter_1_1.svg" alt="Icon">
+                            </div>
+                            <div class="media-body">
+                                <h2 class="counter-card_number"><span class="counter-number">986</span>+</h2>
+                                <p class="counter-card_text">Finished Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-auto">
+                        <div class="counter-card">
+                            <div class="counter-card_icon">
+                                <img src="assets/frontend/img/icon/counter_1_2.svg" alt="Icon">
+                            </div>
+                            <div class="media-body">
+                                <h2 class="counter-card_number"><span class="counter-number">896</span>+</h2>
+                                <p class="counter-card_text">Happy Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-auto">
+                        <div class="counter-card">
+                            <div class="counter-card_icon">
+                                <img src="assets/frontend/img/icon/counter_1_3.svg" alt="Icon">
+                            </div>
+                            <div class="media-body">
+                                <h2 class="counter-card_number"><span class="counter-number">396</span>+</h2>
+                                <p class="counter-card_text">Skilled Experts</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-auto">
+                        <div class="counter-card">
+                            <div class="counter-card_icon">
+                                <img src="assets/frontend/img/icon/counter_1_4.svg" alt="Icon">
+                            </div>
+                            <div class="media-body">
+                                <h2 class="counter-card_number"><span class="counter-number">496</span>+</h2>
+                                <p class="counter-card_text">Honorable Awards</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--==============================
+Team Area  
+==============================-->
+    <section class="team-sec space">
+        <div class="container z-index-common">
+            <div class="title-area text-center">
+                <span class="sub-title">
+                    <div class="icon-masking me-2">
+                        <span class="mask-icon" data-mask-src="assets/frontend/img/theme-img/title_shape_1.svg"></span>
+                        <img src="assets/frontend/img/theme-img/title_shape_1.svg" alt="shape">
+                    </div>
+                    TEAM MEMBER
+                </span>
+                <h2 class="sec-title">See Our Skilled Expert <span class="text-theme">Team</span></h2>
+            </div>
+
+            <div class="slider-area">
+                <div class="swiper th-slider has-shadow" id="teamSlider2" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"}}}'>
+                    <div class="swiper-wrapper">
+                        <!-- Single Item -->
+                        <div class="swiper-slide">
+                            <div class="th-team team-card">
+                                <div class="team-img">
+                                    <img src="assets/frontend/img/team/team_1_1.jpg" alt="Team">
+                                </div>
+                                <div class="team-content">
+                                    <div class="box-particle" id="team-p1"></div>
+                                    <div class="team-social">
+                                        <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                        <a target="_blank" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                                        <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                    <h3 class="box-title"><a href="team-details.html">Rayan Athels</a></h3>
+                                    <span class="team-desig">Founder & CEO</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Item -->
+                        <div class="swiper-slide">
+                            <div class="th-team team-card">
+                                <div class="team-img">
+                                    <img src="assets/frontend/img/team/team_1_2.jpg" alt="Team">
+                                </div>
+                                <div class="team-content">
+                                    <div class="box-particle" id="team-p2"></div>
+                                    <div class="team-social">
+                                        <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                        <a target="_blank" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                                        <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                    <h3 class="box-title"><a href="team-details.html">Alex Furnandes</a></h3>
+                                    <span class="team-desig">Project Manager</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Item -->
+                        <div class="swiper-slide">
+                            <div class="th-team team-card">
+                                <div class="team-img">
+                                    <img src="assets/frontend/img/team/team_1_3.jpg" alt="Team">
+                                </div>
+                                <div class="team-content">
+                                    <div class="box-particle" id="team-p3"></div>
+                                    <div class="team-social">
+                                        <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                        <a target="_blank" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                                        <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                    <h3 class="box-title"><a href="team-details.html">Mary Crispy</a></h3>
+                                    <span class="team-desig">Cheif Expert</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Item -->
+                        <div class="swiper-slide">
+                            <div class="th-team team-card">
+                                <div class="team-img">
+                                    <img src="assets/frontend/img/team/team_1_4.jpg" alt="Team">
+                                </div>
+                                <div class="team-content">
+                                    <div class="box-particle" id="team-p4"></div>
+                                    <div class="team-social">
+                                        <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                        <a target="_blank" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                                        <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                    <h3 class="box-title"><a href="team-details.html">Henry Joshep</a></h3>
+                                    <span class="team-desig">Product Manager</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Item -->
+                        <div class="swiper-slide">
+                            <div class="th-team team-card">
+                                <div class="team-img">
+                                    <img src="assets/frontend/img/team/team_1_5.jpg" alt="Team">
+                                </div>
+                                <div class="team-content">
+                                    <div class="box-particle" id="team-p5"></div>
+                                    <div class="team-social">
+                                        <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                        <a target="_blank" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                                        <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                    <h3 class="box-title"><a href="team-details.html">Sanjida Carlose</a></h3>
+                                    <span class="team-desig">IT Consultant</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Item -->
+                        <div class="swiper-slide">
+                            <div class="th-team team-card">
+                                <div class="team-img">
+                                    <img src="assets/frontend/img/team/team_1_6.jpg" alt="Team">
+                                </div>
+                                <div class="team-content">
+                                    <div class="box-particle" id="team-p6"></div>
+                                    <div class="team-social">
+                                        <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                        <a target="_blank" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                                        <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                    <h3 class="box-title"><a href="team-details.html">Marian Widjya</a></h3>
+                                    <span class="team-desig">Head Manager</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Item -->
+                        <div class="swiper-slide">
+                            <div class="th-team team-card">
+                                <div class="team-img">
+                                    <img src="assets/frontend/img/team/team_1_7.jpg" alt="Team">
+                                </div>
+                                <div class="team-content">
+                                    <div class="box-particle" id="team-p7"></div>
+                                    <div class="team-social">
+                                        <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                        <a target="_blank" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                                        <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                    <h3 class="box-title"><a href="team-details.html">Peter Parker</a></h3>
+                                    <span class="team-desig">Web Developer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single Item -->
+                        <div class="swiper-slide">
+                            <div class="th-team team-card">
+                                <div class="team-img">
+                                    <img src="assets/frontend/img/team/team_1_8.jpg" alt="Team">
+                                </div>
+                                <div class="team-content">
+                                    <div class="box-particle" id="team-p8"></div>
+                                    <div class="team-social">
+                                        <a target="_blank" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                        <a target="_blank" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                                        <a target="_blank" href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                    <h3 class="box-title"><a href="team-details.html">Grayson Gabriel</a></h3>
+                                    <span class="team-desig">UI/UX Designer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button data-slider-prev="#teamSlider2" class="slider-arrow style3 slider-prev"><i class="far fa-arrow-left"></i></button>
+                <button data-slider-next="#teamSlider2" class="slider-arrow style3 slider-next"><i class="far fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="shape-mockup" data-bottom="0" data-left="0">
+            <div class="particle-2" id="particle-2"></div>
+        </div>
+    </section><!--==============================
+Project Area  
+==============================-->
+    <section class="space" id="project-sec">
+        <div class="container">
+            <div class="row justify-content-lg-between justify-content-center align-items-center">
+                <div class="col-lg-5 mb-n2 mb-lg-0">
+                    <div class="title-area text-center text-lg-start">
+                        <span class="sub-title">
+                            <div class="icon-masking me-2">
+                                <span class="mask-icon" data-mask-src="assets/frontend/img/theme-img/title_shape_1.svg"></span>
+                                <img src="assets/frontend/img/theme-img/title_shape_1.svg" alt="shape">
+                            </div>LATEST PROJECT
+                        </span>
+                        <h2 class="sec-title">See We Have Solution <br> Done <span class="text-theme">IT Projects</span></h2>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="sec-btn">
+                        <a href="project.html" class="th-btn">VIEW ALL PORJECTS<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div> <!-- / Title row -->
+            <div class="slider-area">
+                <div class="swiper th-slider has-shadow" id="projectSlider1" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="assets/frontend/img/project/project_1_1.jpg" alt="project image">
+                                </div>
+                                <div class="project-content-wrap">
+                                    <div class="project-content">
+                                        <div class="box-particle" id="project-p1"></div>
+                                        <h3 class="box-title"><a href="project-details.html">IT Consultency</a></h3>
+                                        <p class="project-subtitle">Technology</p>
+                                        <a href="assets/frontend/img/project/project_1_1.jpg" class="icon-btn popup-image"><i class="far fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="assets/frontend/img/project/project_1_2.jpg" alt="project image">
+                                </div>
+                                <div class="project-content-wrap">
+                                    <div class="project-content">
+                                        <div class="box-particle" id="project-p2"></div>
+                                        <h3 class="box-title"><a href="project-details.html">Web Development</a></h3>
+                                        <p class="project-subtitle">Technology</p>
+                                        <a href="assets/frontend/img/project/project_1_2.jpg" class="icon-btn popup-image"><i class="far fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="assets/frontend/img/project/project_1_3.jpg" alt="project image">
+                                </div>
+                                <div class="project-content-wrap">
+                                    <div class="project-content">
+                                        <div class="box-particle" id="project-p3"></div>
+                                        <h3 class="box-title"><a href="project-details.html">Website Design</a></h3>
+                                        <p class="project-subtitle">Technology</p>
+                                        <a href="assets/frontend/img/project/project_1_3.jpg" class="icon-btn popup-image"><i class="far fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="assets/frontend/img/project/project_1_4.jpg" alt="project image">
+                                </div>
+                                <div class="project-content-wrap">
+                                    <div class="project-content">
+                                        <div class="box-particle" id="project-p4"></div>
+                                        <h3 class="box-title"><a href="project-details.html">SEO Optimization</a></h3>
+                                        <p class="project-subtitle">Marketing</p>
+                                        <a href="assets/frontend/img/project/project_1_4.jpg" class="icon-btn popup-image"><i class="far fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="assets/frontend/img/project/project_1_5.jpg" alt="project image">
+                                </div>
+                                <div class="project-content-wrap">
+                                    <div class="project-content">
+                                        <div class="box-particle" id="project-p5"></div>
+                                        <h3 class="box-title"><a href="project-details.html">Digital Marketing</a></h3>
+                                        <p class="project-subtitle">Marketing</p>
+                                        <a href="assets/frontend/img/project/project_1_5.jpg" class="icon-btn popup-image"><i class="far fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="assets/frontend/img/project/project_1_6.jpg" alt="project image">
+                                </div>
+                                <div class="project-content-wrap">
+                                    <div class="project-content">
+                                        <div class="box-particle" id="project-p6"></div>
+                                        <h3 class="box-title"><a href="project-details.html">Business Analysis</a></h3>
+                                        <p class="project-subtitle">Business</p>
+                                        <a href="assets/frontend/img/project/project_1_6.jpg" class="icon-btn popup-image"><i class="far fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="assets/frontend/img/project/project_1_7.jpg" alt="project image">
+                                </div>
+                                <div class="project-content-wrap">
+                                    <div class="project-content">
+                                        <div class="box-particle" id="project-p7"></div>
+                                        <h3 class="box-title"><a href="project-details.html">Software Service</a></h3>
+                                        <p class="project-subtitle">Technology</p>
+                                        <a href="assets/frontend/img/project/project_1_7.jpg" class="icon-btn popup-image"><i class="far fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="assets/frontend/img/project/project_1_8.jpg" alt="project image">
+                                </div>
+                                <div class="project-content-wrap">
+                                    <div class="project-content">
+                                        <div class="box-particle" id="project-p8"></div>
+                                        <h3 class="box-title"><a href="project-details.html">Data Recovery</a></h3>
+                                        <p class="project-subtitle">Technology</p>
+                                        <a href="assets/frontend/img/project/project_1_8.jpg" class="icon-btn popup-image"><i class="far fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img src="assets/frontend/img/project/project_1_9.jpg" alt="project image">
+                                </div>
+                                <div class="project-content-wrap">
+                                    <div class="project-content">
+                                        <div class="box-particle" id="project-p9"></div>
+                                        <h3 class="box-title"><a href="project-details.html">Cloud Computing</a></h3>
+                                        <p class="project-subtitle">Technology</p>
+                                        <a href="assets/frontend/img/project/project_1_9.jpg" class="icon-btn popup-image"><i class="far fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button data-slider-prev="#projectSlider1" class="slider-arrow style3 slider-prev"><i class="far fa-arrow-left"></i></button>
+                <button data-slider-next="#projectSlider1" class="slider-arrow style3 slider-next"><i class="far fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="shape-mockup" data-top="0%" data-right="0%"><img src="assets/frontend/img/shape/tech_shape_1.png" alt="shape"></div>
+        <div class="shape-mockup" data-bottom="0%" data-left="0%"><img src="assets/frontend/img/shape/tech_shape_2.png" alt="shape"></div>
+    </section><!--==============================
+Testimonial Area  
+==============================-->
+    <section class="overflow-hidden space" data-bg-src="assets/frontend/img/bg/testi_bg_1.jpg" data-overlay="overlay1" data-opacity="9">
+        <div class="container z-index-common">
+            <div class="row align-items-center">
+                <div class="col-xl-5">
+                    <div class="pe-xxl-5 text-xl-start text-center">
+                        <div class="title-area mb-35">
+                            <span class="sub-title">
+                                <div class="icon-masking me-2">
+                                    <span class="mask-icon" data-mask-src="assets/frontend/img/theme-img/title_shape_1.svg"></span>
+                                    <img src="assets/frontend/img/theme-img/title_shape_1.svg" alt="shape">
+                                </div>
+                                TESTIMONIALS
+                            </span>
+                            <h2 class="sec-title text-white">Let’s Here What Are The Customer <span class="text-theme">Saying</span></h2>
+                        </div>
+                        <p class="mt-n2 mb-35 text-white">Appropriately envisioneer leveraged information through 2.0 communities. Synergistically parallel task inexpensive products whereas cross-media ideas.</p>
+                        <a href="about.html" class="th-btn style3 shadow-none">VIEW MORE<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-xl-7 mt-40 mt-xl-0">
+                    <div class="testi-card-area slider-area">
+                        <div class="swiper testi-card-slide th-slider" id="testiSlide1" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"1"},"1200":{"slidesPerView":"1"}}}'>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testi-card">
+                                        <div class="testi-card_review">
+                                            <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                        </div>
+                                        <p class="testi-card_text">“Phosfluorescently reinvent prospective metrics before granular schema. Professionally metrics before expedite client-centric methods of empow ment whereas effective solut ion.”</p>
+                                        <div class="testi-card_profile">
+                                            <div class="testi-card_avater">
+                                                <img src="assets/frontend/img/testimonial/testi_1_1.jpg" alt="testimonial">
+                                            </div>
+                                            <div class="media-body">
+                                                <h3 class="testi-card_name">Alex Farnandes</h3>
+                                                <span class="testi-card_desig">UI/UX Designer</span>
+                                            </div>
+                                        </div>
+                                        <div class="testi-card_quote">
+                                            <img src="assets/frontend/img/icon/quote_left.svg" alt="quote">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testi-card">
+                                        <div class="testi-card_review">
+                                            <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                        </div>
+                                        <p class="testi-card_text">“Dnosflu orescent reinvent prospective metrics before granular schema. Professionally metrics before expedite client-centric methods of empow ment whereas effective coverless.”</p>
+                                        <div class="testi-card_profile">
+                                            <div class="testi-card_avater">
+                                                <img src="assets/frontend/img/testimonial/testi_1_2.jpg" alt="testimonial">
+                                            </div>
+                                            <div class="media-body">
+                                                <h3 class="testi-card_name">Mariana Sonia</h3>
+                                                <span class="testi-card_desig">CEO at Corola</span>
+                                            </div>
+                                        </div>
+                                        <div class="testi-card_quote">
+                                            <img src="assets/frontend/img/icon/quote_left.svg" alt="quote">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testi-card">
+                                        <div class="testi-card_review">
+                                            <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                        </div>
+                                        <p class="testi-card_text">“The best service reinvent prospective metrics before granular schema. Professionally metrics before expedite client-centric methods of empow ment whereas effective turnings.”</p>
+                                        <div class="testi-card_profile">
+                                            <div class="testi-card_avater">
+                                                <img src="assets/frontend/img/testimonial/testi_1_3.jpg" alt="testimonial">
+                                            </div>
+                                            <div class="media-body">
+                                                <h3 class="testi-card_name">Abraham Khalil</h3>
+                                                <span class="testi-card_desig">UI/UX Designer</span>
+                                            </div>
+                                        </div>
+                                        <div class="testi-card_quote">
+                                            <img src="assets/frontend/img/icon/quote_left.svg" alt="quote">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testi-card">
+                                        <div class="testi-card_review">
+                                            <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                        </div>
+                                        <p class="testi-card_text">“Five star he reinvent prospective metrics before granular schema. Professionally metrics before expedite client-centric methods of empow ment whereas effective gotoning.”</p>
+                                        <div class="testi-card_profile">
+                                            <div class="testi-card_avater">
+                                                <img src="assets/frontend/img/testimonial/testi_1_4.jpg" alt="testimonial">
+                                            </div>
+                                            <div class="media-body">
+                                                <h3 class="testi-card_name">Alexa Jenifer</h3>
+                                                <span class="testi-card_desig">CEO at Morosto</span>
+                                            </div>
+                                        </div>
+                                        <div class="testi-card_quote">
+                                            <img src="assets/frontend/img/icon/quote_left.svg" alt="quote">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testi-thumb-wrap">
+                            <div class="testi-thumb testi-card-tab" data-slider-tab="#testiSlide1">
+                                <div class="tab-btn active">
+                                    <img src="assets/frontend/img/testimonial/testi_1_1.jpg" alt="Image">
+                                </div>
+                                <div class="tab-btn">
+                                    <img src="assets/frontend/img/testimonial/testi_1_2.jpg" alt="Image">
+                                </div>
+                                <div class="tab-btn">
+                                    <img src="assets/frontend/img/testimonial/testi_1_3.jpg" alt="Image">
+                                </div>
+                                <div class="tab-btn">
+                                    <img src="assets/frontend/img/testimonial/testi_1_4.jpg" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+Contact Area  
+==============================-->
+    <div class="space" id="contact-sec" data-bg-src="assets/frontend/img/bg/appointment_bg_1.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 pe-xxl-5 mb-40 mb-xl-0">
+                    <div class="title-area mb-35 text-xl-start text-center">
+                        <span class="sub-title">
+                            <div class="icon-masking me-2">
+                                <span class="mask-icon" data-mask-src="assets/frontend/img/theme-img/title_shape_1.svg"></span>
+                                <img src="assets/frontend/img/theme-img/title_shape_1.svg" alt="shape">
+                            </div>
+                            APPOINTMENT NOW
+                        </span>
+                        <h2 class="sec-title">We're Ready to Talk About Your <span class="text-theme">Opportunities</span></h2>
+                    </div>
+                    <p class="mt-n2 mb-30 text-xl-start text-center">Progressively morph principle-centered e-markets without an expanded array of opportunities. Conveniently incubate e-tailers for extensive leadership skills. Holisticly extend leading-edge vortals vis-a-vis 24/7 e-markets. Appropriately evolve efficient functionalities with installed base relationships.</p>
+                    <div class="contact-feature-wrap">
+                        <div class="contact-feature">
+                            <div class="icon-btn">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="media-body">
+                                <p class="contact-feature_label">Call Us On:</p>
+                                <a href="tel:+19088000393" class="contact-feature_link">+190-8800-0393</a>
+                            </div>
+                        </div>
+                        <div class="contact-feature">
+                            <div class="icon-btn">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="media-body">
+                                <p class="contact-feature_label">Quick Mail Us:</p>
+                                <a href="mailto:info@webteck.com" class="contact-feature_link">info@webteck.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 ps-xl-4">
+                    <h3 class="h4 mt-n2 mb-30 text-center">Make An Appointment</h3>
+                    <form action="mail.php" method="POST" class="appoitment-form ajax-contact">
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Name">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter Your Email">
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <select name="subject" id="subject" class="form-select">
+                                    <option value="" disabled selected hidden>Select Subject</option>
+                                    <option value="IT Consult">IT Consult</option>
+                                    <option value="UI/UX Design">UI/UX Design</option>
+                                    <option value="Branding Solution">Branding Solution</option>
+                                    <option value="Product Marketing">Product Marketing</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <input type="tel" class="form-control" name="number" id="number" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea name="message" id="message" cols="30" rows="3" class="form-control" placeholder="Write Your Message"></textarea>
+                            </div>
+                            <div class="form-btn col-12">
+                                <button class="th-btn w-100">MAKE AN APPOINTMENT</button>
+                            </div>
+                        </div>
+                        <p class="form-messages mb-0 mt-3"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div><!--==============================
+Blog Area  
+==============================-->
+    <section class="bg-top-right overflow-hidden space" id="blog-sec" data-bg-src="assets/frontend/img/bg/blog_bg_1.png">
+        <div class="container space-bottom">
+            <div class="title-area text-center">
+                <span class="sub-title">
+                    <div class="icon-masking me-2">
+                        <span class="mask-icon" data-mask-src="assets/frontend/img/theme-img/title_shape_1.svg"></span>
+                        <img src="assets/frontend/img/theme-img/title_shape_1.svg" alt="shape">
+                    </div>
+                    NEWS & ARTICLES
+                </span>
+                <h2 class="sec-title">Get Every Single Update <span class="text-theme">Blog</span></h2>
+            </div>
+
+            <div class="slider-area">
+                <div class="swiper th-slider has-shadow" id="blogSlider1" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <div class="blog-img">
+                                    <img src="assets/frontend/img/blog/blog_1_1.jpg" alt="blog image">
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <a href="blog.html"><i class="fal fa-calendar-days"></i>15 Jan, 2025</a>
+                                        <a href="blog.html"><i class="fal fa-comments"></i>2 Comments</a>
+                                    </div>
+                                    <h3 class="box-title"><a href="blog-details.html">Unsatiable entreaties may collecting Power.</a></h3>
+                                    <div class="blog-bottom">
+                                        <a href="blog.html" class="author"><img src="assets/frontend/img/blog/author-1-1.png" alt="avater"> By Themeholy</a>
+                                        <a href="blog-details.html" class="line-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <div class="blog-img">
+                                    <img src="assets/frontend/img/blog/blog_1_2.jpg" alt="blog image">
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <a href="blog.html"><i class="fal fa-calendar-days"></i>16 Jan, 2025</a>
+                                        <a href="blog.html"><i class="fal fa-comments"></i>3 Comments</a>
+                                    </div>
+                                    <h3 class="box-title"><a href="blog-details.html">Regional Manager & limited time management.</a></h3>
+                                    <div class="blog-bottom">
+                                        <a href="blog.html" class="author"><img src="assets/frontend/img/blog/author-1-1.png" alt="avater"> By Themeholy</a>
+                                        <a href="blog-details.html" class="line-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <div class="blog-img">
+                                    <img src="assets/frontend/img/blog/blog_1_3.jpg" alt="blog image">
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <a href="blog.html"><i class="fal fa-calendar-days"></i>17 Jan, 2025</a>
+                                        <a href="blog.html"><i class="fal fa-comments"></i>2 Comments</a>
+                                    </div>
+                                    <h3 class="box-title"><a href="blog-details.html">What’s the Holding Back the It Solution Industry?</a></h3>
+                                    <div class="blog-bottom">
+                                        <a href="blog.html" class="author"><img src="assets/frontend/img/blog/author-1-1.png" alt="avater"> By Themeholy</a>
+                                        <a href="blog-details.html" class="line-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <div class="blog-img">
+                                    <img src="assets/frontend/img/blog/blog_1_4.jpg" alt="blog image">
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <a href="blog.html"><i class="fal fa-calendar-days"></i>19 Jan, 2025</a>
+                                        <a href="blog.html"><i class="fal fa-comments"></i>4 Comments</a>
+                                    </div>
+                                    <h3 class="box-title"><a href="blog-details.html">Latin derived from Cicero's 1st-century BC</a></h3>
+                                    <div class="blog-bottom">
+                                        <a href="blog.html" class="author"><img src="assets/frontend/img/blog/author-1-1.png" alt="avater"> By Themeholy</a>
+                                        <a href="blog-details.html" class="line-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <div class="blog-img">
+                                    <img src="assets/frontend/img/blog/blog_1_1.jpg" alt="blog image">
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <a href="blog.html"><i class="fal fa-calendar-days"></i>15 Jan, 2025</a>
+                                        <a href="blog.html"><i class="fal fa-comments"></i>2 Comments</a>
+                                    </div>
+                                    <h3 class="box-title"><a href="blog-details.html">Unsatiable entreaties may collecting Power.</a></h3>
+                                    <div class="blog-bottom">
+                                        <a href="blog.html" class="author"><img src="assets/frontend/img/blog/author-1-1.png" alt="avater"> By Themeholy</a>
+                                        <a href="blog-details.html" class="line-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <div class="blog-img">
+                                    <img src="assets/frontend/img/blog/blog_1_2.jpg" alt="blog image">
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <a href="blog.html"><i class="fal fa-calendar-days"></i>16 Jan, 2025</a>
+                                        <a href="blog.html"><i class="fal fa-comments"></i>3 Comments</a>
+                                    </div>
+                                    <h3 class="box-title"><a href="blog-details.html">Regional Manager & limited time management.</a></h3>
+                                    <div class="blog-bottom">
+                                        <a href="blog.html" class="author"><img src="assets/frontend/img/blog/author-1-1.png" alt="avater"> By Themeholy</a>
+                                        <a href="blog-details.html" class="line-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <div class="blog-img">
+                                    <img src="assets/frontend/img/blog/blog_1_3.jpg" alt="blog image">
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <a href="blog.html"><i class="fal fa-calendar-days"></i>17 Jan, 2025</a>
+                                        <a href="blog.html"><i class="fal fa-comments"></i>2 Comments</a>
+                                    </div>
+                                    <h3 class="box-title"><a href="blog-details.html">What’s the Holding Back the It Solution Industry?</a></h3>
+                                    <div class="blog-bottom">
+                                        <a href="blog.html" class="author"><img src="assets/frontend/img/blog/author-1-1.png" alt="avater"> By Themeholy</a>
+                                        <a href="blog-details.html" class="line-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="blog-card">
+                                <div class="blog-img">
+                                    <img src="assets/frontend/img/blog/blog_1_4.jpg" alt="blog image">
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <a href="blog.html"><i class="fal fa-calendar-days"></i>19 Jan, 2025</a>
+                                        <a href="blog.html"><i class="fal fa-comments"></i>4 Comments</a>
+                                    </div>
+                                    <h3 class="box-title"><a href="blog-details.html">Latin derived from Cicero's 1st-century BC</a></h3>
+                                    <div class="blog-bottom">
+                                        <a href="blog.html" class="author"><img src="assets/frontend/img/blog/author-1-1.png" alt="avater"> By Themeholy</a>
+                                        <a href="blog-details.html" class="line-btn">Read More<i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button data-slider-prev="#blogSlider1" class="slider-arrow style3 slider-prev"><i class="far fa-arrow-left"></i></button>
+                <button data-slider-next="#blogSlider1" class="slider-arrow style3 slider-next"><i class="far fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="slider-area text-center">
+                <div class="swiper th-slider" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"},"1400":{"slidesPerView":"5"}}}'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="brand-box">
+                                <img src="assets/frontend/img/brand/brand_1_1.png" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box">
+                                <img src="assets/frontend/img/brand/brand_1_2.png" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box">
+                                <img src="assets/frontend/img/brand/brand_1_3.png" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box">
+                                <img src="assets/frontend/img/brand/brand_1_4.png" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box">
+                                <img src="assets/frontend/img/brand/brand_1_5.png" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box">
+                                <img src="assets/frontend/img/brand/brand_1_6.png" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box">
+                                <img src="assets/frontend/img/brand/brand_1_1.png" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box">
+                                <img src="assets/frontend/img/brand/brand_1_2.png" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box">
+                                <img src="assets/frontend/img/brand/brand_1_3.png" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box">
+                                <img src="assets/frontend/img/brand/brand_1_4.png" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box">
+                                <img src="assets/frontend/img/brand/brand_1_5.png" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box">
+                                <img src="assets/frontend/img/brand/brand_1_6.png" alt="Brand Logo">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="shape-mockup" data-bottom="0" data-left="0">
+            <div class="particle-2 small" id="particle-4"></div>
+        </div>
+    </section>
     @endsection
 @section('script')
 <!-- ============================================================== -->

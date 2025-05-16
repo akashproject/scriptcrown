@@ -35,7 +35,12 @@
                <div data-i18n="Settings">Media Library</div>
             </a>
          </li>
-         
+         <li class="menu-item">
+            <a href="{{ route('admin-pages') }}" class="menu-link">
+               <i class="menu-icon tf-icons bx bx-cog"></i>
+               <div data-i18n="Pages">Pages</div>
+            </a>
+         </li>
          <li class="menu-item">
             <a href="{{ route('admin-settings') }}" class="menu-link">
                <i class="menu-icon tf-icons bx bx-cog"></i>

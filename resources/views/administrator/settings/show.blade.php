@@ -57,6 +57,19 @@
 							<i class="tf-icons bx bx-message-square"></i> Social Settings
 						</button>
 					</li>
+					<li class="nav-item">
+						<button
+							type="button"
+							class="nav-link"
+							role="tab"
+							data-bs-toggle="tab"
+							data-bs-target="#navs-pills-justified-seo"
+							aria-controls="navs-pills-justified-seo"
+							aria-selected="false"
+						>
+							<i class="tf-icons bx bx-message-square"></i> SEO Settings
+						</button>
+					</li>
 				</ul>
 				<div class="tab-content">
 					<div class="tab-pane fade show active" id="navs-pills-justified-home" role="tabpanel">
@@ -297,6 +310,48 @@
 										name="youtube" id="youtube" placeholder="Enter YouTube Link Here" value="{{ (isset($settings['youtube']))?$settings['youtube']:'' }}"
 										autofocus
 									/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="navs-pills-justified-seo" role="tabpanel">
+						<div class="card-body">
+							<div class="row">
+								<div class="mb-3 col-md-6">
+									<label for="firstName" class="form-label">UTM Campaign</label>
+									<input
+										class="form-control"
+										type="text"
+										name="utm_campaign" id="utm_campaign" placeholder="Enter utm campaign Link Here" value="{{ (isset($settings['utm_campaign']))?$settings['utm_campaign']:'' }}" 
+										autofocus
+									/>
+								</div>		
+								<div class="mb-3 col-md-6">
+									<label for="firstName" class="form-label">UTM Source</label>
+									<input
+										class="form-control"
+										type="text"
+										name="utm_source" id="utm_source" placeholder="Enter utm_source Link Here" value="{{ (isset($settings['utm_source']))?$settings['utm_source']:'' }}"
+										autofocus
+									/>
+								</div>		
+								<div class="mb-3 col-md-6">
+									<label for="firstName" class="form-label"> Communication Medium</label>
+									<input
+										class="form-control"
+										type="text"
+										name="communication_medium" id="communication_medium" placeholder="Enter Communication medium Link Here" value="{{ (isset($settings['communication_medium']))?$settings['communication_medium']:'' }}"
+										autofocus
+									/>
+								</div>	
+								<div class="mb-3 col-md-6">
+									<label for="firstName" class="form-label">Schema</label>
+									<textarea
+										class="form-control"
+										type="text"
+										name="schema" id="schema" value="{{ (isset($settings['schema']))?$settings['schema']:'' }}"
+										autofocus
+									>{{ (isset($settings['schema']))?$settings['schema']:'' }}</textarea>
 								</div>
 							</div>
 						</div>
