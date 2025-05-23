@@ -6583,9 +6583,6 @@ a.text-theme:hover,
   margin: 0 14px;
 }
 
-.main-menu > ul > li > a {
-  padding: 47px 0;
-}
 
 .main-menu > ul > li > a:hover {
   color: var(--theme-color);
@@ -6993,7 +6990,7 @@ a.text-theme:hover,
 /* Large devices */
 @media (max-width: 1199px) {
   .main-menu > ul > li > a {
-    padding: 37px 0;
+    padding: 0 0;
   }
 }
 
@@ -7003,7 +7000,7 @@ a.text-theme:hover,
 }
 
 .header-layout1 .header-top {
-  padding: 17px 0;
+  padding: 8px 0;
   background-color: var(--theme-color);
   --body-color: #fff;
 }
@@ -7112,7 +7109,7 @@ a.text-theme:hover,
     margin-left: 30px;
   }
   .header-layout1 .header-top {
-    padding: 12px 0;
+    padding: 8px 0;
   }
 }
 
