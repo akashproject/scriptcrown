@@ -37,7 +37,7 @@
          </li>
          <li class="menu-item">
             <a href="{{ route('admin-pages') }}" class="menu-link">
-               <i class="menu-icon tf-icons bx bx-cog"></i>
+               <i class="menu-icon tf-icons bx bx-file"></i>
                <div data-i18n="Pages">Pages</div>
             </a>
          </li>

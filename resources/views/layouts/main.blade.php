@@ -93,7 +93,6 @@
     <script src="{{ url('assets/frontend/js/imagesloaded.pkgd.min.js') }}"></script>
     <script src="{{ url('assets/frontend/js/isotope.pkgd.min.js') }}"></script>
     <script src="{{ url('assets/frontend/js/tilt.jquery.min.js') }}"></script>
-    <script src="{{ url('assets/frontend/js/gsap.min.js') }}"></script>
     <script src="{{ url('assets/frontend/js/ScrollTrigger.min.js') }}"></script>
     <script src="{{ url('assets/frontend/js/smooth-scroll.js') }}"></script>
     <script src="{{ url('assets/frontend/js/particles.min.js') }}"></script>

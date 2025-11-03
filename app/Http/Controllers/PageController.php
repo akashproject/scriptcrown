@@ -13,7 +13,7 @@ class PageController extends Controller
         try {
            //echo $slug; exit;
             $contentMain = Page::where('slug', $slug)->first();
-            return view("page.".$contentMain->template,compact('contentMain'));
+            return view("pages.".$contentMain->template,compact('contentMain'));
 
         } catch(\Illuminate\Database\QueryException $e){
             print_r($e); exit;

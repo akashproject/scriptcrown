@@ -1,6 +1,5 @@
 @extends('layouts.main')
     @section('content')
-    Hero Area
     <div class="th-hero-wrapper hero-2" id="hero">
         <div class="slider-area">
             <div class="swiper th-slider hero-slider-2" id="heroSlider2" data-slider-options='{"autoHeight":"true","effect":"fade","breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"1"},"1200":{"slidesPerView":"1"}}}'>

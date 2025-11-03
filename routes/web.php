@@ -38,5 +38,5 @@ Route::group(['prefix' => 'administrator'], function () {
     });
 });
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('website');
-Route::get('/{slug}', [App\Http\Controllers\PageController::class, 'index'])->where('slug', '([A-Za-z0-9\-]+)')->name('page');
+Route::get('/{slug}', [App\Http\Controllers\PageController::class, 'index'])->where('slug', '([A-Za-z0-9\-]+)')->name('page-view');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
