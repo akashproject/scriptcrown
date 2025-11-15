@@ -36,6 +36,24 @@
             </a>
          </li>
          <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link menu-toggle">
+               <i class="menu-icon tf-icons bx bx-book"></i>
+               <div data-i18n="Services">Services</div>
+            </a>
+            <ul class="menu-sub">
+               <li class="menu-item">
+                  <a href="{{ route('admin-category') }}" class="menu-link">
+                     <div data-i18n="Notifications">Category</div>
+                  </a>
+               </li>
+               <li class="menu-item">
+                  <a href="{{ route('admin-services') }}" class="menu-link">
+                     <div data-i18n="Notifications">Services</div>
+                  </a>
+               </li>
+            </ul>
+         </li>
+         <li class="menu-item">
             <a href="{{ route('admin-category') }}" class="menu-link">
                <i class="menu-icon tf-icons bx bx-file"></i>
                <div data-i18n="Category">Category</div>
