@@ -11,6 +11,13 @@ Route::group(['prefix' => 'administrator'], function () {
 
         Route::get('/', [App\Http\Controllers\Administrator\IndexController::class, 'dashboard'])->name('admin-dashboard');
 
+        //Category
+        Route::get('/category', [App\Http\Controllers\Administrator\CategoryController::class, 'index'])->name('admin-category');
+        Route::get('/add-category', [App\Http\Controllers\Administrator\CategoryController::class, 'Add'])->name('admin-add-category');
+        Route::get('/view-category/{id}', [App\Http\Controllers\Administrator\CategoryController::class, 'show'])->name('admin-show-category');
+        Route::post('/save-category', [App\Http\Controllers\Administrator\CategoryController::class, 'save'])->name('admin-save-category');
+        Route::get('/delete-category/{id}', [App\Http\Controllers\Administrator\CategoryController::class, 'delete'])->name('admin-delete-category');
+        
         Route::get('/settings', [App\Http\Controllers\Administrator\SettingController::class, 'show'])->name('admin-settings');
         Route::post('/save-settings', [App\Http\Controllers\Administrator\SettingController::class, 'save'])->name('admin-save-settings');
 
@@ -38,5 +45,5 @@ Route::group(['prefix' => 'administrator'], function () {
     });
 });
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('website');
-Route::get('/{slug}', [App\Http\Controllers\PageController::class, 'index'])->where('slug', '([A-Za-z0-9\-]+)')->name('page-view');
+Route::get('/{slug}', [App\Http\Controllers\PageController::class, 'index'])->where('slug', '([A-Za-z0-9\-]+)')->name('page');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

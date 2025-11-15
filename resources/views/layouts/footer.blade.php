@@ -16,7 +16,7 @@
                             </div>
                             <div class="media-body">
                                 <span class="footer-contact_text">Quick Call Us:</span>
-                                <a href="tel:+19088000393" class="footer-contact_link">+190-8800-0393</a>
+                                <a href="tel:{{ get_theme_setting('mobile') }}" class="footer-contact_link">{{ get_theme_setting('mobile') }}</a>
                             </div>
                         </div>
                         <div class="footer-contact">
@@ -25,16 +25,7 @@
                             </div>
                             <div class="media-body">
                                 <span class="footer-contact_text">Mail Us On:</span>
-                                <a href="mailto:info@webteck.com" class="footer-contact_link">info@webteck.com</a>
-                            </div>
-                        </div>
-                        <div class="footer-contact">
-                            <div class="footer-contact_icon">
-                                <i class="fas fa-location-dot"></i>
-                            </div>
-                            <div class="media-body">
-                                <span class="footer-contact_text">Visit Location:</span>
-                                <a href="https://www.google.com/maps" class="footer-contact_link">54 Flemington, USA</a>
+                                <a href="mailto:{{ get_theme_setting('email') }}" class="footer-contact_link">{{ get_theme_setting('email') }}</a>
                             </div>
                         </div>
                     </div>

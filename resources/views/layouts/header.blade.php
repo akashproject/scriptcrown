@@ -239,7 +239,7 @@
                         <div class="col-auto">
                             <nav class="main-menu d-none d-lg-inline-block">
                                 <ul>
-                                    <li class="menu-btn menu-item-has-children mega-menu-wrap"><a target="_blank" href="" >Services</a></li>
+                                    <li class="menu-btn menu-item-has-children mega-menu-wrap"><a target="_blank" href="{{ route('page','services') }}" >Services</a></li>
                                     @foreach($primaryMenu as $key => $menuItem)
                                     <li><a target="_blank" href="{{ url($menuItem['url']) }}" >{{ $menuItem['name'] }}</a></li>
                                     @endforeach
@@ -255,11 +255,7 @@
                         </div>
                         <div class="col-auto d-none d-lg-block">
                             <div class="header-button">
-                                <button type="button" class="icon-btn searchBoxToggler"><i class="fal fa-search"></i></button>
-                                <button type="button" class="icon-btn sideMenuToggler">
-                                    <i class="fal fa-shopping-cart"></i>
-                                    <span class="badge">5</span>
-                                </button>
+                                <button type="button" class="icon-btn searchBoxToggler"><span>AI </span> <i class="fal fa-search"></i></button>
                                 <a href="contact.html" class="th-btn style3 shadow-none">Make Appointment<i class="fas fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
