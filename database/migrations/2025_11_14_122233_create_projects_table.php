@@ -20,6 +20,8 @@ return new class extends Migration
             $table->string('slug',50);
             $table->text('excerpt');
             $table->text('description');
+            $table->string('domain_url')->nullable();
+            $table->integer('testimonial_id')->nullable();
             $table->integer('banner_image')->nullable();
             $table->integer('featured_image')->nullable();     
             $table->string('title');

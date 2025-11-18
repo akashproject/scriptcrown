@@ -55,8 +55,9 @@
 							<div class="col-sm-9">
 								<select name="category_id" id="category_id" class="select2 form-control custom-select">	
 									<option value="">Select Category</option>
-									<option value="1"> Publish</option>
-									<option value="0" > Private </option>
+									@foreach($categories as $value)
+									<option value="{{ $value->id }}">{{ $value->name }}</option>
+									@endforeach
 								<select>
 							</div>
 						</div>

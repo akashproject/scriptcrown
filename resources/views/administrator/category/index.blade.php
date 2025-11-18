@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="col-12">
-	@if($courseType)
+	@if($category)
 		<div class="card">
 			<div class="card-body">
 				<form class="form-horizontal" method="post" action="{{ route('admin-save-category') }}" enctype="multipart/form-data">
@@ -121,7 +121,7 @@
 										</tr>
 									</thead>
 									<tbody>
-										@foreach ($courseType as $value)
+										@foreach ($category as $value)
 										<tr>
 											<td>{{ $value->name }}
 												<div>

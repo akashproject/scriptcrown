@@ -54,6 +54,12 @@
             </ul>
          </li>
          <li class="menu-item">
+            <a href="{{ route('admin-projects') }}" class="menu-link">
+               <i class="menu-icon tf-icons bx bx-file"></i>
+               <div data-i18n="Projects">Projects</div>
+            </a>
+         </li>
+         <li class="menu-item">
             <a href="{{ route('admin-pages') }}" class="menu-link">
                <i class="menu-icon tf-icons bx bx-file"></i>
                <div data-i18n="Pages">Pages</div>

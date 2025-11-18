@@ -4,11 +4,11 @@
 	<div class="card">
 		<div class="card-header d-flex flex-wrap justify-content-between gap-3">
 			<div class="card-title mb-0 me-1">
-				<h5 class="mb-1"> {{ count($pages) }} Records found</h5>
+				<h5 class="mb-1"> {{ count($projects) }} Records found</h5>
 			</div>
 			<div class="d-flex justify-content-md-end align-items-center gap-3 flex-wrap mb-3" >
 				<div class="dt-buttons btn-group flex-wrap mb-0">
-					<a class="btn create-new btn-primary" href="{{ route('admin-add-page') }} ">
+					<a class="btn create-new btn-primary" href="{{ route('admin-add-project') }} ">
 						<span>
 							<span class="d-flex align-items-center gap-2">
 								<i class="icon-base bx bx-plus icon-sm"></i> 
@@ -41,7 +41,7 @@
 					</thead>
 
 					<tbody>
-						@foreach ($pages as $value)
+						@foreach ($projects as $value)
 						<tr>
 							<td>{{ $value->name }}</td>													
 							<td>{{ $value->slug }}</td>									
@@ -49,16 +49,16 @@
 							<td>{{ $value->created_at->format("d M, Y") }}</td>									
 							<td>
 								<div class="d-inline-block text-nowrap">
-									<a href="{{ route('page',$value->slug) }}" class="btn btn-sm btn-icon">
+									<a href="{{ route('admin-projects',$value->slug) }}" class="btn btn-sm btn-icon">
 										<i class="bx bx-show"></i>
 									</a>
 									@can('update')
-									<a href="{{ route('admin-view-page',$value->id) }}" class="btn btn-sm btn-icon">
+									<a href="{{ route('admin-view-project',$value->id) }}" class="btn btn-sm btn-icon">
 										<i class="bx bx-edit"></i>
 									</a>
 									@endcan
 									@can('delete')
-									<a href="{{ route('admin-delete-page',$value->id) }}" onclick="return confirm('Are you sure?')"; class="btn btn-sm btn-icon delete-record">
+									<a href="{{ route('admin-delete-project',$value->id) }}" onclick="return confirm('Are you sure?')"; class="btn btn-sm btn-icon delete-record">
 										<i class="bx bx-trash"></i>
 									</a>
 									@endcan

@@ -13,9 +13,9 @@ class CategoryController extends Controller
     {
         try {
 
-            $courseType = Category::all();
+            $category = Category::all();
             $listCategory = Category::all();
-            return view('administrator.category.index',compact('courseType','listCategory'));
+            return view('administrator.category.index',compact('category','listCategory'));
 
         } catch(\Illuminate\Database\QueryException $e){
             throw $e;
@@ -25,10 +25,10 @@ class CategoryController extends Controller
     public function show($id)
     {
         try {
-            $courseType = Category::find($id);
+            $category = Category::find($id);
             $listCategory = Category::all();
 
-            return view('administrator.category.show',compact('courseType','listCategory'));
+            return view('administrator.category.show',compact('category','listCategory'));
         } catch(\Illuminate\Database\QueryException $e){
             var_dump($e->getMessage()); 
         }        
@@ -45,8 +45,8 @@ class CategoryController extends Controller
             if($data['category_id'] <= 0){
                 Category::create($data);
             } else {
-                $courseType = Category::findOrFail($data['category_id']);
-                $courseType->update($data);
+                $category = Category::findOrFail($data['category_id']);
+                $category->update($data);
             }
             return redirect()->back()->with('message', 'Page updated successfully!');
         } catch(\Illuminate\Database\QueryException $e){

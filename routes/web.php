@@ -25,6 +25,13 @@ Route::group(['prefix' => 'administrator'], function () {
         Route::post('/save-service', [App\Http\Controllers\Administrator\ServiceController::class, 'save'])->name('admin-save-service');
         Route::get('/delete-service/{id}', [App\Http\Controllers\Administrator\ServiceController::class, 'delete'])->name('admin-delete-service');
 
+        //Projects
+        Route::get('/projects', [App\Http\Controllers\Administrator\ProjectController::class, 'index'])->name('admin-projects');
+        Route::get('/add-project', [App\Http\Controllers\Administrator\ProjectController::class, 'Add'])->name('admin-add-project');
+        Route::get('/view-project/{id}', [App\Http\Controllers\Administrator\ProjectController::class, 'show'])->name('admin-view-project');
+        Route::post('/save-project', [App\Http\Controllers\Administrator\ProjectController::class, 'save'])->name('admin-save-project');
+        Route::get('/delete-project/{id}', [App\Http\Controllers\Administrator\ProjectController::class, 'delete'])->name('admin-delete-project');
+
         Route::get('/settings', [App\Http\Controllers\Administrator\SettingController::class, 'show'])->name('admin-settings');
         Route::post('/save-settings', [App\Http\Controllers\Administrator\SettingController::class, 'save'])->name('admin-save-settings');
 
@@ -54,3 +61,4 @@ Route::group(['prefix' => 'administrator'], function () {
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('website');
 Route::get('/{slug}', [App\Http\Controllers\PageController::class, 'index'])->where('slug', '([A-Za-z0-9\-]+)')->name('page');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/services/{slug}', [App\Http\Controllers\ServiceController::class, 'index'])->name('services');

@@ -40,7 +40,7 @@
 								<td>{{ $value->status }}</td>													
 								<td>
 									<div class="d-inline-block text-nowrap">
-										<a href="{{ route('view-services',$value->slug) }}" class="btn btn-sm btn-icon">
+										<a href="{{ route('services',$value->slug) }}" class="btn btn-sm btn-icon">
 											<i class="bx bx-show"></i>
 										</a>
 										@can('update')

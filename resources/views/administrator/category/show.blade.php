@@ -5,7 +5,7 @@
 		<div class="card-body">
 		@if($category)
 			<h5 class="card-title"> Edit Course Type #{{ $category->id }}</h5>
-			<form class="form-horizontal" method="post" action="{{ url('administrator/save-course-type') }}" enctype="multipart/form-data">
+			<form class="form-horizontal" method="post" action="{{ route('admin-save-category') }}" enctype="multipart/form-data">
 				@csrf
 				<div class="card-body">
 					@if ($errors->any())
@@ -80,7 +80,7 @@
 								<div class="col-sm-9">
 									<select name="parent_id" id="parent_id" class="select2 form-control custom-select" style="width: 100%; height:36px;">	
 										<option value=""></option>
-										@foreach($listCourseType as $value)
+										@foreach($listCategory as $value)
 										<option value="{{ $value->id }}" {{ ( $value->id ==  $category->parent_id )? 'selected' : '' }} > {{ $value->name }}</option>
 										@endforeach
 									<select>
@@ -153,10 +153,8 @@
 										</tr>
 									</thead>
 									<tbody>
-										@foreach ($listCourseType as $value)
-
+										@foreach ($listCategory as $value)
 										<tr>
-
 											<td>
 
 												{{ $value->name }}
