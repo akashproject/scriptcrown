@@ -1,4 +1,4 @@
-@extends('administrator.layouts.app')
+@extends('administrator.layouts.admin')
 @section('content')
 	<div class="row">
 		<div class="col-lg-8 mb-4 order-0">

@@ -20,6 +20,7 @@ Route::group(['prefix' => 'administrator'], function () {
         
         //Services
         Route::get('/services', [App\Http\Controllers\Administrator\ServiceController::class, 'index'])->name('admin-services');
+        Route::get('/add-service', [App\Http\Controllers\Administrator\ServiceController::class, 'add'])->name('admin-add-service');
         Route::get('/view-service/{id}', [App\Http\Controllers\Administrator\ServiceController::class, 'show'])->name('admin-show-service');
         Route::post('/save-service', [App\Http\Controllers\Administrator\ServiceController::class, 'save'])->name('admin-save-service');
         Route::get('/delete-service/{id}', [App\Http\Controllers\Administrator\ServiceController::class, 'delete'])->name('admin-delete-service');

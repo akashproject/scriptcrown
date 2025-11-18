@@ -8,22 +8,42 @@
 
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Admin Panel') }}</title>
+    <title>{{ config('app.name', 'ScriptCrown Technologies') }}</title>
 
     <!-- Scripts -->
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="{{ url('assets/administrator/vendor/fonts/boxicons.css') }}" />
+    <link rel="stylesheet" href="{{ url('assets/administrator/vendor/libs/datatables-bs5/datatables.bootstrap5.css') }}">
+    <link rel="stylesheet" href="{{ url('assets/administrator/vendor/libs/datatables-bs5/responsive.bootstrap5.css') }}">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.0/min/dropzone.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
     <!-- Core CSS -->
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ url('assets/administrator/css/theme.css') }}" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/dropzone.css" />
-    
-    
+    <link rel="stylesheet" href="{{ url('assets/administrator/vendor/css/core.css') }}" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="{{ url('assets/administrator/vendor/css/theme-default.css') }}" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="{{ url('assets/administrator/css/demo.css') }}" />
+    <link rel="stylesheet" href="{{ url('assets/administrator/css/own.css') }}" />
     <link rel="stylesheet" href="{{ url('assets/administrator/css/style.css') }}" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="{{ url('assets/administrator/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />
+    <link rel="stylesheet" href="{{ url('assets/administrator/vendor/libs/apex-charts/apex-charts.css') }}" />
+    <link rel="stylesheet" href="{{ url('assets/administrator/vendor/css/pages/page-auth.css') }}" />
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="{{ url('assets/administrator/vendor/js/helpers.js') }}"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="{{ url('assets/administrator/js/config.js') }}"></script>
     @yield('style')
 </head>
 
@@ -38,7 +58,6 @@
 
 		@endif
         
-       
           @if(auth()->check())
             <!-- Layout container -->
             <div class="layout-page">
@@ -72,20 +91,32 @@
 <script>
     let globalUrl = "{{ env("APP_URL") }}"
 </script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" ></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" ></script>
+<!-- Core JS -->
+<!-- build:js assets/vendor/js/core.js -->
+<script src="{{ url('assets/administrator/vendor/libs/jquery/jquery.js') }}"></script>
+<script src="{{ url('assets/administrator/vendor/libs/datatables-bs5/datatables-bootstrap5.js') }}" ></script>
+<script src="{{ url('assets/administrator/vendor/libs/popper/popper.js') }}"></script>
+<script src="{{ url('assets/administrator/vendor/js/bootstrap.js') }}"></script>
+<script src="{{ url('assets/administrator/vendor/libs/perfect-scrollbar/perfect-scrollbar.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.0/dropzone.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.5.6/perfect-scrollbar.min.js"></script>
+<script src="{{ url('assets/administrator/vendor/js/menu.js') }}"></script>
+<!-- <script src="{{ url('assets/administrator/vendor/js/custom.js') }}"></script> -->
+<!-- endbuild -->
+
+<!-- Vendors JS -->
+<script src="{{ url('assets/administrator/vendor/libs/apex-charts/apexcharts.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.10.0/tinymce.min.js"></script>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-
-<script src="{{ url('assets/administrator/js/theme.js') }}"></script>
+<!-- Main JS -->
 <script src="{{ url('assets/administrator/js/main.js') }}"></script>
-
+<!-- Page JS -->
+<script src="{{ url('assets/administrator/js/dashboards-analytics.js') }}"></script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!--Wave Effects -->
+<script src="{{ url('assets/administrator/js/own.js') }}"></script>
 <script>
+    $('#zero_config').DataTable();
     tinymce.init({
         selector : ".editor",
         plugins: 'emoticons wordcount help code lists',
@@ -98,7 +129,7 @@
     Dropzone.options.dropzonewidget = { 
         maxFilesize: 150, // 2 MB
         success: function(file, response){ // Dropzone upload response
-            var html = '<div class="file-content text-center"><a href="#imageBox" class="image-thumbnail open-popup-link" data-id="'+response.id+'"><img src="'+`${globalUrl}`+response.path+'/thumb_'+response.filename+'" alt="" style="width:100%"></a><a target="_blank" href="'+`${globalUrl}`+'administrator/view-file/'+response.id+'" style="display:block">Edit</a></div>';
+            var html = '<div class="file-content text-center"><a href="#imageBox" class="image-thumbnail open-popup-link" data-id="'+response.id+'"><img src="'+`${globalUrl}`+response.path+'/'+response.filename+'" alt="" style="width:100%"><span> '+response.name+' </span></a><a target="_blank" href="'+`${globalUrl}`+'administrator/view-file/'+response.id+'" style="display:block">Edit</a></div>';
             $(".image-thumbnail-container").prepend(html);
         }
     };

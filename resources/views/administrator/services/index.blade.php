@@ -7,7 +7,18 @@
 				<div class="card-title mb-0 me-1">
 					<h5 class="mb-1"> {{ count($services) }} Records found</h5>
 				</div>
-				
+				<div class="d-flex justify-content-md-end align-items-center gap-3 flex-wrap mb-3" >
+					<div class="dt-buttons btn-group flex-wrap mb-0">
+						<a class="btn create-new btn-primary" href="{{ route('admin-add-service') }} ">
+							<span>
+								<span class="d-flex align-items-center gap-2">
+									<i class="icon-base bx bx-plus icon-sm"></i> 
+									<span class="d-none d-sm-inline-block">Add New Record</span>
+								</span>
+							</span>
+						</a> 
+					</div>
+				</div>
 			</div>
 			<div class="card-body">
 				<h5 class="card-title"> Datatable</h5>

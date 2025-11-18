@@ -23,8 +23,8 @@ class ServiceController extends Controller
     }
 
     public function add() {
-        $serviceTypes = Category::all();
-        return view('administrator.services.add',compact('serviceTypes'));
+        $categories = Category::all();
+        return view('administrator.services.add',compact('categories'));
     }
 
     public function show($id)

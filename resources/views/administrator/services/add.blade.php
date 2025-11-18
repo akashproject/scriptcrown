@@ -50,13 +50,32 @@
 							
 					</div>
 					<div class="col-md-4">
-						
 						<div class="form-group row mb-2">
-							<label for="state" class="col-sm-12 text-left control-label col-form-label">Status</label>
-							<div class="col-sm-12">
+							<label for="category_id" class="col-sm-3 text-left control-label col-form-label">Category</label>
+							<div class="col-sm-9">
+								<select name="category_id" id="category_id" class="select2 form-control custom-select">	
+									<option value="">Select Category</option>
+									<option value="1"> Publish</option>
+									<option value="0" > Private </option>
+								<select>
+							</div>
+						</div>
+						<div class="form-group row mb-2">
+							<label for="technology_id" class="col-sm-3 text-left control-label col-form-label">Technology</label>
+							<div class="col-sm-9">
+								<select name="technology_id" id="technology_id" class="select2 form-control custom-select">	
+									<option value="">Select Technology</option>
+									<option value="1" > Publish</option>
+									<option value="0" > Private </option>
+								<select>
+							</div>
+						</div>
+						<div class="form-group row mb-2">
+							<label for="state" class="col-sm-3 text-left control-label col-form-label">Status</label>
+							<div class="col-sm-9">
 								<select name="status" id="status" class="select2 form-control custom-select">	
 									<option value="">Update Status</option>
-									<option value="1" selected> Publish</option>
+									<option value="1" > Publish</option>
 									<option value="0" > Private </option>
 								<select>
 							</div>
