@@ -4,7 +4,6 @@
         <div class="slider-area">
             <div class="swiper th-slider hero-slider-2" id="heroSlider2" data-slider-options='{"autoHeight":"true","effect":"fade","breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"1"},"1200":{"slidesPerView":"1"}}}'>
                 <div class="swiper-wrapper">
-
                     <div class="swiper-slide">
                         <div class="th-hero-slide">
                             <div class="th-hero-bg" data-bg-src="{{ url('assets/frontend/img/hero/hero_bg_2_1.jpg') }}"></div>
@@ -121,6 +120,10 @@
                                 <img src="{{ url('assets/frontend/img/bg/service_box_bg.png') }}" alt="bg">
                             </div>
                         </div>
+                        <div class="service-call-to-action-btn">
+                            <a href="service.html" class="th-btn width-49"><i class="fab fa-whatsapp ms-2"></i> Chat with US</a>
+                            <a href="service.html" class="th-btn width-49">Get Quote<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-2">
@@ -139,6 +142,10 @@
                                 <img src="{{ url('assets/frontend/img/bg/service_box_bg.png') }}" alt="bg">
                             </div>
                         </div>
+                        <div class="service-call-to-action-btn">
+                            <a href="service.html" class="th-btn width-49"><i class="fab fa-whatsapp ms-2"></i> Chat with US</a>
+                            <a href="service.html" class="th-btn width-49">Get Quote<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-2">
@@ -156,6 +163,10 @@
                             <div class="bg-shape">
                                 <img src="{{ url('assets/frontend/img/bg/service_box_bg.png') }}" alt="bg">
                             </div>
+                        </div>
+                        <div class="service-call-to-action-btn">
+                            <a href="service.html" class="th-btn width-49"><i class="fab fa-whatsapp ms-2"></i> Chat with US</a>
+                            <a href="service.html" class="th-btn width-49">Get Quote<i class="fa-regular fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
@@ -216,7 +227,68 @@
             </div>
         </div>
     </section>
- 
+    <section class="space" id="industry-sec">
+        <div class="container">
+            <div class="row justify-content-lg-between justify-content-center align-items-center">
+                <div class="col-lg-6 col-sm-9 pe-xl-5">
+                    <div class="title-area text-center text-lg-start">
+                        <span class="sub-title">
+                            <div class="icon-masking me-2">
+                                <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
+                                <img src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}" alt="shape">
+                            </div>
+                            WHAT WE DO
+                        </span>
+                        <h2 class="sec-title">We Provide Exclusive Service For <span class="text-theme fw-normal">Your Business</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 mb-2">
+                    <a href="" class="industry-box">
+                        <i class="far fa-cart-shopping"></i>
+                        <h6> Ecommerce </h6>
+                    </a>
+                </div>
+                <div class="col-lg-2 mb-2">
+                    <a href="" class="industry-box">
+                        <i class="far fa-graduation-cap"></i>
+                        <h6> Education </h6>
+                    </a>
+                </div>
+                <div class="col-lg-2 mb-2">
+                    <a href="" class="industry-box">
+                        <i class="far fa-medkit"></i>
+                        <h6> Health Care </h6>
+                    </a>
+                </div>
+                <div class="col-lg-2 mb-2">
+                    <a href="" class="industry-box">
+                        <i class="far fa-female"></i>
+                        <h6> Fasion & Lifestyle </h6>
+                    </a>
+                </div>
+                <div class="col-lg-2 mb-2">
+                    <a href="" class="industry-box">
+                        <i class="far fa-taxi"></i>
+                        <h6> Transport </h6>
+                    </a>
+                </div>
+                <div class="col-lg-2 mb-2">
+                    <a href="" class="industry-box">
+                        <i class="far fa-taxi"></i>
+                        <h6> Hotel & Resturent </h6>
+                    </a>
+                </div>
+                <div class="col-lg-2 mb-2">
+                    <a href="" class="industry-box">
+                        <i class="far fa-home"></i>
+                        <h6> Real Estate </h6>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="space" id="about-sec">
         <div class="container">
             <div class="row align-items-center">
@@ -225,9 +297,9 @@
                         <div class="img1">
                             <img src="{{ url('assets/frontend/img/normal/about_1_1.png') }}" alt="About">
                         </div>
-                        <div class="shape1">
+                        <!-- <div class="shape1">
                             <img src="{{ url('assets/frontend/img/normal/about_shape_1.png') }}" alt="shape">
-                        </div>
+                        </div> -->
                         <div class="year-counter">
                             <h3 class="year-counter_number"><span class="counter-number">25</span></h3>
                             <p class="year-counter_text">Years Experience</p>

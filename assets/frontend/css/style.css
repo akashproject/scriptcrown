@@ -2930,6 +2930,10 @@ textarea.is-invalid {
   border-color: var(--white-color);
 }
 
+.width-49 {
+  width: 49%;
+}
+
 .play-btn {
   display: inline-block;
   position: relative;
@@ -47517,3 +47521,21 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 /*# sourceMappingURL=style.css.map */
+.industry-box {
+  border: 1px solid #d1d1d1;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+}
+
+.industry-box i {
+  font-size: 31px;
+  color: #6159d7;
+}
+
+.industry-box h6 {
+  font-size: 16px;
+  padding-top: 12px;
+  margin: 0;
+}
