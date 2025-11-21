@@ -75,7 +75,7 @@
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a class="icon-masking" href="index.html"><span data-mask-src="assets/logo/logo.webp" class="mask-icon"></span><img src="assets/logo/logo.webp" alt="Webteck"></a>
+                <a class="icon-masking" href="{{ url('/') }}"><span data-mask-src="assets/logo/logo-small.png" class="mask-icon"></span><img style="width: 31%;" src="assets/logo/logo-small.png" alt="Webteck"></a>
             </div>
 
             <div class="th-mobile-menu">
@@ -233,7 +233,7 @@
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto">
                             <div class="header-logo">
-                                <a class="icon-masking" href="{{ url('/') }}"><span data-mask-src="assets/logo/logo.png" class="mask-icon"></span><img src="assets/logo/logo.webp" alt="Webteck"></a>
+                                <a class="icon-masking" href="{{ url('/') }}"><span data-mask-src="assets/logo/logo.png" class="mask-icon"></span><img src="assets/logo/logo-small.png" alt="Webteck"></a>
                             </div>
                         </div>
                         <div class="col-auto">

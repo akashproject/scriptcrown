@@ -5,7 +5,7 @@
             <div class="row align-items-center">
                 <div class="col-xl-3">
                     <div class="footer-logo">
-                        <a class="icon-masking" href="index.html"><span data-mask-src="assets/frontend/img/logo-white.svg" class="mask-icon"></span><img src="assets/frontend/img/logo-white.svg" alt="Webteck"></a>
+                        <a class="icon-masking" href="index.html"><span data-mask-src="assets/frontend/img/logo.png" class="mask-icon"></span><img src="assets/frontend/img/logo.png" alt="Webteck"></a>
                     </div>
                 </div>
                 <div class="col-xl-9">
