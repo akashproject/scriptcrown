@@ -207,7 +207,6 @@
                     <div class="col-auto d-none d-lg-block">
                         <div class="header-links">
                             <ul>
-                                <li><i class="fas fa-map-location"></i>54 NJ-12, Flemington, United States</li>
                                 <li><i class="fas fa-phone"></i><a href="tel:{{ get_theme_setting('mobile') }}">{{ get_theme_setting('mobile') }}</a></li>
                                 <li><i class="fas fa-envelope"></i><a href="mailto:{{ get_theme_setting('email') }}">{{ get_theme_setting('email') }}</a></li>
                             </ul>
@@ -229,9 +228,9 @@
         <div class="sticky-wrapper">
             <!-- Main Menu Area -->
             <div class="menu-area">
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row align-items-center justify-content-between">
-                        <div class="col-auto">
+                        <div class="col-auto header-left d-flex align-items-center">
                             <div class="header-logo">
                                 <a class="icon-masking" href="{{ url('/') }}"><span data-mask-src="assets/logo/logo.png" class="mask-icon"></span><img src="assets/logo/logo-small.png" alt="Webteck"></a>
                             </div>

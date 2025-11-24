@@ -103,7 +103,7 @@
     </div>
     
     <section class="service-sec space" id="service-sec" data-bg-src="{{ url('assets/frontend/img/bg/service_bg_1.png') }}">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row justify-content-lg-between justify-content-center align-items-center">
                 <div class="col-lg-6 col-sm-9 pe-xl-5">
                     <div class="title-area text-center text-lg-start">
@@ -125,7 +125,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-4 mb-2">
+                <div class="col-md-4 col-lg-3 mb-2">
                     <div class="service-box">
                         <div class="service-box_img">
                             <img src="{{ url('assets/frontend/img/service/service_box_1.jpg') }}" alt="Icon">
@@ -147,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-2">
+                <div class="col-md-4 col-lg-3 mb-2">
                     <div class="service-box">
                         <div class="service-box_img">
                             <img src="{{ url('assets/frontend/img/service/service_box_2.jpg') }}" alt="Icon">
@@ -169,7 +169,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-2">
+                <div class="col-md-4 col-lg-3 mb-2">
                     <div class="service-box">
                         <div class="service-box_img">
                             <img src="{{ url('assets/frontend/img/service/service_box_2.jpg') }}" alt="Icon">
@@ -191,7 +191,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-2">
+                <div class="col-md-4 col-lg-3 mb-2">
                     <div class="service-box">
                         <div class="service-box_img">
                             <img src="{{ url('assets/frontend/img/service/service_box_2.jpg') }}" alt="Icon">
@@ -209,7 +209,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-2">
+                <div class="col-md-4 col-lg-3 mb-2">
                     <div class="service-box">
                         <div class="service-box_img">
                             <img src="{{ url('assets/frontend/img/service/service_box_2.jpg') }}" alt="Icon">
@@ -227,7 +227,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-2">
+                <div class="col-md-4 col-lg-3 mb-2">
                     <div class="service-box">
                         <div class="service-box_img">
                             <img src="{{ url('assets/frontend/img/service/service_box_2.jpg') }}" alt="Icon">
@@ -249,7 +249,7 @@
         </div>
     </section>
 
-    <section class="space" id="industry-sec">
+    <section class="space" id="business-sec">
         <div class="container">
             <div class="row justify-content-lg-between justify-content-center align-items-center">
                 <div class="col-lg-6 col-sm-9 pe-xl-5">
@@ -265,46 +265,46 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-2 mb-2">
-                    <a href="" class="industry-box">
-                        <i class="far fa-cart-shopping"></i>
+            <div class="business-row">
+                <div class="business-col mb-2">
+                    <a href="" class="business-box">
+                        <img src="https://dummyimage.com/200x100" ></i>
                         <h6> Ecommerce </h6>
                     </a>
                 </div>
-                <div class="col-lg-2 mb-2">
-                    <a href="" class="industry-box">
-                        <i class="far fa-graduation-cap"></i>
+                <div class="business-col mb-2">
+                    <a href="" class="business-box">
+                        <img src="https://dummyimage.com/200x100" ></i>
                         <h6> Education </h6>
                     </a>
                 </div>
-                <div class="col-lg-2 mb-2">
-                    <a href="" class="industry-box">
-                        <i class="far fa-medkit"></i>
+                <div class="business-col mb-2">
+                    <a href="" class="business-box">
+                        <img src="https://dummyimage.com/200x100" ></i>
                         <h6> Health Care </h6>
                     </a>
                 </div>
-                <div class="col-lg-2 mb-2">
-                    <a href="" class="industry-box">
-                        <i class="far fa-female"></i>
+                <div class="business-col mb-2">
+                    <a href="" class="business-box">
+                        <img src="https://dummyimage.com/200x100" ></i>
                         <h6> Fasion & Lifestyle </h6>
                     </a>
                 </div>
-                <div class="col-lg-2 mb-2">
-                    <a href="" class="industry-box">
-                        <i class="far fa-taxi"></i>
+                <div class="business-col mb-2">
+                    <a href="" class="business-box">
+                        <img src="https://dummyimage.com/200x100" ></i>
                         <h6> Transport </h6>
                     </a>
                 </div>
-                <div class="col-lg-2 mb-2">
-                    <a href="" class="industry-box">
-                        <i class="far fa-taxi"></i>
+                <div class="business-col mb-2">
+                    <a href="" class="business-box">
+                        <img src="https://dummyimage.com/200x100" ></i>
                         <h6> Hotel & Resturent </h6>
                     </a>
                 </div>
-                <div class="col-lg-2 mb-2">
-                    <a href="" class="industry-box">
-                        <i class="far fa-home"></i>
+                <div class="business-col mb-2">
+                    <a href="" class="business-box">
+                        <img src="https://dummyimage.com/200x100" ></i>
                         <h6> Real Estate </h6>
                     </a>
                 </div>
@@ -404,41 +404,41 @@
                 <div class="col-md-8">
                     <div class="row ">
                         <div class="col-lg-2 mb-2">
-                            <a href="" class="industry-box">
+                            <a href="" class="business-box">
                                 <img src="{{ url('assets/frontend/img/tech/wordpress.png') }}">
                             </a>
                         </div>
                         <div class="col-lg-2 mb-2">
-                            <a href="" class="industry-box">
+                            <a href="" class="business-box">
                                 <img src="{{ url('assets/frontend/img/tech/shopify.png') }}">
                             </a>
                         </div>
                         <div class="col-lg-2 mb-2">
-                            <a href="" class="industry-box">
+                            <a href="" class="business-box">
                                 <i class="far fa-medkit"></i>
                                 <h6> Health Care </h6>
                             </a>
                         </div>
                         <div class="col-lg-2 mb-2">
-                            <a href="" class="industry-box">
+                            <a href="" class="business-box">
                                 <i class="far fa-female"></i>
                                 <h6> Fasion & Lifestyle </h6>
                             </a>
                         </div>
                         <div class="col-lg-2 mb-2">
-                            <a href="" class="industry-box">
+                            <a href="" class="business-box">
                                 <i class="far fa-taxi"></i>
                                 <h6> Transport </h6>
                             </a>
                         </div>
                         <div class="col-lg-2 mb-2">
-                            <a href="" class="industry-box">
+                            <a href="" class="business-box">
                                 <i class="far fa-taxi"></i>
                                 <h6> Hotel & Resturent </h6>
                             </a>
                         </div>
                         <div class="col-lg-2 mb-2">
-                            <a href="" class="industry-box">
+                            <a href="" class="business-box">
                                 <i class="far fa-home"></i>
                                 <h6> Real Estate </h6>
                             </a>
