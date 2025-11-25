@@ -123,8 +123,19 @@
                     </div>
                 </div>
             </div>
-
+            <div class="tab-container">
+                <div class="tab">
+                    <a > Website Development </a>
+                </div>
+                <div class="tab">
+                    <a > Mobile App Development </a>
+                </div>
+                <div class="tab">
+                    <a > Website Development </a>
+                </div>
+            </div>
             <div class="row">
+                @foreach(getServices() as $value)
                 <div class="col-md-4 col-lg-3 mb-2">
                     <div class="service-box">
                         <div class="service-box_img">
@@ -134,9 +145,9 @@
                             <div class="service-box_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_box_1.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details.html">Web Development</a></h3>
+                            <h3 class="box-title"><a href="{{ route('service',$value->slug) }}">{{ $value->name }}</a></h3>
                             <p class="service-box_text">Intrinsicly redefine competitive e-business before adaptive.</p>
-                            <a href="service-details.html" class="link-btn">Read More<i class="fas fa-arrow-right ms-2"></i></a>
+                            <a href="{{ route('service',$value->slug) }}" class="link-btn">Read More<i class="fas fa-arrow-right ms-2"></i></a>
                             <div class="bg-shape">
                                 <img src="{{ url('assets/frontend/img/bg/service_box_bg.png') }}" alt="bg">
                             </div>
@@ -147,104 +158,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-lg-3 mb-2">
-                    <div class="service-box">
-                        <div class="service-box_img">
-                            <img src="{{ url('assets/frontend/img/service/service_box_2.jpg') }}" alt="Icon">
-                        </div>
-                        <div class="service-box_content">
-                            <div class="service-box_icon">
-                                <img src="{{ url('assets/frontend/img/icon/service_box_2.svg') }}" alt="Icon">
-                            </div>
-                            <h3 class="box-title"><a href="service-details.html">Android & IOS App Development</a></h3>
-                            <p class="service-box_text">Intrinsicly redefine competitive e-business before adaptive.</p>
-                            <a href="service-details.html" class="link-btn">Read More<i class="fas fa-arrow-right ms-2"></i></a>
-                            <div class="bg-shape">
-                                <img src="{{ url('assets/frontend/img/bg/service_box_bg.png') }}" alt="bg">
-                            </div>
-                        </div>
-                        <div class="service-call-to-action-btn">
-                            <a href="service.html" class="th-btn width-49"><i class="fab fa-whatsapp ms-2"></i> Chat with US</a>
-                            <a href="service.html" class="th-btn width-49">Get Quote<i class="fa-regular fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-3 mb-2">
-                    <div class="service-box">
-                        <div class="service-box_img">
-                            <img src="{{ url('assets/frontend/img/service/service_box_2.jpg') }}" alt="Icon">
-                        </div>
-                        <div class="service-box_content">
-                            <div class="service-box_icon">
-                                <img src="{{ url('assets/frontend/img/icon/service_box_2.svg') }}" alt="Icon">
-                            </div>
-                            <h3 class="box-title"><a href="service-details.html">Software Development</a></h3>
-                            <p class="service-box_text">Intrinsicly redefine competitive e-business before adaptive.</p>
-                            <a href="service-details.html" class="link-btn">Read More<i class="fas fa-arrow-right ms-2"></i></a>
-                            <div class="bg-shape">
-                                <img src="{{ url('assets/frontend/img/bg/service_box_bg.png') }}" alt="bg">
-                            </div>
-                        </div>
-                        <div class="service-call-to-action-btn">
-                            <a href="service.html" class="th-btn width-49"><i class="fab fa-whatsapp ms-2"></i> Chat with US</a>
-                            <a href="service.html" class="th-btn width-49">Get Quote<i class="fa-regular fa-arrow-right ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-3 mb-2">
-                    <div class="service-box">
-                        <div class="service-box_img">
-                            <img src="{{ url('assets/frontend/img/service/service_box_2.jpg') }}" alt="Icon">
-                        </div>
-                        <div class="service-box_content">
-                            <div class="service-box_icon">
-                                <img src="{{ url('assets/frontend/img/icon/service_box_2.svg') }}" alt="Icon">
-                            </div>
-                            <h3 class="box-title"><a href="service-details.html">Digital Marketing</a></h3>
-                            <p class="service-box_text">Intrinsicly redefine competitive e-business before adaptive.</p>
-                            <a href="service-details.html" class="link-btn">Read More<i class="fas fa-arrow-right ms-2"></i></a>
-                            <div class="bg-shape">
-                                <img src="{{ url('assets/frontend/img/bg/service_box_bg.png') }}" alt="bg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-3 mb-2">
-                    <div class="service-box">
-                        <div class="service-box_img">
-                            <img src="{{ url('assets/frontend/img/service/service_box_2.jpg') }}" alt="Icon">
-                        </div>
-                        <div class="service-box_content">
-                            <div class="service-box_icon">
-                                <img src="{{ url('assets/frontend/img/icon/service_box_2.svg') }}" alt="Icon">
-                            </div>
-                            <h3 class="box-title"><a href="service-details.html">Graphics Design</a></h3>
-                            <p class="service-box_text">Intrinsicly redefine competitive e-business before adaptive.</p>
-                            <a href="service-details.html" class="link-btn">Read More<i class="fas fa-arrow-right ms-2"></i></a>
-                            <div class="bg-shape">
-                                <img src="{{ url('assets/frontend/img/bg/service_box_bg.png') }}" alt="bg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-3 mb-2">
-                    <div class="service-box">
-                        <div class="service-box_img">
-                            <img src="{{ url('assets/frontend/img/service/service_box_2.jpg') }}" alt="Icon">
-                        </div>
-                        <div class="service-box_content">
-                            <div class="service-box_icon">
-                                <img src="{{ url('assets/frontend/img/icon/service_box_2.svg') }}" alt="Icon">
-                            </div>
-                            <h3 class="box-title"><a href="service-details.html">Social Media Marketing</a></h3>
-                            <p class="service-box_text">Intrinsicly redefine competitive e-business before adaptive.</p>
-                            <a href="service-details.html" class="link-btn">Read More<i class="fas fa-arrow-right ms-2"></i></a>
-                            <div class="bg-shape">
-                                <img src="{{ url('assets/frontend/img/bg/service_box_bg.png') }}" alt="bg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -404,43 +318,13 @@
                 <div class="col-md-8">
                     <div class="row ">
                         <div class="col-lg-2 mb-2">
-                            <a href="" class="business-box">
+                            <a href="" class="technology-box">
                                 <img src="{{ url('assets/frontend/img/tech/wordpress.png') }}">
                             </a>
                         </div>
                         <div class="col-lg-2 mb-2">
-                            <a href="" class="business-box">
+                            <a href="" class="technology-box">
                                 <img src="{{ url('assets/frontend/img/tech/shopify.png') }}">
-                            </a>
-                        </div>
-                        <div class="col-lg-2 mb-2">
-                            <a href="" class="business-box">
-                                <i class="far fa-medkit"></i>
-                                <h6> Health Care </h6>
-                            </a>
-                        </div>
-                        <div class="col-lg-2 mb-2">
-                            <a href="" class="business-box">
-                                <i class="far fa-female"></i>
-                                <h6> Fasion & Lifestyle </h6>
-                            </a>
-                        </div>
-                        <div class="col-lg-2 mb-2">
-                            <a href="" class="business-box">
-                                <i class="far fa-taxi"></i>
-                                <h6> Transport </h6>
-                            </a>
-                        </div>
-                        <div class="col-lg-2 mb-2">
-                            <a href="" class="business-box">
-                                <i class="far fa-taxi"></i>
-                                <h6> Hotel & Resturent </h6>
-                            </a>
-                        </div>
-                        <div class="col-lg-2 mb-2">
-                            <a href="" class="business-box">
-                                <i class="far fa-home"></i>
-                                <h6> Real Estate </h6>
                             </a>
                         </div>
                     </div>
@@ -448,6 +332,7 @@
             </div>
         </div>
     </section>
+
     <div class="space" id="about-sec">
         <div class="container">
             <div class="row align-items-center">
@@ -514,6 +399,8 @@
             </div>
         </div>
     </div>
+
+
     <section class="bg-bottom-right position-relative" data-bg-src="{{ url('assets/frontend/img/bg/cta_bg_1.png') }}" data-bg-color="#080E1C">
         <div class="img-half img-left th-video2">
             <img src="{{ url('assets/frontend/img/normal/cta_1.jpg') }}" alt="video">

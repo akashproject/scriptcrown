@@ -61,4 +61,4 @@ Route::group(['prefix' => 'administrator'], function () {
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('website');
 Route::get('/{slug}', [App\Http\Controllers\PageController::class, 'index'])->where('slug', '([A-Za-z0-9\-]+)')->name('page');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/services/{slug}', [App\Http\Controllers\ServiceController::class, 'index'])->name('services');
+Route::get('/services/{slug}', [App\Http\Controllers\ServiceController::class, 'view'])->name('service');

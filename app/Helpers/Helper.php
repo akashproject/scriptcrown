@@ -101,3 +101,24 @@ if (! function_exists('getCommunicationMedium')) {
         return ($params)?$params:get_theme_setting('lead_type');
     }
 }
+
+if (! function_exists('getCategories')) {
+    function getCategories($params = null){
+        $categories = DB::table('categories')->get();
+        return $categories;
+    }
+}
+
+if (! function_exists('getServices')) {
+    function getServices($params = null){
+        $services = DB::table('services')->get();
+        return $services;
+    }
+}
+
+if (! function_exists('getProjects')) {
+    function getProjects($params = null){
+        $projects = DB::table('projects')->get();
+        return $projects;
+    }
+}

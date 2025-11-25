@@ -75,9 +75,8 @@
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a class="icon-masking" href="{{ url('/') }}"><span data-mask-src="assets/logo/logo-small.png" class="mask-icon"></span><img style="width: 31%;" src="assets/logo/logo-small.png" alt="Webteck"></a>
+                <a class="icon-masking" href="{{ url('/') }}"><span data-mask-src="{{ url('/assets/logo/logo-small.png') }}" class="mask-icon"></span><img style="width: 31%;" src="{{ url('/assets/logo/logo-small.png') }}" alt="Webteck"></a>
             </div>
-
             <div class="th-mobile-menu">
                 <ul>
                     <li class="menu-item-has-children mega-menu-wrap">
@@ -232,7 +231,7 @@
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto header-left d-flex align-items-center">
                             <div class="header-logo">
-                                <a class="icon-masking" href="{{ url('/') }}"><span data-mask-src="assets/logo/logo.png" class="mask-icon"></span><img src="assets/logo/logo-small.png" alt="Webteck"></a>
+                                <a class="icon-masking" href="{{ url('/') }}"><span data-mask-src="{{ url('/assets/logo/logo.png') }}" class="mask-icon"></span><img src="{{ url('/assets/logo/logo-small.png') }}" alt="Webteck"></a>
                             </div>
                         </div>
                         <div class="col-auto">
@@ -254,7 +253,7 @@
                         </div>
                         <div class="col-auto d-none d-lg-block">
                             <div class="header-button">
-                                <button type="button" class="icon-btn searchBoxToggler"><span>AI </span> <i class="fal fa-search"></i></button>
+                                <button type="button" class="th-btn searchBoxToggler"><span>Ask to AI </span> <i class="fal fa-search"></i></button>
                                 <a href="contact.html" class="th-btn style3 shadow-none">Make Appointment<i class="fas fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
