@@ -1,6 +1,6 @@
 @extends('layouts.main')
     @section('content')
-<div class="breadcumb-wrapper " data-bg-src="{{ url('assets/frontend/img/bg/breadcumb-bg.jpg') }}">
+    <div class="breadcumb-wrapper " data-bg-src="{{ url('assets/frontend/img/bg/breadcumb-bg.jpg') }}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">About Us</h1>

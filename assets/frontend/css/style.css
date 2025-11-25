@@ -11039,6 +11039,7 @@ a.text-theme:hover,
   color: var(--white-color);
 }
 
+
 .breadcumb-title {
   color: var(--white-color);
   margin: -0.22em 0 -0.14em 0;
@@ -11047,9 +11048,32 @@ a.text-theme:hover,
 
 .breadcumb-wrapper {
   background-color: var(--title-color);
-  padding: 160px 0;
+  padding: 0;
   overflow: hidden;
-  text-align: center;
+  text-align: left;
+}
+
+.breadcumb-wrapper::before {
+    content: " ";
+    background: #161515d1;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 412px;
+    position: absolute;
+}
+
+.breadcumb-content,.banner-content {
+    z-index: 1;
+    position: relative;
+}
+
+.banner-content p {
+  color: #fff;
+}
+
+.award-icon {
+    display: inline-block;
 }
 
 /* Large devices */
