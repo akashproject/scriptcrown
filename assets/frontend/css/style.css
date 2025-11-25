@@ -47562,35 +47562,52 @@ span.select2-selection.select2-selection--single:focus {
   text-align: center;
   display: block;
   overflow: hidden;
-  background: #4d35c5;
+  background: #140c3e;
 }
-
+.business-box:hover {
+    transform: scale(1.2);
+}
 .business-box h6 {
-    font-size: 16px;
-    padding: 5px 0;
-    margin: 0;
-    color: #fff;
+  font-size: 16px;
+  padding: 5px 0;
+  margin: 0;
+  color: #fff;
 }
 
 .tech-tab-container {
-    width: 75%;
+  width: 75%;
 }
 
 ul.tech-tab {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 ul.tech-tab li {
-    margin: 0;
-    border: 1px solid #ccc;
-    margin-bottom: 5px;
-    padding: 10px 20px;
-    border-radius: 5px;
+  margin: 0;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
 ul.tech-tab li a {
-    font-size: 20px;
-    font-weight: 600;
-    color: #9c43df;
+  font-size: 20px;
+  font-weight: 600;
+  color: #9c43df;
+}
+
+.tab-container {
+  display: flex;
+}
+
+.tab-container .tab {
+  padding: 10px 20px;
+  border: 1px solid;
+  color: #684df4;
+}
+
+.tab.active {
+  background: #684df4;
+  color: #fff;
 }

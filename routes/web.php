@@ -32,6 +32,13 @@ Route::group(['prefix' => 'administrator'], function () {
         Route::post('/save-project', [App\Http\Controllers\Administrator\ProjectController::class, 'save'])->name('admin-save-project');
         Route::get('/delete-project/{id}', [App\Http\Controllers\Administrator\ProjectController::class, 'delete'])->name('admin-delete-project');
 
+        //Projects
+        Route::get('/businesses', [App\Http\Controllers\Administrator\BusinessController::class, 'index'])->name('admin-businesses');
+        Route::get('/add-business', [App\Http\Controllers\Administrator\BusinessController::class, 'Add'])->name('admin-add-business');
+        Route::get('/view-business/{id}', [App\Http\Controllers\Administrator\BusinessController::class, 'show'])->name('admin-view-business');
+        Route::post('/save-business', [App\Http\Controllers\Administrator\BusinessController::class, 'save'])->name('admin-save-business');
+        Route::get('/delete-business/{id}', [App\Http\Controllers\Administrator\BusinessController::class, 'delete'])->name('admin-delete-business');
+
         Route::get('/settings', [App\Http\Controllers\Administrator\SettingController::class, 'show'])->name('admin-settings');
         Route::post('/save-settings', [App\Http\Controllers\Administrator\SettingController::class, 'save'])->name('admin-save-settings');
 

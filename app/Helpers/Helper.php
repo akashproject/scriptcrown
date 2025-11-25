@@ -122,3 +122,10 @@ if (! function_exists('getProjects')) {
         return $projects;
     }
 }
+
+if (! function_exists('getBusinesses')) {
+    function getBusinesses($params = null){
+        $businesses = DB::table('businesses')->orderBy('name','asc')->get();
+        return $businesses;
+    }
+}

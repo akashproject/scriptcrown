@@ -179,49 +179,16 @@
                     </div>
                 </div>
             </div>
-            <div class="business-row">
-                <div class="business-col mb-2">
+            <div class="row">
+                @foreach(getBusinesses() as $value)
+                <div class="col-lg-2 mb-2">
                     <a href="" class="business-box">
                         <img src="https://dummyimage.com/200x100" ></i>
-                        <h6> Ecommerce </h6>
+                        <h6> {{ $value->name }} </h6>
                     </a>
                 </div>
-                <div class="business-col mb-2">
-                    <a href="" class="business-box">
-                        <img src="https://dummyimage.com/200x100" ></i>
-                        <h6> Education </h6>
-                    </a>
-                </div>
-                <div class="business-col mb-2">
-                    <a href="" class="business-box">
-                        <img src="https://dummyimage.com/200x100" ></i>
-                        <h6> Health Care </h6>
-                    </a>
-                </div>
-                <div class="business-col mb-2">
-                    <a href="" class="business-box">
-                        <img src="https://dummyimage.com/200x100" ></i>
-                        <h6> Fasion & Lifestyle </h6>
-                    </a>
-                </div>
-                <div class="business-col mb-2">
-                    <a href="" class="business-box">
-                        <img src="https://dummyimage.com/200x100" ></i>
-                        <h6> Transport </h6>
-                    </a>
-                </div>
-                <div class="business-col mb-2">
-                    <a href="" class="business-box">
-                        <img src="https://dummyimage.com/200x100" ></i>
-                        <h6> Hotel & Resturent </h6>
-                    </a>
-                </div>
-                <div class="business-col mb-2">
-                    <a href="" class="business-box">
-                        <img src="https://dummyimage.com/200x100" ></i>
-                        <h6> Real Estate </h6>
-                    </a>
-                </div>
+                @endforeach
+                
             </div>
         </div>
     </section>
