@@ -123,7 +123,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-container">
+            <div class="tab-container my-4">
                 <div class="tab">
                     <a > Website Development </a>
                 </div>
@@ -139,7 +139,7 @@
                 <div class="col-md-4 col-lg-3 mb-2">
                     <div class="service-box">
                         <div class="service-box_img">
-                            <img src="{{ url('assets/frontend/img/service/service_box_1.jpg') }}" alt="Icon">
+                            <img src="{{ url('assets/frontend/img/service/web-development.webp') }}" alt="Icon">
                         </div>
                         <div class="service-box_content">
                             <div class="service-box_icon">
