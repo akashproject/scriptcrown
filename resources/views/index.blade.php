@@ -295,13 +295,24 @@
                     </div>
                 </div>
                 <div class="col-md-8">
-                    <div class="row ">
+                    <div class="row text-center justify-conten-center">
+                        <div class="col-lg-3 mb-2">
+                            <a href="" class="technology-box">
+                                <div>
+                                    <img src="{{ url('assets/frontend/img/tech/php.png') }}">
+                                </div>
+                                <div class="mx-2 width-49">
+                                    <p> PHP </p>
+                                </div>
+                                
+                            </a>
+                        </div>
                         <div class="col-lg-3 mb-2">
                             <a href="" class="technology-box">
                                 <div>
                                     <img src="{{ url('assets/frontend/img/tech/wordpress.png') }}">
                                 </div>
-                                <div>
+                                <div class="mx-2 width-49">
                                     <p> Wordpress </p>
                                 </div>
                                 
@@ -312,7 +323,7 @@
                                 <div>
                                     <img src="{{ url('assets/frontend/img/tech/shopify.png') }}">
                                 </div>
-                                <div>
+                                <div class="mx-2 width-49">
                                     <p> Shopify </p>
                                 </div>
                             </a>

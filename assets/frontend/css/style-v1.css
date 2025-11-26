@@ -49709,6 +49709,10 @@ span.select2-selection.select2-selection--single:focus {
 	}
 }
 
+.justify-conten-center {
+	justify-content: center;
+}
+
 .business-row {
   display:flex;
   flex-wrap: wrap;
@@ -49777,12 +49781,15 @@ ul.tech-tab li a {
 .technology-box {
     display: flex;
     align-items: center;
-    gap: 9px;
-    padding: 13px 12px;
-    border: 1px solid #ccc;
+    border: 2px solid #c2a7d7;
     border-radius: 10px;
+    padding: 6px 10px;
 }
 
-.technology-box p{
-    margin: 0; padding: 0;
+.technology-box p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+	margin: 0;
+	padding: 0;
 }
