@@ -49774,3 +49774,15 @@ ul.tech-tab li a {
   background: #684df4;
   color: #fff;
 }
+.technology-box {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 13px 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.technology-box p{
+    margin: 0; padding: 0;
+}

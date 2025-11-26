@@ -296,14 +296,25 @@
                 </div>
                 <div class="col-md-8">
                     <div class="row ">
-                        <div class="col-lg-2 mb-2">
+                        <div class="col-lg-3 mb-2">
                             <a href="" class="technology-box">
-                                <img src="{{ url('assets/frontend/img/tech/wordpress.png') }}">
+                                <div>
+                                    <img src="{{ url('assets/frontend/img/tech/wordpress.png') }}">
+                                </div>
+                                <div>
+                                    <p> Wordpress </p>
+                                </div>
+                                
                             </a>
                         </div>
-                        <div class="col-lg-2 mb-2">
+                        <div class="col-lg-3 mb-2">
                             <a href="" class="technology-box">
-                                <img src="{{ url('assets/frontend/img/tech/shopify.png') }}">
+                                <div>
+                                    <img src="{{ url('assets/frontend/img/tech/shopify.png') }}">
+                                </div>
+                                <div>
+                                    <p> Shopify </p>
+                                </div>
                             </a>
                         </div>
                     </div>
