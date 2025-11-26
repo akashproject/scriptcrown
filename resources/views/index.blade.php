@@ -138,14 +138,26 @@
                 @foreach(getServices() as $value)
                 <div class="col-md-4 col-lg-3 mb-2">
                     <div class="service-box">
-                        <div class="service-box_img">
+                        <a href="{{ route('service',$value->slug) }}" class="service-box_img">
                             <img src="{{ url('assets/frontend/img/service/web-development.webp') }}" alt="Icon">
-                        </div>
+                        </a>
                         <div class="service-box_content">
                             <div class="service-box_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_box_1.svg') }}" alt="Icon">
                             </div>
                             <h3 class="box-title"><a href="{{ route('service',$value->slug) }}">{{ $value->name }}</a></h3>
+                            <div class="service-stat">
+                                <span> 100+ Projects</span>
+                                <span> 100+ Projects</span>
+                            </div>
+                            <div class="service-stat">
+                                <span> PHP </span>
+                                <span>Wordpress</span>
+                                <span>Laravel</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Javascript</span>
+                            </div>
                             <p class="service-box_text">Intrinsicly redefine competitive e-business before adaptive.</p>
                             <a href="{{ route('service',$value->slug) }}" class="link-btn">Read More<i class="fas fa-arrow-right ms-2"></i></a>
                             <div class="bg-shape">
@@ -300,73 +312,68 @@
         </div>
     </section>
 
-    <div class="space" id="about-sec">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6 mb-30 mb-xl-0">
-                    <div class="img-box1">
-                        <div class="img1">
-                            <img src="{{ url('assets/frontend/img/normal/about_1_1.png') }}" alt="About">
-                        </div>
-                        <!-- <div class="shape1">
-                            <img src="{{ url('assets/frontend/img/normal/about_shape_1.png') }}" alt="shape">
-                        </div> -->
-                        <div class="year-counter">
-                            <h3 class="year-counter_number"><span class="counter-number">25</span></h3>
-                            <p class="year-counter_text">Years Experience</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <div class="ps-xxl-4 ms-xl-3">
-                        <div class="title-area mb-35">
-                            <span class="sub-title">
-                                <div class="icon-masking me-2">
-                                    <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_1.svg') }}"></span>
-                                    <img src="{{ url('assets/frontend/img/theme-img/title_shape_1.svg') }}" alt="shape">
-                                </div>About Us
-                            </span>
-                            <h2 class="sec-title">We Are Increasing Business Success With <span class="text-theme">IT Solution</span></h2>
-                        </div>
-                        <p class="mt-n2 mb-25">Collaboratively envisioneer user friendly supply chains and cross unit imperative. Authoritativel fabricate competitive resource and holistic synergy. Uniquely generate efficient schemas before future.</p>
-                        <div class="about-feature-wrap">
-                            <div class="about-feature">
-                                <div class="about-feature_icon">
-                                    <img src="{{ url('assets/frontend/img/icon/about_feature_1_1.svg') }}" alt="Icon">
-                                </div>
-                                <div class="media-body">
-                                    <h3 class="about-feature_title">Certified Company</h3>
-                                    <p class="about-feature_text">Best Provide Skills Services</p>
-                                </div>
-                            </div>
-                            <div class="about-feature">
-                                <div class="about-feature_icon">
-                                    <img src="{{ url('assets/frontend/img/icon/about_feature_1_2.svg') }}" alt="Icon">
-                                </div>
-                                <div class="media-body">
-                                    <h3 class="about-feature_title">Expart Team</h3>
-                                    <p class="about-feature_text">100% Expert Team</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="btn-group">
-                            <a href="about.html" class="th-btn">DISCOVER MORE<i class="fa-regular fa-arrow-right ms-2"></i></a>
-                            <div class="call-btn">
-                                <div class="play-btn">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <div class="media-body">
-                                    <span class="btn-text">Call Us On:</span>
-                                    <a href="tel:+19088000393" class="btn-title">+190-8800-0393</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="position-relative overflow-hidden project-area11 space" id="project-sec">
+      <div class="container th-container4">
+        <div class="row justify-content-lg-between justify-content-center align-items-center">
+          <div class="col-lg-6 col-sm-9 pe-xl-5">
+            <div class="title-area text-center text-lg-start"><span class="sub-title sub-title8">Our Projects</span>
+              <h2 class="sec-title sec-title3">Our <span class="">Recent</span> Projects</h2>
+              <p class="fs-20">Unveiling the extraordinary power. delving into the exceptionally powerfull features of data analysis</p>
             </div>
+          </div>
+          <div class="col-auto">
+            <div class="sec-btn"><a href="service.html" class="th-btn btn-gradient2 style-radius">View All Projects</a></div>
+          </div>
         </div>
-    </div>
-
+        <div class="slider-area">
+          <div class="swiper th-slider" id="projectSlider10" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"2"}}}'>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="project-card4">
+                  <div class="project-img"><img src="{{ url('assets/frontend/img/project/project_12_1.jpg') }}" alt="project image"></div>
+                  <div class="project-content-wrap">
+                    <div class="project-content"><span>Web Design</span><span>Web Design</span><span>Landing Page</span>
+                      <h3 class="box-title"><a href="project-details.html">Finance Management Landing Page Responsive Website</a></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="project-card4">
+                  <div class="project-img"><img src="{{ url('assets/frontend/img/project/project_12_2.jpg') }}" alt="project image"></div>
+                  <div class="project-content-wrap">
+                    <div class="project-content"><span>Web Design</span><span>Web Design</span><span>Landing Page</span>
+                      <h3 class="box-title"><a href="project-details.html">Nexacard - Digital Bank Card Responsive Page Website</a></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="project-card4">
+                  <div class="project-img"><img src="{{ url('assets/frontend/img/project/project_12_1.jpg') }}" alt="project image"></div>
+                  <div class="project-content-wrap">
+                    <div class="project-content"><span>Web Design</span><span>Web Design</span><span>Landing Page</span>
+                      <h3 class="box-title"><a href="project-details.html">Finance Management Landing Page Responsive Website</a></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="project-card4">
+                  <div class="project-img"><img src="{{ url('assets/frontend/img/project/project_12_2.jpg') }}" alt="project image"></div>
+                  <div class="project-content-wrap">
+                    <div class="project-content"><span>Web Design</span><span>Web Design</span><span>Landing Page</span>
+                      <h3 class="box-title"><a href="project-details.html">Nexacard - Digital Bank Card Responsive Page Website</a></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-pagination text-center"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="bg-bottom-right position-relative" data-bg-src="{{ url('assets/frontend/img/bg/cta_bg_1.png') }}" data-bg-color="#080E1C">
         <div class="img-half img-left th-video2">
@@ -439,236 +446,6 @@
             </div>
         </div>
     </div>
-
-    <div class="space-top" data-pos-for=".team-sec" data-sec-pos="bottom-half">
-        <div class="container z-index-common">
-            <div class="counter-card-wrap" data-bg-src="{{ url('assets/frontend/img/bg/counter_bg_2.png') }}">
-                <div class="row gy-40 justify-content-between">
-                    <div class="col-6 col-lg-auto">
-                        <div class="counter-card">
-                            <div class="counter-card_icon">
-                                <img src="{{ url('assets/frontend/img/icon/counter_1_1.svg') }}" alt="Icon">
-                            </div>
-                            <div class="media-body">
-                                <h2 class="counter-card_number"><span class="counter-number">986</span>+</h2>
-                                <p class="counter-card_text">Finished Project</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-auto">
-                        <div class="counter-card">
-                            <div class="counter-card_icon">
-                                <img src="{{ url('assets/frontend/img/icon/counter_1_2.svg') }}" alt="Icon">
-                            </div>
-                            <div class="media-body">
-                                <h2 class="counter-card_number"><span class="counter-number">896</span>+</h2>
-                                <p class="counter-card_text">Happy Clients</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-auto">
-                        <div class="counter-card">
-                            <div class="counter-card_icon">
-                                <img src="{{ url('assets/frontend/img/icon/counter_1_3.svg') }}" alt="Icon">
-                            </div>
-                            <div class="media-body">
-                                <h2 class="counter-card_number"><span class="counter-number">396</span>+</h2>
-                                <p class="counter-card_text">Skilled Experts</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-auto">
-                        <div class="counter-card">
-                            <div class="counter-card_icon">
-                                <img src="{{ url('assets/frontend/img/icon/counter_1_4.svg') }}" alt="Icon">
-                            </div>
-                            <div class="media-body">
-                                <h2 class="counter-card_number"><span class="counter-number">496</span>+</h2>
-                                <p class="counter-card_text">Honorable Awards</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="space" id="project-sec">
-        <div class="container">
-            <div class="row justify-content-lg-between justify-content-center align-items-center">
-                <div class="col-lg-5 mb-n2 mb-lg-0">
-                    <div class="title-area text-center text-lg-start">
-                        <span class="sub-title">
-                            <div class="icon-masking me-2">
-                                <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_1.svg') }}"></span>
-                                <img src="{{ url('assets/frontend/img/theme-img/title_shape_1.svg') }}" alt="shape">
-                            </div>LATEST PROJECT
-                        </span>
-                        <h2 class="sec-title">See We Have Solution <br> Done <span class="text-theme">IT Projects</span></h2>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="sec-btn">
-                        <a href="project.html" class="th-btn">VIEW ALL PORJECTS<i class="fa-regular fa-arrow-right ms-2"></i></a>
-                    </div>
-                </div>
-            </div> <!-- / Title row -->
-            <div class="slider-area">
-                <div class="swiper th-slider has-shadow" id="projectSlider1" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="project-card">
-                                <div class="project-img">
-                                    <img src="{{ url('assets/frontend/img/project/project_1_1.jpg') }}" alt="project image">
-                                </div>
-                                <div class="project-content-wrap">
-                                    <div class="project-content">
-                                        <div class="box-particle" id="project-p1"></div>
-                                        <h3 class="box-title"><a href="project-details.html">IT Consultency</a></h3>
-                                        <p class="project-subtitle">Technology</p>
-                                        <a href="{{ url('assets/frontend/img/project/project_1_1.jpg') }}" class="icon-btn popup-image"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="project-card">
-                                <div class="project-img">
-                                    <img src="{{ url('assets/frontend/img/project/project_1_2.jpg') }}" alt="project image">
-                                </div>
-                                <div class="project-content-wrap">
-                                    <div class="project-content">
-                                        <div class="box-particle" id="project-p2"></div>
-                                        <h3 class="box-title"><a href="project-details.html">Web Development</a></h3>
-                                        <p class="project-subtitle">Technology</p>
-                                        <a href="{{ url('assets/frontend/img/project/project_1_2.jpg') }}" class="icon-btn popup-image"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="project-card">
-                                <div class="project-img">
-                                    <img src="{{ url('assets/frontend/img/project/project_1_3.jpg') }}" alt="project image">
-                                </div>
-                                <div class="project-content-wrap">
-                                    <div class="project-content">
-                                        <div class="box-particle" id="project-p3"></div>
-                                        <h3 class="box-title"><a href="project-details.html">Website Design</a></h3>
-                                        <p class="project-subtitle">Technology</p>
-                                        <a href="{{ url('assets/frontend/img/project/project_1_3.jpg') }}" class="icon-btn popup-image"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="project-card">
-                                <div class="project-img">
-                                    <img src="{{ url('assets/frontend/img/project/project_1_4.jpg') }}" alt="project image">
-                                </div>
-                                <div class="project-content-wrap">
-                                    <div class="project-content">
-                                        <div class="box-particle" id="project-p4"></div>
-                                        <h3 class="box-title"><a href="project-details.html">SEO Optimization</a></h3>
-                                        <p class="project-subtitle">Marketing</p>
-                                        <a href="{{ url('assets/frontend/img/project/project_1_4.jpg') }}" class="icon-btn popup-image"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="project-card">
-                                <div class="project-img">
-                                    <img src="{{ url('assets/frontend/img/project/project_1_5.jpg') }}" alt="project image">
-                                </div>
-                                <div class="project-content-wrap">
-                                    <div class="project-content">
-                                        <div class="box-particle" id="project-p5"></div>
-                                        <h3 class="box-title"><a href="project-details.html">Digital Marketing</a></h3>
-                                        <p class="project-subtitle">Marketing</p>
-                                        <a href="{{ url('assets/frontend/img/project/project_1_5.jpg') }}" class="icon-btn popup-image"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="project-card">
-                                <div class="project-img">
-                                    <img src="{{ url('assets/frontend/img/project/project_1_6.jpg') }}" alt="project image">
-                                </div>
-                                <div class="project-content-wrap">
-                                    <div class="project-content">
-                                        <div class="box-particle" id="project-p6"></div>
-                                        <h3 class="box-title"><a href="project-details.html">Business Analysis</a></h3>
-                                        <p class="project-subtitle">Business</p>
-                                        <a href="{{ url('assets/frontend/img/project/project_1_6.jpg') }}" class="icon-btn popup-image"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="project-card">
-                                <div class="project-img">
-                                    <img src="{{ url('assets/frontend/img/project/project_1_7.jpg') }}" alt="project image">
-                                </div>
-                                <div class="project-content-wrap">
-                                    <div class="project-content">
-                                        <div class="box-particle" id="project-p7"></div>
-                                        <h3 class="box-title"><a href="project-details.html">Software Service</a></h3>
-                                        <p class="project-subtitle">Technology</p>
-                                        <a href="{{ url('assets/frontend/img/project/project_1_7.jpg') }}" class="icon-btn popup-image"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="project-card">
-                                <div class="project-img">
-                                    <img src="{{ url('assets/frontend/img/project/project_1_8.jpg') }}" alt="project image">
-                                </div>
-                                <div class="project-content-wrap">
-                                    <div class="project-content">
-                                        <div class="box-particle" id="project-p8"></div>
-                                        <h3 class="box-title"><a href="project-details.html">Data Recovery</a></h3>
-                                        <p class="project-subtitle">Technology</p>
-                                        <a href="{{ url('assets/frontend/img/project/project_1_8.jpg') }}" class="icon-btn popup-image"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="project-card">
-                                <div class="project-img">
-                                    <img src="{{ url('assets/frontend/img/project/project_1_9.jpg') }}" alt="project image">
-                                </div>
-                                <div class="project-content-wrap">
-                                    <div class="project-content">
-                                        <div class="box-particle" id="project-p9"></div>
-                                        <h3 class="box-title"><a href="project-details.html">Cloud Computing</a></h3>
-                                        <p class="project-subtitle">Technology</p>
-                                        <a href="{{ url('assets/frontend/img/project/project_1_9.jpg') }}" class="icon-btn popup-image"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <button data-slider-prev="#projectSlider1" class="slider-arrow style3 slider-prev"><i class="far fa-arrow-left"></i></button>
-                <button data-slider-next="#projectSlider1" class="slider-arrow style3 slider-next"><i class="far fa-arrow-right"></i></button>
-            </div>
-        </div>
-        <div class="shape-mockup" data-top="0%" data-right="0%"><img src="{{ url('assets/frontend/img/shape/tech_shape_1.png') }}" alt="shape"></div>
-        <div class="shape-mockup" data-bottom="0%" data-left="0%"><img src="{{ url('assets/frontend/img/shape/tech_shape_2.png') }}" alt="shape"></div>
-    </section>
 
     <section class="overflow-hidden space" data-bg-src="{{ url('assets/frontend/img/bg/testi_bg_1.jpg') }}" data-overlay="overlay1" data-opacity="9">
         <div class="container z-index-common">
@@ -870,6 +647,71 @@
             </div>
         </div>
     </div>
+
+    <section class="faq-area th-radius5 position-relative space overflow-hidden" id="faq-sec" data-bg-src="{{ url('/assets/frontend/img/bg/faq_bg_3.jpg') }}">
+      <div class="container th-container4">
+        <div class="row justify-content-center">
+          <div class="col-xl-7">
+            <div class="title-area text-center pe-xl-4 ps-xl-4"><span class="sub-title sub-title8 style2">FAQ</span>
+              <h2 class="sec-title sec-title3">Frequently <span>Asked</span> Have Any Questions?</h2>
+              <p class="fs-20 pe-xl-4 ps-xl-4">Unveiling the extraordinary power. delving into the exceptionally powerfull features of data analysis</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-card style8">
+                <div class="accordion-header" id="collapse-item-1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">1. What services does your digital agency offer?</button></div>
+                <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-card style8">
+                <div class="accordion-header" id="collapse-item-2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">2. What industries do you specilize in?</button></div>
+                <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-card style8">
+                <div class="accordion-header" id="collapse-item-3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">3. What services does your digital agency offer?</button></div>
+                <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-card style8">
+                <div class="accordion-header" id="collapse-item-4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">4. What services does your digital agency offer?</button></div>
+                <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-card style8">
+                <div class="accordion-header" id="collapse-item-5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">5. What services does your digital agency offer?</button></div>
+                <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="collapse-item-5" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shape-mockup spin d-none d-xl-block" data-top="15%" data-left="5%"><img src="{{ url('/assets/frontend/img/shape/shape_11.png') }}" alt="shape"></div>
+      <div class="shape-mockup movingX d-none d-xl-block" data-top="6%" data-right="10%"><img src="{{ url('/assets/frontend/img/shape/shape_12.png') }}" alt="shape"></div>
+      <div class="shape-mockup movingX d-none d-xl-block" data-bottom="22%" data-left="4%"><img src="{{ url('/assets/frontend/img/shape/shape_13.png') }}" alt="shape"></div>
+      <div class="shape-mockup spin d-none d-xl-block" data-top="32%" data-right="7%"><img src="{{ url('/assets/frontend/img/shape/shape_14.png') }}" alt="shape"></div>
+      <div class="shape-mockup spin d-none d-xl-block" data-bottom="16%" data-right="6%"><img src="{{ url('/assets/frontend/img/shape/shape_15.png') }}" alt="shape"></div>
+    </section>
+
     @endsection
 @section('script')
 @endsection

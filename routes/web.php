@@ -32,12 +32,20 @@ Route::group(['prefix' => 'administrator'], function () {
         Route::post('/save-project', [App\Http\Controllers\Administrator\ProjectController::class, 'save'])->name('admin-save-project');
         Route::get('/delete-project/{id}', [App\Http\Controllers\Administrator\ProjectController::class, 'delete'])->name('admin-delete-project');
 
-        //Projects
+        //Businesses
         Route::get('/businesses', [App\Http\Controllers\Administrator\BusinessController::class, 'index'])->name('admin-businesses');
         Route::get('/add-business', [App\Http\Controllers\Administrator\BusinessController::class, 'Add'])->name('admin-add-business');
         Route::get('/view-business/{id}', [App\Http\Controllers\Administrator\BusinessController::class, 'show'])->name('admin-view-business');
         Route::post('/save-business', [App\Http\Controllers\Administrator\BusinessController::class, 'save'])->name('admin-save-business');
         Route::get('/delete-business/{id}', [App\Http\Controllers\Administrator\BusinessController::class, 'delete'])->name('admin-delete-business');
+
+        //Faqs
+        Route::get('/faqs', [App\Http\Controllers\Administrator\FaqController::class, 'index'])->name('admin-faqs');
+        Route::get('/add-faq', [App\Http\Controllers\Administrator\FaqController::class, 'add'])->name('admin-add-faq');
+        Route::get('/view-faq/{id}', [App\Http\Controllers\Administrator\FaqController::class, 'show'])->name('admin-show-faq');
+        Route::post('/save-faq', [App\Http\Controllers\Administrator\FaqController::class, 'save'])->name('admin-save-faq');
+        Route::get('/delete-faq/{id}', [App\Http\Controllers\Administrator\FaqController::class, 'delete'])->name('admin-delete-faq');
+        
 
         Route::get('/settings', [App\Http\Controllers\Administrator\SettingController::class, 'show'])->name('admin-settings');
         Route::post('/save-settings', [App\Http\Controllers\Administrator\SettingController::class, 'save'])->name('admin-save-settings');
@@ -69,3 +77,5 @@ Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('w
 Route::get('/{slug}', [App\Http\Controllers\PageController::class, 'index'])->where('slug', '([A-Za-z0-9\-]+)')->name('page');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/services/{slug}', [App\Http\Controllers\ServiceController::class, 'view'])->name('service');
+Route::get('/projects/{slug}', [App\Http\Controllers\ProjectController::class, 'view'])->name('projects');
+Route::get('/technologies/{slug}', [App\Http\Controllers\TechnologyController::class, 'view'])->name('technologies');

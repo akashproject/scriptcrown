@@ -51,7 +51,7 @@
     <link rel="stylesheet" href="{{ url('assets/frontend/css/magnific-popup.min.css') }}">
     <link rel="stylesheet" href="{{ url('assets/frontend/css/swiper-bundle.min.css') }}">
     <link rel="stylesheet" href="{{ url('assets/frontend/css/imageRevealHover.css') }}">
-    <link rel="stylesheet" href="{{ url('assets/frontend/css/style.css') }}">
+    <link rel="stylesheet" href="{{ url('assets/frontend/css/style-v1.css') }}">
     
     @yield('style')
     @if(isset($contentMain->schema))

@@ -2930,10 +2930,6 @@ textarea.is-invalid {
   border-color: var(--white-color);
 }
 
-.width-49 {
-  width: 49%;
-}
-
 .play-btn {
   display: inline-block;
   position: relative;

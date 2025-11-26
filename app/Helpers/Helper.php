@@ -129,3 +129,17 @@ if (! function_exists('getBusinesses')) {
         return $businesses;
     }
 }
+
+if (! function_exists('getFaqs')) {
+    function getFaqs(){
+        $faqs = DB::table('faqs')->where('status',"1")->get();
+        return $faq;
+    }
+}
+
+if (! function_exists('getFaqsById')) {
+    function getFaqsById($faqs){
+        $faqs = DB::table('faqs')->whereIn('id',json_decode($faqs))->where('status',"1")->get();
+        return $faqs;
+    }
+}
