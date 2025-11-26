@@ -143,3 +143,10 @@ if (! function_exists('getFaqsById')) {
         return $faqs;
     }
 }
+
+if (! function_exists('getTechnologies')) {
+    function getTechnologies($params = null){
+        $technologies = DB::table('technologies')->orderBy('name','asc')->get();
+        return $technologies;
+    }
+}

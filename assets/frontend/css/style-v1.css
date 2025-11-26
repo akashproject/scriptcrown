@@ -49778,12 +49778,18 @@ ul.tech-tab li a {
   background: #684df4;
   color: #fff;
 }
+.technogy-content {
+    display: inline-flex;
+    margin: 0 3px;
+}
+
 .technology-box {
     display: flex;
     align-items: center;
     border: 2px solid #c2a7d7;
     border-radius: 10px;
     padding: 6px 10px;
+    width: auto;
 }
 
 .technology-box p {

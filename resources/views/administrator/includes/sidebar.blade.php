@@ -66,6 +66,12 @@
             </a>
          </li>
          <li class="menu-item">
+            <a href="{{ route('admin-technologies') }}" class="menu-link">
+               <i class="menu-icon tf-icons bx bx-file"></i>
+               <div data-i18n="Technology">Technologies</div>
+            </a>
+         </li>
+         <li class="menu-item">
             <a href="{{ route('admin-pages') }}" class="menu-link">
                <i class="menu-icon tf-icons bx bx-file"></i>
                <div data-i18n="Pages">Pages</div>

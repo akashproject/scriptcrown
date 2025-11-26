@@ -138,14 +138,14 @@
                 @foreach(getServices() as $value)
                 <div class="col-md-4 col-lg-3 mb-2">
                     <div class="service-box">
-                        <a href="{{ route('service',$value->slug) }}" class="service-box_img">
+                        <a href="{{ route('services',$value->slug) }}" class="service-box_img">
                             <img src="{{ url('assets/frontend/img/service/web-development.webp') }}" alt="Icon">
                         </a>
                         <div class="service-box_content">
                             <div class="service-box_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_box_1.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title"><a href="{{ route('service',$value->slug) }}">{{ $value->name }}</a></h3>
+                            <h3 class="box-title"><a href="{{ route('services',$value->slug) }}">{{ $value->name }}</a></h3>
                             <div class="service-stat">
                                 <span> 100+ Projects</span>
                                 <span> 100+ Projects</span>
@@ -159,7 +159,7 @@
                                 <span>Javascript</span>
                             </div>
                             <p class="service-box_text">Intrinsicly redefine competitive e-business before adaptive.</p>
-                            <a href="{{ route('service',$value->slug) }}" class="link-btn">Read More<i class="fas fa-arrow-right ms-2"></i></a>
+                            <a href="{{ route('services',$value->slug) }}" class="link-btn">Read More<i class="fas fa-arrow-right ms-2"></i></a>
                             <div class="bg-shape">
                                 <img src="{{ url('assets/frontend/img/bg/service_box_bg.png') }}" alt="bg">
                             </div>
@@ -280,7 +280,7 @@
                 </div>
             </div>  
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="tech-tab-container">
                         <ul class="tech-tab">
                             <li> <a href="javascript:void(0)" >Website Backend </a></li>
@@ -294,40 +294,20 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="row text-center justify-conten-center">
-                        <div class="col-lg-3 mb-2">
+                <div class="col-md-9">
+                    <div class="technogy-wrap text-center justify-conten-center">
+                        @foreach(getTechnologies() as $value)
+                        <div class="technogy-content mb-2">
                             <a href="" class="technology-box">
                                 <div>
                                     <img src="{{ url('assets/frontend/img/tech/php.png') }}">
                                 </div>
-                                <div class="mx-2 width-49">
-                                    <p> PHP </p>
-                                </div>
-                                
-                            </a>
-                        </div>
-                        <div class="col-lg-3 mb-2">
-                            <a href="" class="technology-box">
-                                <div>
-                                    <img src="{{ url('assets/frontend/img/tech/wordpress.png') }}">
-                                </div>
-                                <div class="mx-2 width-49">
-                                    <p> Wordpress </p>
-                                </div>
-                                
-                            </a>
-                        </div>
-                        <div class="col-lg-3 mb-2">
-                            <a href="" class="technology-box">
-                                <div>
-                                    <img src="{{ url('assets/frontend/img/tech/shopify.png') }}">
-                                </div>
-                                <div class="mx-2 width-49">
-                                    <p> Shopify </p>
+                                <div class="mx-2">
+                                    <p> {{ $value->name }} </p>
                                 </div>
                             </a>
                         </div>
+                        @endforeach
                     </div>
                 </div>
             </div>

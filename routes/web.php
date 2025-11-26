@@ -39,6 +39,13 @@ Route::group(['prefix' => 'administrator'], function () {
         Route::post('/save-business', [App\Http\Controllers\Administrator\BusinessController::class, 'save'])->name('admin-save-business');
         Route::get('/delete-business/{id}', [App\Http\Controllers\Administrator\BusinessController::class, 'delete'])->name('admin-delete-business');
 
+        //Technologies
+        Route::get('/technologies', [App\Http\Controllers\Administrator\TechnologyController::class, 'index'])->name('admin-technologies');
+        Route::get('/add-technology', [App\Http\Controllers\Administrator\TechnologyController::class, 'Add'])->name('admin-add-technology');
+        Route::get('/view-technology/{id}', [App\Http\Controllers\Administrator\TechnologyController::class, 'show'])->name('admin-view-technology');
+        Route::post('/save-technology', [App\Http\Controllers\Administrator\TechnologyController::class, 'save'])->name('admin-save-technology');
+        Route::get('/delete-technology/{id}', [App\Http\Controllers\Administrator\TechnologyController::class, 'delete'])->name('admin-delete-technology');
+
         //Faqs
         Route::get('/faqs', [App\Http\Controllers\Administrator\FaqController::class, 'index'])->name('admin-faqs');
         Route::get('/add-faq', [App\Http\Controllers\Administrator\FaqController::class, 'add'])->name('admin-add-faq');
@@ -76,6 +83,6 @@ Route::group(['prefix' => 'administrator'], function () {
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('website');
 Route::get('/{slug}', [App\Http\Controllers\PageController::class, 'index'])->where('slug', '([A-Za-z0-9\-]+)')->name('page');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/services/{slug}', [App\Http\Controllers\ServiceController::class, 'view'])->name('service');
+Route::get('/services/{slug}', [App\Http\Controllers\ServiceController::class, 'view'])->name('services');
 Route::get('/projects/{slug}', [App\Http\Controllers\ProjectController::class, 'view'])->name('projects');
 Route::get('/technologies/{slug}', [App\Http\Controllers\TechnologyController::class, 'view'])->name('technologies');
