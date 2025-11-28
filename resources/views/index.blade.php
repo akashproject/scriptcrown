@@ -136,10 +136,10 @@
             </div>
             <div class="row">
                 @foreach(getServices() as $value)
-                <div class="col-md-4 col-lg-3 mb-2">
+                <div class="col-md-4 col-lg-3 mb-3">
                     <div class="service-box">
                         <a href="{{ route('services',$value->slug) }}" class="service-box_img">
-                            <img src="{{ url('assets/frontend/img/service/web-development.webp') }}" alt="Icon">
+                            <img src="{{ isset($value->featured_image)?getSizedImage('',$value->featured_image):url('assets/frontend/img/service/web-development.webp') }}" alt="Icon">
                         </a>
                         <div class="service-box_content">
                             <div class="service-box_icon">
@@ -158,8 +158,6 @@
                                 <span>CSS</span>
                                 <span>Javascript</span>
                             </div>
-                            <p class="service-box_text">Intrinsicly redefine competitive e-business before adaptive.</p>
-                            <a href="{{ route('services',$value->slug) }}" class="link-btn">Read More<i class="fas fa-arrow-right ms-2"></i></a>
                             <div class="bg-shape">
                                 <img src="{{ url('assets/frontend/img/bg/service_box_bg.png') }}" alt="bg">
                             </div>

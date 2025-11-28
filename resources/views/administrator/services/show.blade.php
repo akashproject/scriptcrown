@@ -75,9 +75,9 @@
 						<div class="form-group row mb-2">
 							<label for="tags" class="col-md-6 text-left control-label col-form-label">Featured Image</label>
 							<div class="col-sm-6 text-center">
-								<a href="#imageBox" class="image-profile open-popup-link">
-									<img src="https://dummyimage.com/150x150?text=Add%20Image" alt="">
-									<input type="hidden" name="featured_image" id="featured_image" value="" >	
+								<a href="#imageBox" class="image-profile open-popup-link" >
+									<img src="{{ (isset($service->featured_image))?getSizedImage('thumb',$service->featured_image):'https://dummyimage.com/150x150?text=Add%20Image' }}" alt="">
+									<input type="hidden" name="featured_image" id="featured_image" value="{{ $service->featured_image }}" >	
 								</a>	
 								@if(isset($service->featured_image))
 									<a href="javascript:void(0)" class="removeImage" style="color: #c90f0f;font-weight: 600;"> Remove Image </a>	
