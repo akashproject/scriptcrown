@@ -191,7 +191,7 @@
             </div>
             <div class="row">
                 @foreach(getBusinesses() as $value)
-                <div class="col-lg-2 mb-2">
+                <div class="col-md-2 col-sm-6 mb-2">
                     <a href="" class="business-box">
                         <img src="https://dummyimage.com/200x100" ></i>
                         <h6> {{ $value->name }} </h6>
