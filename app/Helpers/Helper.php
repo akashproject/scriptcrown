@@ -109,8 +109,12 @@ if (! function_exists('getCategories')) {
 }
 
 if (! function_exists('getServices')) {
-    function getServices($params = null){
-        $services = DB::table('services')->get();
+    function getServices($category_id = null){
+        $services = DB::table('services');
+        if($category_id){
+            $services = $services->where('category_id',$category_id);
+        }
+        $services = $services->get();
         return $services;
     }
 }
