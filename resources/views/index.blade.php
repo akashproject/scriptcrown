@@ -296,9 +296,9 @@
                     <div class="technogy-wrap text-center justify-conten-center">
                         @foreach(getTechnologies() as $value)
                         <div class="technogy-content mb-2">
-                            <a href="" class="technology-box">
+                            <a href="{{ route('technologies',$value->slug) }}" class="technology-box">
                                 <div>
-                                    <img src="{{ url('assets/frontend/img/tech/php.png') }}">
+                                    <img src="{{ url('assets/frontend/img/tech/'.strtolower($value->name).'.png') }}">
                                 </div>
                                 <div class="mx-2">
                                     <p> {{ $value->name }} </p>
@@ -661,6 +661,7 @@
         <div class="row justify-content-center">
           <div class="col-12">
             <div class="accordion" id="faqAccordion">
+                
               <div class="accordion-card style8">
                 <div class="accordion-header" id="collapse-item-1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">1. What services does your digital agency offer?</button></div>
                 <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">

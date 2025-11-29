@@ -50,6 +50,17 @@
 								<textarea class="form-control editor" name="description" id="description" placeholder="Enter description Here" >{{ $business->description }}</textarea>
 							</div>
 						</div>
+
+						<div class="form-group row mb-2">
+							<label for="faqs" class="col-sm-3 text-left control-label col-form-label">Faqs</label>
+							<div class="col-sm-9">
+								<select name="faqs[]" id="faqs" class="select2 form-control custom-select" style="width: 100%; height:100px;" multiple>	
+									@foreach (getFaqs() as $faq)
+									<option value="{{ $faq->id }}" {{ ($business->faqs != null && in_array($faq->id,  json_decode($business->faqs)))?'selected' : '' }}> {{  $faq->question }} </option>
+									@endforeach
+								</select>
+							</div>
+						</div>	
 					</div>
 
 					<div class="col-md-5">

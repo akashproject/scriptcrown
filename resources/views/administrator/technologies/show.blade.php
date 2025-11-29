@@ -50,19 +50,19 @@
 								<textarea class="form-control editor" name="description" id="description" placeholder="Enter description Here" >{{ $technology->description }}</textarea>
 							</div>
 						</div>
+						<div class="form-group row mb-2">
+							<label for="faqs" class="col-sm-3 text-left control-label col-form-label">Faqs</label>
+							<div class="col-sm-9">
+								<select name="faqs[]" id="faqs" class="select2 form-control custom-select" style="width: 100%; height:100px;" multiple>	
+									@foreach (getFaqs() as $faq)
+									<option value="{{ $faq->id }}" {{ ($technology->faqs != null && in_array($faq->id,  json_decode($technology->faqs)))?'selected' : '' }}> {{  $faq->question }} </option>
+									@endforeach
+								</select>
+							</div>
+						</div>	
 					</div>
 
 					<div class="col-md-5">
-						<div class="mb-3 row">
-							<label for="state" class="col-sm-3 text-right control-label col-form-label">Enable OTP</label>
-							<div class="col-sm-9">
-								<select name="enable_otp" id="enable_otp" class="select2 form-control custom-select" style="width: 100%; height:36px;">	
-									<option value="">Enable Otp</option>
-									<option value="1" {{ ( $technology->enable_otp ==  '1' )? 'selected' : '' }}> Yes</option>
-									<option value="0" {{ ( $technology->enable_otp ==  '0' )? 'selected' : '' }}> No </option>
-								<select>
-							</div>
-						</div>
 						<div class="mb-3 row">
 							<label for="state" class="col-sm-3 text-right control-label col-form-label">Status</label>
 							<div class="col-sm-9">

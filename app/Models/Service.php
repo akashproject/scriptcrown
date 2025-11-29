@@ -12,6 +12,6 @@ class Service extends Model
     protected $primaryKey = 'id';
 
     protected $fillable = [
-        'id','category_id','technology_id','name','slug','excerpt','description','banner_image','featured_image','title','meta_description','schema','robots','utm_campaign','utm_source','status','created_at',
+        'id','category_id','technology_id','name','slug','excerpt','description','banner_image','featured_image','faqs','title','meta_description','schema','robots','utm_campaign','utm_source','status','created_at',
     ];
 }

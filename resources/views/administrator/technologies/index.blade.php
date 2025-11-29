@@ -53,12 +53,12 @@
 										<i class="bx bx-show"></i>
 									</a>
 									@can('update')
-									<a href="{{ route('admin-view-business',$value->id) }}" class="btn btn-sm btn-icon">
+									<a href="{{ route('admin-view-technology',$value->id) }}" class="btn btn-sm btn-icon">
 										<i class="bx bx-edit"></i>
 									</a>
 									@endcan
 									@can('delete')
-									<a href="{{ route('admin-delete-business',$value->id) }}" onclick="return confirm('Are you sure?')"; class="btn btn-sm btn-icon delete-record">
+									<a href="{{ route('admin-delete-technology',$value->id) }}" onclick="return confirm('Are you sure?')"; class="btn btn-sm btn-icon delete-record">
 										<i class="bx bx-trash"></i>
 									</a>
 									@endcan

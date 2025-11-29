@@ -56,6 +56,8 @@ class AppServiceProvider extends ServiceProvider
             $loggedInUser = Auth::user();
             $view->with('loggedInUser', $loggedInUser);
 
+            $media = Media::orderBy('created_at', 'desc')->get();
+            $view->with('media', $media);
             if($loggedInUser){
                 $roles = $loggedInUser
                 ->roles

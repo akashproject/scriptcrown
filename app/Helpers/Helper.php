@@ -132,7 +132,7 @@ if (! function_exists('getBusinesses')) {
 if (! function_exists('getFaqs')) {
     function getFaqs(){
         $faqs = DB::table('faqs')->where('status',"1")->get();
-        return $faq;
+        return $faqs;
     }
 }
 

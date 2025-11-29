@@ -47,6 +47,16 @@
 								<textarea class="form-control" name="excerpt" id="excerpt" placeholder="Enter excerpt Here" >{{ $service->excerpt }}</textarea>
 							</div>
 						</div>
+						<div class="form-group row mb-2">
+							<label for="faqs" class="col-sm-3 text-left control-label col-form-label">Faqs</label>
+							<div class="col-sm-9">
+								<select name="faqs[]" id="faqs" class="select2 form-control custom-select" style="width: 100%; height:100px;" multiple>	
+									@foreach (getFaqs() as $faq)
+									<option value="{{ $faq->id }}" {{ ($service->faqs != null && in_array($faq->id,  $service->faqs))?'selected' : '' }}> {{  $faq->question }} </option>
+									@endforeach
+								</select>
+							</div>
+						</div>	
 					</div>
 
 					<div class="col-md-4">
