@@ -193,7 +193,7 @@
                 @foreach(getBusinesses() as $value)
                 <div class="col-md-2 col-sm-6 mb-2">
                     <a href="" class="business-box">
-                        <img src="https://dummyimage.com/200x100" ></i>
+                        <img src="{{ url('assets/frontend/img/business/'.strtolower(str_replace(' ','-',$value->name)).'.svg') }}" ></i>
                         <h6> {{ $value->name }} </h6>
                     </a>
                 </div>

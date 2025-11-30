@@ -14,7 +14,7 @@
                 </div>
                 <form method="post" id="lead_generate_form" action="#" >
                     @csrf
-                    <div class="row g-3">
+                    <div class="row">
                         <div class="col-lg-6 mb-2">
                             <div class="form-floating mb-2">
                                 <select class="form-control" id="name" name="business"  required>
