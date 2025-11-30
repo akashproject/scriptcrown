@@ -1235,7 +1235,7 @@ ul.wp-block-rss a {
 .fs-16 {
 	font-size: 16px
 }
-
+/* 
 select,
 .form-control,
 .form-select,
@@ -1328,7 +1328,7 @@ select::placeholder,
 textarea::placeholder,
 input::placeholder {
 	color: var(--body-color)
-}
+} */
 
 .form-select,
 select {
@@ -49798,4 +49798,24 @@ ul.tech-tab li a {
     color: #333;
 	margin: 0;
 	padding: 0;
+}
+
+
+/* Popup Form */
+.headerLogo {
+    width: 50%;
+}
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 0;
+    width: auto;
+    max-width: 920px;
+    margin: 20px auto;
+    transition: 1s all;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.leadModelBody {
+    padding: 0px 0px 20px 20px;
 }

@@ -68,6 +68,10 @@
     @include('layouts.header')
     @yield('content')
     @include('layouts.footer')
+
+    <div id="lead-generate-popup" class="white-popup mfp-hide">
+            @include('common.leadCaptureForm')
+        </div>
     <script>
         let globalUrl = "{{ env("APP_URL") }}"
         let isAjaxSubmit = "{{ get_theme_setting('ajax_submit') }}"
@@ -78,6 +82,7 @@
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
         </svg>
     </div>
+
 
     <!--==============================
     All Js File

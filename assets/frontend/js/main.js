@@ -1273,6 +1273,15 @@
         });
     }
     
+    $('.open-popup-link').magnificPopup({
+        type: 'inline',
+        midClick: true,
+        mainClass: 'mfp-fade'
+    });
+
+    $(".mfp-close-btn").on("click",function(){
+        $(".mfp-close").trigger("click");
+    })
     
     // /*----------- 00. Right Click Disable ----------*/
     //   window.addEventListener('contextmenu', function (e) {

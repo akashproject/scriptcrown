@@ -164,7 +164,7 @@
                         </div>
                         <div class="service-call-to-action-btn">
                             <a href="service.html" class="th-btn width-49"><i class="fab fa-whatsapp ms-2"></i> Chat with US</a>
-                            <a href="service.html" class="th-btn width-49">Get Quote<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                            <a href="#lead-generate-popup" class="th-btn width-49  open-popup-link">Get Quote<i class="fa-regular fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
