@@ -310,6 +310,9 @@
                 </div>
             </div>
         </div>
+        <div class="shape-mockup" data-bottom="0" data-left="0">
+            <div class="particle-2" id="particle-2"></div>
+        </div>
     </section>
 
     <section class="position-relative overflow-hidden project-area11 space" id="project-sec">

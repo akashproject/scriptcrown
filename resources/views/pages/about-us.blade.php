@@ -377,13 +377,11 @@ Feature Area
 
             </div>
         </div>
-    </div><!--==============================
-Testimonial Area  
-==============================-->
-    <section class="bg-top-center space" data-bg-src="{{ url('assets/frontend/img/bg/testi_bg_3.jpg') }}">
+    </div>
+
+    <section class="bg-auto space" data-bg-src="{{ url('assets/frontend/img/bg/testi_bg_2.png') }}">
         <div class="container">
             <div class="title-area text-center">
-                <div class="shadow-title color2">TESTIMONIALS</div>
                 <span class="sub-title">
                     <div class="icon-masking me-2">
                         <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
@@ -391,165 +389,130 @@ Testimonial Area
                     </div>
                     CUSTOMER FEEDBACK
                 </span>
-                <h2 class="sec-title text-white">What Happy Clients Says <br> <span class="text-theme"> About Us?</span></h2>
+                <h2 class="sec-title">What Happy Clients Says <br> <span class="text-theme fw-normal"> About Us?</span></h2>
             </div>
 
             <div class="slider-area">
-                <div class="swiper th-slider has-shadow" id="testiSlider3" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'>
+                <div class="swiper th-slider has-shadow" id="testiSlider2" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"1"},"1200":{"slidesPerView":"2"}}}'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="testi-grid">
-                                <div class="testi-grid_img">
-                                    <img src="{{ url('assets/frontend/img/testimonial/testi_3_1.jpg') }}" alt="Avater">
-                                    <div class="testi-grid_quote">
-                                        <img src="{{ url('assets/frontend/img/icon/quote_left_3.svg') }}" alt="quote">
+                            <div class="testi-box">
+                                <div class="testi-box_img">
+                                    <img src="{{ url('assets/frontend/img/testimonial/testi_2_1.jpg') }}" alt="Avater">
+                                    <div class="testi-box_quote">
+                                        <img src="{{ url('assets/frontend/img/icon/quote_left_2.svg') }}" alt="quote">
                                     </div>
                                 </div>
-                                <div class="testi-grid_review">
-                                    <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-                                </div>
-                                <div class="testi-grid_content">
-                                    <p class="testi-grid_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration. Globally synergize resource sucking value via cutting-edge.</p>
+                                <div class="testi-box_content">
+                                    <p class="testi-box_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.</p>
+                                    <div class="testi-box_review">
+                                        <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                    </div>
                                     <h3 class="box-title">David Farnandes</h3>
-                                    <p class="testi-grid_desig">CEO at Anaton</p>
+                                    <p class="testi-box_desig">CEO at Anaton</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="testi-grid">
-                                <div class="testi-grid_img">
-                                    <img src="{{ url('assets/frontend/img/testimonial/testi_3_2.jpg') }}" alt="Avater">
-                                    <div class="testi-grid_quote">
-                                        <img src="{{ url('assets/frontend/img/icon/quote_left_3.svg') }}" alt="quote">
+                            <div class="testi-box">
+                                <div class="testi-box_img">
+                                    <img src="{{ url('assets/frontend/img/testimonial/testi_2_2.jpg') }}" alt="Avater">
+                                    <div class="testi-box_quote">
+                                        <img src="{{ url('assets/frontend/img/icon/quote_left_2.svg') }}" alt="quote">
                                     </div>
                                 </div>
-                                <div class="testi-grid_review">
-                                    <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-                                </div>
-                                <div class="testi-grid_content">
-                                    <p class="testi-grid_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration. Globally synergize resource sucking value via cutting-edge.</p>
+                                <div class="testi-box_content">
+                                    <p class="testi-box_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.</p>
+                                    <div class="testi-box_review">
+                                        <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                    </div>
                                     <h3 class="box-title">Jackline Techie</h3>
-                                    <p class="testi-grid_desig">CEO at Kormola</p>
+                                    <p class="testi-box_desig">CEO at Kormola</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="testi-grid">
-                                <div class="testi-grid_img">
-                                    <img src="{{ url('assets/frontend/img/testimonial/testi_3_3.jpg') }}" alt="Avater">
-                                    <div class="testi-grid_quote">
-                                        <img src="{{ url('assets/frontend/img/icon/quote_left_3.svg') }}" alt="quote">
+                            <div class="testi-box">
+                                <div class="testi-box_img">
+                                    <img src="{{ url('assets/frontend/img/testimonial/testi_2_3.jpg') }}" alt="Avater">
+                                    <div class="testi-box_quote">
+                                        <img src="{{ url('assets/frontend/img/icon/quote_left_2.svg') }}" alt="quote">
                                     </div>
                                 </div>
-                                <div class="testi-grid_review">
-                                    <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-                                </div>
-                                <div class="testi-grid_content">
-                                    <p class="testi-grid_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration. Globally synergize resource sucking value via cutting-edge.</p>
+                                <div class="testi-box_content">
+                                    <p class="testi-box_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.</p>
+                                    <div class="testi-box_review">
+                                        <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                    </div>
                                     <h3 class="box-title">Abraham Khalil</h3>
-                                    <p class="testi-grid_desig">CEO at Anatora</p>
+                                    <p class="testi-box_desig">CEO at Rimasu</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="testi-grid">
-                                <div class="testi-grid_img">
-                                    <img src="{{ url('assets/frontend/img/testimonial/testi_3_4.jpg') }}" alt="Avater">
-                                    <div class="testi-grid_quote">
-                                        <img src="{{ url('assets/frontend/img/icon/quote_left_3.svg') }}" alt="quote">
+                            <div class="testi-box">
+                                <div class="testi-box_img">
+                                    <img src="{{ url('assets/frontend/img/testimonial/testi_2_1.jpg') }}" alt="Avater">
+                                    <div class="testi-box_quote">
+                                        <img src="{{ url('assets/frontend/img/icon/quote_left_2.svg') }}" alt="quote">
                                     </div>
                                 </div>
-                                <div class="testi-grid_review">
-                                    <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-                                </div>
-                                <div class="testi-grid_content">
-                                    <p class="testi-grid_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration. Globally synergize resource sucking value via cutting-edge.</p>
-                                    <h3 class="box-title">Md Sumon Mia</h3>
-                                    <p class="testi-grid_desig">CEO at Rimasu</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testi-grid">
-                                <div class="testi-grid_img">
-                                    <img src="{{ url('assets/frontend/img/testimonial/testi_3_1.jpg') }}" alt="Avater">
-                                    <div class="testi-grid_quote">
-                                        <img src="{{ url('assets/frontend/img/icon/quote_left_3.svg') }}" alt="quote">
+                                <div class="testi-box_content">
+                                    <p class="testi-box_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.</p>
+                                    <div class="testi-box_review">
+                                        <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
                                     </div>
-                                </div>
-                                <div class="testi-grid_review">
-                                    <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-                                </div>
-                                <div class="testi-grid_content">
-                                    <p class="testi-grid_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration. Globally synergize resource sucking value via cutting-edge.</p>
                                     <h3 class="box-title">David Farnandes</h3>
-                                    <p class="testi-grid_desig">CEO at Anaton</p>
+                                    <p class="testi-box_desig">CEO at Anaton</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="testi-grid">
-                                <div class="testi-grid_img">
-                                    <img src="{{ url('assets/frontend/img/testimonial/testi_3_2.jpg') }}" alt="Avater">
-                                    <div class="testi-grid_quote">
-                                        <img src="{{ url('assets/frontend/img/icon/quote_left_3.svg') }}" alt="quote">
+                            <div class="testi-box">
+                                <div class="testi-box_img">
+                                    <img src="{{ url('assets/frontend/img/testimonial/testi_2_2.jpg') }}" alt="Avater">
+                                    <div class="testi-box_quote">
+                                        <img src="{{ url('assets/frontend/img/icon/quote_left_2.svg') }}" alt="quote">
                                     </div>
                                 </div>
-                                <div class="testi-grid_review">
-                                    <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-                                </div>
-                                <div class="testi-grid_content">
-                                    <p class="testi-grid_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration. Globally synergize resource sucking value via cutting-edge.</p>
+                                <div class="testi-box_content">
+                                    <p class="testi-box_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.</p>
+                                    <div class="testi-box_review">
+                                        <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                    </div>
                                     <h3 class="box-title">Jackline Techie</h3>
-                                    <p class="testi-grid_desig">CEO at Kormola</p>
+                                    <p class="testi-box_desig">CEO at Kormola</p>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="testi-grid">
-                                <div class="testi-grid_img">
-                                    <img src="{{ url('assets/frontend/img/testimonial/testi_3_3.jpg') }}" alt="Avater">
-                                    <div class="testi-grid_quote">
-                                        <img src="{{ url('assets/frontend/img/icon/quote_left_3.svg') }}" alt="quote">
+                            <div class="testi-box">
+                                <div class="testi-box_img">
+                                    <img src="{{ url('assets/frontend/img/testimonial/testi_2_3.jpg') }}" alt="Avater">
+                                    <div class="testi-box_quote">
+                                        <img src="{{ url('assets/frontend/img/icon/quote_left_2.svg') }}" alt="quote">
                                     </div>
                                 </div>
-                                <div class="testi-grid_review">
-                                    <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-                                </div>
-                                <div class="testi-grid_content">
-                                    <p class="testi-grid_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration. Globally synergize resource sucking value via cutting-edge.</p>
+                                <div class="testi-box_content">
+                                    <p class="testi-box_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.</p>
+                                    <div class="testi-box_review">
+                                        <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                    </div>
                                     <h3 class="box-title">Abraham Khalil</h3>
-                                    <p class="testi-grid_desig">CEO at Anatora</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testi-grid">
-                                <div class="testi-grid_img">
-                                    <img src="{{ url('assets/frontend/img/testimonial/testi_3_4.jpg') }}" alt="Avater">
-                                    <div class="testi-grid_quote">
-                                        <img src="{{ url('assets/frontend/img/icon/quote_left_3.svg') }}" alt="quote">
-                                    </div>
-                                </div>
-                                <div class="testi-grid_review">
-                                    <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-                                </div>
-                                <div class="testi-grid_content">
-                                    <p class="testi-grid_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration. Globally synergize resource sucking value via cutting-edge.</p>
-                                    <h3 class="box-title">Md Sumon Mia</h3>
-                                    <p class="testi-grid_desig">CEO at Rimasu</p>
+                                    <p class="testi-box_desig">CEO at Rimasu</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button data-slider-prev="#testiSlider3" class="slider-arrow style3 slider-prev"><i class="far fa-arrow-left"></i></button>
-                <button data-slider-next="#testiSlider3" class="slider-arrow style3 slider-next"><i class="far fa-arrow-right"></i></button>
+                <button data-slider-prev="#testiSlider2" class="slider-arrow style3 slider-prev"><i class="far fa-arrow-left"></i></button>
+                <button data-slider-next="#testiSlider2" class="slider-arrow style3 slider-next"><i class="far fa-arrow-right"></i></button>
             </div>
         </div>
-    </section><!--==============================
-Blog Area  
-==============================-->
+        <div class="shape-mockup moving d-none d-xl-block" data-bottom="0%" data-left="10%"><img src="{{ url('assets/frontend/img/shape/line_1.png') }}" alt="shape"></div>
+        <div class="shape-mockup jump d-none d-xl-block" data-top="20%" data-right="2%"><img src="{{ url('assets/frontend/img/shape/line_2.png') }}" alt="shape"></div>
+    </section>
+
     <section class="bg-top-right overflow-hidden space-bottom" id="blog-sec" data-bg-src="{{ url('assets/frontend/img/bg/blog_bg_1.png') }}">
         <div class="container space-bottom">
             <div class="title-area text-center">
