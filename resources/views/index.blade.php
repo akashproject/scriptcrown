@@ -135,7 +135,7 @@
                 </div>
             </div>
             <div class="row">
-                @foreach(getServices() as $value)
+                @foreach(getServicesByVisibility() as $value)
                 <div class="col-md-4 col-lg-3 mb-3">
                     <div class="service-box">
                         <a href="{{ route('services',$value->slug) }}" class="service-box_img">

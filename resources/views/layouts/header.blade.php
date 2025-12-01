@@ -268,7 +268,7 @@
                         <div class="col-auto d-none d-lg-block">
                             <div class="header-button">
                                 <button type="button" class="th-btn searchBoxToggler"><span>Ask to AI </span> <i class="fal fa-search"></i></button>
-                                <a href="contact.html" class="th-btn style3 shadow-none">Make Appointment<i class="fas fa-arrow-right ms-1"></i></a>
+                                <a href="#lead-generate-popup" class="th-btn style3 shadow-none open-popup-link">Make Appointment<i class="fas fa-arrow-right ms-1"></i></a>
                             </div>
                         </div>
                     </div>

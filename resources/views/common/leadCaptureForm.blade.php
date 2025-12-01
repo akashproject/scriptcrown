@@ -1,12 +1,25 @@
 <div class="leadModel lead-capture_popup__form contact-form-validated form-one" >
     <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-6 position-relative lead-form-side-panel" style="background-image: url({{ url('assets/frontend/img/bg/appointment_bg_5.jpg') }});">
             <div class="leadModelHeader">
                 <div class="headerLogo">
                     <a class="td_site_branding td_accent_color" href="{{ url('/') }}">
                         <img src="{{ url('assets/logo/logo.png') }}" class="width-100">                         
                     </a> 
                 </div>
+            </div>
+            <div class="modelSideBanner">
+                <div class="sec-title sec-title--center wow fadeInUp mb-3 mt-5" data-wow-duration="1500ms" data-wow-delay="00ms">
+                    <h3 class="sec-title__title" style="font-size:22px">Let’s discuss your project</h3><!-- /.sec-title__title -->
+                </div><!-- /.sec-title -->
+                <div class="row justified-content-center">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="leadModelHeader">
+                
             </div>
             <div class="leadModelBody">
                 <div class="">
@@ -102,16 +115,6 @@
 
                     </div>
                 </form>
-            </div>
-        </div>
-        <div class="col-md-5 position-relative">
-            <div class="modelSideBanner">
-                <div class="sec-title sec-title--center wow fadeInUp mb-3 mt-5" data-wow-duration="1500ms" data-wow-delay="00ms">
-                    <h3 class="sec-title__title" style="font-size:22px"><span>Placed </span> <span class="sec-title__title__shape">Students</span><span class="sec-title__title__text"> Story</span></h3><!-- /.sec-title__title -->
-                </div><!-- /.sec-title -->
-                <div class="row justified-content-center">
-                    
-                </div>
             </div>
         </div>
     </div>

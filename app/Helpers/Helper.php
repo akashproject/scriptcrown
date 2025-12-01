@@ -119,6 +119,17 @@ if (! function_exists('getServices')) {
     }
 }
 
+if (! function_exists('getServicesByVisibility')) {
+    function getServicesByVisibility($category_id = null){
+        $services = DB::table('services');
+        if($category_id){
+            $services = $services->where('category_id',$category_id);
+        }
+        $services = $services->where('featured_visibility',"1")->get();
+        return $services;
+    }
+}
+
 if (! function_exists('getProjects')) {
     function getProjects($params = null){
         $projects = DB::table('projects')->get();
