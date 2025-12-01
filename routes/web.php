@@ -86,3 +86,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/services/{slug}', [App\Http\Controllers\ServiceController::class, 'view'])->name('services');
 Route::get('/projects/{slug}', [App\Http\Controllers\ProjectController::class, 'view'])->name('projects');
 Route::get('/technologies/{slug}', [App\Http\Controllers\TechnologyController::class, 'view'])->name('technologies');
+Route::get('/business/{slug}', [App\Http\Controllers\TechnologyController::class, 'view'])->name('business');

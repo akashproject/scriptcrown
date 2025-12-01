@@ -189,16 +189,15 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="business-box-area mt-4">
                 @foreach(getBusinesses() as $value)
-                <div class="col-md-2 col-sm-6 mb-2">
-                    <a href="" class="business-box">
-                        <img src="{{ url('assets/frontend/img/business/'.strtolower(str_replace(' ','-',$value->name)).'.svg') }}" ></i>
+                <div class="business-box-wrap">
+                    <a href="{{ route('business',$value->slug) }}" class="business-box">
+                        <img src="https://dummyimage.com/200x100" ></i>
                         <h6> {{ $value->name }} </h6>
                     </a>
                 </div>
                 @endforeach
-                
             </div>
         </div>
     </section>
@@ -261,8 +260,8 @@
         </div>
     </section>
 
-    <section class="space">
-        <div class="container">
+    <section class="team-sec space" id="technology-sec">
+        <div class="container z-index-common">
             <div class="row justify-content-lg-between justify-content-center align-items-center">
                 <div class="col-lg-6 col-sm-9 pe-xl-5">
                     <div class="title-area text-center text-lg-start">
@@ -297,12 +296,12 @@
                         @foreach(getTechnologies() as $value)
                         <div class="technogy-content mb-2">
                             <a href="{{ route('technologies',$value->slug) }}" class="technology-box">
-                                <div>
+                                <span>
                                     <img src="{{ url('assets/frontend/img/tech/'.strtolower($value->name).'.png') }}">
-                                </div>
-                                <div class="mx-2">
+                                </span>
+                                <span class="mx-2">
                                     <p> {{ $value->name }} </p>
-                                </div>
+                                </span>
                             </a>
                         </div>
                         @endforeach
@@ -310,9 +309,9 @@
                 </div>
             </div>
         </div>
-        <div class="shape-mockup" data-bottom="0" data-left="0">
+        <!-- <div class="shape-mockup" data-bottom="0" data-left="0">
             <div class="particle-2" id="particle-2"></div>
-        </div>
+        </div> -->
     </section>
 
     <section class="position-relative overflow-hidden project-area11 space" id="project-sec">

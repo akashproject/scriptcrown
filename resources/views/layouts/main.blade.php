@@ -52,6 +52,7 @@
     <link rel="stylesheet" href="{{ url('assets/frontend/css/swiper-bundle.min.css') }}">
     <link rel="stylesheet" href="{{ url('assets/frontend/css/imageRevealHover.css') }}">
     <link rel="stylesheet" href="{{ url('assets/frontend/css/style-v1.css') }}">
+    <link rel="stylesheet" href="{{ url('assets/frontend/css/responsive.css') }}">
     
     @yield('style')
     @if(isset($contentMain->schema))
