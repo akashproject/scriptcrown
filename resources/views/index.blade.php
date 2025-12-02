@@ -123,6 +123,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="tab-container my-4">
                 <div class="tab">
                     <a > Website Development </a>
@@ -379,7 +380,7 @@
 
     <section class="bg-bottom-right position-relative" data-bg-src="{{ url('assets/frontend/img/bg/cta_bg_1.png') }}" data-bg-color="#080E1C">
         <div class="img-half img-left th-video2">
-            <img src="{{ url('assets/frontend/img/normal/cta_1.jpg') }}" alt="video">
+            <img src="{{ url('assets/frontend/img/normal/cta_1.webp') }}" alt="video">
             <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn popup-video"><i class="fas fa-play"></i></a>
         </div>
         <div class="container">
