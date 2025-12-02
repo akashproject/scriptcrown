@@ -89,6 +89,7 @@
                                             @endforeach
                                         </ul>
                                     </li>
+                                    <li><a target="_blank" href="{{ route('page','industries') }}" >industries</a></li>
                                     @foreach($primaryMenu as $key => $menuItem)
                                     <li><a target="_blank" href="{{ url($menuItem['url']) }}" >{{ $menuItem['name'] }}</a></li>
                                     @endforeach

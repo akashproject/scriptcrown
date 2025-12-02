@@ -87,7 +87,7 @@
 
 						<div class="mb-3 row">
 							<label for="tags" class="col-md-4 text-left control-label col-form-label">Banner Image</label>
-							<div class="col-sm-8 text-business">
+							<div class="col-sm-6 text-business">
 								<a href="#imageBox" class="image-profile open-popup-link">
 									<img src="{{ (isset($business->banner_image))?getSizedImage('',$business->banner_image):'https://dummyimage.com/250x250?text=Add%20Image' }}" alt="" style="width:100%">
 									<input type="hidden" name="banner_image" id="banner_image" value="{{ $business->banner_image }}" >	
@@ -95,6 +95,19 @@
 								@if(isset($business->banner_image))
 									<a href="javascript:void(0)" class="removeImage" style="color: #c90f0f;font-weight: 600;"> Remove Image </a>	
 								@endif					
+							</div>
+						</div>
+
+						<div class="mb-3 row">
+							<label for="tags" class="col-md-6 text-left control-label col-form-label">Featured Image</label>
+							<div class="col-sm-6 text-center">
+								<a href="#imageBox" class="image-profile open-popup-link" >
+									<img src="{{ (isset($business->featured_image))?getSizedImage('thumb',$business->featured_image):'https://dummyimage.com/150x150?text=Add%20Image' }}" alt="">
+									<input type="hidden" name="featured_image" id="featured_image" value="{{ $business->featured_image }}" >	
+								</a>	
+								@if(isset($business->featured_image))
+									<a href="javascript:void(0)" class="removeImage" style="color: #c90f0f;font-weight: 600;"> Remove Image </a>	
+								@endif
 							</div>
 						</div>
 					</div>

@@ -194,7 +194,7 @@
                 @foreach(getBusinesses() as $value)
                 <div class="business-box-wrap">
                     <a href="{{ route('business',$value->slug) }}" class="business-box">
-                        <img src="https://dummyimage.com/200x100" ></i>
+                        <img src="{{ isset($value->featured_image)?getSizedImage('',$value->featured_image):'https://dummyimage.com/200x100' }}" ></i>
                         <h6> {{ $value->name }} </h6>
                     </a>
                 </div>
