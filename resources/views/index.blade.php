@@ -125,15 +125,11 @@
             </div>
             
             <div class="tab-container my-4">
+                @foreach(getCategories() as $value)
                 <div class="tab">
-                    <a > Website Development </a>
+                    <a href="{{ route('category',$value->slug) }}" > {{ $value->name }} </a>
                 </div>
-                <div class="tab">
-                    <a > Mobile App Development </a>
-                </div>
-                <div class="tab">
-                    <a > Website Development </a>
-                </div>
+                @endforeach
             </div>
             <div class="row">
                 @foreach(getServicesByVisibility() as $value)
