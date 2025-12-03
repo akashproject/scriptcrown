@@ -282,14 +282,14 @@
                     <div class="tech-tab-container">
                         <ul class="tech-tab">
                             @foreach(getTechTypes() as $value)
-                            <li> <a href="javascript:void(0)" >{{ $value->name }} </a></li>
+                            <li id="{{ $value->slug }}" class="tech-group"> <a href="javascript:void(0)" >{{ $value->name }} </a></li>
                             @endforeach
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-9">
                     @foreach(getTechTypes() as $value)
-                    <div class="technogy-wrap text-center justify-conten-center">
+                    <div class="technogy-wrap text-center justify-conten-center {{ $value->slug }}">
                         @foreach(getTechnologies($value->id) as $value)
                         <div class="technogy-content mb-2">
                             <a href="{{ route('technologies',$value->slug) }}" class="technology-box">

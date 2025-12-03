@@ -59,10 +59,6 @@ Route::group(['prefix' => 'administrator'], function () {
         Route::get('/view-faq/{id}', [App\Http\Controllers\Administrator\FaqController::class, 'show'])->name('admin-show-faq');
         Route::post('/save-faq', [App\Http\Controllers\Administrator\FaqController::class, 'save'])->name('admin-save-faq');
         Route::get('/delete-faq/{id}', [App\Http\Controllers\Administrator\FaqController::class, 'delete'])->name('admin-delete-faq');
-        
-
-        Route::get('/settings', [App\Http\Controllers\Administrator\SettingController::class, 'show'])->name('admin-settings');
-        Route::post('/save-settings', [App\Http\Controllers\Administrator\SettingController::class, 'save'])->name('admin-save-settings');
 
         //Page
         Route::get('/pages', [App\Http\Controllers\Administrator\PageController::class, 'index'])->name('admin-pages');
@@ -85,6 +81,23 @@ Route::group(['prefix' => 'administrator'], function () {
         Route::post('/save-file', [App\Http\Controllers\Administrator\MediaController::class, 'updateFile'])->name('admin-save-file');
         Route::get('/delete-file/{id}', [App\Http\Controllers\Administrator\MediaController::class, 'delete'])->name('admin-delete-file');
         Route::post('/search-media', [App\Http\Controllers\Administrator\MediaController::class, 'search'])->name('admin-search-media');
+
+        //Clients
+        Route::get('/clients', [App\Http\Controllers\Administrator\ClientController::class, 'index'])->name('admin-clients');
+        Route::get('/add-client', [App\Http\Controllers\Administrator\ClientController::class, 'Add'])->name('admin-add-client');
+        Route::get('/view-client/{id}', [App\Http\Controllers\Administrator\ClientController::class, 'show'])->name('admin-show-client');
+        Route::post('/save-client', [App\Http\Controllers\Administrator\ClientController::class, 'save'])->name('admin-save-client');
+        Route::get('/delete-client/{id}', [App\Http\Controllers\Administrator\ClientController::class, 'delete'])->name('admin-delete-client');
+
+        //Testimonials
+        Route::get('/testimonials', [App\Http\Controllers\Administrator\TestimonialController::class, 'index'])->name('admin-testimonials');
+        Route::get('/add-testimonial', [App\Http\Controllers\Administrator\TestimonialController::class, 'Add'])->name('admin-add-testimonial');
+        Route::get('/view-testimonial/{id}', [App\Http\Controllers\Administrator\TestimonialController::class, 'show'])->name('admin-show-testimonial');
+        Route::post('/save-testimonial', [App\Http\Controllers\Administrator\TestimonialController::class, 'save'])->name('admin-save-testimonial');
+        Route::get('/delete-testimonial/{id}', [App\Http\Controllers\Administrator\TestimonialController::class, 'delete'])->name('admin-delete-testimonial');
+
+        Route::get('/settings', [App\Http\Controllers\Administrator\SettingController::class, 'show'])->name('admin-settings');
+        Route::post('/save-settings', [App\Http\Controllers\Administrator\SettingController::class, 'save'])->name('admin-save-settings');
     });
 });
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('website');

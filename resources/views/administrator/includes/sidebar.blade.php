@@ -96,6 +96,12 @@
             </a>
          </li>
          <li class="menu-item">
+            <a href="{{ route('admin-testimonials') }}" class="menu-link">
+               <i class="menu-icon tf-icons bx bx-chat"></i>
+               <div data-i18n="Testimonials">Testimonials</div>
+            </a>
+         </li>
+         <li class="menu-item">
             <a href="{{ route('admin-settings') }}" class="menu-link">
                <i class="menu-icon tf-icons bx bx-cog"></i>
                <div data-i18n="Settings">Settings</div>

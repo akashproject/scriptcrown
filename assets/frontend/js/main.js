@@ -1193,6 +1193,8 @@
         });
     });
 
+
+
     // /*----------- 00.Gsap Cursor ----------*/
     var cursor = $(".cursor"),
     follower = $(".cursor2");
@@ -1281,7 +1283,12 @@
 
     $(".mfp-close-btn").on("click",function(){
         $(".mfp-close").trigger("click");
-    })
+    });
+
+    $(".tech-group").on("click", function () {
+       $(".technogy-wrap").hide();
+       $(".technogy-wrap."+$(this).attr('id')).show();
+    });
     
     // /*----------- 00. Right Click Disable ----------*/
     //   window.addEventListener('contextmenu', function (e) {
