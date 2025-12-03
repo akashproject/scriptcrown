@@ -4,10 +4,32 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+Route::get('aa/migrate-fresh', function() {
+            Artisan::call('migrate:fresh');
+            $output = Artisan::output();
+            dd($output);
+        });
+
+Route::get('/aa/migrate-seed', function() {
+    Artisan::call('migrate', ['--seed' => true]);
+    $output = Artisan::output();
+    dd($output);
+});
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::group(['prefix' => 'administrator'], function () {
 
     Route::group(['middleware' => ['auth','role:super-admin|admin']], function () {
+
+        //Artisan Commands
+        Route::get('/clear-cache', function() {
+            $exitCode = Artisan::call('cache:clear');
+            return 'Cache Cleared'; 
+        }); 
+
+        
+
+        
 
         Route::get('/', [App\Http\Controllers\Administrator\IndexController::class, 'dashboard'])->name('admin-dashboard');
 

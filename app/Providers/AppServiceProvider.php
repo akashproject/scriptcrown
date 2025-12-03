@@ -31,10 +31,6 @@ class AppServiceProvider extends ServiceProvider
                 'name' => "Projects",
             ),
             array(
-                'url'=>'/blog',
-                'name' => "Read & Learn",
-            ),
-            array(
                 'url'=>'/contact-us',
                 'name' => "Contact Us",
             ),

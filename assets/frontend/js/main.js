@@ -1286,8 +1286,8 @@
     });
 
     $(".tech-group").on("click", function () {
-       $(".technogy-wrap").hide();
-       $(".technogy-wrap."+$(this).attr('id')).show();
+       $(".technogy-content").hide();
+       $(".technogy-content."+$(this).attr('id')).show();
     });
     
     // /*----------- 00. Right Click Disable ----------*/

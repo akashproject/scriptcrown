@@ -282,19 +282,19 @@
                     <div class="tech-tab-container">
                         <ul class="tech-tab">
                             @foreach(getTechTypes() as $value)
-                            <li id="{{ $value->slug }}" class="tech-group"> <a href="javascript:void(0)" >{{ $value->name }} </a></li>
+                            <li id="tech_{{ $value->id }}" class="tech-group"> <a href="javascript:void(0)" >{{ $value->name }} </a></li>
                             @endforeach
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-9">
-                    @foreach(getTechTypes() as $value)
-                    <div class="technogy-wrap text-center justify-conten-center {{ $value->slug }}">
-                        @foreach(getTechnologies($value->id) as $value)
-                        <div class="technogy-content mb-2">
+                    <div class="technogy-wrap text-center">
+                    @foreach(getTechTypes() as $type)
+                        @foreach(getTechnologies($type->id) as $value)
+                        <div class="technogy-content mb-2 tech_{{ $type->id }}">
                             <a href="{{ route('technologies',$value->slug) }}" class="technology-box">
                                 <span>
-                                    <img src="{{ url('assets/frontend/img/tech/'.strtolower($value->name).'.png') }}">
+                                    <img src="{{ url('assets/frontend/img/tech/'.str_replace(' ','-',strtolower($value->name)).'.png') }}">
                                 </span>
                                 <span class="mx-2">
                                     <p> {{ $value->name }} </p>
@@ -302,8 +302,8 @@
                             </a>
                         </div>
                         @endforeach
-                    </div>
                     @endforeach
+                    </div>
                 </div>
             </div>
         </div>
