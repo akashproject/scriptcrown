@@ -22,27 +22,15 @@
 				<div class="row">
 					<div class="col-md-8" >
 						<div class="form-group row mb-3">
-							<label for="rating" class="col-sm-3 text-right control-label col-form-label">Rating</label>
+							<label for="name" class="col-sm-3 text-right control-label col-form-label">Name</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" name="rating" id="rating" placeholder="Enter Source Here" >
+								<input type="text" class="form-control" name="name" id="name" placeholder="Enter Name Here" >
 							</div>
 						</div>
 						<div class="form-group row mb-3">
-							<label for="source" class="col-sm-3 text-right control-label col-form-label">Source</label>
+							<label for="company_name" class="col-sm-3 text-right control-label col-form-label">Company Name</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" name="source" id="source" placeholder="Enter Source Here" >
-							</div>
-						</div>
-						<div class="form-group row mb-3">
-							<label for="video_link" class="col-sm-3 text-right control-label col-form-label">Video Link</label>
-							<div class="col-sm-9">
-								<input type="text" class="form-control" name="video_link" id="video_link" placeholder="Enter Source Here" >
-							</div>
-						</div>
-						<div class="form-group row mb-3">
-							<label for="description" class="col-sm-3 text-right control-label col-form-label">Description</label>
-							<div class="col-sm-9">
-								<textarea class="form-control editor" name="description"  id="mceEditor" placeholder="Enter Description Here" ></textarea>
+								<input type="text" class="form-control" name="company_name" id="company_name" placeholder="Enter Company Name Here" >
 							</div>
 						</div>
 					</div>

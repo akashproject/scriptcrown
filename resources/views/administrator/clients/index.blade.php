@@ -23,9 +23,8 @@
 					<table id="" class="table">
 						<thead>
 							<tr>
-								<th>Rating</th>
-								<th>Description</th>
-								<th>Source</th>
+								<th>Name</th>
+								<th>Company Name</th>
 								<th>Options</th>
 							</tr>
 						</thead>
@@ -33,9 +32,8 @@
 						<tbody>
 							@foreach ($clients as $value)
 							<tr>
-								<td>{{ $value->rating }}</td>													
-								<td>{{ $value->description }}</td>													
-								<td>{{ $value->source }}</td>													
+								<td>{{ $value->name }}</td>													
+								<td>{{ $value->company_name }}</td>													
 								<td>
 									<div class="d-inline-block text-nowrap">
 										@can('update')
