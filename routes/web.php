@@ -46,6 +46,13 @@ Route::group(['prefix' => 'administrator'], function () {
         Route::post('/save-technology', [App\Http\Controllers\Administrator\TechnologyController::class, 'save'])->name('admin-save-technology');
         Route::get('/delete-technology/{id}', [App\Http\Controllers\Administrator\TechnologyController::class, 'delete'])->name('admin-delete-technology');
 
+        //Technology Type
+        Route::get('/tech-types', [App\Http\Controllers\Administrator\TechTypeController::class, 'index'])->name('admin-tech-types');
+        Route::get('/add-tech-type', [App\Http\Controllers\Administrator\TechTypeController::class, 'Add'])->name('admin-add-tech-type');
+        Route::get('/show-tech-type/{id}', [App\Http\Controllers\Administrator\TechTypeController::class, 'show'])->name('admin-show-tech-type');
+        Route::post('/save-tech-type', [App\Http\Controllers\Administrator\TechTypeController::class, 'save'])->name('admin-save-tech-type');
+        Route::get('/delete-tech-type/{id}', [App\Http\Controllers\Administrator\TechTypeController::class, 'delete'])->name('admin-delete-tech-type');
+
         //Faqs
         Route::get('/faqs', [App\Http\Controllers\Administrator\FaqController::class, 'index'])->name('admin-faqs');
         Route::get('/add-faq', [App\Http\Controllers\Administrator\FaqController::class, 'add'])->name('admin-add-faq');

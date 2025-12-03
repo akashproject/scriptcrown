@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Administrator;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Technology;
+use App\Models\TechType;
 
 class TechnologyController extends Controller
 {
@@ -21,7 +22,8 @@ class TechnologyController extends Controller
 
     public function add() {
         try {
-            return view('administrator.technologies.add');
+            $techTypes = TechType::all();
+            return view('administrator.technologies.add',compact('techTypes'));
         } catch(\Illuminate\Database\QueryException $e){
             //throw $th;
         }
@@ -32,7 +34,8 @@ class TechnologyController extends Controller
     {
         try {
             $technology = Technology::findorFail($id);
-            return view('administrator.technologies.show',compact('technology'));
+            $techTypes = TechType::all();
+            return view('administrator.technologies.show',compact('technology','techTypes'));
         } catch(\Illuminate\Database\QueryException $e){
         }        
     }

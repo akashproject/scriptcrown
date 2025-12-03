@@ -66,10 +66,22 @@
             </a>
          </li>
          <li class="menu-item">
-            <a href="{{ route('admin-technologies') }}" class="menu-link">
-               <i class="menu-icon tf-icons bx bx-file"></i>
-               <div data-i18n="Technology">Technologies</div>
+            <a href="javascript:void(0)" class="menu-link menu-toggle">
+               <i class="menu-icon tf-icons bx bx-book"></i>
+               <div data-i18n="Technologies">Technologies</div>
             </a>
+            <ul class="menu-sub">
+               <li class="menu-item">
+                  <a href="{{ route('admin-technologies') }}" class="menu-link">
+                     <div data-i18n="Technologies">Technologies</div>
+                  </a>
+               </li>
+               <li class="menu-item">
+                  <a href="{{ route('admin-tech-types') }}" class="menu-link">
+                     <div data-i18n="Types">Types</div>
+                  </a>
+               </li>
+            </ul>
          </li>
          <li class="menu-item">
             <a href="{{ route('admin-pages') }}" class="menu-link">

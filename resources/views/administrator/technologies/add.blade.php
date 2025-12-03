@@ -57,6 +57,17 @@
 					</div>
 
 					<div class="col-md-5">
+						<div class="form-group row mb-2">
+							<label for="type_id" class="col-sm-3 text-left control-label col-form-label">Types</label>
+							<div class="col-sm-9">
+								<select name="type_id" id="type_id" class="select2 form-control custom-select">	
+									<option value="">Select Type</option>
+									@foreach($techTypes as $value)
+									<option value="{{ $value->id }}">{{ $value->name }}</option>
+									@endforeach
+								<select>
+							</div>
+						</div>
 						<div class="mb-2 row">
 							<label for="state" class="col-sm-3 text-left control-label col-form-label">Status</label>
 							<div class="col-sm-9">

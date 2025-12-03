@@ -158,9 +158,21 @@ if (! function_exists('getFaqsById')) {
     }
 }
 
+if (! function_exists('getTechTypes')) {
+    function getTechTypes($params = null){
+        $tech_types = DB::table('tech_types')->orderBy('name','asc')->get();
+        return $tech_types;
+    }
+}
+
 if (! function_exists('getTechnologies')) {
-    function getTechnologies($params = null){
-        $technologies = DB::table('technologies')->orderBy('name','asc')->get();
+    function getTechnologies($type_id = null){
+        $technologies = DB::table('technologies');
+        if($type_id){
+            $technologies = $technologies->where('type_id',$type_id);
+        }
+        $technologies = $technologies->orderBy('name','asc')->get();
+        
         return $technologies;
     }
 }

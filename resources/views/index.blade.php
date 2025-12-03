@@ -281,20 +281,16 @@
                 <div class="col-md-3">
                     <div class="tech-tab-container">
                         <ul class="tech-tab">
-                            <li> <a href="javascript:void(0)" >Website Backend </a></li>
-                            <li> <a href="javascript:void(0)" >Website Frontend </a></li>
-                            <li> <a href="javascript:void(0)" >Web Application </a></li>
-                            <li> <a href="javascript:void(0)" >Mobile Application </a></li>
-                            <li> <a href="javascript:void(0)" >Database </a></li>
-                            <li> <a href="javascript:void(0)" >DevOps </a></li>
-                            <li> <a href="javascript:void(0)" >Digital Marketing Tools </a></li>
-                            <li> <a href="javascript:void(0)" >Creative & Design Tools </a></li>
+                            @foreach(getTechTypes() as $value)
+                            <li> <a href="javascript:void(0)" >{{ $value->name }} </a></li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-9">
+                    @foreach(getTechTypes() as $value)
                     <div class="technogy-wrap text-center justify-conten-center">
-                        @foreach(getTechnologies() as $value)
+                        @foreach(getTechnologies($value->id) as $value)
                         <div class="technogy-content mb-2">
                             <a href="{{ route('technologies',$value->slug) }}" class="technology-box">
                                 <span>
@@ -307,12 +303,10 @@
                         </div>
                         @endforeach
                     </div>
+                    @endforeach
                 </div>
             </div>
         </div>
-        <!-- <div class="shape-mockup" data-bottom="0" data-left="0">
-            <div class="particle-2" id="particle-2"></div>
-        </div> -->
     </section>
 
     <section class="position-relative overflow-hidden project-area11 space" id="project-sec">

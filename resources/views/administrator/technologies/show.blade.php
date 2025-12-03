@@ -64,6 +64,17 @@
 
 					<div class="col-md-5">
 						<div class="mb-3 row">
+							<label for="type_id" class="col-sm-3 text-right control-label col-form-label">Select Type</label>
+							<div class="col-sm-9">
+								<select name="type_id" id="type_id" class="select2 form-control custom-select">	
+									<option value="">Select Type</option>
+									@foreach($techTypes as $value)
+									<option value="{{ $value->id }}" {{ ($technology->type_id == $value->id)?'selected':'' }}> {{ $value->name }}</option>
+									@endforeach
+								</select>
+							</div>
+						</div>	
+						<div class="mb-3 row">
 							<label for="state" class="col-sm-3 text-right control-label col-form-label">Status</label>
 							<div class="col-sm-9">
 								<select name="status" id="status" class="select2 form-control custom-select" style="width: 100%; height:36px;">	
@@ -75,7 +86,7 @@
 						</div>
 
 						<div class="mb-3 row">
-							<label for="tags" class="col-md-4 text-left control-label col-form-label">Banner Image</label>
+							<label for="tags" class="col-md-4 text-right control-label col-form-label">Banner Image</label>
 							<div class="col-sm-8 text-technology">
 								<a href="#imageBox" class="image-profile open-popup-link">
 									<img src="{{ (isset($technology->banner_image))?getSizedImage('',$technology->banner_image):'https://dummyimage.com/250x250?text=Add%20Image' }}" alt="" style="width:100%">
