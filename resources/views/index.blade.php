@@ -20,8 +20,8 @@
                                 implementation of technology. We are passionate about helping our clients achieve their
                                 goals.</p>
                             <div class="btn-group">
-                                <a href="service.html" class="th-btn style-radius text-capitalize">View All Services</a>
-                                <a href="about.html" class="th-btn style7 style-radius text-capitalize">Get In Touch</a>
+                                <a href="{{ route('page','services') }}" class="th-btn style-radius text-capitalize">View All Services</a>
+                                <a href="/ai" class="th-btn style7 style-radius text-capitalize">Ask To AI</a>
                             </div>
                         </div>
                     </div>
@@ -102,6 +102,56 @@
         </div>
     </div>
     
+    <section class="service-sec space bg-white" id="service-sec" >
+        <div class="brand-area bg-white space-bottom">
+            <div class="container th-container5">
+                <div class="title-area mb-30 text-center">
+                    <h6 class="brand-title">We’ve worked on over 200 projects with 150+ clients</h6>
+                </div>
+                <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"},"1400":{"slidesPerView":"5"}}}'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="brand-box1-1">
+                                <img src="{{ url('assets/frontend/img/brand/brand_1_1.png') }}" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box1-1">
+                                <img src="{{ url('assets/frontend/img/brand/brand_1_2.png') }}" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box1-1">
+                                <img src="{{ url('assets/frontend/img/brand/brand_1_3.png') }}" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box1-1">
+                                <img src="{{ url('assets/frontend/img/brand/brand_1_4.png') }}" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box1-1">
+                                <img src="{{ url('assets/frontend/img/brand/brand_1_5.png') }}" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box1-1">
+                                <img src="{{ url('assets/frontend/img/brand/brand_1_1.png') }}" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box1-1">
+                                <img src="{{ url('assets/frontend/img/brand/brand_1_2.png') }}" alt="Brand Logo">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="service-sec space" id="service-sec" data-bg-src="{{ url('assets/frontend/img/bg/service_bg_1.png') }}">
         <div class="container-fluid">
             <div class="row justify-content-lg-between justify-content-center align-items-center">
@@ -119,11 +169,11 @@
                 </div>
                 <div class="col-auto">
                     <div class="sec-btn">
-                        <a href="service.html" class="th-btn">VIEW ALL SERVICES<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <a href="{{ route('page','services') }}" class="th-btn">VIEW ALL SERVICES<i class="fa-regular fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
-            
+            @if(!check_device('mobile'))
             <div class="tab-container my-4">
                 @foreach(getCategories() as $value)
                 <div class="tab">
@@ -131,6 +181,7 @@
                 </div>
                 @endforeach
             </div>
+            @endif
             <div class="row">
                 @foreach(getServicesByVisibility() as $value)
                 <div class="col-md-4 col-lg-3 mb-3">
@@ -160,7 +211,7 @@
                             </div>
                         </div>
                         <div class="service-call-to-action-btn">
-                            <a href="service.html" class="th-btn width-49"><i class="fab fa-whatsapp ms-2"></i> Chat with US</a>
+                            <a href="https://api.whatsapp.com/send?phone=9831318675" class="th-btn width-49"><i class="fab fa-whatsapp ms-2"></i> Chat with US</a>
                             <a href="#lead-generate-popup" class="th-btn width-49  open-popup-link">Get Quote<i class="fa-regular fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
@@ -305,6 +356,35 @@
         </div>
     </section>
 
+    <section class="bg-bottom-right position-relative" data-bg-src="{{ url('assets/frontend/img/bg/cta_bg_1.png') }}" data-bg-color="#080E1C">
+        <div class="img-half img-left th-video2">
+            <img src="{{ url('assets/frontend/img/normal/cta_1.webp') }}" alt="video">
+            <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn popup-video"><i class="fas fa-play"></i></a>
+        </div>
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-xl-5 space">
+                    <div class="title-area mb-35">
+                        <span class="sub-title">
+                            <div class="icon-masking me-2">
+                                <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_1.svg') }}"></span>
+                                <img src="{{ url('assets/frontend/img/theme-img/title_shape_1.svg') }}" alt="shape">
+                            </div>
+                            GET BEST IT SOLUTION 2024
+                        </span>
+                        <h2 class="sec-title text-white">We Help Businesses To Achieve Their <span class="text-theme">Objectives</span></h2>
+                    </div>
+                    <p class="mt-n2 mb-30 text-white">Authoritatively build ubiquitous models vis-a-vis fully tested mindshare. Conveniently repurpose user friendly paradigms vis-a-vis out-of-the-box portals. Dramatically matrix magnetic schemas for extensive methodologies. Credibly.</p>
+                    <a href="about.html" class="th-btn style3">DISCOVER MORE<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="shape-mockup" data-bottom="0" data-right="0">
+            <div class="particle-1" id="particle-1"></div>
+        </div>
+    </section>  
+
+
     <section class="position-relative overflow-hidden project-area11 space" id="project-sec">
       <div class="container th-container4">
         <div class="row justify-content-lg-between justify-content-center align-items-center">
@@ -368,34 +448,63 @@
       </div>
     </section>
 
-    <section class="bg-bottom-right position-relative" data-bg-src="{{ url('assets/frontend/img/bg/cta_bg_1.png') }}" data-bg-color="#080E1C">
-        <div class="img-half img-left th-video2">
-            <img src="{{ url('assets/frontend/img/normal/cta_1.webp') }}" alt="video">
-            <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn popup-video"><i class="fas fa-play"></i></a>
-        </div>
-        <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-xl-5 space">
-                    <div class="title-area mb-35">
-                        <span class="sub-title">
-                            <div class="icon-masking me-2">
-                                <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_1.svg') }}"></span>
-                                <img src="{{ url('assets/frontend/img/theme-img/title_shape_1.svg') }}" alt="shape">
-                            </div>
-                            GET BEST IT SOLUTION 2024
-                        </span>
-                        <h2 class="sec-title text-white">We Help Businesses To Achieve Their <span class="text-theme">Objectives</span></h2>
-                    </div>
-                    <p class="mt-n2 mb-30 text-white">Authoritatively build ubiquitous models vis-a-vis fully tested mindshare. Conveniently repurpose user friendly paradigms vis-a-vis out-of-the-box portals. Dramatically matrix magnetic schemas for extensive methodologies. Credibly.</p>
-                    <a href="about.html" class="th-btn style3">DISCOVER MORE<i class="fa-regular fa-arrow-right ms-2"></i></a>
-                </div>
+    <div class="about-area22 position-relative space" id="about-sec" data-bg-src="{{ url('assets/frontend/img/bg/about_bg_2.jpg') }}">
+         <div class="container th-container4">
+            <div class="row">
+               <div class="col-xl-7 mb-30 mb-xl-0 ps-xl-5">
+                  <div class="img-box25 me-xl-5">
+                     <div class="img1"><img src="{{ url('assets/frontend/img/normal/about_23_1.jpg') }}" alt="About"></div>
+                     <div class="th-experience2">
+                        <h2 class="experience-year"><span class="counter-number">15</span>+</h2>
+                        <p class="experience-text">Years <span>of experience</span></p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-5">
+                  <div class="title-area mb-35 pe-xl-5 me-xl-5">
+                     <span class="sub-title sub-title8">About Us</span>
+                     <h2 class="sec-title sec-title3 text-white">We’re Awards winning Digtial <span class="text-white">Agency</span></h2>
+                  </div>
+                  <p class="sec-text5 mt-n2 mb-25 text-white fs-20">Webteck is an IT solution advisor and studyinng platform for high converting business.Sit sed suspendisse mattis dictumst pulvinar. Nunc parturient feugiat est ultrices.</p>
+                  <div class="feature-item2">
+                     <div class="box-icon"><img src="{{ url('assets/frontend/img/icon/feature_5_1.svg') }}" alt="Icon"></div>
+                     <div class="media-body">
+                        <h3 class="box-title">120+ Our Expert Team</h3>
+                     </div>
+                  </div>
+                  <div class="feature-item2">
+                     <div class="box-icon"><img src="{{ url('assets/frontend/img/icon/feature_5_2.svg') }}" alt="Icon"></div>
+                     <div class="media-body">
+                        <h3 class="box-title">250+ Award Winning</h3>
+                     </div>
+                  </div>
+                  <div class="feature-item2">
+                     <div class="box-icon"><img src="{{ url('assets/frontend/img/icon/feature_5_3.svg') }}" alt="Icon"></div>
+                     <div class="media-body">
+                        <h3 class="box-title">300+ Transparency Supports</h3>
+                     </div>
+                  </div>
+                  <div class="feature-item2">
+                     <div class="box-icon"><img src="{{ url('assets/frontend/img/icon/feature_5_4.svg') }}" alt="Icon"></div>
+                     <div class="media-body">
+                        <h3 class="box-title">24/7 customers Support</h3>
+                     </div>
+                  </div>
+                  <div class="btn-group style3 mt-40">
+                     <a href="about.html" class="th-btn btn-gradient2 style-radius">Learn More</a>
+                     <div class="feature-wrapper style5">
+                        <div class="feature-icon"><a href="tel:+2583258235"><i class="fa-solid fa-phone"></i></a></div>
+                        <div class="media-body">
+                           <span class="header-info_label">Call Now!</span>
+                           <p class="header-info_link"><a href="tel:+25632542598">(+256) 3254 2598</a></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-        <div class="shape-mockup" data-bottom="0" data-right="0">
-            <div class="particle-1" id="particle-1"></div>
-        </div>
-    </section>  
-
+         </div>
+      </div>
+      
     <div class="space-top" data-bg-src="{{ url('assets/frontend/img/bg/why_bg_1.png') }}">
         <div class="container">
             <div class="row align-items-center flex-row-reverse">

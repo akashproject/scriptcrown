@@ -136,20 +136,24 @@
         <div class="particle-1" id="particle-5"></div>
     </div>
 </footer>
+@if(check_device('mobile'))
 <div class="footer-menu">
-    <ul>
-        <li>
-            <a href="{{ route('website') }}"><i class="fa fa-home"></i> <span>  Home </span></a>
-        </li>
-        <li>
-            <a href="{{ route('page','services') }}"><i class="fa fa-handshake"></i> <span>  Services </span> </a>
-        </li>
-        <li>
-            <a href="{{ route('page','industries') }}" ><i class="fa fa-building"></i> <span>  Industries </span> </a>
-        </li>
-        <li>
-            <a href="https://api.whatsapp.com/send?phone=6290565997"><i class="fab fa-whatsapp text-green"></i> <span>  Whatsapp </span></a>
-        </li>
-        <li><a href="#" class="th-menu-toggle"><i class="far fa-bars"></i><span>  Menu </span></a> </li>
-    </ul>
+    <div class="container">
+        <ul>
+            <li>
+                <a href="{{ route('website') }}"><i class="fa fa-home"></i> <span>  Home </span></a>
+            </li>
+            <li>
+                <a href="{{ route('page','services') }}"><i class="fa fa-handshake"></i> <span>  Services </span> </a>
+            </li>
+            <li>
+                <a href="{{ route('page','industries') }}" ><i class="fa fa-building"></i> <span>  Industries </span> </a>
+            </li>
+            <li>
+                <a href="https://api.whatsapp.com/send?phone=6290565997"><i class="fab fa-whatsapp text-green"></i> <span>  Whatsapp </span></a>
+            </li>
+            <li><a href="#" class="th-menu-toggle"><i class="far fa-bars"></i><span>  Menu </span></a> </li>
+        </ul>
+    </div>
 </div>
+@endif

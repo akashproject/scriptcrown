@@ -41,19 +41,140 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                @foreach(getBusinesses() as $value)
-                <div class="col-lg-2 mb-2">
-                    <a href="" class="business-box">
-                        <img src="https://dummyimage.com/200x100" ></i>
-                        <h6> {{ $value->name }} </h6>
-                    </a>
-                </div>
-                @endforeach
+            <div class="business-box-area mt-4">
+              @foreach(getBusinesses() as $value)
+              <div class="business-box-wrap">
+                <a href="{{ route('business',$value->slug) }}" class="business-box">
+                    <img src="{{ isset($value->featured_image)?getSizedImage('',$value->featured_image):'https://dummyimage.com/200x100' }}" ></i>
+                    <h6> {{ $value->name }} </h6>
+                </a>
+              </div>
+              @endforeach
             </div>
         </div>
     </section>
 
+
+    <section class="service-area4 th-radius5 space" id="service-sec">
+        <div class="container th-container4">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="title-area text-center me-xl-5 ms-xl-5">
+                        <span class="sub-title sub-title3">Our Services</span>
+                        <h2 class="sec-title">We Provide Experts cyber security services</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-3 justify-content-between align-items-center">
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 wow fadeInRight">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_1.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details.html">Cyber Security</a></h3>
+                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
+                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 wow fadeInRight">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_2.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details.html">Data Protection</a></h3>
+                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
+                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 wow fadeInRight">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_3.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details.html">Server Security</a></h3>
+                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
+                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 wow fadeInRight">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_4.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details.html">Network Security</a></h3>
+                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
+                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 ">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_5.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details.html">Data Encryption</a></h3>
+                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
+                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_6.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details.html">Hacking Protection</a></h3>
+                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
+                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_7.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details.html">Backup & Recovery</a></h3>
+                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
+                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_8.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details.html">Cloud Security</a></h3>
+                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
+                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @if($contentMain->faqs)
     <section class="faq-area th-radius5 position-relative space overflow-hidden" id="faq-sec" data-bg-src="{{ url('/assets/frontend/img/bg/faq_bg_3.jpg') }}">
       <div class="container th-container4">
         <div class="row justify-content-center">
@@ -89,6 +210,7 @@
       <div class="shape-mockup spin d-none d-xl-block" data-top="32%" data-right="7%"><img src="{{ url('/assets/frontend/img/shape/shape_14.png') }}" alt="shape"></div>
       <div class="shape-mockup spin d-none d-xl-block" data-bottom="16%" data-right="6%"><img src="{{ url('/assets/frontend/img/shape/shape_15.png') }}" alt="shape"></div>
     </section>
+    @endif
     @endsection
 @section('script')
 @endsection

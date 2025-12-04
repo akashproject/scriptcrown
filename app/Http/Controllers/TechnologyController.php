@@ -14,7 +14,6 @@ class TechnologyController extends Controller
         if(!$contentMain) {
             abort(404);
         }
-        $contentMain->service_id = $contentMain->id;
         $utm_campaign = $contentMain->utm_campaign;
         $utm_source = $contentMain->utm_source;
 

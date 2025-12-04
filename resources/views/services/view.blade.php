@@ -54,6 +54,57 @@
         </div>
     </section>
 
+    <div class=" overflow-hidden space-bottom" id="service-sec">
+        <div class="container th-container4">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="title-area text-center">
+                        <span class="sub-title">Awesome Feature</span>
+                        <h2 class="sec-title">Our Awesome app Features</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4 justify-content-center">
+                <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
+                    <div class="feature-card style2">
+                        <div class="feature-card-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_8_1.svg') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title"><a href="service-details,html">Note Powerful and Security</a></h3>
+                        <p class="feature-card_text">Incorporate testimonials customer reviews, or social media feeds to build trust and credibility.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
+                    <div class="feature-card style2">
+                        <div class="feature-card-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_8_2.svg') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title"><a href="service-details,html">Easy Sort, Classify and Search</a></h3>
+                        <p class="feature-card_text">Testimonials incorporate customer reviews, or social media feeds to build trust and credibility.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
+                    <div class="feature-card style2">
+                        <div class="feature-card-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title"><a href="service-details,html">Collaboration and Share</a></h3>
+                        <p class="feature-card_text">Customer testimonials incorporate reviews, or social media feeds to build trust and credibility.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
+                    <div class="feature-card style2">
+                        <div class="feature-card-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title"><a href="service-details,html">Share your Data to anyone</a></h3>
+                        <p class="feature-card_text">Reviews incorporate testimonials customer, or social media feeds to build trust and credibility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="faq-area th-radius5 position-relative space overflow-hidden" id="faq-sec" data-bg-src="{{ url('/assets/frontend/img/bg/faq_bg_3.jpg') }}">
       <div class="container th-container4">
         <div class="row justify-content-center">
@@ -117,6 +168,7 @@
       <div class="shape-mockup spin d-none d-xl-block" data-top="32%" data-right="7%"><img src="{{ url('/assets/frontend/img/shape/shape_14.png') }}" alt="shape"></div>
       <div class="shape-mockup spin d-none d-xl-block" data-bottom="16%" data-right="6%"><img src="{{ url('/assets/frontend/img/shape/shape_15.png') }}" alt="shape"></div>
     </section>
+    
     @endsection
 @section('script')
 @endsection
