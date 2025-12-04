@@ -401,46 +401,18 @@
         <div class="slider-area">
           <div class="swiper th-slider" id="projectSlider10" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"2"}}}'>
             <div class="swiper-wrapper">
+            @foreach(getProjects() as $value)   
               <div class="swiper-slide">
                 <div class="project-card4">
-                  <div class="project-img"><img src="{{ url('assets/frontend/img/project/project_12_1.jpg') }}" alt="project image"></div>
+                  <div class="project-img"><img src="{{ isset($value->featured_image)?getSizedImage('',$value->featured_image):'assets/frontend/img/project/project_12_1.jpg' }}" alt="project image"></div>
                   <div class="project-content-wrap">
                     <div class="project-content"><span>Web Design</span><span>Web Design</span><span>Landing Page</span>
-                      <h3 class="box-title"><a href="project-details.html">Finance Management Landing Page Responsive Website</a></h3>
+                      <h3 class="box-title"><a href="project-details.html">{{ $value->name }} </a></h3>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="project-card4">
-                  <div class="project-img"><img src="{{ url('assets/frontend/img/project/project_12_2.jpg') }}" alt="project image"></div>
-                  <div class="project-content-wrap">
-                    <div class="project-content"><span>Web Design</span><span>Web Design</span><span>Landing Page</span>
-                      <h3 class="box-title"><a href="project-details.html">Nexacard - Digital Bank Card Responsive Page Website</a></h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="project-card4">
-                  <div class="project-img"><img src="{{ url('assets/frontend/img/project/project_12_1.jpg') }}" alt="project image"></div>
-                  <div class="project-content-wrap">
-                    <div class="project-content"><span>Web Design</span><span>Web Design</span><span>Landing Page</span>
-                      <h3 class="box-title"><a href="project-details.html">Finance Management Landing Page Responsive Website</a></h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="project-card4">
-                  <div class="project-img"><img src="{{ url('assets/frontend/img/project/project_12_2.jpg') }}" alt="project image"></div>
-                  <div class="project-content-wrap">
-                    <div class="project-content"><span>Web Design</span><span>Web Design</span><span>Landing Page</span>
-                      <h3 class="box-title"><a href="project-details.html">Nexacard - Digital Bank Card Responsive Page Website</a></h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            @endforeach
             </div>
             <div class="slider-pagination text-center"></div>
           </div>
@@ -449,106 +421,113 @@
     </section>
 
     <div class="about-area22 position-relative space" id="about-sec" data-bg-src="{{ url('assets/frontend/img/bg/about_bg_2.jpg') }}">
-         <div class="container th-container4">
-            <div class="row">
-               <div class="col-xl-7 mb-30 mb-xl-0 ps-xl-5">
-                  <div class="img-box25 me-xl-5">
-                     <div class="img1"><img src="{{ url('assets/frontend/img/normal/about_23_1.jpg') }}" alt="About"></div>
-                     <div class="th-experience2">
-                        <h2 class="experience-year"><span class="counter-number">15</span>+</h2>
-                        <p class="experience-text">Years <span>of experience</span></p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xl-5">
-                  <div class="title-area mb-35 pe-xl-5 me-xl-5">
-                     <span class="sub-title sub-title8">About Us</span>
-                     <h2 class="sec-title sec-title3 text-white">We’re Awards winning Digtial <span class="text-white">Agency</span></h2>
-                  </div>
-                  <p class="sec-text5 mt-n2 mb-25 text-white fs-20">Webteck is an IT solution advisor and studyinng platform for high converting business.Sit sed suspendisse mattis dictumst pulvinar. Nunc parturient feugiat est ultrices.</p>
-                  <div class="feature-item2">
-                     <div class="box-icon"><img src="{{ url('assets/frontend/img/icon/feature_5_1.svg') }}" alt="Icon"></div>
-                     <div class="media-body">
-                        <h3 class="box-title">120+ Our Expert Team</h3>
-                     </div>
-                  </div>
-                  <div class="feature-item2">
-                     <div class="box-icon"><img src="{{ url('assets/frontend/img/icon/feature_5_2.svg') }}" alt="Icon"></div>
-                     <div class="media-body">
-                        <h3 class="box-title">250+ Award Winning</h3>
-                     </div>
-                  </div>
-                  <div class="feature-item2">
-                     <div class="box-icon"><img src="{{ url('assets/frontend/img/icon/feature_5_3.svg') }}" alt="Icon"></div>
-                     <div class="media-body">
-                        <h3 class="box-title">300+ Transparency Supports</h3>
-                     </div>
-                  </div>
-                  <div class="feature-item2">
-                     <div class="box-icon"><img src="{{ url('assets/frontend/img/icon/feature_5_4.svg') }}" alt="Icon"></div>
-                     <div class="media-body">
-                        <h3 class="box-title">24/7 customers Support</h3>
-                     </div>
-                  </div>
-                  <div class="btn-group style3 mt-40">
-                     <a href="about.html" class="th-btn btn-gradient2 style-radius">Learn More</a>
-                     <div class="feature-wrapper style5">
-                        <div class="feature-icon"><a href="tel:+2583258235"><i class="fa-solid fa-phone"></i></a></div>
-                        <div class="media-body">
-                           <span class="header-info_label">Call Now!</span>
-                           <p class="header-info_link"><a href="tel:+25632542598">(+256) 3254 2598</a></p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+        <div class="container th-container4">
+        <div class="row">
+            <div class="col-xl-7 mb-30 mb-xl-0 ps-xl-5">
+                <div class="img-box25 me-xl-5">
+                    <div class="img1"><img src="{{ url('assets/frontend/img/normal/about_23_1.jpg') }}" alt="About"></div>
+                    <div class="th-experience2">
+                    <h2 class="experience-year"><span class="counter-number">15</span>+</h2>
+                    <p class="experience-text">Years <span>of experience</span></p>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-      
-    <div class="space-top" data-bg-src="{{ url('assets/frontend/img/bg/why_bg_1.png') }}">
-        <div class="container">
-            <div class="row align-items-center flex-row-reverse">
-                <div class="col-xxl-7 col-xl-6 mb-30 mb-xl-0">
-                    <div class="img-box2">
-                        <div class="img1">
-                            <img src="{{ url('assets/frontend/img/normal/why_1_1.jpg') }}" alt="Why">
-                        </div>
+            <div class="col-xl-5">
+                <div class="title-area mb-35 pe-xl-5 me-xl-5">
+                    <span class="sub-title sub-title8">About Us</span>
+                    <h2 class="sec-title sec-title3 text-white">We’re Awards winning Digtial <span class="text-white">Agency</span></h2>
+                </div>
+                <p class="sec-text5 mt-n2 mb-25 text-white fs-20">Webteck is an IT solution advisor and studyinng platform for high converting business.Sit sed suspendisse mattis dictumst pulvinar. Nunc parturient feugiat est ultrices.</p>
+                <div class="feature-item2">
+                    <div class="box-icon"><img src="{{ url('assets/frontend/img/icon/feature_5_1.svg') }}" alt="Icon"></div>
+                    <div class="media-body">
+                    <h3 class="box-title">120+ Our Expert Team</h3>
                     </div>
                 </div>
-                <div class="col-xxl-5 col-xl-6">
-                    <div class="title-area mb-35">
-                        <span class="sub-title">
-                            <div class="icon-masking me-2">
-                                <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_1.svg') }}"></span>
-                                <img src="{{ url('assets/frontend/img/theme-img/title_shape_1.svg') }}" alt="shape">
-                            </div>
-                            WHY CHOOSE US
-                        </span>
-                        <h2 class="sec-title">We Deal With The Aspects Professional <span class="text-theme">IT Services</span></h2>
-                    </div>
-                    <p class="mt-n2 mb-30">Collaboratively envisioneer user friendly supply chains and cross unit imperative. Authoritativel fabricate competitive resource and holistic.</p>
-                    <div class="two-column">
-                        <div class="checklist style2">
-                            <ul>
-                                <li><i class="far fa-check"></i> Big Data Analysis</li>
-                                <li><i class="far fa-check"></i> 24/7 Online Support</li>
-                                <li><i class="far fa-check"></i> Business Improvement</li>
-                            </ul>
-                        </div>
-                        <div class="checklist style2">
-                            <ul>
-                                <li><i class="far fa-check"></i> High Quality Sicurity</li>
-                                <li><i class="far fa-check"></i> 24/7 Support Team</li>
-                                <li><i class="far fa-check"></i> Easy Solutions</li>
-                            </ul>
-                        </div>
+                <div class="feature-item2">
+                    <div class="box-icon"><img src="{{ url('assets/frontend/img/icon/feature_5_2.svg') }}" alt="Icon"></div>
+                    <div class="media-body">
+                    <h3 class="box-title">250+ Award Winning</h3>
                     </div>
                 </div>
-
+                <div class="feature-item2">
+                    <div class="box-icon"><img src="{{ url('assets/frontend/img/icon/feature_5_3.svg') }}" alt="Icon"></div>
+                    <div class="media-body">
+                    <h3 class="box-title">300+ Transparency Supports</h3>
+                    </div>
+                </div>
+                <div class="feature-item2">
+                    <div class="box-icon"><img src="{{ url('assets/frontend/img/icon/feature_5_4.svg') }}" alt="Icon"></div>
+                    <div class="media-body">
+                    <h3 class="box-title">24/7 customers Support</h3>
+                    </div>
+                </div>
+                <div class="btn-group style3 mt-40">
+                    <a href="about.html" class="th-btn btn-gradient2 style-radius">Learn More</a>
+                    <div class="feature-wrapper style5">
+                    <div class="feature-icon"><a href="tel:+2583258235"><i class="fa-solid fa-phone"></i></a></div>
+                    <div class="media-body">
+                        <span class="header-info_label">Call Now!</span>
+                        <p class="header-info_link"><a href="tel:+25632542598">(+256) 3254 2598</a></p>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
+        </div>
     </div>
-
+    <section class="space" id="project-sec">
+        <div class=" overflow-hidden space-bottom" id="service-sec">
+            <div class="container th-container4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="title-area text-center">
+                            <span class="sub-title">Awesome Feature</span>
+                            <h2 class="sec-title">Our Awesome app Features</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-4 justify-content-center">
+                    <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
+                        <div class="feature-card style2">
+                            <div class="feature-card-icon">
+                                <img src="{{ url('/assets/frontend/img/icon/feature_card_8_1.svg') }}" alt="icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details,html">Note Powerful and Security</a></h3>
+                            <p class="feature-card_text">Incorporate testimonials customer reviews, or social media feeds to build trust and credibility.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
+                        <div class="feature-card style2">
+                            <div class="feature-card-icon">
+                                <img src="{{ url('/assets/frontend/img/icon/feature_card_8_2.svg') }}" alt="icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details,html">Easy Sort, Classify and Search</a></h3>
+                            <p class="feature-card_text">Testimonials incorporate customer reviews, or social media feeds to build trust and credibility.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
+                        <div class="feature-card style2">
+                            <div class="feature-card-icon">
+                                <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details,html">Collaboration and Share</a></h3>
+                            <p class="feature-card_text">Customer testimonials incorporate reviews, or social media feeds to build trust and credibility.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
+                        <div class="feature-card style2">
+                            <div class="feature-card-icon">
+                                <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details,html">Share your Data to anyone</a></h3>
+                            <p class="feature-card_text">Reviews incorporate testimonials customer, or social media feeds to build trust and credibility.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="overflow-hidden space" data-bg-src="{{ url('assets/frontend/img/bg/testi_bg_1.jpg') }}" data-overlay="overlay1" data-opacity="9">
         <div class="container z-index-common">
             <div class="row align-items-center">

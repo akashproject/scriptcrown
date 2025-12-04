@@ -31,34 +31,21 @@
 						</div>
 
 						<div class="mb-3 row">
-
 							<label for="slug" class="col-sm-3 text-right control-label col-form-label">Slug</label>
-
 							<div class="col-sm-9">
-
 								<input type="text" class="form-control" name="slug" id="slug" placeholder="Slug Here"  value="{{ $project->slug }}" >
-
 							</div>
-
 						</div>
 
 						<div class="mb-3 row">
-
 							<label for="description" class="col-sm-3 text-right control-label col-form-label">Description</label>
 							<div class="col-sm-9">
 								<textarea class="form-control editor" name="description" id="description" placeholder="Enter description Here" >{{ $project->description }}</textarea>
 							</div>
-
 						</div>
-
-						
-
 					</div>
 
 					<div class="col-md-5">
-
-					
-
 						<div class="mb-3 row">
 							<label for="state" class="col-sm-3 text-right control-label col-form-label">Enable OTP</label>
 							<div class="col-sm-9">
@@ -87,10 +74,22 @@
 									<img src="{{ (isset($project->banner_image))?getSizedImage('',$project->banner_image):'https://dummyimage.com/250x250?text=Add%20Image' }}" alt="" style="width:100%">
 									<input type="hidden" name="banner_image" id="banner_image" value="{{ $project->banner_image }}" >	
 								</a>	
-
 								@if(isset($project->banner_image))
 									<a href="javascript:void(0)" class="removeImage" style="color: #c90f0f;font-weight: 600;"> Remove Image </a>	
 								@endif					
+							</div>
+						</div>
+
+						<div class="form-group row mb-2">
+							<label for="tags" class="col-md-6 text-left control-label col-form-label">Featured Image</label>
+							<div class="col-sm-6 text-center">
+								<a href="#imageBox" class="image-profile open-popup-link" >
+									<img src="{{ (isset($project->featured_image))?getSizedImage('thumb',$project->featured_image):'https://dummyimage.com/150x150?text=Add%20Image' }}" alt="">
+									<input type="hidden" name="featured_image" id="featured_image" value="{{ $project->featured_image }}" >	
+								</a>	
+								@if(isset($project->featured_image))
+									<a href="javascript:void(0)" class="removeImage" style="color: #c90f0f;font-weight: 600;"> Remove Image </a>	
+								@endif
 							</div>
 						</div>
 					</div>
