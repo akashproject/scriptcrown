@@ -186,7 +186,12 @@ if (! function_exists('getClients')) {
 
 if (! function_exists('getTestimonials')) {
     function getTestimonials($params = null){
-        $testimonials = DB::table('testimonials')->get();
+        $testimonials = DB::table('testimonials')
+        ->join('clients', 'clients.id', '=', 'testimonials.client_id')
+        ->select('testimonials.*', 'clients.name as client_name','clients.company_name as company','clients.designation','clients.featured_image as client_image')
+        ->where('testimonials.status',"1")
+        ->distinct()
+        ->get();
         return $testimonials;
     }
 }

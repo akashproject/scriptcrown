@@ -5,13 +5,25 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('aa/migrate-fresh', function() {
-            Artisan::call('migrate:fresh');
-            $output = Artisan::output();
-            dd($output);
-        });
+    Artisan::call('migrate:fresh');
+    $output = Artisan::output();
+    dd($output);
+});
+
+Route::get('aa/migrate', function() {
+    Artisan::call('migrate');
+    $output = Artisan::output();
+    dd($output);
+});
 
 Route::get('/aa/migrate-seed', function() {
     Artisan::call('migrate', ['--seed' => true]);
+    $output = Artisan::output();
+    dd($output);
+});
+
+Route::get('/aa/migrate-rollback', function() {
+    Artisan::call('migrate:rollback', ['--step' => "1"]);
     $output = Artisan::output();
     dd($output);
 });

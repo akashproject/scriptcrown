@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
             $table->string('name',50);
-            $table->string('designation',50);
+            $table->string('designation',50)->nullable();
             $table->integer('featured_image')->nullable();
-            $table->string('company_name',50);
-            $table->string('company_logo',50);
+            $table->string('company_name',50)->nullable();
+            $table->string('company_logo',50)->nullable();
             $table->string('meta_title');
             $table->text('meta_description')->nullable();
             $table->text('schema')->nullable();

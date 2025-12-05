@@ -49,6 +49,30 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-md-4" >
+						<div class="row mb-2">
+							<label for="client_id" class="col-sm-3 text-left control-label col-form-label">Client</label>
+							<div class="col-sm-9">
+								<select name="client_id" id="client_id" class="select2 form-control custom-select">	
+									<option value="">Select Client</option>
+									@foreach(getClients() as $value)
+									<option value="{{ $value->id }}" {{ ($testimonial->client_id == $value->id)?'selected':'' }}>{{ $value->name }}</option>
+									@endforeach
+								<select>
+							</div>
+						</div>	
+						<div class="row mb-2">
+							<label for="project_id" class="col-sm-3 text-left control-label col-form-label">Project</label>
+							<div class="col-sm-9">
+								<select name="project_id" id="project_id" class="select2 form-control custom-select">	
+									<option value="">Select Project</option>
+									@foreach(getProjects() as $value)
+									<option value="{{ $value->id }}" {{ ($testimonial->project_id == $value->id)?'selected':'' }}>{{ $value->name }}</option>
+									@endforeach
+								<select>
+							</div>
+						</div>	
+					</div>
 				</div>
 				<h4 class="card-title"> Search Engine Options </h4>
 				<div class="row">

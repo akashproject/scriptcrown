@@ -5,7 +5,7 @@
 		<div class="card-body">
 		@if($techType)
 			<h5 class="card-title"> Edit Course Type #{{ $techType->id }}</h5>
-			<form class="form-horizontal" method="post" action="{{ route('admin-save-techType') }}" enctype="multipart/form-data">
+			<form class="form-horizontal" method="post" action="{{ route('admin-save-tech-type') }}" enctype="multipart/form-data">
 				@csrf
 				<div class="card-body">
 					@if ($errors->any())
@@ -145,8 +145,8 @@
 											<td>
 												{{ $value->name }}
 												<div >
-													<a href="{{ route('view-tech-type',$value->id) }}" class="">Edit</a> | 
-													<a href="{{ route('view-tech-type',$value->id) }}" class="" onclick="return confirm('Are you sure?')"; >Delete </a>
+													<a href="{{ route('admin-show-tech-type',$value->id) }}" class="">Edit</a> | 
+													<a href="{{ route('admin-delete-tech-type',$value->id) }}" class="" onclick="return confirm('Are you sure?')"; >Delete </a>
 												</div>
 											</td>												
 											<td>{{ $value->slug }}</td>

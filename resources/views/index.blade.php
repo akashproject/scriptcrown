@@ -112,17 +112,17 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="brand-box1-1">
-                                <img src="{{ url('assets/frontend/img/brand/brand_1_1.png') }}" alt="Brand Logo">
+                                <img src="{{ url('assets/frontend/img/brand/brand-logo.webp') }}" alt="Brand Logo">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand-box1-1">
-                                <img src="{{ url('assets/frontend/img/brand/brand_1_2.png') }}" alt="Brand Logo">
+                                <img src="{{ url('assets/frontend/img/brand/brand-logo.webp') }}" alt="Brand Logo">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand-box1-1">
-                                <img src="{{ url('assets/frontend/img/brand/brand_1_3.png') }}" alt="Brand Logo">
+                                <img src="{{ url('assets/frontend/img/brand/brand-logo.webp') }}" alt="Brand Logo">
                             </div>
                         </div>
                         <div class="swiper-slide">
@@ -567,8 +567,8 @@
                                                 <img src="{{ url('assets/frontend/img/testimonial/testi_1_1.jpg') }}" alt="testimonial">
                                             </div>
                                             <div class="media-body">
-                                                <h3 class="testi-card_name">Alex Farnandes</h3>
-                                                <span class="testi-card_desig">UI/UX Designer</span>
+                                                <h3 class="testi-card_name">{{ $value->client_name }}</h3>
+                                                <span class="testi-card_desig">{{ $value->designation }}</span>
                                             </div>
                                         </div>
                                         <div class="testi-card_quote">
