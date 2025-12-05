@@ -18,6 +18,8 @@ class ServiceController extends Controller
         $utm_campaign = $contentMain->utm_campaign;
         $utm_source = $contentMain->utm_source;
 
-        return view('services.view',compact('contentMain'));
+        $template = ($contentMain->template)?$contentMain->template:'default-template';
+
+        return view("services.".$template,compact('contentMain'));
     }
 }

@@ -50,6 +50,12 @@
 							
 					</div>
 					<div class="col-md-4">
+						<div class="mb-3 row">
+							<label for="template" class="col-sm-3 text-right control-label col-form-label">Template</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" name="template" id="template" placeholder="Template Here" value="default-template">
+							</div>
+						</div>	
 						<div class="form-group row mb-2">
 							<label for="category_id" class="col-sm-3 text-left control-label col-form-label">Category</label>
 							<div class="col-sm-9">

@@ -60,7 +60,14 @@
 					</div>
 
 					<div class="col-md-4">
-						<div class="form-group row mb-2">
+						<div class="mb-3 row">
+							<label for="template" class="col-sm-3 text-right control-label col-form-label">Template</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" name="template" id="template" placeholder="Template Here" value="{{ $service->template }}">
+							</div>
+						</div>	
+
+						<div class="row mb-2">
 							<label for="type_id" class="col-sm-12 text-left control-label col-form-label">Select Category</label>
 							<div class="col-sm-12">
 								<select name="type_id[]" id="type_id" class="select2 form-control custom-select">	
@@ -72,7 +79,7 @@
 							</div>
 						</div>	
 						
-						<div class="form-group row mb-2">
+						<div class="row mb-2">
 							<label for="state" class="col-sm-12 text-left control-label col-form-label">Status</label>
 							<div class="col-sm-12">
 								<select name="status" id="status" class="select2 form-control custom-select" style="width: 100%; height:36px;">	
@@ -82,7 +89,7 @@
 								</select>
 							</div>
 						</div>
-						<div class="form-group row mb-2">
+						<div class="row mb-2">
 							<label for="tags" class="col-md-6 text-left control-label col-form-label">Featured Image</label>
 							<div class="col-sm-6 text-center">
 								<a href="#imageBox" class="image-profile open-popup-link" >

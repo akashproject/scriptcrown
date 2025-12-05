@@ -12,7 +12,7 @@ class TechType extends Model
     protected $primaryKey = 'id';
 
     protected $fillable = [
-        'id','name','slug','excerpt','description','banner_image','featured_image','title','meta_description','schema','robots','utm_campaign','utm_source','status','created_at',
+        'id','name','slug','excerpt','description','banner_image','featured_image','template','title','meta_description','schema','robots','utm_campaign','utm_source','status','created_at',
     ];
 
 

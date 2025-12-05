@@ -27,10 +27,6 @@ Route::group(['prefix' => 'administrator'], function () {
             return 'Cache Cleared'; 
         }); 
 
-        
-
-        
-
         Route::get('/', [App\Http\Controllers\Administrator\IndexController::class, 'dashboard'])->name('admin-dashboard');
 
         //Category
