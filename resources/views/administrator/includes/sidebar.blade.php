@@ -61,13 +61,13 @@
          </li>
          <li class="menu-item">
             <a href="{{ route('admin-businesses') }}" class="menu-link">
-               <i class="menu-icon tf-icons bx bx-file"></i>
+               <i class="menu-icon tf-icons bx bx-hotel"></i>
                <div data-i18n="Business">Businesses</div>
             </a>
          </li>
          <li class="menu-item">
             <a href="javascript:void(0)" class="menu-link menu-toggle">
-               <i class="menu-icon tf-icons bx bx-book"></i>
+               <i class="menu-icon tf-icons bx bx-laptop"></i>
                <div data-i18n="Technologies">Technologies</div>
             </a>
             <ul class="menu-sub">
@@ -97,7 +97,7 @@
          </li>
          <li class="menu-item">
             <a href="{{ route('admin-clients') }}" class="menu-link">
-               <i class="menu-icon tf-icons bx bx-chat"></i>
+               <i class="menu-icon tf-icons bx bx-user"></i>
                <div data-i18n="Clients">Clients</div>
             </a>
          </li>

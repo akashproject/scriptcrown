@@ -24,6 +24,7 @@
 						<thead>
 							<tr>
 								<th>Name</th>
+								<th>Designation</th>
 								<th>Company Name</th>
 								<th>Options</th>
 							</tr>
@@ -33,6 +34,7 @@
 							@foreach ($clients as $value)
 							<tr>
 								<td>{{ $value->name }}</td>													
+								<td>{{ $value->designation }}</td>													
 								<td>{{ $value->company_name }}</td>													
 								<td>
 									<div class="d-inline-block text-nowrap">

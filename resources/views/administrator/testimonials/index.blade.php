@@ -34,7 +34,7 @@
 							@foreach ($testimonials as $value)
 							<tr>
 								<td>{{ $value->rating }}</td>													
-								<td>{{ $value->description }}</td>													
+								<td>{!! $value->description !!}</td>													
 								<td>{{ $value->source }}</td>													
 								<td>
 									<div class="d-inline-block text-nowrap">

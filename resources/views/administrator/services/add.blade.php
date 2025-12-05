@@ -93,10 +93,7 @@
 								<a href="#imageBox" class="image-profile open-popup-link">
 									<img src="https://dummyimage.com/150x150?text=Add%20Image" alt="">
 									<input type="hidden" name="featured_image" id="featured_image" value="" >	
-								</a>	
-								@if(isset($universityCourse->featured_image))
-									<a href="javascript:void(0)" class="removeImage" style="color: #c90f0f;font-weight: 600;"> Remove Image </a>	
-								@endif
+								</a>
 							</div>
 						</div>
 						<div class="form-group row mb-2">
@@ -105,10 +102,7 @@
 								<a href="#imageBox" class="image-profile open-popup-link">
 									<img src="https://dummyimage.com/150x150?text=Add%20Image" alt="">
 									<input type="hidden" name="banner_image" id="banner_image" value="" >	
-								</a>	
-								@if(isset($universityCourse->banner_image))
-									<a href="javascript:void(0)" class="removeImage" style="color: #c90f0f;font-weight: 600;"> Remove Image </a>	
-								@endif					
+								</a>			
 							</div>
 						</div>
 						

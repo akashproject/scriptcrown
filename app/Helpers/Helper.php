@@ -176,3 +176,17 @@ if (! function_exists('getTechnologies')) {
         return $technologies;
     }
 }
+
+if (! function_exists('getClients')) {
+    function getClients($params = null){
+        $clients = DB::table('clients')->get();
+        return $clients;
+    }
+}
+
+if (! function_exists('getTestimonials')) {
+    function getTestimonials($params = null){
+        $testimonials = DB::table('testimonials')->get();
+        return $testimonials;
+    }
+}

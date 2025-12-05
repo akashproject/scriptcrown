@@ -25,27 +25,21 @@
 				<div class="row">
 					<div class="col-md-8" >
 						<div class="form-group row mb-3">
-							<label for="rating" class="col-sm-3 text-right control-label col-form-label">Rating</label>
+							<label for="name" class="col-sm-3 text-right control-label col-form-label">Name</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" name="rating" id="rating" placeholder="Enter Source Here" value="{{ $client->rating }}" >
+								<input type="text" class="form-control" name="name" id="name" placeholder="Enter Source Here" value="{{ $client->name }}" >
 							</div>
 						</div>
 						<div class="form-group row mb-3">
-							<label for="source" class="col-sm-3 text-right control-label col-form-label">Source</label>
+							<label for="designation" class="col-sm-3 text-right control-label col-form-label">Designation</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" name="source" id="source" placeholder="Enter Source Here" value="{{ $client->source }}" >
+								<input type="text" class="form-control" name="designation" id="designation" placeholder="Enter Source Here" value="{{ $client->designation }}" >
 							</div>
 						</div>
 						<div class="form-group row mb-3">
-							<label for="video_link" class="col-sm-3 text-right control-label col-form-label">Video Link</label>
+							<label for="company_name" class="col-sm-3 text-right control-label col-form-label">Company Name</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" name="video_link" id="video_link" placeholder="Enter Source Here" value="{{ $client->video_link }}" >
-							</div>
-						</div>
-						<div class="form-group row mb-3">
-							<label for="description" class="col-sm-3 text-right control-label col-form-label">Description</label>
-							<div class="col-sm-9">
-								<textarea class="form-control editor" name="description"  id="mceEditor" placeholder="Enter Description Here" >{{ $client->description }}</textarea>
+								<input type="text" class="form-control" name="company_name" id="company_name" placeholder="Enter Source Here" value="{{ $client->company_name }}" >
 							</div>
 						</div>
 					</div>
@@ -58,6 +52,18 @@
 									<input type="hidden" name="featured_image" id="featured_image" value="{{ $client->featured_image }}" >	
 								</a>	
 								@if(isset($client->featured_image))
+									<a href="javascript:void(0)" class="removeImage" style="color: #c90f0f;font-weight: 600;"> Remove Image </a>	
+								@endif
+							</div>
+						</div>
+						<div class="row mb-2">
+							<label for="tags" class="col-md-6 text-left control-label col-form-label">Featured Image</label>
+							<div class="col-sm-6 text-center">
+								<a href="#imageBox" class="image-profile open-popup-link" >
+									<img src="{{ (isset($client->company_logo))?getSizedImage('thumb',$client->company_logo):'https://dummyimage.com/150x150?text=Add%20Image' }}" alt="">
+									<input type="hidden" name="company_logo" id="company_logo" value="{{ $client->company_logo }}" >	
+								</a>	
+								@if(isset($client->company_logo))
 									<a href="javascript:void(0)" class="removeImage" style="color: #c90f0f;font-weight: 600;"> Remove Image </a>	
 								@endif
 							</div>

@@ -48,7 +48,16 @@
 									<img src="https://dummyimage.com/150x150?text=Add%20Image" alt="">
 									<input type="hidden" name="featured_image" id="featured_image" value="" >	
 								</a>	
-								@if(isset($universityCourse->featured_image))
+							</div>
+						</div>
+						<div class=" row mb-2">
+							<label for="tags" class="col-md-6 text-left control-label col-form-label">Company Logo</label>
+							<div class="col-sm-6 text-center">
+								<a href="#imageBox" class="image-profile open-popup-link">
+									<img src="https://dummyimage.com/150x150?text=Add%20Image" alt="">
+									<input type="hidden" name="company_logo" id="company_logo" value="" >	
+								</a>	
+								@if(isset($universityCourse->company_logo))
 									<a href="javascript:void(0)" class="removeImage" style="color: #c90f0f;font-weight: 600;"> Remove Image </a>	
 								@endif
 							</div>

@@ -476,6 +476,7 @@
         </div>
         </div>
     </div>
+
     <section class="space" id="project-sec">
         <div class=" overflow-hidden space-bottom" id="service-sec">
             <div class="container th-container4">
@@ -528,6 +529,7 @@
             </div>
         </div>
     </section>
+
     <section class="overflow-hidden space" data-bg-src="{{ url('assets/frontend/img/bg/testi_bg_1.jpg') }}" data-overlay="overlay1" data-opacity="9">
         <div class="container z-index-common">
             <div class="row align-items-center">
@@ -551,12 +553,15 @@
                     <div class="testi-card-area slider-area">
                         <div class="swiper testi-card-slide th-slider" id="testiSlide1" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"1"},"1200":{"slidesPerView":"1"}}}'>
                             <div class="swiper-wrapper">
+                                @foreach(getTestimonials() as $value)
                                 <div class="swiper-slide">
                                     <div class="testi-card">
                                         <div class="testi-card_review">
-                                            <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                            @for($i = 1; $i <= $value->rating; $i++)
+                                            <i class="fa-solid fa-star-sharp"></i>
+                                            @endfor
                                         </div>
-                                        <p class="testi-card_text">“Phosfluorescently reinvent prospective metrics before granular schema. Professionally metrics before expedite client-centric methods of empow ment whereas effective solut ion.”</p>
+                                        <p class="testi-card_text"> {!! $value->description !!}</p>
                                         <div class="testi-card_profile">
                                             <div class="testi-card_avater">
                                                 <img src="{{ url('assets/frontend/img/testimonial/testi_1_1.jpg') }}" alt="testimonial">
@@ -571,66 +576,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="testi-card">
-                                        <div class="testi-card_review">
-                                            <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-                                        </div>
-                                        <p class="testi-card_text">“Dnosflu orescent reinvent prospective metrics before granular schema. Professionally metrics before expedite client-centric methods of empow ment whereas effective coverless.”</p>
-                                        <div class="testi-card_profile">
-                                            <div class="testi-card_avater">
-                                                <img src="{{ url('assets/frontend/img/testimonial/testi_1_2.jpg') }}" alt="testimonial">
-                                            </div>
-                                            <div class="media-body">
-                                                <h3 class="testi-card_name">Mariana Sonia</h3>
-                                                <span class="testi-card_desig">CEO at Corola</span>
-                                            </div>
-                                        </div>
-                                        <div class="testi-card_quote">
-                                            <img src="{{ url('assets/frontend/img/icon/quote_left.svg') }}" alt="quote">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testi-card">
-                                        <div class="testi-card_review">
-                                            <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-                                        </div>
-                                        <p class="testi-card_text">“The best service reinvent prospective metrics before granular schema. Professionally metrics before expedite client-centric methods of empow ment whereas effective turnings.”</p>
-                                        <div class="testi-card_profile">
-                                            <div class="testi-card_avater">
-                                                <img src="{{ url('assets/frontend/img/testimonial/testi_1_3.jpg') }}" alt="testimonial">
-                                            </div>
-                                            <div class="media-body">
-                                                <h3 class="testi-card_name">Abraham Khalil</h3>
-                                                <span class="testi-card_desig">UI/UX Designer</span>
-                                            </div>
-                                        </div>
-                                        <div class="testi-card_quote">
-                                            <img src="{{ url('assets/frontend/img/icon/quote_left.svg') }}" alt="quote">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testi-card">
-                                        <div class="testi-card_review">
-                                            <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-                                        </div>
-                                        <p class="testi-card_text">“Five star he reinvent prospective metrics before granular schema. Professionally metrics before expedite client-centric methods of empow ment whereas effective gotoning.”</p>
-                                        <div class="testi-card_profile">
-                                            <div class="testi-card_avater">
-                                                <img src="{{ url('assets/frontend/img/testimonial/testi_1_4.jpg') }}" alt="testimonial">
-                                            </div>
-                                            <div class="media-body">
-                                                <h3 class="testi-card_name">Alexa Jenifer</h3>
-                                                <span class="testi-card_desig">CEO at Morosto</span>
-                                            </div>
-                                        </div>
-                                        <div class="testi-card_quote">
-                                            <img src="{{ url('assets/frontend/img/icon/quote_left.svg') }}" alt="quote">
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
 
