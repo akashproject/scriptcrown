@@ -36,13 +36,13 @@
         </div>
         <div class="brand-slider8-area">
             <div class="slider-area text-center">
-                <div class="swiper th-slider brand-slider8" id="brandSlider5" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"4"},"1200":{"slidesPerView":"3"},"1400":{"slidesPerView":"5"}}}'>
+                <div class="swiper th-slider brand-slider8" id="brandSlider5" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"4.5"},"1200":{"slidesPerView":"5"},"1400":{"slidesPerView":"5"}}}'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="award-icon">
                                 <div class="varified-by"> <span> Verified By </span> </div>
                                 <div>
-                                    <img src="{{ url('assets/award/google.webp') }}" >
+                                    <img src="{{ url('assets/frontend/img/award/clutch.webp') }}" alt="Verifed by clutch Review">
                                 </div>
                                 <div class="rating-stars">
                                     <span class="rating-count"> 5.0 </span> 
@@ -60,7 +60,7 @@
                             <div class="award-icon">
                                 <div class="varified-by"> <span> Verified By </span> </div>
                                 <div>
-                                    <img src="{{ url('assets/award/google.webp') }}" >
+                                    <img src="{{ url('assets/frontend/img/award/google.webp') }}" alt="Verifed by Google Review"  >
                                 </div>
                                 <div class="rating-stars">
                                     <span class="rating-count"> 5.0 </span> 
@@ -78,7 +78,7 @@
                             <div class="award-icon">
                                 <div class="varified-by"> <span> Verified By </span> </div>
                                 <div>
-                                    <img src="{{ url('assets/award/google.webp') }}" >
+                                    <img src="{{ url('assets/frontend/img/award/upwork.webp') }}" alt="Verifed by upwork Review" >
                                 </div>
                                 <div class="rating-stars">
                                     <span class="rating-count"> 5.0 </span> 
@@ -96,7 +96,7 @@
                             <div class="award-icon">
                                 <div class="varified-by"> <span> Verified By </span> </div>
                                 <div>
-                                    <img src="{{ url('assets/award/google.webp') }}" >
+                                    <img src="{{ url('assets/frontend/img/award/goodfirms.webp') }}" alt="Verifed by goodfirms Review" >
                                 </div>
                                 <div class="rating-stars">
                                     <span class="rating-count"> 5.0 </span> 
@@ -114,7 +114,7 @@
                             <div class="award-icon">
                                 <div class="varified-by"> <span> Verified By </span> </div>
                                 <div>
-                                    <img src="{{ url('assets/award/google.webp') }}" >
+                                    <img src="{{ url('assets/frontend/img/award/freelancer.webp') }}" alt="Verifed by freelancer Review">
                                 </div>
                                 <div class="rating-stars">
                                     <span class="rating-count"> 5.0 </span> 
@@ -148,7 +148,7 @@
                 <div class="title-area mb-30 text-center">
                     <h6 class="brand-title">We’ve worked on over 200 projects with 150+ clients</h6>
                 </div>
-                <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"},"1400":{"slidesPerView":"5"}}}'>
+                <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"6"},"1400":{"slidesPerView":"5"}}}'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="brand-box1-1">
@@ -249,7 +249,7 @@
                             </div>
                         </div>
                         <div class="service-call-to-action-btn">
-                            <a href="https://api.whatsapp.com/send?phone=9831318675" class="th-btn width-49"><i class="fab fa-whatsapp ms-2"></i> Chat with US</a>
+                            <a href="https://api.whatsapp.com/send?phone=6290565997" class="th-btn width-49"><i class="fab fa-whatsapp ms-2"></i> Chat with US</a>
                             <a href="#lead-generate-popup" class="th-btn width-49  open-popup-link">Get Quote<i class="fa-regular fa-arrow-right ms-2"></i></a>
                         </div>
                     </div>
@@ -436,7 +436,7 @@
           </div>
         </div>
         <div class="slider-area">
-          <div class="swiper th-slider" id="projectSlider10" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"2"}}}'>
+          <div class="swiper th-slider" id="projectSlider10" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"3"}}}'>
             <div class="swiper-wrapper">
             @foreach(getProjects() as $project)   
               <div class="swiper-slide">

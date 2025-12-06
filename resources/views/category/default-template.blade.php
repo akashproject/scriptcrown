@@ -13,99 +13,98 @@
                     </div>
                     <div class="banner-content py-3">
                         <p>We build high-quality, responsive, and user-friendly websites tailored to your business needs. From modern UI/UX design to powerful backend development, our team delivers fast, secure, and scalable web solutions that help you grow your online presence and convert visitors into customers.</p>
-                        <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2.1},"576":{"slidesPerView":"2.4"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"3"},"1400":{"slidesPerView":"4"}}}'>
+                        <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2.1},"576":{"slidesPerView":"2.4"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"3"},"1400":{"slidesPerView":"4.3"}}}'>
                             <div class="swiper-wrapper">
-                                
                                 <div class="swiper-slide">
-                                    <div class="award-icon">
-                                        <div class="varified-by"> <span> Verified By </span> </div>
-                                        <div>
-                                            <img src="{{ url('assets/award/google.webp') }}" >
-                                        </div>
-                                        <div class="rating-stars">
-                                            <span class="rating-count"> 5.0 </span> 
-                                            <span> 
-                                                <i class="fa-solid fa-star-sharp"></i>
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                            </span> 
-                                        </div>
-                                    </div>
+                            <div class="award-icon">
+                                <div class="varified-by"> <span> Verified By </span> </div>
+                                <div>
+                                    <img src="{{ url('assets/frontend/img/award/clutch.webp') }}" alt="Verifed by clutch Review">
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="award-icon">
-                                        <div class="varified-by"> <span> Verified By </span> </div>
-                                        <div>
-                                            <img src="{{ url('assets/award/google.webp') }}" >
-                                        </div>
-                                        <div class="rating-stars">
-                                            <span class="rating-count"> 5.0 </span> 
-                                            <span> 
-                                                <i class="fa-solid fa-star-sharp"></i>
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                            </span> 
-                                        </div>
-                                    </div>
+                                <div class="rating-stars">
+                                    <span class="rating-count"> 5.0 </span> 
+                                    <span> 
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                    </span> 
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="award-icon">
-                                        <div class="varified-by"> <span> Verified By </span> </div>
-                                        <div>
-                                            <img src="{{ url('assets/award/google.webp') }}" >
-                                        </div>
-                                        <div class="rating-stars">
-                                            <span class="rating-count"> 5.0 </span> 
-                                            <span> 
-                                                <i class="fa-solid fa-star-sharp"></i>
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                            </span> 
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="award-icon">
+                                <div class="varified-by"> <span> Verified By </span> </div>
+                                <div>
+                                    <img src="{{ url('assets/frontend/img/award/google.webp') }}" alt="Verifed by Google Review"  >
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="award-icon">
-                                        <div class="varified-by"> <span> Verified By </span> </div>
-                                        <div>
-                                            <img src="{{ url('assets/award/google.webp') }}" >
-                                        </div>
-                                        <div class="rating-stars">
-                                            <span class="rating-count"> 5.0 </span> 
-                                            <span> 
-                                                <i class="fa-solid fa-star-sharp"></i>
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                            </span> 
-                                        </div>
-                                    </div>
+                                <div class="rating-stars">
+                                    <span class="rating-count"> 5.0 </span> 
+                                    <span> 
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                    </span> 
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="award-icon">
-                                        <div class="varified-by"> <span> Verified By </span> </div>
-                                        <div>
-                                            <img src="{{ url('assets/award/google.webp') }}" >
-                                        </div>
-                                        <div class="rating-stars">
-                                            <span class="rating-count"> 5.0 </span> 
-                                            <span> 
-                                                <i class="fa-solid fa-star-sharp"></i>
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                                <i class="fa-solid fa-star-sharp"></i> 
-                                            </span> 
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="award-icon">
+                                <div class="varified-by"> <span> Verified By </span> </div>
+                                <div>
+                                    <img src="{{ url('assets/frontend/img/award/upwork.webp') }}" alt="Verifed by upwork Review" >
                                 </div>
+                                <div class="rating-stars">
+                                    <span class="rating-count"> 5.0 </span> 
+                                    <span> 
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                    </span> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="award-icon">
+                                <div class="varified-by"> <span> Verified By </span> </div>
+                                <div>
+                                    <img src="{{ url('assets/frontend/img/award/goodfirms.webp') }}" alt="Verifed by goodfirms Review" >
+                                </div>
+                                <div class="rating-stars">
+                                    <span class="rating-count"> 5.0 </span> 
+                                    <span> 
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                    </span> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="award-icon">
+                                <div class="varified-by"> <span> Verified By </span> </div>
+                                <div>
+                                    <img src="{{ url('assets/frontend/img/award/freelancer.webp') }}" alt="Verifed by freelancer Review">
+                                </div>
+                                <div class="rating-stars">
+                                    <span class="rating-count"> 5.0 </span> 
+                                    <span> 
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                    </span> 
+                                </div>
+                            </div>
+                        </div>
                             </div>
 
                         </div>
