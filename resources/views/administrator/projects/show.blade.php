@@ -47,6 +47,28 @@
 
 					<div class="col-md-5">
 						<div class="mb-3 row">
+							<label for="service_id" class="col-sm-3 text-right control-label col-form-label">Services</label>
+							<div class="col-sm-9">
+								<select name="service_id[]" id="service_id" class="select2 form-control custom-select" style="width: 100%; height:200px;" multiple>	
+									<option value="">Select Service</option>
+									@foreach(getServices() as $value)
+									<option value="{{ $value->id }}" {{ (isset($project->service_id) && in_array($value->id,  json_decode($project->service_id)))?'selected' : '' }}> {{ $value->name }}</option>	
+									@endforeach
+								<select>
+							</div>
+						</div>
+						<div class="mb-3 row">
+							<label for="technology_id" class="col-sm-3 text-right control-label col-form-label">Technologies</label>
+							<div class="col-sm-9">
+								<select name="technology_id[]" id="technology_id" class="select2 form-control custom-select" style="width: 100%; height:200px;" multiple>	
+									<option value="">Select Technology</option>
+									@foreach(getTechnologies() as $value)
+									<option value="{{ $value->id }}" {{ (isset($project->technology_id) && in_array($value->id,  json_decode($project->technology_id)))?'selected' : '' }}> {{ $value->name }}</option>	
+									@endforeach
+								<select>
+							</div>
+						</div>
+						<div class="mb-3 row">
 							<label for="state" class="col-sm-3 text-right control-label col-form-label">Enable OTP</label>
 							<div class="col-sm-9">
 								<select name="enable_otp" id="enable_otp" class="select2 form-control custom-select" style="width: 100%; height:36px;">	
@@ -68,10 +90,10 @@
 						</div>
 
 						<div class="mb-3 row">
-							<label for="tags" class="col-md-4 text-left control-label col-form-label">Banner Image</label>
-							<div class="col-sm-8 text-project">
+							<label for="tags" class="col-md-4 text-right control-label col-form-label">Banner Image</label>
+							<div class="col-sm-6 text-center">
 								<a href="#imageBox" class="image-profile open-popup-link">
-									<img src="{{ (isset($project->banner_image))?getSizedImage('',$project->banner_image):'https://dummyimage.com/250x250?text=Add%20Image' }}" alt="" style="width:100%">
+									<img src="{{ (isset($project->banner_image))?getSizedImage('',$project->banner_image):'https://dummyimage.com/150x150?text=Add%20Image' }}" alt="" style="width:100%">
 									<input type="hidden" name="banner_image" id="banner_image" value="{{ $project->banner_image }}" >	
 								</a>	
 								@if(isset($project->banner_image))
@@ -81,7 +103,7 @@
 						</div>
 
 						<div class="form-group row mb-2">
-							<label for="tags" class="col-md-6 text-left control-label col-form-label">Featured Image</label>
+							<label for="tags" class="col-md-4 text-right control-label col-form-label">Featured Image</label>
 							<div class="col-sm-6 text-center">
 								<a href="#imageBox" class="image-profile open-popup-link" >
 									<img src="{{ (isset($project->featured_image))?getSizedImage('thumb',$project->featured_image):'https://dummyimage.com/150x150?text=Add%20Image' }}" alt="">

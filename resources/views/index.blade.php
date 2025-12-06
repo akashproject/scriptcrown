@@ -39,54 +39,94 @@
                 <div class="swiper th-slider brand-slider8" id="brandSlider5" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"4"},"1200":{"slidesPerView":"3"},"1400":{"slidesPerView":"5"}}}'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="about.html" class="brand-box style3">
-                                <img src="{{ url('assets/frontend/img/brand/brand_8_1.svg') }}" alt="Brand Logo">
-                            </a>
+                            <div class="award-icon">
+                                <div class="varified-by"> <span> Verified By </span> </div>
+                                <div>
+                                    <img src="{{ url('assets/award/google.webp') }}" >
+                                </div>
+                                <div class="rating-stars">
+                                    <span class="rating-count"> 5.0 </span> 
+                                    <span> 
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                    </span> 
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="about.html" class="brand-box style3">
-                                <img src="{{ url('assets/frontend/img/brand/brand_8_2.svg') }}" alt="Brand Logo">
-                            </a>
+                            <div class="award-icon">
+                                <div class="varified-by"> <span> Verified By </span> </div>
+                                <div>
+                                    <img src="{{ url('assets/award/google.webp') }}" >
+                                </div>
+                                <div class="rating-stars">
+                                    <span class="rating-count"> 5.0 </span> 
+                                    <span> 
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                    </span> 
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="about.html" class="brand-box style3">
-                                <img src="{{ url('assets/frontend/img/brand/brand_8_3.svg') }}" alt="Brand Logo">
-                            </a>
+                            <div class="award-icon">
+                                <div class="varified-by"> <span> Verified By </span> </div>
+                                <div>
+                                    <img src="{{ url('assets/award/google.webp') }}" >
+                                </div>
+                                <div class="rating-stars">
+                                    <span class="rating-count"> 5.0 </span> 
+                                    <span> 
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                    </span> 
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="about.html" class="brand-box style3">
-                                <img src="{{ url('assets/frontend/img/brand/brand_8_4.svg') }}" alt="Brand Logo">
-                            </a>
+                            <div class="award-icon">
+                                <div class="varified-by"> <span> Verified By </span> </div>
+                                <div>
+                                    <img src="{{ url('assets/award/google.webp') }}" >
+                                </div>
+                                <div class="rating-stars">
+                                    <span class="rating-count"> 5.0 </span> 
+                                    <span> 
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                    </span> 
+                                </div>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a href="about.html" class="brand-box style3">
-                                <img src="{{ url('assets/frontend/img/brand/brand_8_5.svg') }}" alt="Brand Logo">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="about.html" class="brand-box style3">
-                                <img src="{{ url('assets/frontend/img/brand/brand_8_1.svg') }}" alt="Brand Logo">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="about.html" class="brand-box style3">
-                                <img src="{{ url('assets/frontend/img/brand/brand_8_2.svg') }}" alt="Brand Logo">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="about.html" class="brand-box style3">
-                                <img src="{{ url('assets/frontend/img/brand/brand_8_3.svg') }}" alt="Brand Logo">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="about.html" class="brand-box style3">
-                                <img src="{{ url('assets/frontend/img/brand/brand_8_4.svg') }}" alt="Brand Logo">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="about.html" class="brand-box style3">
-                                <img src="{{ url('assets/frontend/img/brand/brand_8_5.svg') }}" alt="Brand Logo">
-                            </a>
+                            <div class="award-icon">
+                                <div class="varified-by"> <span> Verified By </span> </div>
+                                <div>
+                                    <img src="{{ url('assets/award/google.webp') }}" >
+                                </div>
+                                <div class="rating-stars">
+                                    <span class="rating-count"> 5.0 </span> 
+                                    <span> 
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                    </span> 
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -194,17 +234,15 @@
                                 <img src="{{ url('assets/frontend/img/icon/service_box_1.svg') }}" alt="Icon">
                             </div>
                             <h3 class="box-title"><a href="{{ route('services',$value->slug) }}">{{ $value->name }}</a></h3>
-                            <div class="service-stat">
-                                <span> 100+ Projects</span>
-                                <span> 100+ Projects</span>
-                            </div>
-                            <div class="service-stat">
-                                <span> PHP </span>
-                                <span>Wordpress</span>
-                                <span>Laravel</span>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>Javascript</span>
+                            <div class="service-tag">
+                                <div class="available-list">
+                                    <ul>
+                                        <li>Basic Modules</li>
+                                        <li>Tasks, Calls, Events</li>
+                                        <li>Email insights</li>
+                                        <li>Sales forecasting</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="bg-shape">
                                 <img src="{{ url('assets/frontend/img/bg/service_box_bg.png') }}" alt="bg">
@@ -384,7 +422,6 @@
         </div>
     </section>  
 
-
     <section class="position-relative overflow-hidden project-area11 space" id="project-sec">
       <div class="container th-container4">
         <div class="row justify-content-lg-between justify-content-center align-items-center">
@@ -401,13 +438,29 @@
         <div class="slider-area">
           <div class="swiper th-slider" id="projectSlider10" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"2"}}}'>
             <div class="swiper-wrapper">
-            @foreach(getProjects() as $value)   
+            @foreach(getProjects() as $project)   
               <div class="swiper-slide">
                 <div class="project-card4">
-                  <div class="project-img"><img src="{{ isset($value->featured_image)?getSizedImage('',$value->featured_image):'assets/frontend/img/project/project_12_1.jpg' }}" alt="project image"></div>
+                  <div class="project-img"><img src="{{ isset($project->featured_image)?getSizedImage('',$project->featured_image):'assets/frontend/img/project/project_12_1.jpg' }}" alt="project image"></div>
                   <div class="project-content-wrap">
-                    <div class="project-content"><span>Web Design</span><span>Web Design</span><span>Landing Page</span>
-                      <h3 class="box-title"><a href="project-details.html">{{ $value->name }} </a></h3>
+                    <div class="project-content">
+                      <h3 class="box-title"><a href="project-details.html">{{ $project->name }} </a></h3>
+                        @if($project->service_id)
+                        <div class="project-service" >
+                            <ul>
+                                @foreach(getServices(null,$project->service_id) as $serve_id )
+                                <li> <a href="" >Service: {{ $serve_id->name }}</a></li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endif
+                        @if($project->technology_id)
+                        <div class="project-tech">
+                            @foreach(getTechnologies(null,$project->technology_id) as $tech_id )
+                            <span> {{ $tech_id->name }}</span>
+                            @endforeach
+                        </div>
+                        @endif
                     </div>
                   </div>
                 </div>

@@ -109,10 +109,13 @@ if (! function_exists('getCategories')) {
 }
 
 if (! function_exists('getServices')) {
-    function getServices($category_id = null){
+    function getServices($category_id = null,$ids = null){
         $services = DB::table('services');
         if($category_id){
             $services = $services->where('category_id',$category_id);
+        }
+        if($ids){
+            $services = $services->whereIn('id',json_decode($ids));
         }
         $services = $services->get();
         return $services;
@@ -166,16 +169,21 @@ if (! function_exists('getTechTypes')) {
 }
 
 if (! function_exists('getTechnologies')) {
-    function getTechnologies($type_id = null){
+    function getTechnologies($type_id = null,$ids=null){
         $technologies = DB::table('technologies');
         if($type_id){
             $technologies = $technologies->where('type_id',$type_id);
+        }
+        if($ids){
+            $technologies = $technologies->whereIn('id',json_decode($ids));
         }
         $technologies = $technologies->orderBy('name','asc')->get();
         
         return $technologies;
     }
 }
+
+
 
 if (! function_exists('getClients')) {
     function getClients($params = null){

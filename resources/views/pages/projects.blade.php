@@ -38,52 +38,34 @@
           
         </div>
         <div class="row">
-            <div class="col-md-6 my-3">
+            @foreach(getProjects() as $project)   
+            <div class="col-md-4 my-3">
                 <div class="project-card4">
-                    <a href="" class="project-img"><img src="{{ url('assets/frontend/img/project/project_12_1.jpg') }}" alt="project image"></a>
-                    <div class="project-content-wrap">
+                  <div class="project-img"><img src="{{ isset($project->featured_image)?getSizedImage('',$project->featured_image):'assets/frontend/img/project/project_12_1.jpg' }}" alt="project image"></div>
+                  <div class="project-content-wrap">
                     <div class="project-content">
-                        <p> Industry : <strong> Healthcare </strong>
-                        <div>
-                            Skills : <span>Web Design</span><span>Web Design</span><span>Landing Page</span>
+                      <h3 class="box-title"><a href="project-details.html">{{ $project->name }} </a></h3>
+                        @if($project->service_id)
+                        <div class="project-service" >
+                            <ul>
+                                @foreach(getServices(null,$project->service_id) as $serve_id )
+                                <li> <a href="" >Service: {{ $serve_id->name }}</a></li>
+                                @endforeach
+                            </ul>
                         </div>
-                        <h3 class="box-title"><a href="project-details.html">Finance Management Landing Page Responsive Website</a></h3>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 my-3">
-                <div class="project-card4">
-                    <div class="project-img"><img src="{{ url('assets/frontend/img/project/project_12_2.jpg') }}" alt="project image"></div>
-                    <div class="project-content-wrap">
-                        <div class="project-content">
-                            <p> Industry : <strong> Healthcare </strong>
-                            <span>Web Design</span><span>Web Design</span><span>Landing Page</span>
-                            <h3 class="box-title"><a href="project-details.html">Nexacard - Digital Bank Card Responsive Page Website</a></h3>
+                        @endif
+                        @if($project->technology_id)
+                        <div class="project-tech">
+                            @foreach(getTechnologies(null,$project->technology_id) as $tech_id )
+                            <span> {{ $tech_id->name }}</span>
+                            @endforeach
                         </div>
+                        @endif
                     </div>
+                  </div>
                 </div>
             </div>
-            <div class="col-md-6 my-3">
-                <div class="project-card4">
-                    <div class="project-img"><img src="{{ url('assets/frontend/img/project/project_12_1.jpg') }}" alt="project image"></div>
-                    <div class="project-content-wrap">
-                    <div class="project-content"><span>Web Design</span><span>Web Design</span><span>Landing Page</span>
-                        <h3 class="box-title"><a href="project-details.html">Finance Management Landing Page Responsive Website</a></h3>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 my-3">
-                <div class="project-card4">
-                    <div class="project-img"><img src="{{ url('assets/frontend/img/project/project_12_2.jpg') }}" alt="project image"></div>
-                    <div class="project-content-wrap">
-                    <div class="project-content"><span>Web Design</span><span>Web Design</span><span>Landing Page</span>
-                        <h3 class="box-title"><a href="project-details.html">Nexacard - Digital Bank Card Responsive Page Website</a></h3>
-                    </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
       </div>
     </section>

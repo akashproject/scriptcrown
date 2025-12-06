@@ -319,6 +319,10 @@ h6 {
   width: 49%;
 }
 
+.justify-content-center {
+    justify-content: center;
+}
+
 @media (max-width: 1199px) {
 
 	.h1,
@@ -11671,7 +11675,7 @@ a.text-theme:hover,
 
 @media (max-width: 767px) {
 	.breadcumb-wrapper {
-		padding: 100px 0
+		padding: 0
 	}
 }
 
@@ -44220,17 +44224,17 @@ span.select2-selection.select2-selection--single:focus {
 }
 
 .project-card4 .project-content span {
-	position: relative;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 30px;
-	color: #1C1C25;
-	border-radius: 24px;
-	padding: 3px 20px;
-	display: inline-block;
-	background: -webkit-linear-gradient(0.04deg, #5484FF 17.55%, #642CDC 87.6%);
+    position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 5px;
+    padding: 0px 17px;
+    display: inline-block;
+    background: -webkit-linear-gradient(0.04deg, #5484FF 17.55%, #642CDC 87.6%);
 	background: linear-gradient(89.96deg, #5484FF 17.55%, #642CDC 87.6%);
-	z-index: 2
+    z-index: 2;
+    color: #1C1C25;
 }
 
 @media (max-width: 375px) {
@@ -44241,20 +44245,49 @@ span.select2-selection.select2-selection--single:focus {
 
 .project-card4 .project-content span:before {
 	content: "";
-	position: absolute;
-	inset: 1px;
-	border-radius: inherit;
-	background: #EFF1F9;
-	z-index: -1
+    position: absolute;
+    inset: 1px;
+    border-radius: inherit;
+    background: #d7dfff;
+    z-index: -1;
 }
 
 .project-card4 .box-title {
-	font-size: 36px;
+	font-size: 28px;
 	font-weight: 600;
-	margin-top: 20px;
-	margin-bottom: 0
+	margin-bottom: 20px;
+	margin-top: 0;
+	text-align: center;
 }
 
+.project-card4 .project-service ul {
+    padding: 0;
+}
+
+.project-service li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    padding-left: 22px;
+    margin-top: 10px;
+}
+
+.project-service li:after {
+	content: "\f058";
+	font-family: var(--icon-font);
+	font-weight: 600;
+	color: var(--theme-color);
+	font-size: 1.1em;
+	position: absolute;
+	top: 1px;
+	left: 0
+}
+
+.project-service li a {
+	color: #010c2e;
+}
 @media (max-width: 767px) {
 	.project-card4 .box-title {
 		font-size: 25px
