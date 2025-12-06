@@ -11616,10 +11616,37 @@ a.text-theme:hover,
   color: #fff;
 }
 
-.award-icon {
-    display: inline-block;
+.awards {
+	padding: 0;
+	margin: 0;
+}
+.varified-by {
+    text-align: left;
+    color: #000;
+    font-weight: 600;
+    font-size: 12px;
 }
 
+.award-icon {
+    display: inline-block;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    padding-top: 8px;
+	text-align: center;
+}
+
+.award-icon .rating-count {
+	font-weight: 800;
+	color: #000;
+}
+
+.award-icon .rating-stars {
+	display:  flex;
+	align-items: center;
+    gap: 7px;
+    justify-content: center;
+}
 @media (max-width: 1199px) {
 	.breadcumb-wrapper {
 		padding: 140px 0
@@ -37463,6 +37490,16 @@ span.select2-selection.select2-selection--single:focus {
 	color: var(--white-color)
 }
 
+.service-box:hover .service-tag .available-list li {
+    display: inline-flex;
+    width: 49%;
+    list-style: none;
+    color: var(--white-color)
+}
+.service-box:hover .service-tag .available-list li:after {
+    color: var(--white-color)
+}
+
 .service-box:hover .link-btn:before {
 	background-color: var(--white-color);
 	width: 100%
@@ -40796,6 +40833,18 @@ span.select2-selection.select2-selection--single:focus {
 	.available-list {
 		padding: 0
 	}
+}
+
+.service-tag .available-list {
+	padding: 0;
+}
+
+
+.service-tag .available-list li {
+    display: inline-flex;
+    width: 49%;
+    list-style: none;
+	margin: 2px 0;
 }
 
 .available-list ul {

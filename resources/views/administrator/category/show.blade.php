@@ -156,16 +156,26 @@
 										@foreach ($listCategory as $value)
 										<tr>
 											<td>
-
-												{{ $value->name }}
-												<div >
-													<a href="{{ url('administrator/view-course-type') }}/{{ $value->id }}" class="">Edit</a> | 
-													<a href="{{ url('administrator/delete-course-type') }}/{{ $value->id }}" class="" onclick="return confirm('Are you sure?')"; >Delete </a>
+												<div>
+													{{ $value->name }}
 												</div>
-											</td>												
+												<div class="d-inline-block text-nowrap">
+													<a href="{{ route('category',$value->slug) }}" class="btn btn-sm btn-icon">
+														<i class="bx bx-show"></i>
+													</a>
+													@can('update')
+													<a href="{{ route('admin-show-category',$value->id) }}" class="btn btn-sm btn-icon"><i class="bx bx-edit"></i></a>
+													@endcan
+													@can('delete')
+													<a href="{{ route('admin-delete-category',$value->id) }}" onclick="return confirm('Are you sure?')"; class="btn btn-sm btn-icon delete-record">
+														<i class="bx bx-trash"></i>
+													</a>
+													@endcan
+												</div>
+											</td>													
 											<td>{{ $value->slug }}</td>
-										</tr>
 
+										</tr>
 										@endforeach							
 									</tbody>
 								</table>

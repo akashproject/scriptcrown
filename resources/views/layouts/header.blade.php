@@ -79,7 +79,7 @@
                                         <a href="#">Services</a>
                                         <ul class="mega-menu">
                                             @foreach(getCategories() as $key => $category)
-                                            <li><a href="{{ route('page','services') }}"><span class="mr-5"><img src="{{ url('assets/frontend/img/icon/'.$category->slug.'.png') }}" alt="{{ $category->name }}" ></span><span>{{ $category->name }}</span></a>
+                                            <li><a href="{{ route('category',$category->slug) }}"><span class="mr-5"><img src="{{ url('assets/frontend/img/icon/'.$category->slug.'.png') }}" alt="{{ $category->name }}" ></span><span>{{ $category->name }}</span></a>
                                                 <ul>
                                                     @foreach(getServices($category->id) as $service)
                                                     <li><a href="{{ route('services',$service->slug) }}">{{ $service->name }} Service</a></li>
