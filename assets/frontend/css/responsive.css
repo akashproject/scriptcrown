@@ -29,6 +29,9 @@
 		--arrow-horizontal: -20px;
 		--pos-x: -70px
 	}
+	.header-layout1 .logo-bg {
+		width: 33%
+	}
 }
 
 @media (max-width: 1399px) {
@@ -49,6 +52,17 @@
 	.slider-arrow {
 		--arrow-horizontal: 40px;
 		--pos-x: -17px
+	}
+	.service-tag .available-list li {
+		width: auto;
+		margin: 2px 5px;
+	}
+	.service-tag:hover .available-list li {
+		width: auto;
+		margin: 2px 5px;
+	}
+	.th-btn {
+		padding: 14.5px 17px;
 	}
 
 }

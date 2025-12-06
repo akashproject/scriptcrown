@@ -6879,18 +6879,6 @@ a.text-theme:hover,
 	}
 }
 
-@media (max-width: 1500px) {
-	.header-layout1 .logo-bg {
-		width: 27%
-	}
-}
-
-@media (max-width: 1399px) {
-	.header-layout1 .header-button .th-btn {
-		display: none
-	}
-}
-
 @media (max-width: 1199px) {
 	.header-layout1 .logo-bg:before {
 		-webkit-clip-path: polygon(0 0, calc(100% - 50px) 0%, 100% 100%, 0% 100%);
@@ -43707,6 +43695,7 @@ span.select2-selection.select2-selection--single:focus {
 	background: linear-gradient(89.96deg, #5484FF 17.55%, #642CDC 87.6%);
     z-index: 2;
     color: #1C1C25;
+	margin: 2px 0;
 }
 
 @media (max-width: 375px) {

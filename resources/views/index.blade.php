@@ -36,7 +36,7 @@
         </div>
         <div class="brand-slider8-area">
             <div class="slider-area text-center">
-                <div class="swiper th-slider brand-slider8" id="brandSlider5" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"4.5"},"1200":{"slidesPerView":"5"},"1400":{"slidesPerView":"5"}}}'>
+                <div class="swiper th-slider brand-slider8" id="brandSlider5" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"4.5"},"1200":{"slidesPerView":"5"},"1400":{"slidesPerView":"5"}}}'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="award-icon">
@@ -148,7 +148,7 @@
                 <div class="title-area mb-30 text-center">
                     <h6 class="brand-title">We’ve worked on over 200 projects with 150+ clients</h6>
                 </div>
-                <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"6"},"1400":{"slidesPerView":"5"}}}'>
+                <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"6"},"1400":{"slidesPerView":"5"}}}'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="brand-box1-1">
