@@ -3,6 +3,9 @@
 		margin-left: auto;
 		margin-right: auto
 	}
+	.header-layout1 .logo-bg {
+		width: 37%
+	}
 }
 
 @media only screen and (max-width: 1600px) {
@@ -57,7 +60,7 @@
 		width: auto;
 		margin: 2px 5px;
 	}
-	.service-tag:hover .available-list li {
+	.service-box:hover .service-tag .available-list li {
 		width: auto;
 		margin: 2px 5px;
 	}
@@ -223,6 +226,13 @@
 	.title-line {
 		--section-title-space: 55px
 	}
+	.hero-style15 {
+		padding: 40px 0 40px 0
+	}
+	.brand-slider8-area {
+		max-width: 100%;
+		padding: 10px 20px;
+	}
 }
 
 @media (max-width: 991px) {
@@ -272,6 +282,16 @@
 	.title-line {
 		--section-title-space: 50px
 	}
+	.header-layout1 .logo-bg {
+		width: 56%
+	}
+
+	.header-layout1 .header-logo img {
+		max-height: 80px
+	}
+	.header-layout1 .logo-bg {
+        width: 76%;
+    }
 }
 
 @media (max-width: 782px) {
@@ -401,6 +421,14 @@
 	.h2,
 	h2 {
 		font-size: 28px
+	}
+	.header-logo {
+		max-width: 150px
+	}
+
+	.header-logo .icon-masking .mask-icon {
+		-webkit-mask-size: cover;
+		mask-size: cover
 	}
 
 	.post-password-form p {
