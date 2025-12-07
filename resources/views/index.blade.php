@@ -221,7 +221,6 @@
                 </div>
                 @endforeach
             </div>
-            @endif
             <div class="row">
                 @foreach(getServicesByVisibility() as $value)
                 <div class="col-md-4 col-lg-3 mb-3">
@@ -256,6 +255,46 @@
                 </div>
                 @endforeach
             </div>
+            @endif
+
+            @if(check_device('mobile'))
+                <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1.3},"576":{"slidesPerView":"1.3"},"768":{"slidesPerView":"1.3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"6"},"1400":{"slidesPerView":"5"}}}'>
+                    <div class="swiper-wrapper">
+                        @foreach(getServicesByVisibility() as $value)
+                        <div class="swiper-slide">
+                            <div class="service-box">
+                                <a href="{{ route('services',$value->slug) }}" class="service-box_img">
+                                    <img src="{{ isset($value->featured_image)?getSizedImage('',$value->featured_image):url('assets/frontend/img/service/web-development.webp') }}" alt="Icon">
+                                </a>
+                                <div class="service-box_content">
+                                    <div class="service-box_icon">
+                                        <img src="{{ url('assets/frontend/img/icon/service_box_1.svg') }}" alt="Icon">
+                                    </div>
+                                    <h3 class="box-title"><a href="{{ route('services',$value->slug) }}">{{ $value->name }}</a></h3>
+                                    <div class="service-tag">
+                                        <div class="available-list">
+                                            <ul>
+                                                <li>Basic Modules</li>
+                                                <li>Tasks, Calls, Events</li>
+                                                <li>Email insights</li>
+                                                <li>Sales forecasting</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="bg-shape">
+                                        <img src="{{ url('assets/frontend/img/bg/service_box_bg.png') }}" alt="bg">
+                                    </div>
+                                </div>
+                                <div class="service-call-to-action-btn">
+                                    <a href="https://api.whatsapp.com/send?phone=6290565997" class="th-btn th-btn-service-mobile width-49"><i class="fab fa-whatsapp ms-2"></i> Chat with US</a>
+                                    <a href="#lead-generate-popup" class="th-btn width-49  open-popup-link">Get Quote<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+            @endif
         </div>
     </section>
 
