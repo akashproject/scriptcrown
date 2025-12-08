@@ -15,7 +15,7 @@
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a class="icon-masking" href="{{ url('/') }}"><span data-mask-src="{{ url('/assets/logo/logo-small.png') }}" class="mask-icon"></span><img style="width: 31%;" src="{{ url('/assets/logo/logo-small.png') }}" alt="Webteck"></a>
+                <a class="icon-masking" href="{{ url('/') }}"><span data-mask-src="{{ url('/assets/logo/logo-small.png') }}" class="mask-icon"></span><img src="{{ url('/assets/logo/logo-small.png') }}" alt="Webteck"></a>
             </div>
             <div class="th-mobile-menu">
                 <ul>
@@ -74,12 +74,15 @@
                         <div class="col-auto">
                             <nav class="main-menu d-none d-lg-inline-block">
                                 <ul>
-                                    
                                     <li class="menu-item-has-children mega-menu-wrap">
-                                        <a href="#">Services</a>
+                                        <a href="{{ route('page','services') }}">Services</a>
                                         <ul class="mega-menu">
                                             @foreach(getCategories() as $key => $category)
-                                            <li><a href="{{ route('category',$category->slug) }}"><span class="mr-5"><img src="{{ url('assets/frontend/img/icon/'.$category->slug.'.png') }}" alt="{{ $category->name }}" ></span><span>{{ $category->name }}</span></a>
+                                            <li>
+                                                <a href="{{ route('category',$category->slug) }}">
+                                                    <span class="mr-5"><img src="{{ url('assets/frontend/img/icon/'.$category->slug.'.png') }}" alt="{{ $category->name }}" > 
+                                                    </span><span>{{ $category->name }}</span>
+                                                </a>
                                                 <ul>
                                                     @foreach(getServices($category->id) as $service)
                                                     <li><a href="{{ route('services',$service->slug) }}">{{ $service->name }} Service</a></li>

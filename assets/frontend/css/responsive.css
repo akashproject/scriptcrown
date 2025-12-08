@@ -233,6 +233,13 @@
 		max-width: 100%;
 		padding: 10px 20px;
 	}
+	.business-box-wrap {
+		display: inline-block;
+		width: 16%;
+	}
+	.technogy-content {
+		width: 32%;
+	}
 }
 
 @media (max-width: 991px) {
@@ -298,6 +305,14 @@
 	}
 	.service-box .box-title {
 		margin-bottom: 12px;
+		font-size: 20px;
+	}
+	.business-box-wrap {
+		display: inline-block;
+		width: 24%;
+	}
+	.technogy-content {
+		width: 48%;
 	}
 }
 
@@ -307,7 +322,14 @@
 	.logged-in .preloader .th-btn {
 		top: 46px
 	}
+
+	.business-box-wrap {
+		width: 24%;
+	}
 	
+	.technogy-content {
+		width: 44%;
+	}
 }
 
 @media (max-width: 768px) {
@@ -317,6 +339,12 @@
 
 	.page--content.clearfix+.th-comment-form {
 		margin-top: 24px
+	}
+	.mobile-logo .icon-masking {
+    	width: 80%;
+	}
+	.technogy-content {
+		width: 47%;
 	}
 }
 
@@ -384,7 +412,7 @@
 		li{
 			list-style: none;
 			display: inline-block;
-			width: 18%;
+			width: 17%;
 			text-align: center;
 			a{
 			i{
@@ -430,12 +458,13 @@
 		font-size: 28px
 	}
 	.header-logo {
-		max-width: 150px
+		max-width: 220px
 	}
 
 	.header-logo .icon-masking .mask-icon {
 		-webkit-mask-size: cover;
-		mask-size: cover
+		mask-size: cover;
+		background: none;
 	}
 
 	.post-password-form p {
@@ -516,9 +545,13 @@
 	.th-mobile-menu>ul {
 		padding: 0 20px
 	}
+	.hero-style15 .hero-title {
+		font-size: 30px;
+		line-height: 40px
+	}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 390px) {
 
 	.h1,
 	h1 {
@@ -526,6 +559,9 @@
 	}
 	.th-btn.style-radius {
 		padding: 18px 25px
+	}
+	.th-btn {
+		min-width: 127px;
 	}
 	.sub-title.sub-title2.style1::before {
 		display: none
@@ -536,4 +572,40 @@
 	.shadow-title {
 		font-size: 40px
 	}
+	.technogy-content {
+        display: inline-block;
+        margin: 0 3px;
+        width: 47%;
+    }
+	.technogy-content span {
+		width: 50%;
+	}
+	.technology-box p {
+		font-size: 12px;
+	}
+	.service-box_content {
+		padding: 0;
+	}
+	.service-call-to-action-btn {
+		display: flex;
+	}
+	.service-call-to-action-btn a {
+		font-size: 13px;
+	}
+	.service-box .box-title {
+        margin-bottom: 5px;
+    }
+	.service-box_icon {
+		height: 68px;
+	}
+	.available-list ul {
+		padding: 0;
+		margin-bottom: 10px;
+		text-align: left;
+		padding-left: 15px;
+	}
+	.service-tag .available-list li {
+        margin: 0 5px;
+	}
 }
+

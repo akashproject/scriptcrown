@@ -3578,7 +3578,6 @@ hr.title-line {
 	height: 100%;
 	width: 100%;
 	mix-blend-mode: hue;
-	background: var(--theme-color);
 	top: 0
 }
 
@@ -14768,10 +14767,7 @@ ul.comment-list .th-comment-item:first-child>.th-post-comment {
 }
 
 @media (max-width: 375px) {
-	.hero-style15 .hero-title {
-		font-size: 30px;
-		line-height: 40px
-	}
+	
 }
 
 .hero-style15 .hero-text {

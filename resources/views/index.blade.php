@@ -36,7 +36,7 @@
         </div>
         <div class="brand-slider8-area">
             <div class="slider-area text-center">
-                <div class="swiper th-slider brand-slider8" id="brandSlider5" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"4.5"},"1200":{"slidesPerView":"5"},"1400":{"slidesPerView":"5"}}}'>
+                <div class="swiper th-slider brand-slider8" id="brandSlider5" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3.5"},"992":{"slidesPerView":"4.5"},"1200":{"slidesPerView":"5"},"1400":{"slidesPerView":"5"}}}'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="award-icon">
@@ -148,7 +148,7 @@
                 <div class="title-area mb-30 text-center">
                     <h6 class="brand-title">We’ve worked on over 200 projects with 150+ clients</h6>
                 </div>
-                <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"6"},"1400":{"slidesPerView":"5"}}}'>
+                <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"4"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"6"},"1400":{"slidesPerView":"5"}}}'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="brand-box1-1">
@@ -223,7 +223,7 @@
             </div>
             <div class="row">
                 @foreach(getServicesByVisibility() as $value)
-                <div class="col-md-4 col-lg-3 mb-3">
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-3">
                     <div class="service-box">
                         <a href="{{ route('services',$value->slug) }}" class="service-box_img">
                             <img src="{{ isset($value->featured_image)?getSizedImage('',$value->featured_image):url('assets/frontend/img/service/web-development.webp') }}" alt="Icon">
@@ -258,7 +258,7 @@
             @endif
 
             @if(check_device('mobile'))
-                <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1.3},"576":{"slidesPerView":"1.3"},"768":{"slidesPerView":"1.3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"6"},"1400":{"slidesPerView":"5"}}}'>
+                <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1.3},"576":{"slidesPerView":"1.3"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"6"},"1400":{"slidesPerView":"5"}}}'>
                     <div class="swiper-wrapper">
                         @foreach(getServicesByVisibility() as $value)
                         <div class="swiper-slide">
@@ -402,7 +402,7 @@
                 </div>
             </div>  
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-5 col-lg-4 col-xl-3">
                     <div class="tech-tab-container">
                         <ul class="tech-tab">
                             @foreach(getTechTypes() as $value)
@@ -411,7 +411,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-7 col-lg-8 col-xl-9">
                     <div class="technogy-wrap text-center">
                     @foreach(getTechTypes() as $type)
                         @foreach(getTechnologies($type->id) as $value)
@@ -475,7 +475,7 @@
           </div>
         </div>
         <div class="slider-area">
-          <div class="swiper th-slider" id="projectSlider10" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"3"}}}'>
+          <div class="swiper th-slider" id="projectSlider10" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1.2},"576":{"slidesPerView":"1.2"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"}}}'>
             <div class="swiper-wrapper">
             @foreach(getProjects() as $project)   
               <div class="swiper-slide">
