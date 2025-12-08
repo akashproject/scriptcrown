@@ -1,6 +1,6 @@
 @extends('layouts.main')
     @section('content')
-    <div class="breadcumb-wrapper " data-bg-src="{{ url('assets/frontend/img/service/service-inner-banner.webp') }}">
+     <div class="breadcumb-wrapper " data-bg-src="{{ url('assets/frontend/img/service/service-inner-banner.webp') }}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
@@ -13,11 +13,100 @@
                     </div>
                     <div class="banner-content py-3">
                         <p>We build high-quality, responsive, and user-friendly websites tailored to your business needs. From modern UI/UX design to powerful backend development, our team delivers fast, secure, and scalable web solutions that help you grow your online presence and convert visitors into customers.</p>
-                        <div>
-                            <span class="mx-2 award-icon"><img src="https://dummyimage.com/100" ></span>
-                            <span class="mx-2 award-icon"><img src="https://dummyimage.com/100" ></span>
-                            <span class="mx-2 award-icon"><img src="https://dummyimage.com/100" ></span>
-                            <span class="mx-2 award-icon"><img src="https://dummyimage.com/100" ></span>
+                        <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2.1},"576":{"slidesPerView":"2.4"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4.5"},"1400":{"slidesPerView":"4.3"}}}'>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                            <div class="award-icon">
+                                <div class="varified-by"> <span> Verified By </span> </div>
+                                <div>
+                                    <img src="{{ url('assets/frontend/img/award/clutch.webp') }}" alt="Verifed by clutch Review">
+                                </div>
+                                <div class="rating-stars">
+                                    <span class="rating-count"> 5.0 </span> 
+                                    <span> 
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                    </span> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="award-icon">
+                                <div class="varified-by"> <span> Verified By </span> </div>
+                                <div>
+                                    <img src="{{ url('assets/frontend/img/award/google.webp') }}" alt="Verifed by Google Review"  >
+                                </div>
+                                <div class="rating-stars">
+                                    <span class="rating-count"> 5.0 </span> 
+                                    <span> 
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                    </span> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="award-icon">
+                                <div class="varified-by"> <span> Verified By </span> </div>
+                                <div>
+                                    <img src="{{ url('assets/frontend/img/award/upwork.webp') }}" alt="Verifed by upwork Review" >
+                                </div>
+                                <div class="rating-stars">
+                                    <span class="rating-count"> 5.0 </span> 
+                                    <span> 
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                    </span> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="award-icon">
+                                <div class="varified-by"> <span> Verified By </span> </div>
+                                <div>
+                                    <img src="{{ url('assets/frontend/img/award/goodfirms.webp') }}" alt="Verifed by goodfirms Review" >
+                                </div>
+                                <div class="rating-stars">
+                                    <span class="rating-count"> 5.0 </span> 
+                                    <span> 
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                    </span> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="award-icon">
+                                <div class="varified-by"> <span> Verified By </span> </div>
+                                <div>
+                                    <img src="{{ url('assets/frontend/img/award/freelancer.webp') }}" alt="Verifed by freelancer Review">
+                                </div>
+                                <div class="rating-stars">
+                                    <span class="rating-count"> 5.0 </span> 
+                                    <span> 
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                        <i class="fa-solid fa-star-sharp"></i> 
+                                    </span> 
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -25,9 +114,57 @@
             </div>
         </div>
     </div>
-<!--==============================
-About Area  
-==============================-->
+
+    <section class="service-sec space bg-white" id="service-sec" >
+        <div class="brand-area bg-white space-bottom">
+            <div class="container th-container5">
+                <div class="title-area mb-30 text-center">
+                    <h6 class="brand-title">We’ve worked on over 200 projects with 150+ clients</h6>
+                </div>
+                <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"4"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"6"},"1400":{"slidesPerView":"5"}}}'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="brand-box1-1">
+                                <img src="{{ url('assets/frontend/img/brand/brand-logo.webp') }}" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box1-1">
+                                <img src="{{ url('assets/frontend/img/brand/brand-logo.webp') }}" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box1-1">
+                                <img src="{{ url('assets/frontend/img/brand/brand-logo.webp') }}" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box1-1">
+                                <img src="{{ url('assets/frontend/img/brand/brand_1_4.png') }}" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box1-1">
+                                <img src="{{ url('assets/frontend/img/brand/brand_1_5.png') }}" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box1-1">
+                                <img src="{{ url('assets/frontend/img/brand/brand_1_1.png') }}" alt="Brand Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="brand-box1-1">
+                                <img src="{{ url('assets/frontend/img/brand/brand_1_2.png') }}" alt="Brand Logo">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="overflow-hidden space" id="about-sec">
         <div class="container">
             <div class="row align-items-center">
@@ -93,9 +230,74 @@ About Area
                 </div>
             </div>
         </div>
-    </div><!--==============================
-Team Area  
-==============================-->
+    </div>
+    
+    <div class="position-relative overflow-hidden space">
+        <div class="container th-container4">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="title-area text-center">
+                        <span class="sub-title">our Feature</span>
+                        <h2 class="sec-title">Explore the defining attributes</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-wrap9 style2">
+                <div class="row gy-5 justify-content-center justify-content-lg-between align-items-center">
+                    <div class="col-xl-6">
+                        <div class="feature-thumb12_wrapp">
+                            <div class="feature-thumb12-1">
+                                <img src="{{ url('assets/frontend/img/normal/feature-img-12-1.png') }}" alt="img">
+                            </div>
+                            <div class="feature-thumb12-2 movingX">
+                                <img src="{{ url('assets/frontend/img/normal/feature-img-12-2.png') }}" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="feature9-content pe-xl-5">
+                            <h1 class="feature-content-title mb-20">Comprehensive Analytics Integration</h1>
+                            <p class="mb-40">We seamlessly integrate industry-leading analytics tools like Google Analytics
+                                to track website traffic, user behavior, and conversions.We seamlessly integrate
+                                industry-leading analytics tools like Google Analytics to track website traffic.</p>
+                            <div class="btn-wrap">
+                                <a href="about.html" class="th-btn style-radius text-capitalize">view details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 pt-20 pb-20">
+                        <hr class="feature-line mt-0">
+                    </div>
+                    <div class="col-xl-6 order-lg-4">
+                        <div class="feature-thumb12_wrapp">
+                            <div class="feature-thumb12-3">
+                                <img src="{{ url('assets/frontend/img/normal/feature-img-12-3.png') }}" alt="img">
+                            </div>
+                            <div class="feature-thumb12-4 movingX">
+                                <img src="{{ url('assets/frontend/img/normal/feature-img-12-4.png') }}" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="feature9-content pe-xl-5">
+                            <h1 class="feature-content-title mb-20">Tailored reports for diverse analytical needs</h1>
+                            <p class="mb-40">Creating captivating content that resonates with target audiences, while
+                                strategically aligning with brand objectives and values. Utilizing data-driven insights to
+                                optimize content performance and drive meaningful audience interactions.</p>
+                            <div class="btn-wrap">
+                                <a href="about.html" class="th-btn style-radius text-capitalize">view details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="shape-mockup body-shape-content d-none d-xl-block" data-top="50%" data-right="1%">
+            <h4 class="shepe-text style3">Feature</h4>
+        </div>
+    </div>
+
     <section class="team-sec space">
         <div class="container z-index-common">
             <div class="title-area text-center">
@@ -514,254 +716,6 @@ Feature Area
         <div class="shape-mockup jump d-none d-xl-block" data-top="20%" data-right="2%"><img src="{{ url('assets/frontend/img/shape/line_2.png') }}" alt="shape"></div>
     </section>
 
-    <section class="bg-top-right overflow-hidden space-bottom" id="blog-sec" data-bg-src="{{ url('assets/frontend/img/bg/blog_bg_1.png') }}">
-        <div class="container space-bottom">
-            <div class="title-area text-center">
-                <span class="sub-title">
-                    <div class="icon-masking me-2">
-                        <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_1.svg') }}"></span>
-                        <img src="{{ url('assets/frontend/img/theme-img/title_shape_1.svg') }}" alt="shape">
-                    </div>
-                    NEWS & ARTICLES
-                </span>
-                <h2 class="sec-title">Get Every Single Update <span class="text-theme">Blog</span></h2>
-            </div>
-
-            <div class="slider-area">
-                <div class="swiper th-slider has-shadow" id="blogSlider1" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img">
-                                    <img src="{{ url('assets/frontend/img/blog/blog_1_1.jpg') }}" alt="blog image">
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta">
-                                        <a href="blog.html"><i class="fal fa-calendar-days"></i>15 Jan, 2024</a>
-                                        <a href="blog.html"><i class="fal fa-comments"></i>2 Comments</a>
-                                    </div>
-                                    <h3 class="box-title"><a href="blog-details.html">Unsatiable entreaties may collecting Power.</a></h3>
-                                    <div class="blog-bottom">
-                                        <a href="blog.html" class="author"><img src="{{ url('assets/frontend/img/blog/author-1-1.png') }}" alt="avater"> By Themeholy</a>
-                                        <a href="blog-details.html" class="line-btn">Read More<i class="fas fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img">
-                                    <img src="{{ url('assets/frontend/img/blog/blog_1_2.jpg') }}" alt="blog image">
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta">
-                                        <a href="blog.html"><i class="fal fa-calendar-days"></i>16 Jan, 2024</a>
-                                        <a href="blog.html"><i class="fal fa-comments"></i>3 Comments</a>
-                                    </div>
-                                    <h3 class="box-title"><a href="blog-details.html">Regional Manager & limited time management.</a></h3>
-                                    <div class="blog-bottom">
-                                        <a href="blog.html" class="author"><img src="{{ url('assets/frontend/img/blog/author-1-1.png') }}" alt="avater"> By Themeholy</a>
-                                        <a href="blog-details.html" class="line-btn">Read More<i class="fas fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img">
-                                    <img src="{{ url('assets/frontend/img/blog/blog_1_3.jpg') }}" alt="blog image">
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta">
-                                        <a href="blog.html"><i class="fal fa-calendar-days"></i>17 Jan, 2024</a>
-                                        <a href="blog.html"><i class="fal fa-comments"></i>2 Comments</a>
-                                    </div>
-                                    <h3 class="box-title"><a href="blog-details.html">What’s the Holding Back the It Solution Industry?</a></h3>
-                                    <div class="blog-bottom">
-                                        <a href="blog.html" class="author"><img src="{{ url('assets/frontend/img/blog/author-1-1.png') }}" alt="avater"> By Themeholy</a>
-                                        <a href="blog-details.html" class="line-btn">Read More<i class="fas fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img">
-                                    <img src="{{ url('assets/frontend/img/blog/blog_1_4.jpg') }}" alt="blog image">
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta">
-                                        <a href="blog.html"><i class="fal fa-calendar-days"></i>19 Jan, 2024</a>
-                                        <a href="blog.html"><i class="fal fa-comments"></i>4 Comments</a>
-                                    </div>
-                                    <h3 class="box-title"><a href="blog-details.html">Latin derived from Cicero's 1st-century BC</a></h3>
-                                    <div class="blog-bottom">
-                                        <a href="blog.html" class="author"><img src="{{ url('assets/frontend/img/blog/author-1-1.png') }}" alt="avater"> By Themeholy</a>
-                                        <a href="blog-details.html" class="line-btn">Read More<i class="fas fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img">
-                                    <img src="{{ url('assets/frontend/img/blog/blog_1_1.jpg') }}" alt="blog image">
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta">
-                                        <a href="blog.html"><i class="fal fa-calendar-days"></i>15 Jan, 2024</a>
-                                        <a href="blog.html"><i class="fal fa-comments"></i>2 Comments</a>
-                                    </div>
-                                    <h3 class="box-title"><a href="blog-details.html">Unsatiable entreaties may collecting Power.</a></h3>
-                                    <div class="blog-bottom">
-                                        <a href="blog.html" class="author"><img src="{{ url('assets/frontend/img/blog/author-1-1.png') }}" alt="avater"> By Themeholy</a>
-                                        <a href="blog-details.html" class="line-btn">Read More<i class="fas fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img">
-                                    <img src="{{ url('assets/frontend/img/blog/blog_1_2.jpg') }}" alt="blog image">
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta">
-                                        <a href="blog.html"><i class="fal fa-calendar-days"></i>16 Jan, 2024</a>
-                                        <a href="blog.html"><i class="fal fa-comments"></i>3 Comments</a>
-                                    </div>
-                                    <h3 class="box-title"><a href="blog-details.html">Regional Manager & limited time management.</a></h3>
-                                    <div class="blog-bottom">
-                                        <a href="blog.html" class="author"><img src="{{ url('assets/frontend/img/blog/author-1-1.png') }}" alt="avater"> By Themeholy</a>
-                                        <a href="blog-details.html" class="line-btn">Read More<i class="fas fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img">
-                                    <img src="{{ url('assets/frontend/img/blog/blog_1_3.jpg') }}" alt="blog image">
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta">
-                                        <a href="blog.html"><i class="fal fa-calendar-days"></i>17 Jan, 2024</a>
-                                        <a href="blog.html"><i class="fal fa-comments"></i>2 Comments</a>
-                                    </div>
-                                    <h3 class="box-title"><a href="blog-details.html">What’s the Holding Back the It Solution Industry?</a></h3>
-                                    <div class="blog-bottom">
-                                        <a href="blog.html" class="author"><img src="{{ url('assets/frontend/img/blog/author-1-1.png') }}" alt="avater"> By Themeholy</a>
-                                        <a href="blog-details.html" class="line-btn">Read More<i class="fas fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="blog-card">
-                                <div class="blog-img">
-                                    <img src="{{ url('assets/frontend/img/blog/blog_1_4.jpg') }}" alt="blog image">
-                                </div>
-                                <div class="blog-content">
-                                    <div class="blog-meta">
-                                        <a href="blog.html"><i class="fal fa-calendar-days"></i>19 Jan, 2024</a>
-                                        <a href="blog.html"><i class="fal fa-comments"></i>4 Comments</a>
-                                    </div>
-                                    <h3 class="box-title"><a href="blog-details.html">Latin derived from Cicero's 1st-century BC</a></h3>
-                                    <div class="blog-bottom">
-                                        <a href="blog.html" class="author"><img src="{{ url('assets/frontend/img/blog/author-1-1.png') }}" alt="avater"> By Themeholy</a>
-                                        <a href="blog-details.html" class="line-btn">Read More<i class="fas fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <button data-slider-prev="#blogSlider1" class="slider-arrow style3 slider-prev"><i class="far fa-arrow-left"></i></button>
-                <button data-slider-next="#blogSlider1" class="slider-arrow style3 slider-next"><i class="far fa-arrow-right"></i></button>
-            </div>
-        </div>
-        <div class="container">
-            <div class="slider-area text-center">
-                <div class="swiper th-slider" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"},"1400":{"slidesPerView":"5"}}}'>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="brand-box">
-                                <img src="{{ url('assets/frontend/img/brand/brand_1_1.png') }}" alt="Brand Logo">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box">
-                                <img src="{{ url('assets/frontend/img/brand/brand_1_2.png') }}" alt="Brand Logo">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box">
-                                <img src="{{ url('assets/frontend/img/brand/brand_1_3.png') }}" alt="Brand Logo">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box">
-                                <img src="{{ url('assets/frontend/img/brand/brand_1_4.png') }}" alt="Brand Logo">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box">
-                                <img src="{{ url('assets/frontend/img/brand/brand_1_5.png') }}" alt="Brand Logo">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box">
-                                <img src="{{ url('assets/frontend/img/brand/brand_1_6.png') }}" alt="Brand Logo">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box">
-                                <img src="{{ url('assets/frontend/img/brand/brand_1_1.png') }}" alt="Brand Logo">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box">
-                                <img src="{{ url('assets/frontend/img/brand/brand_1_2.png') }}" alt="Brand Logo">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box">
-                                <img src="{{ url('assets/frontend/img/brand/brand_1_3.png') }}" alt="Brand Logo">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box">
-                                <img src="{{ url('assets/frontend/img/brand/brand_1_4.png') }}" alt="Brand Logo">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box">
-                                <img src="{{ url('assets/frontend/img/brand/brand_1_5.png') }}" alt="Brand Logo">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box">
-                                <img src="{{ url('assets/frontend/img/brand/brand_1_6.png') }}" alt="Brand Logo">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-        <div class="shape-mockup" data-bottom="0" data-left="0">
-            <div class="particle-2 small" id="particle-4"></div>
-        </div>
-    </section>
     @endsection
 @section('script')
 @endsection

@@ -54,6 +54,50 @@
         </div>
     </section>
 
+    <section class="space">
+      <div class="container">
+        <h3 class="h4 mb-20">Benefits With Our Service</h3>
+        <div class="service-feature-wrap">
+            <div class="service-feature">
+                <div class="service-feature_icon">
+                    <img src="{{ url('assets/frontend/img/icon/service_feature_1.svg') }}" alt="icon">
+                </div>
+                <div class="media-body">
+                    <h4 class="service-feature_title">Flexible Solutions</h4>
+                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                </div>
+            </div>
+            <div class="service-feature">
+                <div class="service-feature_icon">
+                    <img src="{{ url('assets/frontend/img/icon/service_feature_2.svg') }}" alt="icon">
+                </div>
+                <div class="media-body">
+                    <h4 class="service-feature_title">24/7 Unlimited Support</h4>
+                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                </div>
+            </div>
+            <div class="service-feature">
+                <div class="service-feature_icon">
+                    <img src="{{ url('assets/frontend/img/icon/service_feature_1.svg') }}" alt="icon">
+                </div>
+                <div class="media-body">
+                    <h4 class="service-feature_title">Flexible Solutions</h4>
+                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                </div>
+            </div>
+            <div class="service-feature">
+                <div class="service-feature_icon">
+                    <img src="{{ url('assets/frontend/img/icon/service_feature_2.svg') }}" alt="icon">
+                </div>
+                <div class="media-body">
+                    <h4 class="service-feature_title">24/7 Unlimited Support</h4>
+                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
     <div class=" overflow-hidden space-bottom" id="service-sec">
         <div class="container th-container4">
             <div class="row justify-content-center">

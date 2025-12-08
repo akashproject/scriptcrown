@@ -18,3 +18,10 @@ DM Steps - 1 : SIte Audit
 6 - Meta Title and desc
 7 - keyword research - "google suggest, trends"
 9 - content from gemini perplexcity
+
+
+// website section
+
+* case study slider
+
+* Key Features in Business detail page

@@ -385,7 +385,7 @@
         </div>
     </section>
 
-    <section class="team-sec space" id="technology-sec">
+    <section class="space" id="technology-sec">
         <div class="container z-index-common">
             <div class="row justify-content-lg-between justify-content-center align-items-center">
                 <div class="col-lg-6 col-sm-9 pe-xl-5">
