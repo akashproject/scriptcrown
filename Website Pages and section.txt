@@ -1,0 +1,59 @@
+Website Pages and section
+
+Homepage
+    * Banner
+    * Companies
+    * Services
+    * Businesses
+    * how to flow
+    * TEchnologies
+    * Video content
+    * Projects
+    * About 
+    * Key Highlight
+    * Reviees
+    * From
+    * Faq
+
+About Us
+    *Banner 
+    * Awards
+    *Companies
+    * Key Features
+    * Quote
+    * Mision vision
+    * Success Stories
+    * On Going Projects
+    * Reviews
+    * Contact Ribbon
+
+All Services
+    *Banner 
+    * Category wise list
+    * Our Key Fretures
+    * USP
+    * Reviews
+    * Form
+    * Faqs
+
+Category Page
+    * Banner 
+    * Service list
+    * Our Key Fretures
+    * USP
+    * Reviews
+    * Form
+    * Faqs
+
+Service Detail Page
+    * Banner
+    * Our Key Fretures
+    * Our Approch
+    * Recent Projects
+    * Rebon
+    * Highlight
+    * Tchnologies an Tools
+    * Form
+    * Faqs
+
+Business List

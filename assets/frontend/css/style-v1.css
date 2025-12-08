@@ -3810,7 +3810,9 @@ hr.title-line {
 }
 
 .text-theme {
-	color: var(--theme-color) !important
+    color: var(--theme-color) !important;
+    display: inline-flex;
+    align-items: center;
 }
 
 .text-title {

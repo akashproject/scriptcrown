@@ -6,19 +6,9 @@
                 <div class="row">
                     <div class="col-xl-7">
                         <div class="hero-style15">
-                            <span class="sub-title">
-                                <div class="icon-masking me-2">
-                                    <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_3.svg') }}"></span>
-                                    <img src="{{ url('assets/frontend/img/theme-img/title_shape_3.svg') }}" alt="shape">
-                                </div>Welcome to Webteck
-                            </span>
-                            <h1 class="hero-title">Empowering Businesses Through <span class="text-theme">Technology</span>
+                            <h1 class="hero-title">Accelerate Your Growth with <span class="text-theme"><img src="{{ url('assets/frontend/img/ai-model.png') }}" alt="Gen AI Solution">AI Solutions</span>
                             </h1>
-                            <p class="hero-text">Webteck is a leading IT agency dedicated to empowering businesses through
-                                the
-                                strategic
-                                implementation of technology. We are passionate about helping our clients achieve their
-                                goals.</p>
+                            <p class="hero-text">SC Technologies We provide end-to-end web development, mobile apps, and cloud strategies to help your business scale effortlessly.</p>
                             <div class="btn-group">
                                 <a href="{{ route('page','services') }}" class="th-btn style-radius text-capitalize">View All Services</a>
                                 <a href="/ai" class="th-btn style7 style-radius text-capitalize">Ask To AI</a>
@@ -146,7 +136,7 @@
         <div class="brand-area bg-white space-bottom">
             <div class="container th-container5">
                 <div class="title-area mb-30 text-center">
-                    <h6 class="brand-title">We’ve worked on over 200 projects with 150+ clients</h6>
+                    <h6 class="brand-title">Trusted by innovators, big and small, across 30+ countries</h6>
                 </div>
                 <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"4"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"6"},"1400":{"slidesPerView":"5"}}}'>
                     <div class="swiper-wrapper">
@@ -202,9 +192,9 @@
                                 <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
                                 <img src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}" alt="shape">
                             </div>
-                            WHAT WE DO
+                            Select Service
                         </span>
-                        <h2 class="sec-title">We Provide Exclusive Service For <span class="text-theme fw-normal">Your Business</span></h2>
+                        <h2 class="sec-title">Choose our expert services to elevate <span class="text-theme fw-normal">Your Business</span></h2>
                     </div>
                 </div>
                 <div class="col-auto">
@@ -308,9 +298,8 @@
                                 <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
                                 <img src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}" alt="shape">
                             </div>
-                            WHAT WE DO
                         </span>
-                        <h2 class="sec-title">We Provide Exclusive Service For <span class="text-theme fw-normal">Your Business</span></h2>
+                        <h2 class="sec-title">Select Your Business Category <span class="text-theme fw-normal"></span></h2>
                     </div>
                 </div>
             </div>
