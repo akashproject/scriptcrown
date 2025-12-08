@@ -25,6 +25,130 @@
             </div>
         </div>
     </div>
+
+    <section class="service-area4 th-radius5 space" id="service-sec">
+        <div class="container th-container4">
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="title-area text-left me-xl-5 ms-xl-5">
+                        <h2 class="sec-title">Professional {{ $contentMain->name }} Service</h2>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="title-area text-left me-xl-5 ms-xl-5">
+                        <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-3 justify-content-between align-items-center">
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 wow fadeInRight">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_1.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details.html">Cyber Security</a></h3>
+                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
+                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 wow fadeInRight">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_2.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details.html">Data Protection</a></h3>
+                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
+                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 wow fadeInRight">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_3.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details.html">Server Security</a></h3>
+                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
+                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 wow fadeInRight">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_4.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details.html">Network Security</a></h3>
+                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
+                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 ">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_5.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details.html">Data Encryption</a></h3>
+                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
+                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_6.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details.html">Hacking Protection</a></h3>
+                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
+                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_7.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details.html">Backup & Recovery</a></h3>
+                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
+                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_8.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title"><a href="service-details.html">Cloud Security</a></h3>
+                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
+                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="space" id="business-sec">
         <div class="container">
             <div class="row justify-content-lg-between justify-content-center align-items-center">
@@ -54,6 +178,68 @@
         </div>
     </section>
 
+    <section class="bg-smoke" id="process-sec" data-bg-src="assets/img/bg/process_bg_1.png">
+        <div class="container space">
+            <div class="title-area text-center">
+                <div class="shadow-title">PROCESS</div>
+                <span class="sub-title">
+                    <div class="icon-masking me-2">
+                        <span class="mask-icon" data-mask-src="assets/img/theme-img/title_shape_2.svg"></span>
+                        <img src="assets/img/theme-img/title_shape_2.svg" alt="shape">
+                    </div>
+                    WORK PROCESS
+                </span>
+                <h2 class="sec-title">How to work <span class="text-theme">it!</span></h2>
+            </div>
+            <div class="process-card-area">
+                <div class="process-line">
+                    <img src="assets/img/bg/process_line.svg" alt="line">
+                </div>
+                <div class="row gy-40">
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">01</div>
+                            <div class="process-card_icon">
+                                <img src="assets/img/icon/process_card_1.svg" alt="icon">
+                            </div>
+                            <h2 class="box-title">Select a project</h2>
+                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">02</div>
+                            <div class="process-card_icon">
+                                <img src="assets/img/icon/process_card_2.svg" alt="icon">
+                            </div>
+                            <h2 class="box-title">Project analysis</h2>
+                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">03</div>
+                            <div class="process-card_icon">
+                                <img src="assets/img/icon/process_card_3.svg" alt="icon">
+                            </div>
+                            <h2 class="box-title">Plan Execute</h2>
+                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">04</div>
+                            <div class="process-card_icon">
+                                <img src="assets/img/icon/process_card_4.svg" alt="icon">
+                            </div>
+                            <h2 class="box-title">Deliver result</h2>
+                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><
     <section class="space">
       <div class="container">
         <h3 class="h4 mb-20">Benefits With Our Service</h3>
