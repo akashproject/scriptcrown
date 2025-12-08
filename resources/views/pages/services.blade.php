@@ -32,7 +32,7 @@
                 <div class="title-area mb-30 text-center">
                     <h6 class="brand-title">We’ve worked on over 200 projects with 150+ clients</h6>
                 </div>
-                <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4"},"1400":{"slidesPerView":"5"}}}'>
+                <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"3"},"900":{"slidesPerView":"4"},"1200":{"slidesPerView":"5"},"1400":{"slidesPerView":"5"}}}'>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="brand-box1-1">
@@ -87,14 +87,14 @@
                                 <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
                                 <img src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}" alt="shape">
                             </div>
-                            Choose your service
+                            Choose {{ $category->name }} service
                         </span>
                         <h2 class="sec-title">  {{ $category->name }} For<span class="text-theme fw-normal"> Your Business</span></h2>
                     </div>
                 </div>
             </div>
             
-            <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1.3},"576":{"slidesPerView":"1.3"},"768":{"slidesPerView":"1.3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"6"},"1400":{"slidesPerView":"5.3"}}}'>
+            <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1.3},"576":{"slidesPerView":"1.3"},"768":{"slidesPerView":"1.3"},"900":{"slidesPerView":"2.5"},"1200":{"slidesPerView":"3"},"1366":{"slidesPerView":"4.2"},"1400":{"slidesPerView":"5.3"}}}'>
                 <div class="swiper-wrapper">
                     @foreach(getServices($category->id) as $value)
                     <div class="swiper-slide">
@@ -122,7 +122,7 @@
                                 </div>
                             </div>
                             <div class="service-call-to-action-btn">
-                                <a href="https://api.whatsapp.com/send?phone=6290565997" class="th-btn th-btn-service-mobile width-49"><i class="fab fa-whatsapp ms-2"></i> Chat with US</a>
+                                <a href="https://api.whatsapp.com/send?phone=6290565997" class="th-btn th-btn-service-mobile width-49"><i class="fab fa-whatsapp ms-2"></i> Let's Chat</a>
                                 <a href="#lead-generate-popup" class="th-btn width-49  open-popup-link">Get Quote<i class="fa-regular fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
