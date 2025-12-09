@@ -41,13 +41,13 @@
             
             <div class="form-footer" >
                 <a href="" class="th-btn style3 shadow-none">
-                    <span class="eduhive-btn__icon"><i class="icon-right-up"></i></span>
+                    <i class="fas fa-arrow-left ms-1"></i>
                     <span> Previous</span>
                 </a>
                 <div class="form-next">
                     <button type="submit" class="th-btn style3 shadow-none">
                         <span> NEXT</span>
-                        <span class="eduhive-btn__icon"><i class="icon-right-up"></i></span>
+                        <i class="fas fa-arrow-right ms-1"></i>
                     </button>
                 </div>
             </div>

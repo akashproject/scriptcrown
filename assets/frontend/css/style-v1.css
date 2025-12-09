@@ -49221,21 +49221,22 @@ span.select2-selection.select2-selection--single:focus {
   margin:0 5px;
 }
 .business-box {
-  border: 1px solid #d1d1d1;
-  border-radius: 12px;
-  text-align: center;
-  display: block;
-  overflow: hidden;
-  background: #140c3e;
+    border: 1px solid #d1d1d1;
+    border-radius: 12px;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    padding: 20px 0;
+    background: #fff;
 }
 .business-box:hover {
     transform: scale(1.2);
 }
 .business-box h6 {
-  font-size: 16px;
-  padding: 5px 0;
-  margin: 0;
-  color: #fff;
+    font-size: 16px;
+    padding: 5px 0;
+    margin: 0;
+    color: #140c3e;
 }
 
 .tech-tab-container {
