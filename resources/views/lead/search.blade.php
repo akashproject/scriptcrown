@@ -31,23 +31,53 @@
                     <span > X </span>
                 </div>
             </div>
+            
+            
             <div class="container">
-                <div class="row">
-                    <div class="col-6 justify-content-center text-center mx-auto">
-                        <img src="{{ url('assets/frontend/img/search.png') }}" alt="Image" class="img-fluid mb-3">
-                        <h4 class="mb-4"> Thanks for sharing what you need help with. Can you tell us more about the goals you're aiming to accomplish or any specific needs? </h4>
+                <div class="display-none step-1">
+                    <div class="row">
+                        <div class="col-xl-6 col-sm-12 col-md-12 justify-content-center text-center mx-auto">
+                            <img src="{{ url('assets/frontend/img/search.png') }}" alt="Image" class="img-fluid mb-3">
+                            <h4 class="mb-4"> Thanks for sharing what you need help with. Can you tell us more about the goals you're aiming to accomplish or any specific needs? </h4>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <h6>Select Business Type</h6>
+                    </div>
+                    <div class="business-box-area mt-4">
+                        @foreach(getBusinesses() as $value)
+                        <div class="business-box-wrap">
+                            <a href="{{ route('business',$value->slug) }}" class="business-box">
+                                <img src="{{ isset($value->featured_image)?getSizedImage('',$value->featured_image):'https://dummyimage.com/200x100' }}" ></i>
+                                <h6> {{ $value->name }} </h6>
+                            </a>
+                        </div>
+                        @endforeach
                     </div>
                 </div>
-                <div class="business-box-area mt-4">
-                    @foreach(getBusinesses() as $value)
-                    <div class="business-box-wrap">
-                        <a href="{{ route('business',$value->slug) }}" class="business-box">
-                            <img src="{{ isset($value->featured_image)?getSizedImage('',$value->featured_image):'https://dummyimage.com/200x100' }}" ></i>
-                            <h6> {{ $value->name }} </h6>
-                        </a>
+
+                <div class="display-none step-2">
+                    <div class="row">
+                        <div class="col-xl-6 col-sm-12 col-md-12 justify-content-center text-center mx-auto">
+                            <img src="{{ url('assets/frontend/img/search.png') }}" alt="Image" class="img-fluid mb-3">
+                            <h4 class="mb-4"> Can you tell us more about service ? </h4>
+                        </div>
                     </div>
-                    @endforeach
+                    <div class="text-left">
+                        <h6>Select Business Type</h6>
+                    </div>
+                    <div class="business-box-area mt-4">
+                        @foreach(getBusinesses() as $value)
+                        <div class="business-box-wrap">
+                            <a href="{{ route('business',$value->slug) }}" class="business-box">
+                                <img src="{{ isset($value->featured_image)?getSizedImage('',$value->featured_image):'https://dummyimage.com/200x100' }}" ></i>
+                                <h6> {{ $value->name }} </h6>
+                            </a>
+                        </div>
+                        @endforeach
+                    </div>
                 </div>
+                
             </div>
             
             <div class="form-footer" >

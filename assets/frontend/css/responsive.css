@@ -397,7 +397,7 @@
 	}
     .business-box-wrap {
         display: inline-block;
-        width: 49%;
+        width: 32%;
     }
 	.footer-menu{
 		display: block;
@@ -536,6 +536,13 @@
 	.sub-title.sub-title5::before,
 	.sub-title.sub-title5:after {
 		display: none
+	}
+	.business-box {
+        min-height: 123px;
+		padding: 10px 0;
+    }
+	.business-box h6 {
+		font-size: 14px;
 	}
 }
 
