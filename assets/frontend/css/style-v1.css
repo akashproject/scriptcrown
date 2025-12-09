@@ -49319,10 +49319,62 @@ ul.tech-tab li a {
     overflow: hidden;
 }
 .leadModelBody {
-    padding: 0px 0px 20px 20px;
+    padding: 0;
 }
 
 .fa-star-sharp {
 	color:#e6cb1e
 }
 /* Form */
+
+/* Search */
+.popular-search-term p {
+    padding: 0;
+    margin: 0;
+}
+.search-term-list {
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 6px 0;
+    font-size: 14px;
+    border-radius: 5px;
+    color: #333;
+    background: #dde5ff7d;
+}
+
+.page-form .form-header {
+    background: #fff;
+    padding: 17px;
+    display: flex;
+    box-shadow: 1px 1px 13px 4px #eee;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.page-form .form-footer {
+    background: #fff;
+    padding: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+.page-form .form-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    padding: 12px 20px;
+    box-shadow: 1px 1px 10px #1616161a;
+    z-index: 60;
+}
+
+.page-form .form-footer .form-next {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
+}

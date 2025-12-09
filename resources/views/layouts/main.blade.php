@@ -71,8 +71,11 @@
     @include('layouts.footer')
 
     <div id="lead-generate-popup" class="white-popup mfp-hide">
-            @include('common.leadCaptureForm')
-        </div>
+        @include('common.leadCaptureForm')
+    </div>
+    <div id="lead-generate-popup-full-screen" class="white-popup mfp-hide">
+        @include('common.leadCaptureForm')
+    </div>
     <script>
         let globalUrl = "{{ env("APP_URL") }}"
         let isAjaxSubmit = "{{ get_theme_setting('ajax_submit') }}"

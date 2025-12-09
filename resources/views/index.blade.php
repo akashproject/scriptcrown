@@ -11,7 +11,6 @@
                             <p class="hero-text">SC Technologies We provide end-to-end web development, mobile apps, and cloud strategies to help your business scale effortlessly.</p>
                            
                             <div class="btn-group">
-                                <a href="{{ route('page','services') }}" class="th-btn style-radius text-capitalize">Demo For Free CRM</a>
                                 <div class="about-client-box style2 mb-sm-0 mb-3">
                                     <div class="client-thumb-group">
                                         <div class="thumb"><img src="{{ url('assets/frontend/img/testimonial/client-img-1-1.png') }}" alt="avater"></div>
@@ -28,22 +27,24 @@
                                 </div>
                             </div>
 
-                             <div class="search-group my-3">
-                                <form action="">
-                                    @csrf
-                                    <div class="row">
-                                        <div class="col-lg-12 mb-2">
+                            <div class="search-group my-3">
+                                <form action="{{ route('search-keyword') }}" method="get">
+                                    <div class="search-form">
+                                        <div class="search-form-input mb-2">
                                             <div class="form-floating mb-2">
                                                 <input type="text" class="form-control" id="search_query" name="search_query" placeholder="Enter Your Name" required>
-                                                <label for="name">What do you need</label>
+                                                <label for="name">What do you need?</label>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 mb-2">
-                                            <div class="popular-search-term"></div>
-                                                <p> Popular Searchs </p>
-                                                <span> How to Build Website </span>  <span> Improve my sales </span> <span> Build E-commerce website </span>     
-                                            </div>
+                                        <div class="search-form-btn mb-2">
+                                            <button type="submit" class="icon-btn style-radius text-capitalize"><i class="fas fa-search" ></i></button>
                                         </div>
+                                    </div>
+                                    <div class="popular-search-term">
+                                        <p> Popular Searchs </p>
+                                        <a href="javascript:void(0)" class="search-term-list">How to Build Website</a>
+                                        <a href="javascript:void(0)" class="search-term-list">Improve my sales</a>
+                                        <a href="javascript:void(0)"class="search-term-list">Build E-commerce website</a> 
                                     </div>
                                 </form>
                             </div>
