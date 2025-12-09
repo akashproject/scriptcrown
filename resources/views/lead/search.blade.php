@@ -2,6 +2,11 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <title>{{ isset($contentMain->title)?$contentMain->title:'Web Development | Best Website Designing | ScriptCrown' }}</title>
+    <link rel="canonical" href="{{url()->current()}}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{{ asset('assets/frontend/img/favicon/favicon.ico') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +33,12 @@
             </div>
             <div class="container">
                 <div class="row">
+                    <div class="col-6 justify-content-center text-center mx-auto">
+                        <img src="{{ url('assets/frontend/img/search.png') }}" alt="Image" class="img-fluid mb-3">
+                        <h4 class="mb-4"> Thanks for sharing what you need help with. Can you tell us more about the goals you're aiming to accomplish or any specific needs? </h4>
+                    </div>
+                </div>
+                <div class="business-box-area mt-4">
                     @foreach(getBusinesses() as $value)
                     <div class="business-box-wrap">
                         <a href="{{ route('business',$value->slug) }}" class="business-box">

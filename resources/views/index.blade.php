@@ -37,7 +37,7 @@
                                             </div>
                                         </div>
                                         <div class="search-form-btn mb-2">
-                                            <button type="submit" class="icon-btn style-radius text-capitalize"><i class="fas fa-search" ></i></button>
+                                            <button type="submit" class="th-btn form-submit-btn text-capitalize"> Find Here</button>
                                         </div>
                                     </div>
                                     <div class="popular-search-term">

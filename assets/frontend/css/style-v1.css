@@ -49340,7 +49340,7 @@ ul.tech-tab li a {
     font-size: 14px;
     border-radius: 5px;
     color: #333;
-    background: #dde5ff7d;
+    background: #d6e0ff;
 }
 
 .page-form .form-header {
@@ -49378,4 +49378,21 @@ ul.tech-tab li a {
     align-items: center;
     gap: 16px;
     margin-left: auto;
+}
+
+/* Banner Search */
+.search-group {
+    max-width: 80%;
+}
+.search-form {
+    display: flex;
+    justify-content: space-between;
+}
+.search-form-input{
+    width: 91%;
+}
+.search-group .search-form .form-submit-btn {
+    padding: 19px 0;
+    font-size: 20px;
+    background: #b50c0c;
 }
