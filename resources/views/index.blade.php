@@ -9,9 +9,43 @@
                             <h1 class="hero-title">Accelerate Your Growth with <span class="text-theme"><img src="{{ url('assets/frontend/img/ai-model.png') }}" alt="Gen AI Solution">AI Solutions</span>
                             </h1>
                             <p class="hero-text">SC Technologies We provide end-to-end web development, mobile apps, and cloud strategies to help your business scale effortlessly.</p>
+                           
                             <div class="btn-group">
-                                <a href="{{ route('page','services') }}" class="th-btn style-radius text-capitalize">View All Services</a>
-                                <a href="/ai" class="th-btn style7 style-radius text-capitalize">Ask To AI</a>
+                                <a href="{{ route('page','services') }}" class="th-btn style-radius text-capitalize">Demo For Free CRM</a>
+                                <div class="about-client-box style2 mb-sm-0 mb-3">
+                                    <div class="client-thumb-group">
+                                        <div class="thumb"><img src="{{ url('assets/frontend/img/testimonial/client-img-1-1.png') }}" alt="avater"></div>
+                                        <div class="thumb"><img src="{{ url('assets/frontend/img/testimonial/client-img-1-2.png') }}" alt="avater"></div>
+                                        <div class="thumb"><img src="{{ url('assets/frontend/img/testimonial/client-img-1-3.png') }}" alt="avater"></div>
+                                    </div>
+                                    <div class="cilent-box">
+                                        <div class="about_review">
+                                            <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
+                                        </div>
+                                        <h4 class="cilent-box_counter"><span class="counter-number">2960</span>+ Client
+                                            Reviews</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <div class="search-group my-3">
+                                <form action="">
+                                    @csrf
+                                    <div class="row">
+                                        <div class="col-lg-12 mb-2">
+                                            <div class="form-floating mb-2">
+                                                <input type="text" class="form-control" id="search_query" name="search_query" placeholder="Enter Your Name" required>
+                                                <label for="name">What do you need</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 mb-2">
+                                            <div class="popular-search-term"></div>
+                                                <p> Popular Searchs </p>
+                                                <span> How to Build Website </span>  <span> Improve my sales </span> <span> Build E-commerce website </span>     
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

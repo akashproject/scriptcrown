@@ -18,6 +18,7 @@ class AppServiceProvider extends ServiceProvider
      * Register any application services.
      */
     private $primaryMenu;
+    private $formData;
     public function register(): void
     {
         //
@@ -39,6 +40,12 @@ class AppServiceProvider extends ServiceProvider
         App::singleton('primaryMenu', function () {
             return $this->primaryMenu;
         });
+
+        // $ip = request()->ip();
+
+        // $location = json_decode(file_get_contents("http://ip-api.com/json/{$ip}"));
+        // dd($location);
+        
     }
 
     /**

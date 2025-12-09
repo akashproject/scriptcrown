@@ -126,6 +126,13 @@ Route::group(['prefix' => 'administrator'], function () {
         Route::post('/save-testimonial', [App\Http\Controllers\Administrator\TestimonialController::class, 'save'])->name('admin-save-testimonial');
         Route::get('/delete-testimonial/{id}', [App\Http\Controllers\Administrator\TestimonialController::class, 'delete'])->name('admin-delete-testimonial');
 
+        //Leads
+        Route::get('/leads', [App\Http\Controllers\Administrator\LeadController::class, 'index'])->name('admin-leads');
+        Route::get('/add-lead', [App\Http\Controllers\Administrator\LeadController::class, 'Add'])->name('admin-add-lead');
+        Route::get('/view-lead/{id}', [App\Http\Controllers\Administrator\LeadController::class, 'show'])->name('admin-show-lead');
+        Route::post('/save-lead', [App\Http\Controllers\Administrator\LeadController::class, 'save'])->name('admin-save-lead');
+        Route::get('/delete-lead/{id}', [App\Http\Controllers\Administrator\LeadController::class, 'delete'])->name('admin-delete-lead');
+
         Route::get('/settings', [App\Http\Controllers\Administrator\SettingController::class, 'show'])->name('admin-settings');
         Route::post('/save-settings', [App\Http\Controllers\Administrator\SettingController::class, 'save'])->name('admin-save-settings');
     });

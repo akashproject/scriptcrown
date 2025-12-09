@@ -35,6 +35,12 @@
                <div data-i18n="Settings">Media Library</div>
             </a>
          </li>
+          <li class="menu-item">
+            <a href="{{ route('admin-leads') }}" class="menu-link">
+               <i class="menu-icon tf-icons bx bx-chat"></i>
+               <div data-i18n="Leads">Leads</div>
+            </a>
+         </li>
          <li class="menu-item">
             <a href="javascript:void(0)" class="menu-link menu-toggle">
                <i class="menu-icon tf-icons bx bx-book"></i>
