@@ -1290,29 +1290,16 @@
        $(".technogy-content."+$(this).attr('id')).show();
     });
     
-    // /*----------- 00. Right Click Disable ----------*/
-    //   window.addEventListener('contextmenu', function (e) {
-    //     // do something here... 
-    //     e.preventDefault();  
-    //   }, false); 
+    $("#search-form").validate({
+        messages: {
+            search_query: {
+                required: "Tell us about your project.",
+            }
+        }
+    });
 
-    // /*----------- 00. Inspect Element Disable ----------*/
-    //   document.onkeydown = function (e) {
-    //     if (event.keyCode == 123) {
-    //       return false;
-    //     }
-    //     if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-    //       return false;
-    //     }
-    //     if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-    //       return false;
-    //     }
-    //     if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-    //       return false;
-    //     }
-    //     if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-    //       return false;
-    //     }
-    //   } 
+    $(".search-term-list").on("click",function(){
+        $("#search_query").val($(this).text());
+    });
     
 })(jQuery);

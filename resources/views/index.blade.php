@@ -28,7 +28,7 @@
                             </div>
 
                             <div class="search-group my-3">
-                                <form action="{{ route('search-keyword') }}" method="get">
+                                <form action="{{ route('search-keyword') }}" id="search-form" method="get">
                                     <div class="search-form">
                                         <div class="search-form-input mb-2">
                                             <div class="form-floating mb-2">
@@ -37,7 +37,8 @@
                                             </div>
                                         </div>
                                         <div class="search-form-btn mb-2">
-                                            <button type="submit" class="th-btn form-submit-btn text-capitalize"> Find Here</button>
+                                            <button type="submit" class="th-btn form-submit-btn text-capitalize d-none d-md-block"> Find Here</button>
+                                            <button type="submit" class="icon-btn icon-search text-white d-none search-sm-block"> <i class="fas fa-search mx-2"> </i></button>
                                         </div>
                                     </div>
                                     <div class="popular-search-term">

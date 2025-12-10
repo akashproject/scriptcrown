@@ -49397,6 +49397,15 @@ ul.tech-tab li a {
 }
 
 /*form-wizard*/
+.form-close {
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 1px;
+}
 .form-wizard {
   position: absolute;
   top: 0;
@@ -49428,7 +49437,7 @@ ul.tech-tab li a {
 }
 
 /* Red border when error */
-.form-wizard input.error {
+.search-form-input input.error, .form-wizard input.error {
     border: 1px solid red !important;
 }
 
@@ -49484,4 +49493,9 @@ ul.tech-tab li a {
 .comment-box p {
     margin: 2px 0;
     color: #333;
+}
+
+.search-group .search-form  .icon-search {
+    background: #b50c0c !important;
+    color: #fff;
 }

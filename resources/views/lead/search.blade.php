@@ -28,9 +28,9 @@
             <div class="page-form position-relative">
                 <div class="form-header" >
                     <div class="form-title"><h5> Search Query </h5> </div>
-                    <div class="form-close">
-                        <span > X </span>
-                    </div>
+                    <a href="{{ route('website') }}" class="form-close" onclick="return confirm('Are you sure to quit');">
+                        <i class="fas fa-close" > </i>
+                    </a>
                 </div>
                 <div class="container">
                     <div class="position-relative">

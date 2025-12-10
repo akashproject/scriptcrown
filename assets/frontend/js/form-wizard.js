@@ -44,12 +44,5 @@ jQuery("#lead-capture-full-screen-form").validate({
             required: true,
         }
     },
-    // messages: {
-    //     company_name: {
-    //         required: "Please enter business name",
-    //     },
-    //     business_type:{
-    //         required: "Select your business type",
-    //     }
-    // }
+
 });
