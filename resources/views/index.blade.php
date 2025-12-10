@@ -42,9 +42,9 @@
                                     </div>
                                     <div class="popular-search-term">
                                         <p> Popular Searchs </p>
-                                        <a href="javascript:void(0)" class="search-term-list">How to Build Website</a>
-                                        <a href="javascript:void(0)" class="search-term-list">Improve my sales</a>
-                                        <a href="javascript:void(0)"class="search-term-list">Build E-commerce website</a> 
+                                        <a href="javascript:void(0)" class="search-term-list"><i class="fas fa-search mx-2"> </i>How to Build Website</a>
+                                        <a href="javascript:void(0)" class="search-term-list"><i class="fas fa-search mx-2"> </i>Improve my sales</a>
+                                        <a href="javascript:void(0)"class="search-term-list"><i class="fas fa-search mx-2"> </i>Build E-commerce website</a> 
                                     </div>
                                 </form>
                             </div>

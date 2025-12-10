@@ -243,6 +243,12 @@
 	.technogy-content {
 		width: 32%;
 	}
+	.small-service-box-wrap {
+		width: 32%;
+	}
+	.small-service-box h6 {
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 991px) {
@@ -317,6 +323,12 @@
 	.technogy-content {
 		width: 48%;
 	}
+	.small-service-box-wrap {
+		width: 30%;
+	}
+	.small-service-box h6 {
+		font-size: 14px;
+	}
 }
 
 @media (max-width: 782px) {
@@ -332,6 +344,9 @@
 	
 	.technogy-content {
 		width: 44%;
+	}
+	.small-service-box {
+		min-height: 170px;
 	}
 }
 
@@ -543,6 +558,9 @@
     }
 	.business-box h6 {
 		font-size: 14px;
+	}
+	.small-service-box-wrap {
+		width: 46%;
 	}
 }
 

@@ -49348,7 +49348,6 @@ ul.tech-tab li a {
     padding: 17px;
     display: flex;
     box-shadow: 1px 1px 13px 4px #eee;
-    margin-bottom: 50px;
     justify-content: space-between;
 }
 
@@ -49395,4 +49394,94 @@ ul.tech-tab li a {
     padding: 19px 0;
     font-size: 20px;
     background: #b50c0c;
+}
+
+/*form-wizard*/
+.form-wizard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  overflow: hidden;
+  height: 0;
+}
+.form-wizard.js-active {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  overflow: visible;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.form-wizard .business-box:hover {
+    transform: scale(1);
+}
+
+.form-wizard input[type="text"],.form-wizard input[type="number"],.form-wizard input[type="email"],.form-wizard textarea {
+    border: 2px solid #b7a9ff;
+}
+
+/* Red border when error */
+.form-wizard input.error {
+    border: 1px solid red !important;
+}
+
+/* Hide error message text */
+.form-wizard label.error {
+    display: none !important;
+}
+
+.form-wizard .skill-feature {
+    margin-bottom: 70px;
+}
+
+.form-floating>label.error {
+    position: relative;
+    text-align: left;
+    padding: 6px 0;
+    color: #c10909;
+    font-weight: 600;
+}
+.business-box-wrap input[type="radio"]:checked + .business-box {
+    background: #e0f3ff; /* change color as required */
+    border-color: #2196f3;
+}
+
+.small-service-box-wrap input[type="checkbox"]:checked + .small-service-box {
+    background: #e0f3ff; /* change color as required */
+    border-color: #2196f3;
+}
+
+.small-service-box-wrap {
+    display: inline-block;
+    width: 14%;
+    margin: 5px;
+}
+
+.small-service-box {
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    background: #fff;
+    min-height: 180px;
+}
+
+.small-service-box h6 {
+    font-size: 14px;
+    padding: 10px 5px;
+    margin: 0;
+}
+
+.comment-box p {
+    margin: 2px 0;
+    color: #333;
 }

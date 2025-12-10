@@ -146,3 +146,4 @@ Route::get('/services/{slug}', [App\Http\Controllers\ServiceController::class, '
 Route::get('/projects/{slug}', [App\Http\Controllers\ProjectController::class, 'view'])->name('projects');
 Route::get('/technologies/{slug}', [App\Http\Controllers\TechnologyController::class, 'view'])->name('technologies');
 Route::get('/business/{slug}', [App\Http\Controllers\TechnologyController::class, 'view'])->name('business');
+Route::post('/capture-lead', [App\Http\Controllers\LeadController::class, 'capture'])->name('capture-lead');
