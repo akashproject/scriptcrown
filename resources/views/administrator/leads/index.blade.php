@@ -24,6 +24,7 @@
 						<thead>
 							<tr>
 								<th>Name</th>
+								<th>Email</th>
 								<th>Company Name</th>
 								<th>Service</th>
 								<th>Options</th>
@@ -33,7 +34,8 @@
 						<tbody>
 							@foreach ($leads as $value)
 							<tr>
-								<td>{{ $value->name }}</td>													
+								<td>{{ $value->full_name }}</td>													
+								<td>{{ $value->email_address }}</td>													
 								<td>{{ $value->company_name }}</td>													
 								<td>{{ $value->service_name }}</td>													
 								<td>
