@@ -16,97 +16,96 @@
                         <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2.1},"576":{"slidesPerView":"2.4"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4.5"},"1400":{"slidesPerView":"4.3"}}}'>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                            <div class="award-icon">
-                                <div class="varified-by"> <span> Verified By </span> </div>
-                                <div>
-                                    <img src="{{ url('assets/frontend/img/award/clutch.webp') }}" alt="Verifed by clutch Review">
+                                    <div class="award-icon">
+                                        <div class="varified-by"> <span> Verified By </span> </div>
+                                        <div>
+                                            <img src="{{ url('assets/frontend/img/award/clutch.webp') }}" alt="Verifed by clutch Review">
+                                        </div>
+                                        <div class="rating-stars">
+                                            <span class="rating-count"> 5.0 </span> 
+                                            <span> 
+                                                <i class="fa-solid fa-star-sharp"></i>
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                            </span> 
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="rating-stars">
-                                    <span class="rating-count"> 5.0 </span> 
-                                    <span> 
-                                        <i class="fa-solid fa-star-sharp"></i>
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                    </span> 
+                                <div class="swiper-slide">
+                                    <div class="award-icon">
+                                        <div class="varified-by"> <span> Verified By </span> </div>
+                                        <div>
+                                            <img src="{{ url('assets/frontend/img/award/google.webp') }}" alt="Verifed by Google Review"  >
+                                        </div>
+                                        <div class="rating-stars">
+                                            <span class="rating-count"> 5.0 </span> 
+                                            <span> 
+                                                <i class="fa-solid fa-star-sharp"></i>
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                            </span> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="award-icon">
+                                        <div class="varified-by"> <span> Verified By </span> </div>
+                                        <div>
+                                            <img src="{{ url('assets/frontend/img/award/upwork.webp') }}" alt="Verifed by upwork Review" >
+                                        </div>
+                                        <div class="rating-stars">
+                                            <span class="rating-count"> 5.0 </span> 
+                                            <span> 
+                                                <i class="fa-solid fa-star-sharp"></i>
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                            </span> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="award-icon">
+                                        <div class="varified-by"> <span> Verified By </span> </div>
+                                        <div>
+                                            <img src="{{ url('assets/frontend/img/award/goodfirms.webp') }}" alt="Verifed by goodfirms Review" >
+                                        </div>
+                                        <div class="rating-stars">
+                                            <span class="rating-count"> 5.0 </span> 
+                                            <span> 
+                                                <i class="fa-solid fa-star-sharp"></i>
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                            </span> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="award-icon">
+                                        <div class="varified-by"> <span> Verified By </span> </div>
+                                        <div>
+                                            <img src="{{ url('assets/frontend/img/award/freelancer.webp') }}" alt="Verifed by freelancer Review">
+                                        </div>
+                                        <div class="rating-stars">
+                                            <span class="rating-count"> 5.0 </span> 
+                                            <span> 
+                                                <i class="fa-solid fa-star-sharp"></i>
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                            </span> 
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="award-icon">
-                                <div class="varified-by"> <span> Verified By </span> </div>
-                                <div>
-                                    <img src="{{ url('assets/frontend/img/award/google.webp') }}" alt="Verifed by Google Review"  >
-                                </div>
-                                <div class="rating-stars">
-                                    <span class="rating-count"> 5.0 </span> 
-                                    <span> 
-                                        <i class="fa-solid fa-star-sharp"></i>
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                    </span> 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="award-icon">
-                                <div class="varified-by"> <span> Verified By </span> </div>
-                                <div>
-                                    <img src="{{ url('assets/frontend/img/award/upwork.webp') }}" alt="Verifed by upwork Review" >
-                                </div>
-                                <div class="rating-stars">
-                                    <span class="rating-count"> 5.0 </span> 
-                                    <span> 
-                                        <i class="fa-solid fa-star-sharp"></i>
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                    </span> 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="award-icon">
-                                <div class="varified-by"> <span> Verified By </span> </div>
-                                <div>
-                                    <img src="{{ url('assets/frontend/img/award/goodfirms.webp') }}" alt="Verifed by goodfirms Review" >
-                                </div>
-                                <div class="rating-stars">
-                                    <span class="rating-count"> 5.0 </span> 
-                                    <span> 
-                                        <i class="fa-solid fa-star-sharp"></i>
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                    </span> 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="award-icon">
-                                <div class="varified-by"> <span> Verified By </span> </div>
-                                <div>
-                                    <img src="{{ url('assets/frontend/img/award/freelancer.webp') }}" alt="Verifed by freelancer Review">
-                                </div>
-                                <div class="rating-stars">
-                                    <span class="rating-count"> 5.0 </span> 
-                                    <span> 
-                                        <i class="fa-solid fa-star-sharp"></i>
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                        <i class="fa-solid fa-star-sharp"></i> 
-                                    </span> 
-                                </div>
-                            </div>
-                        </div>
-                            </div>
-
                         </div>
                     </div>
 
@@ -176,7 +175,7 @@
                             </div>
                             WHAT WE DO
                         </span>
-                        <h2 class="sec-title">We Provide Exclusive Service For <span class="text-theme fw-normal">Your Business</span></h2>
+                        <h2 class="sec-title">We Provide Exclusive Service For <span class="text-theme fw-normal"> Your Business</span></h2>
                     </div>
                 </div>
                 <div class="col-auto">
@@ -235,6 +234,56 @@
                 @endforeach
             </div>
         </div>
+    </section>
+
+    @include('common.embedForm')
+
+    <section class="bg-auto space" data-bg-src="{{ url('assets/frontend/img/bg/testi_bg_2.png') }}">
+        <div class="container">
+            <div class="title-area text-center">
+                <span class="sub-title">
+                    <div class="icon-masking me-2">
+                        <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
+                        <img src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}" alt="shape">
+                    </div>
+                    CUSTOMER FEEDBACK
+                </span>
+                <h2 class="sec-title">What Happy Clients Says <br> <span class="text-theme fw-normal"> About Us?</span></h2>
+            </div>
+
+            <div class="slider-area">
+                <div class="swiper th-slider has-shadow" id="testiSlider2" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"1"},"1200":{"slidesPerView":"2"}}}'>
+                    <div class="swiper-wrapper">
+                        @foreach(getTestimonials() as $value)
+                        <div class="swiper-slide">
+                            <div class="testi-box">
+                                <div class="testi-box_img">
+                                    <img src="{{ url('assets/frontend/img/testimonial/testi_2_1.jpg') }}" alt="Avater">
+                                    <div class="testi-box_quote">
+                                        <img src="{{ url('assets/frontend/img/icon/quote_left_2.svg') }}" alt="quote">
+                                    </div>
+                                </div>
+                                <div class="testi-box_content">
+                                    <div class="testi-box_text">{!! $value->description !!}</div>
+                                    <div class="testi-box_review">
+                                        @for($i = 1; $i <= $value->rating; $i++)
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        @endfor
+                                    </div>
+                                    <h3 class="box-title">{{ $value->client_name }}</h3>
+                                    <p class="testi-box_desig">{{ $value->designation }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+                <button data-slider-prev="#testiSlider2" class="slider-arrow style3 slider-prev"><i class="far fa-arrow-left"></i></button>
+                <button data-slider-next="#testiSlider2" class="slider-arrow style3 slider-next"><i class="far fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="shape-mockup moving d-none d-xl-block" data-bottom="0%" data-left="10%"><img src="{{ url('assets/frontend/img/shape/line_1.png') }}" alt="shape"></div>
+        <div class="shape-mockup jump d-none d-xl-block" data-top="20%" data-right="2%"><img src="{{ url('assets/frontend/img/shape/line_2.png') }}" alt="shape"></div>
     </section>
 
     <section class="faq-area th-radius5 position-relative space overflow-hidden" id="faq-sec" data-bg-src="{{ url('/assets/frontend/img/bg/faq_bg_3.jpg') }}">

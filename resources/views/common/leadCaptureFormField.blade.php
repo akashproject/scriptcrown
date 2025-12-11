@@ -1,52 +1,50 @@
-<div class="contact-info formFieldName">
-    <input id="formFieldName" name="name" type="text" placeholder="Enter Your Name" autocomplete="off" required>
+<div class="col-lg-6 mb-2">
+    <div class="form-floating mb-2">
+        <input type="text" class="form-control" id="company_name" name="company_name" placeholder="Enter Company Name" required>
+        <label for="name">Company Name</label>
+    </div>
 </div>
-
-<div class="contact-info formFieldEmail">
-    <input id="formFieldEmail" name="email" type="email" placeholder="Enter Your Email" autocomplete="off" required>
+<div class="col-lg-6 mb-2">
+    <div class="form-floating mb-2">
+        <select class="form-control" id="business_type" name="business_type"  required>
+            <option value="">Open to select</option>
+            @foreach(getBusinesses() as $value)
+                <option value="{{ $value->name }}">{{ $value->name }}</option>
+            @endforeach
+        </select>
+        <label for="name">Select Business Type</label>
+    </div>
 </div>
-
-<div class="contact-info formFieldMobile">
-    <input id="formFieldMobile" name="mobile" type="number" placeholder="Enter Your Mobile" autocomplete="off" min="6000000000" max="9999999999" required>
+@if(isset($service_id) && $service_id != '')
+    <input type="hidden" class="form-control" id="service_name" name="service_name" value="{{ $service_id }}" required>
+@else
+<div class="col-lg-6 mb-2">
+    <div class="form-floating mb-2">
+        <select class="form-control" id="name" name="business"  required>
+            <option value="">Open to select</option>
+            @foreach(getServices() as $value)
+                <option value="{{ $value->name }}">{{ $value->name }}</option>
+            @endforeach
+        </select>
+        <label for="email_address">Select Service</label>
+    </div>
 </div>
-
-<div class="contact-info formFieldPincode">
-    <input id="formFieldPincode" name="pincode" type="number" placeholder="Enter Pincode of Present Address" min="100000" max="999999" autocomplete="off" required>
+@endif
+<div class="col-lg-6 mb-2">
+    <div class="form-floating mb-2">
+        <input type="text" class="form-control" id="name" name="lead_name" placeholder="Enter Your Name" required>
+        <label for="name">Your Name</label>
+    </div>
 </div>
-
-@if(isset($_GET['city']))
-    <select class="center" name="center" required>
-        <option value="">Select Center</option>
-        @foreach(getCenterByCityId($_GET['city']) as $value)
-            <option value="{{$value->name}}" data-id="{{$value->id}}"> {{$value->name}} </option>
-        @endforeach
-    </select>
-@endif
-
-@if(isset($_GET['state']))
-    <select class="center" name="center" required>
-        <option value="">Select Center</option>
-        @foreach(getCenterByStateId($_GET['state']) as $value)
-            <option value="{{$value->name}}" data-id="{{$value->id}}"> {{$value->name}} </option>
-        @endforeach
-    </select>
-@endif
-
-@if(isset($_GET['bucket']))
-    <select class="center" name="center" required>
-        <option value="">Select Center</option>
-        @foreach(getCenterByBucket($_GET['bucket']) as $value)
-            <option value="{{$value->name}}" > {{$value->name}} </option>
-        @endforeach
-    </select>
-@endif
-
-@if(isset($center))
-    <input type="hidden" name="center" value="{{ (isset($center) )?$center:'' }}">
-@endif
-
-@if(isset($contentMain->course_id))
-<input type="hidden" name="course_id" value="{{$contentMain->course_id}}">
-@endif
-
-<input type="hidden" name="brochure_id" value="">
+<div class="col-lg-6 mb-2">
+    <div class="form-floating mb-2">
+        <input type="email" class="form-control" id="email_address" name="lead_email" placeholder="Enter Your Email Address" required>
+        <label for="email_address">Email Address</label>
+    </div>
+</div>
+<div class="col-lg-6 mb-2">
+    <div class="form-floating mb-2">
+        <input type="text" class="form-control" id="mobile" name="lead_phone" placeholder="Enter Your Mobile Number" required>
+        <label for="mobile_number">Mobile Number</label>
+    </div>
+</div>

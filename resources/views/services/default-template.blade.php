@@ -13,11 +13,99 @@
                     </div>
                     <div class="banner-content py-3">
                         <p>We build high-quality, responsive, and user-friendly websites tailored to your business needs. From modern UI/UX design to powerful backend development, our team delivers fast, secure, and scalable web solutions that help you grow your online presence and convert visitors into customers.</p>
-                        <div>
-                            <span class="mx-2 award-icon"><img src="https://dummyimage.com/100" ></span>
-                            <span class="mx-2 award-icon"><img src="https://dummyimage.com/100" ></span>
-                            <span class="mx-2 award-icon"><img src="https://dummyimage.com/100" ></span>
-                            <span class="mx-2 award-icon"><img src="https://dummyimage.com/100" ></span>
+                        <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2.1},"576":{"slidesPerView":"2.4"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4.5"},"1400":{"slidesPerView":"4.3"}}}'>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="award-icon">
+                                        <div class="varified-by"> <span> Verified By </span> </div>
+                                        <div>
+                                            <img src="{{ url('assets/frontend/img/award/clutch.webp') }}" alt="Verifed by clutch Review">
+                                        </div>
+                                        <div class="rating-stars">
+                                            <span class="rating-count"> 5.0 </span> 
+                                            <span> 
+                                                <i class="fa-solid fa-star-sharp"></i>
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                            </span> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="award-icon">
+                                        <div class="varified-by"> <span> Verified By </span> </div>
+                                        <div>
+                                            <img src="{{ url('assets/frontend/img/award/google.webp') }}" alt="Verifed by Google Review"  >
+                                        </div>
+                                        <div class="rating-stars">
+                                            <span class="rating-count"> 5.0 </span> 
+                                            <span> 
+                                                <i class="fa-solid fa-star-sharp"></i>
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                            </span> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="award-icon">
+                                        <div class="varified-by"> <span> Verified By </span> </div>
+                                        <div>
+                                            <img src="{{ url('assets/frontend/img/award/upwork.webp') }}" alt="Verifed by upwork Review" >
+                                        </div>
+                                        <div class="rating-stars">
+                                            <span class="rating-count"> 5.0 </span> 
+                                            <span> 
+                                                <i class="fa-solid fa-star-sharp"></i>
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                            </span> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="award-icon">
+                                        <div class="varified-by"> <span> Verified By </span> </div>
+                                        <div>
+                                            <img src="{{ url('assets/frontend/img/award/goodfirms.webp') }}" alt="Verifed by goodfirms Review" >
+                                        </div>
+                                        <div class="rating-stars">
+                                            <span class="rating-count"> 5.0 </span> 
+                                            <span> 
+                                                <i class="fa-solid fa-star-sharp"></i>
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                            </span> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="award-icon">
+                                        <div class="varified-by"> <span> Verified By </span> </div>
+                                        <div>
+                                            <img src="{{ url('assets/frontend/img/award/freelancer.webp') }}" alt="Verifed by freelancer Review">
+                                        </div>
+                                        <div class="rating-stars">
+                                            <span class="rating-count"> 5.0 </span> 
+                                            <span> 
+                                                <i class="fa-solid fa-star-sharp"></i>
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                            </span> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -239,7 +327,7 @@
                 </div>
             </div>
         </div>
-    </section><
+    </section>
     
     <section class="space">
       <div class="container">
@@ -439,81 +527,57 @@
                 </div>
             </div>
         </div>
-       
-    
     </section>
 
-    <div class="space" id="contact-sec" data-bg-src="{{ url('assets/frontend/img/bg/appointment_bg_1.jpg') }}">
+    @include('common.embedForm')
+
+     <section class="bg-auto space" data-bg-src="{{ url('assets/frontend/img/bg/testi_bg_2.png') }}">
         <div class="container">
-            <div class="row">
-                <div class="col-xl-6 pe-xxl-5 mb-40 mb-xl-0">
-                    <div class="title-area mb-35 text-xl-start text-center">
-                        <span class="sub-title">
-                            <div class="icon-masking me-2">
-                                <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_1.svg') }}"></span>
-                                <img src="{{ url('assets/frontend/img/theme-img/title_shape_1.svg') }}" alt="shape">
-                            </div>
-                            APPOINTMENT NOW
-                        </span>
-                        <h2 class="sec-title">We're Ready to Talk About Your <span class="text-theme">Opportunities</span></h2>
+            <div class="title-area text-center">
+                <span class="sub-title">
+                    <div class="icon-masking me-2">
+                        <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
+                        <img src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}" alt="shape">
                     </div>
-                    <p class="mt-n2 mb-30 text-xl-start text-center">Progressively morph principle-centered e-markets without an expanded array of opportunities. Conveniently incubate e-tailers for extensive leadership skills. Holisticly extend leading-edge vortals vis-a-vis 24/7 e-markets. Appropriately evolve efficient functionalities with installed base relationships.</p>
-                    <div class="contact-feature-wrap">
-                        <div class="contact-feature">
-                            <div class="icon-btn">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div class="media-body">
-                                <p class="contact-feature_label">Call Us On:</p>
-                                <a href="tel:+19088000393" class="contact-feature_link">+190-8800-0393</a>
+                    CUSTOMER FEEDBACK
+                </span>
+                <h2 class="sec-title">What Happy Clients Says <br> <span class="text-theme fw-normal"> About Us?</span></h2>
+            </div>
+
+            <div class="slider-area">
+                <div class="swiper th-slider has-shadow" id="testiSlider2" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"1"},"1200":{"slidesPerView":"2"}}}'>
+                    <div class="swiper-wrapper">
+                        @foreach(getTestimonials() as $value)
+                        <div class="swiper-slide">
+                            <div class="testi-box">
+                                <div class="testi-box_img">
+                                    <img src="{{ url('assets/frontend/img/testimonial/testi_2_1.jpg') }}" alt="Avater">
+                                    <div class="testi-box_quote">
+                                        <img src="{{ url('assets/frontend/img/icon/quote_left_2.svg') }}" alt="quote">
+                                    </div>
+                                </div>
+                                <div class="testi-box_content">
+                                    <div class="testi-box_text">{!! $value->description !!}</div>
+                                    <div class="testi-box_review">
+                                        @for($i = 1; $i <= $value->rating; $i++)
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        @endfor
+                                    </div>
+                                    <h3 class="box-title">{{ $value->client_name }}</h3>
+                                    <p class="testi-box_desig">{{ $value->designation }}</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="contact-feature">
-                            <div class="icon-btn">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <div class="media-body">
-                                <p class="contact-feature_label">Quick Mail Us:</p>
-                                <a href="mailto:info@webteck.com" class="contact-feature_link">info@webteck.com</a>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
-                <div class="col-xl-6 ps-xl-4">
-                    <h3 class="h4 mt-n2 mb-30 text-center">Make An Appointment</h3>
-                    <form action="mail.php" method="POST" class="appoitment-form ajax-contact">
-                        <div class="row">
-                            <div class="form-group col-sm-6">
-                                <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Name">
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter Your Email">
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <select name="subject" id="subject" class="form-select">
-                                    <option value="" disabled selected hidden>Select Subject</option>
-                                    <option value="IT Consult">IT Consult</option>
-                                    <option value="UI/UX Design">UI/UX Design</option>
-                                    <option value="Branding Solution">Branding Solution</option>
-                                    <option value="Product Marketing">Product Marketing</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <input type="tel" class="form-control" name="number" id="number" placeholder="Phone Number">
-                            </div>
-                            <div class="form-group col-12">
-                                <textarea name="message" id="message" cols="30" rows="3" class="form-control" placeholder="Write Your Message"></textarea>
-                            </div>
-                            <div class="form-btn col-12">
-                                <button class="th-btn w-100">MAKE AN APPOINTMENT</button>
-                            </div>
-                        </div>
-                        <p class="form-messages mb-0 mt-3"></p>
-                    </form>
-                </div>
+                <button data-slider-prev="#testiSlider2" class="slider-arrow style3 slider-prev"><i class="far fa-arrow-left"></i></button>
+                <button data-slider-next="#testiSlider2" class="slider-arrow style3 slider-next"><i class="far fa-arrow-right"></i></button>
             </div>
         </div>
-    </div>
+        <div class="shape-mockup moving d-none d-xl-block" data-bottom="0%" data-left="10%"><img src="{{ url('assets/frontend/img/shape/line_1.png') }}" alt="shape"></div>
+        <div class="shape-mockup jump d-none d-xl-block" data-top="20%" data-right="2%"><img src="{{ url('assets/frontend/img/shape/line_2.png') }}" alt="shape"></div>
+    </section>
 
     <section class="faq-area th-radius5 position-relative space overflow-hidden" id="faq-sec" data-bg-src="{{ url('/assets/frontend/img/bg/faq_bg_3.jpg') }}">
       <div class="container th-container4">

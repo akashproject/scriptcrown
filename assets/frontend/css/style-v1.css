@@ -49457,6 +49457,13 @@ ul.tech-tab li a {
     color: #c10909;
     font-weight: 600;
 }
+
+.form-group.disclaimer p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #333;
+}
+
 .business-box-wrap input[type="radio"]:checked + .business-box {
     background: #e0f3ff; /* change color as required */
     border-color: #2196f3;

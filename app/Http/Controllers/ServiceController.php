@@ -14,12 +14,12 @@ class ServiceController extends Controller
         if(!$contentMain) {
             abort(404);
         }
-        $contentMain->service_id = $contentMain->id;
+        $service_id = $contentMain->id;
         $utm_campaign = $contentMain->utm_campaign;
         $utm_source = $contentMain->utm_source;
 
         $template = ($contentMain->template)?$contentMain->template:'default-template';
 
-        return view("services.".$template,compact('contentMain'));
+        return view("services.".$template,compact('contentMain','service_id'));
     }
 }
