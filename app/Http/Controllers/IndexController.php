@@ -18,10 +18,7 @@ class IndexController extends Controller
     {
         try {
             $request->session()->get("userData");
-           
-
             return view("index");
-
         } catch (\Illuminate\Database\QueryException $e) {
             //throw $th;
         }
@@ -31,7 +28,6 @@ class IndexController extends Controller
     {
         try {
             $postData = $request->all();
-            
             $validatedData = $request->validate([
                 "lead_name" => "required",
                 "lead_email" => "required",

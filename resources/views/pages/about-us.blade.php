@@ -716,6 +716,7 @@ Feature Area
         <div class="shape-mockup jump d-none d-xl-block" data-top="20%" data-right="2%"><img src="{{ url('assets/frontend/img/shape/line_2.png') }}" alt="shape"></div>
     </section>
 
+    @include('common.embedForm')
     @endsection
 @section('script')
 @endsection

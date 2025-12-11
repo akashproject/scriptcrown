@@ -33,8 +33,12 @@
                                         <div class="search-form-input mb-2">
                                             <div class="form-floating mb-2">
                                                 <input type="text" class="form-control" id="search_query" name="search_query" placeholder="Enter Your Name" required>
-                                                <label for="name">What do you need?</label>
+                                                <label for="search_query">What do you need?</label>
+                                                <span class="search_error"></span>
                                             </div>
+                                        </div>
+                                        <div class="text-center">
+                                            
                                         </div>
                                         <div class="search-form-btn mb-2">
                                             <button type="submit" class="th-btn form-submit-btn text-capitalize d-none d-md-block"> Find Here</button>
@@ -719,7 +723,7 @@
             </div>
         </div>
     </section>
-    
+
     @include('common.embedForm')
 
     <section class="faq-area th-radius5 position-relative space overflow-hidden" id="faq-sec" data-bg-src="{{ url('/assets/frontend/img/bg/faq_bg_3.jpg') }}">

@@ -1295,6 +1295,25 @@
             search_query: {
                 required: "Tell us about your project.",
             }
+        },
+        errorElement : 'span',
+        errorLabelContainer: '.search_error',
+    });
+
+    $("#lead_generate_form").validate({
+        messages: {
+            company_name: {
+                required: "Enter Your Name.",
+            },
+            full_name: {
+                required: "Enter Your Name.",
+            },
+            mobile_number: {
+                required: "Enter Mobile Number.",
+            },
+            email_address: {
+                required: "Enter Email Address.",
+            }
         }
     });
 

@@ -126,8 +126,8 @@
                             </div>
                             <div class="business-box-area mt-4">
                                 @foreach(getServices() as $value)
-                                <label class="small-service-box-wrap" for="service_category_{{ $value->id }}">
-                                    <input type="checkbox" class="service_category" name="service_category" id="service_category_{{ $value->id }}"  value="{{ $value->id }}" />
+                                <label class="small-service-box-wrap" for="service_name_{{ $value->id }}">
+                                    <input type="checkbox" class="service_name" name="service_name[]" id="service_name_{{ $value->id }}"  value="{{ $value->id }}" />
                                     <span class="small-service-box">
                                         <img src="{{ isset($value->featured_image)?getSizedImage('',$value->featured_image):'https://dummyimage.com/200x100' }}" ></i>
                                         <h6> {{ $value->name }} </h6>

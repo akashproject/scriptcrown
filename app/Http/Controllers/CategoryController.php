@@ -16,7 +16,8 @@ class CategoryController extends Controller
         if(!$contentMain) {
             abort(404);
         }
-        $contentMain->service_id = $contentMain->id;
+        $category_id = $contentMain->id;
+
         $services = Service::where('category_id',$contentMain->id)
                             ->where('featured_visibility',"1")->get();
                             
@@ -25,6 +26,6 @@ class CategoryController extends Controller
 
         $template = ($contentMain->template)?$contentMain->template:'default-template';
 
-        return view("category.".$template,compact('contentMain','services'));
+        return view("category.".$template,compact('contentMain','services','category_id'));
     }
 }

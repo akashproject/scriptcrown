@@ -49437,12 +49437,15 @@ ul.tech-tab li a {
 }
 
 /* Red border when error */
-.search-form-input input.error, .form-wizard input.error {
+input.error {
     border: 1px solid red !important;
 }
 
 /* Hide error message text */
-.form-wizard label.error {
+.search_error {
+    color: #b50c0c;
+}
+label.error {
     display: none !important;
 }
 

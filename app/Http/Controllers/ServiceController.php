@@ -15,6 +15,7 @@ class ServiceController extends Controller
             abort(404);
         }
         $service_id = $contentMain->id;
+        $category_id = $contentMain->category_id;
         $utm_campaign = $contentMain->utm_campaign;
         $utm_source = $contentMain->utm_source;
 
