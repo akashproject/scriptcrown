@@ -1,7 +1,7 @@
 <div class="space" id="contact-sec" data-bg-src="{{ url('assets/frontend/img/bg/appointment_bg_1.jpg') }}">
     <div class="round-container bg-white p-5">
             <div class="row">
-                <div class="col-xl-7 pe-xxl-5 mb-40 mb-xl-0">
+                <div class="col-xl-6 pe-xxl-5 mb-40 mb-xl-0">
                     <div class="title-area mb-35 text-xl-start text-center">
                         <span class="sub-title">
                             <div class="icon-masking me-2">
@@ -34,7 +34,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-5 ps-xl-4">
+                <div class="col-xl-6 ps-xl-4">
                     <div class="embed-form">
                         <h3 class="h4 mt-n2 mb-30 text-center">Make An Appointment</h3>
                         @include('common.leadCaptureForm')

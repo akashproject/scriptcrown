@@ -18,23 +18,34 @@
 <!-- Service Category-->
 @if(isset($category_id) && $category_id != '')
     <input type="hidden" class="form-control" id="service_category" name="service_category" value="{{ $category_id }}">
+    <div class="col-lg-6 mb-2">
+        <div class="form-floating mb-2">
+            <select class="form-control" id="service_name" name="service_name" >
+                <option value="">Open to select</option>
+                @foreach(getServices(isset($category_id)?$category_id:null) as $value)
+                    <option value="{{ $value->id }}">{{ $value->name }}</option>
+                @endforeach
+            </select>
+            <label for="email_address">Select Service</label>
+        </div>
+    </div>
 @endif
 <!-- Service -->
 @if(isset($service_id) && $service_id != '')
     <input type="hidden" class="form-control" id="service_name" name="service_name" value="{{ $service_id }}">
-@else
-<div class="col-lg-6 mb-2">
-    <div class="form-floating mb-2">
-        <select class="form-control" id="service_name" name="service_name" >
-            <option value="">Open to select</option>
-            @foreach(getServices(isset($category_id)?$category_id:null) as $value)
-                <option value="{{ $value->name }}">{{ $value->name }}</option>
-            @endforeach
-        </select>
-        <label for="email_address">Select Service</label>
+@endif  
+
+<div class="col-lg-12 mb-2">
+    <div class="form-service-category d-flex flex-wrap gap-1" >
+        @foreach(getCategories() as $value)
+        <label class="form-category-chekbox" for="service_category_{{ $value->id }}" class="me-3">
+            <input type="checkbox" id="service_category_{{ $value->id }}" name="service_category[]" value="{{ $value->id }}">
+            {{ $value->name }}
+        </label>
+        @endforeach
     </div>
 </div>
-@endif  
+
 <div class="col-lg-6 mb-2">
     <div class="form-floating mb-2">
         <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Enter Your Name" required>

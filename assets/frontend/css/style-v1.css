@@ -49509,3 +49509,23 @@ label.error {
     background: #b50c0c !important;
     color: #fff;
 }
+.form-category-chekbox {
+    border-radius: 4px;
+    border: 1px solid #c3b7ff;
+    font-size: 12px;
+    background: #ede9ff;
+    padding: 5px 12px;
+}
+
+.form-category-chekbox input[type="checkbox"]{
+	visibility: visible;
+	opacity:1;
+	width:auto;
+	height:auto;
+	display:inline;
+}
+
+.form-service-category input[type="checkbox"]:checked + .form-category-chekbox {
+    background: #e0f3ff; /* change color as required */
+    border-color: #2196f3;
+}
