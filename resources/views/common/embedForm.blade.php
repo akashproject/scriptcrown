@@ -1,5 +1,7 @@
 <div class="space" id="contact-sec" data-bg-src="{{ url('assets/frontend/img/bg/appointment_bg_1.jpg') }}">
-    <div class="round-container bg-white p-5">
+    <div class="container">
+        <div class="page-form-container bg-white
+        ">
             <div class="row">
                 <div class="col-xl-6 pe-xxl-5 mb-40 mb-xl-0">
                     <div class="title-area mb-35 text-xl-start text-center">
@@ -41,6 +43,6 @@
                     </div>
                 </div>
             </div>
-
+        </div>
     </div>
 </div>

@@ -12,7 +12,7 @@
                 <option value="{{ $value->name }}">{{ $value->name }}</option>
             @endforeach
         </select>
-        <label for="name">Select Business Type</label>
+        <label for="name">Select Industry</label>
     </div>
 </div>
 <!-- Service Category-->

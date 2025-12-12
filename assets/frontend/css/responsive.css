@@ -70,6 +70,13 @@
 	.service-box .box-title {
 		font-size: 20px;
 	}
+	.form-category-chekbox {
+		border-radius: 4px;
+		border: 1px solid #c3b7ff;
+		font-size: 15px;
+		background: #ede9ff;
+		padding: 7px 15px;
+	}
 
 }
 
@@ -136,6 +143,11 @@
 	}
 	.arrow-wrap .slider-arrow {
 		display: none
+	}
+	.page-form-container {
+		padding: 30px 30px;
+		border-radius: 50px;
+		background: #fff;
 	}
 }
 
@@ -363,6 +375,14 @@
 	}
 	.technogy-content {
 		width: 47%;
+	}
+}
+
+@media (min-width: 767px) {
+	.page-form-container {
+		padding: 30px 30px;
+		border-radius: 50px;
+		background: #fff;
 	}
 }
 

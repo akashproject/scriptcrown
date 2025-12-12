@@ -184,18 +184,8 @@
                     </div>
                 </div>
             </div>
-            @if(!check_device('mobile'))
-            <div class="tab-container my-4">
-                @foreach(getCategories() as $value)
-                <div class="tab">
-                    <a href="{{ route('category',$value->slug) }}" > {{ $value->name }} </a>
-                </div>
-                @endforeach
-            </div>
-            @endif
             <div class="row justify-content-center">
-                
-                @foreach($services as $value)
+                @foreach(getServices($contentMain->id) as $value)
                 <div class="col-md-4 col-lg-3 mb-3">
                     <div class="service-box">
                         <a href="{{ route('services',$value->slug) }}" class="service-box_img">

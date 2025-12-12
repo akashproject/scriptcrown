@@ -6,22 +6,22 @@ Homepage
     * Services
     * Businesses
     * how to flow
-    * TEchnologies
+    * Technologies
     * Video content
     * Projects
     * About 
     * Key Highlight
-    * Reviees
+    * Reviews
     * From
-    * Faq
+    * FAQ
 
 About Us
-    *Banner 
+    * Banner 
     * Awards
-    *Companies
+    * Companies
     * Key Features
     * Quote
-    * Mision vision
+    * Mission vision
     * Success Stories
     * On Going Projects
     * Reviews
@@ -30,27 +30,27 @@ About Us
 All Services
     *Banner 
     * Category wise list
-    * Our Key Fretures
+    * Our Key Features
     * USP
     * Reviews
     * Form
-    * Faqs
+    * FAQ
 
 Category Page
     * Banner 
     * Service list
-    * Our Key Fretures
+    * Our Key Features
     * USP
     * Reviews
     * Form
-    * Faqs
+    * FAQ
 
 Service Detail Page
     * Banner
-    * Our Key Fretures
+    * Our Key Features
     * Our Approch
     * Recent Projects
-    * Rebon
+    * Ribon
     * Highlight
     * Tchnologies an Tools
     * Form

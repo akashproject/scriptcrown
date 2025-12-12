@@ -59,7 +59,7 @@
                             </div>
                             <div class="form-footer" >
                                 <div class="form-next">
-                                    <button type="button" class="th-btn style3 shadow-none js-btn-next">
+                                    <button type="button" class="th-btn shadow-none js-btn-next">
                                         <span> Next</span>
                                         <i class="fas fa-arrow-right ms-1"></i>
                                     </button>
@@ -95,12 +95,12 @@
                                 @endforeach
                             </div>
                             <div class="form-footer" >
-                                <a href="javascript:void(0)" class="th-btn style3 shadow-none js-btn-prev">
+                                <a href="javascript:void(0)" class="th-btn shadow-none js-btn-prev">
                                     <i class="fas fa-arrow-left ms-1"></i>
                                     <span> Previous</span>
                                 </a>
                                 <div class="form-next">
-                                    <button type="button" class="th-btn style3 shadow-none js-btn-next">
+                                    <button type="button" class="th-btn shadow-none js-btn-next">
                                         <span> Next</span>
                                         <i class="fas fa-arrow-right ms-1"></i>
                                     </button>
@@ -136,12 +136,12 @@
                                 @endforeach
                             </div>
                             <div class="form-footer" >
-                                <a href="javascript:void(0)" class="th-btn style3 shadow-none js-btn-prev">
+                                <a href="javascript:void(0)" class="th-btn shadow-none js-btn-prev">
                                     <i class="fas fa-arrow-left ms-1"></i>
                                     <span> Previous</span>
                                 </a>
                                 <div class="form-next">
-                                    <button type="button" class="th-btn style3 shadow-none js-btn-next">
+                                    <button type="button" class="th-btn shadow-none js-btn-next">
                                         <span> Next</span>
                                         <i class="fas fa-arrow-right ms-1"></i>
                                     </button>
@@ -198,12 +198,12 @@
                             
 
                             <div class="form-footer" >
-                                <a href="javascript:void(0)" class="th-btn style3 shadow-none js-btn-prev">
+                                <a href="javascript:void(0)" class="th-btn shadow-none js-btn-prev">
                                     <i class="fas fa-arrow-left ms-1"></i>
                                     <span> Previous</span>
                                 </a>
                                 <div class="form-next">
-                                    <button type="submit" class="th-btn style3 shadow-none">
+                                    <button type="submit" class="th-btn shadow-none">
                                         <span> Submit</span>
                                     </button>
                                 </div>

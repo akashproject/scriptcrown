@@ -508,7 +508,7 @@
             <div class="swiper-wrapper">
             @foreach(getProjects() as $project)   
               <div class="swiper-slide">
-                <div class="project-card4">
+                <div class="project-card4 text-center">
                   <div class="project-img"><img src="{{ isset($project->featured_image)?getSizedImage('',$project->featured_image):'assets/frontend/img/project/project_12_1.jpg' }}" alt="project image"></div>
                   <div class="project-content-wrap">
                     <div class="project-content">

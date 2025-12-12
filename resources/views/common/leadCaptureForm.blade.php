@@ -33,7 +33,7 @@
         </div>
         <div class="col-lg-6 d-flex" style="align-items: center;">
             <div class="form-one__control form-one__control--full mx-2">
-                <button type="submit" class="th-btn style3 shadow-none">
+                <button type="submit" class="th-btn shadow-none">
                     <span>Submit Enquiry</span>
                     <span class="eduhive-btn__icon"><i class="icon-right-up"></i></span>
                 </button>
