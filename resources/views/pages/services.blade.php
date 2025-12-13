@@ -222,38 +222,42 @@
     </section>
     @endforeach
 
-    <div class="counter-area-9 overflow-hidden space-extra2" data-bg-src="{{ url('assets/frontend/img/bg/counter_bg_9.png') }}">
-        <div class="container th-container4">
+    <div class="counter-area-9 overflow-hidden space-extra2" >
+        <div class="container">
             <div class="row justify-content-md-between justify-content-center gy-40">
                 <div class="col-xl-auto col-sm-6">
-                    <div class="counter-card6">
-                        <h3 class="box-number"><span class="counter-number">96</span>k+</h3>
+                    <div class="counter-card6 text-center">
+                        <img src="{{ url('assets/frontend/img/responsive.png') }}" alt="Clients Worlwide" class="mb-3">
+                        <h3 class="box-number"><span class="counter-number">5500</span>+</h3>
                         <div class="media-body">
-                            <p class=" counter-text mb-n2">Customers visit the Webteck website every month.</p>
+                            <p class=" counter-text mb-n2"> World Wide Projects Delivered </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-auto col-sm-6">
-                    <div class="counter-card6">
-                        <h3 class="box-number"><span class="counter-number">74</span>k+</h3>
+                    <div class="counter-card6 text-center">
+                        <img src="{{ url('assets/frontend/img/international.png') }}" alt="Clients Worlwide" class="mb-3">
+                        <h3 class="box-number"><span class="counter-number">1500</span>+</h3>
                         <div class="media-body">
-                            <p class=" counter-text mb-n2">Total Members of Webteck Website users</p>
+                            <p class=" counter-text mb-n2">Clients Worlwide</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-auto col-sm-6">
-                    <div class="counter-card6">
-                        <h3 class="box-number"><span class="counter-number">100</span>k</h3>
+                    <div class="counter-card6 text-center">
+                        <img src="{{ url('assets/frontend/img/residential.png') }}" alt="Years In IT Industries" class="mb-3">
+                        <h3 class="box-number"><span class="counter-number">15</span>+</h3>
                         <div class="media-body">
-                            <p class=" counter-text mb-n2">Total Visitor of our Webteck Website </p>
+                            <p class=" counter-text mb-n2">Years In IT Industries.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-auto col-sm-6">
-                    <div class="counter-card6">
-                        <h3 class="box-number"><span class="counter-number">96</span>%</h3>
+                    <div class="counter-card6 text-center">
+                        <img src="{{ url('assets/frontend/img/leadership.png') }}" alt="Experts Team Members" class="mb-3">
+                        <h3 class="box-number"><span class="counter-number">50</span>+</h3>
                         <div class="media-body">
-                            <p class=" counter-text mb-n2">Satisfaction rate from our customers.</p>
+                            <p class=" counter-text mb-n2">Experts Team Members.</p>
                         </div>
                     </div>
                 </div>
@@ -277,7 +281,7 @@
         <div class="slider-area">
           <div class="swiper th-slider" id="projectSlider10" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1.2},"576":{"slidesPerView":"1.2"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"}}}'>
             <div class="swiper-wrapper">
-            @foreach(getProjects() as $project)   
+            @foreach(getProjects() as $project)
               <div class="swiper-slide">
                 <div class="project-card4">
                   <div class="project-img"><img src="{{ isset($project->featured_image)?getSizedImage('',$project->featured_image):'assets/frontend/img/project/project_12_1.jpg' }}" alt="project image"></div>

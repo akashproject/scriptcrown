@@ -356,6 +356,77 @@
         </div>
     </section>
 
+    <div class="overflow-hidden space-extra2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="usp-box row justify-content-md-between justify-content-center gy-4">
+                        <div class="col-6">
+                            <div class="usp-card text-center">
+                                <img src="{{ url('assets/frontend/img/responsive-primary.png') }}" alt="Clients Worlwide" class="mb-1">
+                                <h3 class="box-number"><span class="counter-number">5500</span>+</h3>
+                                <div class="media-body">
+                                    <p class=" counter-text mb-n2"> World Wide Projects Delivered </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="usp-card text-center">
+                                <img src="{{ url('assets/frontend/img/international-primary.png') }}" alt="Clients Worlwide" class="mb-1">
+                                <h3 class="box-number"><span class="counter-number">1500</span>+</h3>
+                                <div class="media-body">
+                                    <p class=" counter-text mb-n2">Clients Worlwide</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-n6">
+                            <div class="usp-card text-center">
+                                <img src="{{ url('assets/frontend/img/residential-primary.png') }}" alt="Years In IT Industries" class="mb-1">
+                                <h3 class="box-number"><span class="counter-number">15</span>+</h3>
+                                <div class="media-body">
+                                    <p class=" counter-text mb-n2">Years In IT Industries.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-4">
+                            <div class="usp-card text-center">
+                                <img src="{{ url('assets/frontend/img/leadership-primary.png') }}" alt="Experts Team Members" class="mb-1">
+                                <h3 class="box-number"><span class="counter-number">50</span>+</h3>
+                                <div class="media-body">
+                                    <p class=" counter-text mb-n2">Experts Team Members.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="title-area text-center text-lg-start">
+                        <h2 class="sec-title sec-title3">Drive <span class="">Business Growth</span> with High-Performance Mobile And Web Apps from the #1 Software Development Company</h2>
+                        
+                        <ul class="list-unstyled usp-list">
+                            <li>
+                                <h5 class="mb-0">Enhanced Customer Engagement</h5>
+                                <p>We build intuitive, user-friendly apps that keep customers engaged, improve retention, and increase repeat interactions.</p>
+                            </li>
+                            <li>
+                                <h5 class="mb-0">Process Automation & Operational Efficiency</h5>
+                                <p>Custom apps streamline workflows, reduce manual tasks, and improve overall productivity, saving time and costs.</p>
+                            </li>
+                            <li>
+                                <h5 class="mb-0">Data-Driven Insights for Smarter Decisions</h5>
+                                <p>Integrated analytics help track user behavior, sales trends, and performance metrics to optimize business strategies.</p>
+                            </li>
+                            <li>
+                                <h5 class="mb-0">Increased Revenue & Market Reach</h5>
+                                <p>Mobile and web applications expand your digital presence, open new sales channels, and boost conversions globally.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="process-area4 th-radius3 space background-image" id="process-sec" style="background-image: url({{ url('assets/frontend/img/bg/process_bg_3.jpg') }});">
         <div class="container th-container4">
             <div class="title-area text-center">

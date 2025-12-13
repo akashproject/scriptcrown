@@ -1300,22 +1300,8 @@
         errorLabelContainer: '.search_error',
     });
 
-    $("#lead_generate_form").validate({
-        messages: {
-            company_name: {
-                required: "Enter Your Name.",
-            },
-            full_name: {
-                required: "Enter Your Name.",
-            },
-            mobile_number: {
-                required: "Enter Mobile Number.",
-            },
-            email_address: {
-                required: "Enter Email Address.",
-            }
-        }
-    });
+    $("#lead_generate_form").validate();
+    $("#lead_generate_form_popup").validate();
 
     $(".search-term-list").on("click",function(){
         $("#search_query").val($(this).text());

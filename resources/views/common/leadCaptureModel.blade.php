@@ -60,7 +60,9 @@
                         <div class="sec-title sec-title--center wow fadeInUp mb-3 mt-5" data-wow-duration="1500ms" data-wow-delay="00ms">
                             <h2 class="sec-title__title" style="font-size:30px">Let’s discuss your project</h2><!-- /.sec-title__title -->
                         </div><!-- /.sec-title -->
-                        @include('common.leadCaptureForm')
+                        <form method="post" id="lead_generate_form_popup" class="lead_generate_form_popup" action="{{ route('capture-lead') }}" >
+                            @include('common.leadCaptureFormField')
+                        </form>
                     </div>
                 </div>
             </div>
