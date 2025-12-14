@@ -49539,7 +49539,11 @@ label.error {
 .usp-box .mt-n6 {
     margin-top: 0px;
 }
-.usp-card .box-number .media-body p{
+.usp-card .media-body p{
 	color:#333;
 	font-weight:600;
+}
+p.counter-text {
+    color: #333;
+    font-weight: 600;
 }
