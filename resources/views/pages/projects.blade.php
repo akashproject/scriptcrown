@@ -137,7 +137,7 @@
                         <div class="project-service" >
                             <ul>
                                 @foreach(getServices(null,$project->service_id) as $serve_id )
-                                <li> <a href="" >Service: {{ $serve_id->name }}</a></li>
+                                <li> <a href="" >{{ $serve_id->name }}</a></li>
                                 @endforeach
                             </ul>
                         </div>

@@ -580,28 +580,30 @@
             @foreach(getProjects() as $project)   
               <div class="swiper-slide">
                 <div class="project-card4 text-center">
-                  <div class="project-img"><img src="{{ isset($project->featured_image)?getSizedImage('',$project->featured_image):'assets/frontend/img/project/project_12_1.jpg' }}" alt="project image"></div>
-                  <div class="project-content-wrap">
-                    <div class="project-content">
-                      <h3 class="box-title"><a href="project-details.html">{{ $project->name }} </a></h3>
-                        @if($project->service_id)
-                        <div class="project-service" >
-                            <ul>
-                                @foreach(getServices(null,$project->service_id) as $serve_id )
-                                <li> <a href="" >{{ $serve_id->name }}</a></li>
-                                @endforeach
-                            </ul>
-                        </div>
-                        @endif
-                        @if($project->technology_id)
-                        <div class="project-tech">
-                            @foreach(getTechnologies(null,$project->technology_id) as $tech_id )
-                            <span> {{ $tech_id->name }}</span>
-                            @endforeach
-                        </div>
-                        @endif
+                    <div class="project-img">
+                        <img src="{{ isset($project->featured_image)?getSizedImage('',$project->featured_image):'assets/frontend/img/project/project_12_1.jpg' }}" alt="project image">
                     </div>
-                  </div>
+                    <div class="project-content-wrap">
+                        <div class="project-content">
+                        <h3 class="box-title"><a href="project-details.html">{{ $project->name }} </a></h3>
+                            @if($project->service_id)
+                            <div class="project-service" >
+                                <ul>
+                                    @foreach(getServices(null,$project->service_id) as $serve_id )
+                                    <li> <a href="" >{{ $serve_id->name }}</a></li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            @endif
+                            @if($project->technology_id)
+                            <div class="project-tech">
+                                @foreach(getTechnologies(null,$project->technology_id) as $tech_id )
+                                <span> {{ $tech_id->name }}</span>
+                                @endforeach
+                            </div>
+                            @endif
+                        </div>
+                    </div>
                 </div>
               </div>
             @endforeach

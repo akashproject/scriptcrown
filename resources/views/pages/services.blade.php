@@ -222,48 +222,50 @@
     </section>
     @endforeach
 
-    <div class="counter-area-9 overflow-hidden space-extra2" >
-        <div class="container">
-            <div class="row justify-content-md-between justify-content-center gy-40">
-                <div class="col-xl-auto col-sm-6">
-                    <div class="counter-card6 text-center">
-                        <img src="{{ url('assets/frontend/img/responsive.png') }}" alt="Clients Worlwide" class="mb-3">
-                        <h3 class="box-number"><span class="counter-number">5500</span>+</h3>
-                        <div class="media-body">
-                            <p class=" counter-text mb-n2"> World Wide Projects Delivered </p>
+    <section class="bg-auto space" data-bg-src="{{ url('assets/frontend/img/bg/testi_bg_2.png') }}">
+        <div class="counter-area-9 overflow-hidden space-extra2" >
+            <div class="container">
+                <div class="row justify-content-md-between justify-content-center gy-40">
+                    <div class="col-xl-auto col-sm-6">
+                        <div class="counter-card6 text-center">
+                            <img src="{{ url('assets/frontend/img/responsive.png') }}" alt="Clients Worlwide" class="mb-3">
+                            <h3 class="box-number"><span class="counter-number">5500</span>+</h3>
+                            <div class="media-body">
+                                <p class=" counter-text mb-n2"> World Wide Projects Delivered </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-auto col-sm-6">
-                    <div class="counter-card6 text-center">
-                        <img src="{{ url('assets/frontend/img/international.png') }}" alt="Clients Worlwide" class="mb-3">
-                        <h3 class="box-number"><span class="counter-number">1500</span>+</h3>
-                        <div class="media-body">
-                            <p class=" counter-text mb-n2">Clients Worlwide</p>
+                    <div class="col-xl-auto col-sm-6">
+                        <div class="counter-card6 text-center">
+                            <img src="{{ url('assets/frontend/img/international.png') }}" alt="Clients Worlwide" class="mb-3">
+                            <h3 class="box-number"><span class="counter-number">1500</span>+</h3>
+                            <div class="media-body">
+                                <p class=" counter-text mb-n2">Clients Worlwide</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-auto col-sm-6">
-                    <div class="counter-card6 text-center">
-                        <img src="{{ url('assets/frontend/img/residential.png') }}" alt="Years In IT Industries" class="mb-3">
-                        <h3 class="box-number"><span class="counter-number">15</span>+</h3>
-                        <div class="media-body">
-                            <p class=" counter-text mb-n2">Years In IT Industries.</p>
+                    <div class="col-xl-auto col-sm-6">
+                        <div class="counter-card6 text-center">
+                            <img src="{{ url('assets/frontend/img/residential.png') }}" alt="Years In IT Industries" class="mb-3">
+                            <h3 class="box-number"><span class="counter-number">15</span>+</h3>
+                            <div class="media-body">
+                                <p class=" counter-text mb-n2">Years In IT Industries.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-auto col-sm-6">
-                    <div class="counter-card6 text-center">
-                        <img src="{{ url('assets/frontend/img/leadership.png') }}" alt="Experts Team Members" class="mb-3">
-                        <h3 class="box-number"><span class="counter-number">50</span>+</h3>
-                        <div class="media-body">
-                            <p class=" counter-text mb-n2">Experts Team Members.</p>
+                    <div class="col-xl-auto col-sm-6">
+                        <div class="counter-card6 text-center">
+                            <img src="{{ url('assets/frontend/img/leadership.png') }}" alt="Experts Team Members" class="mb-3">
+                            <h3 class="box-number"><span class="counter-number">50</span>+</h3>
+                            <div class="media-body">
+                                <p class=" counter-text mb-n2">Experts Team Members.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <section class="position-relative overflow-hidden project-area11 space" id="project-sec">
       <div class="container th-container4">
@@ -283,7 +285,7 @@
             <div class="swiper-wrapper">
             @foreach(getProjects() as $project)
               <div class="swiper-slide">
-                <div class="project-card4">
+                <div class="project-card4 text-center">
                   <div class="project-img"><img src="{{ isset($project->featured_image)?getSizedImage('',$project->featured_image):'assets/frontend/img/project/project_12_1.jpg' }}" alt="project image"></div>
                   <div class="project-content-wrap">
                     <div class="project-content">
