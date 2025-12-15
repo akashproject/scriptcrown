@@ -235,6 +235,7 @@
                             Select Service
                         </span>
                         <h2 class="sec-title">Choose our expert services to elevate <span class="text-theme fw-normal">Your Business</span></h2>
+                        <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value.</p>
                     </div>
                 </div>
                 <div class="col-auto">
@@ -341,6 +342,9 @@
                         </span>
                         <h2 class="sec-title">Select Your Business Category <span class="text-theme fw-normal"></span></h2>
                     </div>
+                </div>
+                <div class="col-lg-6 col-sm-9 pe-xl-5">
+                    <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value.</p>
                 </div>
             </div>
             <div class="business-box-area mt-4">
@@ -567,7 +571,7 @@
           <div class="col-lg-6 col-sm-9 pe-xl-5">
             <div class="title-area text-center text-lg-start"><span class="sub-title sub-title8">Our Projects</span>
               <h2 class="sec-title sec-title3">Our <span class="">Recent</span> Projects</h2>
-              <p class="fs-20">Unveiling the extraordinary power. delving into the exceptionally powerfull features of data analysis</p>
+              <p class="fs-20">We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value.</p>
             </div>
           </div>
           <div class="col-auto">

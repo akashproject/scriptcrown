@@ -178,10 +178,8 @@
                         <h2 class="sec-title">We Provide Exclusive Service For <span class="text-theme fw-normal"> Your Business</span></h2>
                     </div>
                 </div>
-                <div class="col-auto">
-                    <div class="sec-btn">
-                        <a href="{{ route('page','services') }}" class="th-btn">VIEW ALL SERVICES<i class="fa-regular fa-arrow-right ms-2"></i></a>
-                    </div>
+                <div class="col-lg-6 col-sm-9 pe-xl-5">
+                    <p>We build high-quality, responsive, and user-friendly websites tailored to your business needs. From modern UI/UX design to powerful backend development, our team delivers fast, secure, and scalable web solutions that help you grow your online presence and convert visitors into customers.</p>
                 </div>
             </div>
             <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1.3},"576":{"slidesPerView":"1.3"},"768":{"slidesPerView":"1.3"},"900":{"slidesPerView":"2.5"},"1200":{"slidesPerView":"3"},"1366":{"slidesPerView":"4.2"},"1400":{"slidesPerView":"5.3"}}}'>
