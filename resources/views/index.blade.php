@@ -176,7 +176,7 @@
         <div class="brand-area bg-white space-bottom">
             <div class="container th-container5">
                 <div class="title-area mb-30 text-center">
-                    <h6 class="brand-title">Trusted by innovators, big and small, across 30+ countries</h6>
+                    <h2 class="brand-title">Trusted by innovators, big and small, across 30+ countries</h2>
                 </div>
                 <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"4"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"6"},"1400":{"slidesPerView":"5"}}}'>
                     <div class="swiper-wrapper">
