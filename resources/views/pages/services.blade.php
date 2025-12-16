@@ -267,6 +267,71 @@
         </div>
     </section>
 
+     <section class="about-sec-v4 space-bottom" id="about-sec">
+        <div class="container space-top">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-30 mb-lg-0">
+                    <div class="img-box6">
+                        <div class="img1">
+                            <img src="{{ url('assets/frontend/img/normal/about_4_1.png') }}" alt="About">
+                        </div>
+                        <div class="shape1">
+                            <img src="{{ url('assets/frontend/img/normal/about_4_2.png') }}" alt="About">
+                        </div>
+                        
+                        <div class="color-animate"></div>
+                    </div>
+                </div>
+                <div class="col-lg-7 text-lg-start text-center">
+                    <div class="ps-xxl-5">
+                        <div class="title-area mb-35">
+                            <h2 class="sec-title">We've Been Thriving for 25 Years.</h2>
+                        </div>
+                        <p class="mt-n2 mb-25">Continually harness backward-compatible initiatives and synergistic content. Objectively strategize cutting edge niches with collaborative synergy. Globally pontificate e-business processes through orthoonal web readiness enhance backend value.</p>
+                        <div class="checklist style4 mb-40 list-center">
+                            <ul>
+                                <li><img src="{{ url('assets/frontend/img/icon/check_1.png') }}" alt="icon"> Dramatically re-engineer value added IT systems via mission</li>
+                                <li><img src="{{ url('assets/frontend/img/icon/check_1.png') }}" alt="icon"> Website & Mobile application design & Development</li>
+                                <li><img src="{{ url('assets/frontend/img/icon/check_1.png') }}" alt="icon"> Professional User Experince & Interface researching</li>
+                            </ul>
+                        </div>
+                        <a href="about.html" class="th-btn">ABOUT MORE<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-lg-start text-center">
+                    <div class="ps-xxl-5">
+                        <div class="title-area mb-35">
+                            <h2 class="sec-title">We've Been Thriving for 25 Years.</h2>
+                        </div>
+                        <p class="mt-n2 mb-25">Continually harness backward-compatible initiatives and synergistic content. Objectively strategize cutting edge niches with collaborative synergy. Globally pontificate e-business processes through orthoonal web readiness enhance backend value.</p>
+                        <div class="checklist style4 mb-40 list-center">
+                            <ul>
+                                <li><img src="{{ url('assets/frontend/img/icon/check_1.png') }}" alt="icon"> Dramatically re-engineer value added IT systems via mission</li>
+                                <li><img src="{{ url('assets/frontend/img/icon/check_1.png') }}" alt="icon"> Website & Mobile application design & Development</li>
+                                <li><img src="{{ url('assets/frontend/img/icon/check_1.png') }}" alt="icon"> Professional User Experince & Interface researching</li>
+                            </ul>
+                        </div>
+                        <a href="about.html" class="th-btn">ABOUT MORE<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-30 mb-lg-0">
+                    <div class="img-box6">
+                        <div class="img1">
+                            <img src="{{ url('assets/frontend/img/normal/about_4_1.png') }}" alt="About">
+                        </div>
+                        <div class="shape1">
+                            <img src="{{ url('assets/frontend/img/normal/about_4_2.png') }}" alt="About">
+                        </div>
+                        
+                        <div class="color-animate"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="position-relative overflow-hidden project-area11 space" id="project-sec">
       <div class="container th-container4">
         <div class="row justify-content-lg-between justify-content-center align-items-center">
