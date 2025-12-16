@@ -117,12 +117,12 @@
     <section class="service-area4 th-radius5 space" id="service-sec">
         <div class="container th-container4">
             <div class="row justify-content-center">
-                <div class="col-lg-4">
-                    <div class="title-area text-left me-xl-5 ms-xl-5">
+                <div class="col-lg-5">
+                    <div class="title-area text-left">
                         <h2 class="sec-title">Professional {{ $contentMain->name }} Service</h2>
                     </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-7">
                     <div class="title-area text-left me-xl-5 ms-xl-5">
                         <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value. </p>
                     </div>
@@ -238,18 +238,16 @@
     </section>
 
     <section class="space" id="business-sec">
-        <div class="container">
-            <div class="row justify-content-lg-between justify-content-center align-items-center">
-                <div class="col-lg-6 col-sm-9 pe-xl-5">
-                    <div class="title-area text-center text-lg-start">
-                        <span class="sub-title">
-                            <div class="icon-masking me-2">
-                                <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
-                                <img src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}" alt="shape">
-                            </div>
-                            Business
-                        </span>
-                        <h2 class="sec-title">Select <span class="text-theme fw-normal">Your Business</span></h2>
+        <div class="container th-container4">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="title-area text-left">
+                        <h2 class="sec-title">Professional {{ $contentMain->name }} Service</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="title-area text-left me-xl-5 ms-xl-5">
+                        <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value. </p>
                     </div>
                 </div>
             </div>
@@ -267,7 +265,7 @@
     </section>
 
     <section class="bg-smoke" id="process-sec" data-bg-src="{{ url('assets/frontend/img/bg/process_bg_1.png') }}">
-        <div class="container space">
+        <div class="container space  th-container4">
             <div class="title-area text-center">
                 <div class="shadow-title">PROCESS</div>
                 <span class="sub-title">
@@ -461,12 +459,40 @@
     </div>
 
     <section class="about-sec-v4 space-bottom" id="about-sec">
-        <div class="container">
+        <div class="container th-container4">
             <div class="row">
-                <div class="col-lg-7">
+                <div class="col-lg-5">
                     <div class="title-area text-left">
                         <span class="sub-title">Why Choose Us</span>
-                        <h2 class="sec-title">Why Choose Us</h2>
+                        <h2 class="sec-title">Powerful Software At The Forefront of Digital Excellence & Technology</h2>
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <div class="skill-circle-wrap">
+                        <div class="skill-circle">
+                            <div class="progressbar" data-path-color="#3E66F3">
+                                <div class="circle" data-percent="96">
+                                    <div class="circle-num"></div>
+                                    <span class="box-text">Team Members</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-circle">
+                            <div class="progressbar" data-path-color="#3E66F3">
+                                <div class="circle" data-percent="95">
+                                    <div class="circle-num"></div>
+                                    <span class="box-text">Complete Project</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-circle">
+                            <div class="progressbar" data-path-color="#3E66F3">
+                                <div class="circle" data-percent="30">
+                                    <div class="circle-num"></div>
+                                    <span class="box-text">Winning Awards</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

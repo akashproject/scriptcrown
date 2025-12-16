@@ -232,9 +232,9 @@
                                 <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
                                 <img src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}" alt="shape">
                             </div>
-                            Select Service
+                            Our Tech Services
                         </span>
-                        <h2 class="sec-title">Choose our expert services to elevate <span class="text-theme fw-normal">Your Business</span></h2>
+                        <h2 class="sec-title">Choose our expert services to elevate <span class="text-theme ">Your Business</span></h2>
                         <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value.</p>
                     </div>
                 </div>
@@ -338,9 +338,10 @@
                             <div class="icon-masking me-2">
                                 <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
                                 <img src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}" alt="shape">
+                                Industry we Serve
                             </div>
                         </span>
-                        <h2 class="sec-title">Select Your Business Category <span class="text-theme fw-normal"></span></h2>
+                        <h2 class="sec-title">Select Your Business Category <span class="text-theme"></span></h2>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-9 pe-xl-5">
@@ -501,7 +502,7 @@
                             </div>
                             WHAT WE DO
                         </span>
-                        <h2 class="sec-title">We Provide Exclusive Service For <span class="text-theme fw-normal">Your Business</span></h2>
+                        <h2 class="sec-title">We Provide Exclusive Service For <span class="text-theme ">Your Business</span></h2>
                     </div>
                 </div>
             </div>  
@@ -575,7 +576,7 @@
             </div>
           </div>
           <div class="col-auto">
-            <div class="sec-btn"><a href="service.html" class="th-btn btn-gradient2 style-radius">View All Projects</a></div>
+            <div class="sec-btn"><a href="{{ route('page','projects') }}" class="th-btn btn-gradient2 style-radius">View All Projects</a></div>
           </div>
         </div>
         <div class="slider-area">
