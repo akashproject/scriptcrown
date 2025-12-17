@@ -136,7 +136,7 @@
         <div class="particle-1" id="particle-5"></div>
     </div>
 </footer>
-@if(check_device('mobile'))
+@if(!check_device('desktop'))
 <div class="footer-menu">
     <div class="container">
         <ul>

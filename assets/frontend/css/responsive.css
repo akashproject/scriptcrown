@@ -261,6 +261,18 @@
 	.small-service-box h6 {
 		font-size: 20px;
 	}
+	.usp-card .media-body p {
+		font-size: 12px;
+	}
+	.usp-box {
+		margin-bottom: 50px;
+	}
+	.th-menu-wrapper .mobile-logo {
+		padding: 30px;
+		display: block;
+		text-align: center;
+		background-color: var(--smoke-color2);
+	}
 }
 
 @media (max-width: 991px) {
@@ -532,6 +544,9 @@
 	}
 	.search-form-input {
 		width: 100%;
+	}
+	.usp-card .box-number {
+		font-size: 49px;
 	}
 }
 

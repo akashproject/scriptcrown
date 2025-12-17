@@ -382,22 +382,12 @@
                 </div>
             </div>
             <div class="row gy-4 justify-content-center">
-                <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
-                    <div class="feature-card style2">
-                        <div class="feature-card-icon">
-                            <img src="{{ url('/assets/frontend/img/icon/feature_card_8_1.svg') }}" alt="icon">
-                        </div>
-                        <h3 class="box-title"><a href="service-details,html">Note Powerful and Security</a></h3>
-                        <p class="feature-card_text">Incorporate testimonials customer reviews, or social media feeds to build trust and credibility.</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
-                    <div class="feature-card style2">
-                        <div class="feature-card-icon">
-                            <img src="{{ url('/assets/frontend/img/icon/feature_card_8_2.svg') }}" alt="icon">
-                        </div>
-                        <h3 class="box-title"><a href="service-details,html">Easy Sort, Classify and Search</a></h3>
-                        <p class="feature-card_text">Testimonials incorporate customer reviews, or social media feeds to build trust and credibility.</p>
+
+                <div class="col-xl-6 col-lg-8 col-md-6 ">
+                    <div class="feature-card style6">
+                        <h2 class="">Core Elements of Our PPC Management Services</h2>
+                        <p class="">The core elements of our PPC management services include research, development, optimization, experimentation, and analysis. From keyword research to creation of ad copies and analysis, we make your ad campaigns effective so that they</p>
+                        <p class="">The core elements of our PPC management services include research, development, optimization, experimentation, and analysis. From keyword research.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -460,7 +450,7 @@
 
     <section class="about-sec-v4 space-bottom" id="about-sec">
         <div class="container th-container4">
-            <div class="row">
+            <div class="row my-5">
                 <div class="col-lg-5">
                     <div class="title-area text-left">
                         <span class="sub-title">Why Choose Us</span>
@@ -471,25 +461,25 @@
                     <div class="skill-circle-wrap">
                         <div class="skill-circle">
                             <div class="progressbar" data-path-color="#3E66F3">
-                                <div class="circle" data-percent="96">
+                                <div class="circle" data-percent="100">
                                     <div class="circle-num"></div>
-                                    <span class="box-text">Team Members</span>
+                                    <span class="box-text">Client Satisfaction</span>
                                 </div>
                             </div>
                         </div>
                         <div class="skill-circle">
                             <div class="progressbar" data-path-color="#3E66F3">
-                                <div class="circle" data-percent="95">
+                                <div class="circle" data-percent="99">
                                     <div class="circle-num"></div>
-                                    <span class="box-text">Complete Project</span>
+                                    <span class="box-text">Success Rate</span>
                                 </div>
                             </div>
                         </div>
                         <div class="skill-circle">
                             <div class="progressbar" data-path-color="#3E66F3">
-                                <div class="circle" data-percent="30">
+                                <div class="circle" data-percent="60">
                                     <div class="circle-num"></div>
-                                    <span class="box-text">Winning Awards</span>
+                                    <span class="box-text">Yearly Growth</span>
                                 </div>
                             </div>
                         </div>
@@ -497,58 +487,68 @@
                 </div>
             </div>
             <div class="row gy-4 justify-content-center">
-                <div class="col-xl-4 col-md-6">
-                    <div class="feature-card">
+                <div class="col-xl-3 col-md-6">
+                    <div class="feature-card style3  px-0">
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
                         <h3 class="box-title">Data Management Service</h3>
-                        <p class="feature-card_text">Intrinsicly maximize best-of-breed strategic theme areas whereas premium alignments. Collaboratively transition client.</p>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="feature-card">
+                <div class="col-xl-3 col-md-6">
+                    <div class="feature-card  px-0">
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
                         <h3 class="box-title">IT Strategy & Consultancy</h3>
-                        <p class="feature-card_text">Intrinsicly maximize best-of-breed strategic theme areas whereas premium alignments. Collaboratively transition client.</p>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="feature-card">
+                <div class="col-xl-3 col-md-6">
+                    <div class="feature-card style3  px-0">
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
                         </div>
                         <h3 class="box-title">World Class Support</h3>
-                        <p class="feature-card_text">Intrinsicly maximize best-of-breed strategic theme areas whereas premium alignments. Collaboratively transition client.</p>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="feature-card">
+                <div class="col-xl-3 col-md-6">
+                    <div class="feature-card  px-0">
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
                         <h3 class="box-title">Data Management Service</h3>
-                        <p class="feature-card_text">Intrinsicly maximize best-of-breed strategic theme areas whereas premium alignments. Collaboratively transition client.</p>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="feature-card">
+                <div class="col-xl-3 col-md-6">
+                    <div class="feature-card px-0">
+                        <div class="shape-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title">Data Management Service</h3>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="feature-card style3 px-0">
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
                         <h3 class="box-title">IT Strategy & Consultancy</h3>
-                        <p class="feature-card_text">Intrinsicly maximize best-of-breed strategic theme areas whereas premium alignments. Collaboratively transition client.</p>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="feature-card">
+                <div class="col-xl-3 col-md-6">
+                    <div class="feature-card px-0">
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
                         </div>
                         <h3 class="box-title">World Class Support</h3>
-                        <p class="feature-card_text">Intrinsicly maximize best-of-breed strategic theme areas whereas premium alignments. Collaboratively transition client.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="feature-card style3 px-0">
+                        <div class="shape-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title">IT Strategy & Consultancy</h3>
                     </div>
                 </div>
             </div>

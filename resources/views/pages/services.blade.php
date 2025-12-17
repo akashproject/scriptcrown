@@ -223,6 +223,25 @@
     @endforeach
 
     <section class="bg-auto space" data-bg-src="{{ url('assets/frontend/img/bg/testi_bg_2.png') }}">
+        <div class="container">
+            <div class="row justify-content-lg-between justify-content-center align-items-center">
+                <div class="col-lg-6 col-sm-9 pe-xl-5">
+                    <div class="title-area text-center text-lg-start">
+                        <span class="sub-title">
+                            <div class="icon-masking me-2">
+                                <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
+                                <img src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}" alt="shape">
+                                 Our Brand Value
+                            </div>
+                        </span>
+                        <h2 class="sec-title">Expertise to transform business with  <span class="text-theme">Technology and Marketing</span></h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-9 pe-xl-5">
+                    <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value.</p>
+                </div>
+            </div>
+        </div>
         <div class="counter-area-9 overflow-hidden space-extra2" >
             <div class="container">
                 <div class="row justify-content-md-between justify-content-center gy-40">
@@ -261,71 +280,6 @@
                                 <p class=" counter-text mb-n2">Experts Team Members.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-     <section class="about-sec-v4 space-bottom" id="about-sec">
-        <div class="container space-top">
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-30 mb-lg-0">
-                    <div class="img-box6">
-                        <div class="img1">
-                            <img src="{{ url('assets/frontend/img/normal/about_4_1.png') }}" alt="About">
-                        </div>
-                        <div class="shape1">
-                            <img src="{{ url('assets/frontend/img/normal/about_4_2.png') }}" alt="About">
-                        </div>
-                        
-                        <div class="color-animate"></div>
-                    </div>
-                </div>
-                <div class="col-lg-7 text-lg-start text-center">
-                    <div class="ps-xxl-5">
-                        <div class="title-area mb-35">
-                            <h2 class="sec-title">We've Been Thriving for 25 Years.</h2>
-                        </div>
-                        <p class="mt-n2 mb-25">Continually harness backward-compatible initiatives and synergistic content. Objectively strategize cutting edge niches with collaborative synergy. Globally pontificate e-business processes through orthoonal web readiness enhance backend value.</p>
-                        <div class="checklist style4 mb-40 list-center">
-                            <ul>
-                                <li><img src="{{ url('assets/frontend/img/icon/check_1.png') }}" alt="icon"> Dramatically re-engineer value added IT systems via mission</li>
-                                <li><img src="{{ url('assets/frontend/img/icon/check_1.png') }}" alt="icon"> Website & Mobile application design & Development</li>
-                                <li><img src="{{ url('assets/frontend/img/icon/check_1.png') }}" alt="icon"> Professional User Experince & Interface researching</li>
-                            </ul>
-                        </div>
-                        <a href="about.html" class="th-btn">ABOUT MORE<i class="fa-regular fa-arrow-right ms-2"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-7 text-lg-start text-center">
-                    <div class="ps-xxl-5">
-                        <div class="title-area mb-35">
-                            <h2 class="sec-title">We've Been Thriving for 25 Years.</h2>
-                        </div>
-                        <p class="mt-n2 mb-25">Continually harness backward-compatible initiatives and synergistic content. Objectively strategize cutting edge niches with collaborative synergy. Globally pontificate e-business processes through orthoonal web readiness enhance backend value.</p>
-                        <div class="checklist style4 mb-40 list-center">
-                            <ul>
-                                <li><img src="{{ url('assets/frontend/img/icon/check_1.png') }}" alt="icon"> Dramatically re-engineer value added IT systems via mission</li>
-                                <li><img src="{{ url('assets/frontend/img/icon/check_1.png') }}" alt="icon"> Website & Mobile application design & Development</li>
-                                <li><img src="{{ url('assets/frontend/img/icon/check_1.png') }}" alt="icon"> Professional User Experince & Interface researching</li>
-                            </ul>
-                        </div>
-                        <a href="about.html" class="th-btn">ABOUT MORE<i class="fa-regular fa-arrow-right ms-2"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-5 mb-30 mb-lg-0">
-                    <div class="img-box6">
-                        <div class="img1">
-                            <img src="{{ url('assets/frontend/img/normal/about_4_1.png') }}" alt="About">
-                        </div>
-                        <div class="shape1">
-                            <img src="{{ url('assets/frontend/img/normal/about_4_2.png') }}" alt="About">
-                        </div>
-                        
-                        <div class="color-animate"></div>
                     </div>
                 </div>
             </div>

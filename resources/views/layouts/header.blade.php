@@ -19,17 +19,27 @@
             </div>
             <div class="th-mobile-menu">
                 <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li class="menu-item-has-children">
-                        <a href="#">Blog</a>
-                        <ul class="sub-menu">
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="blog-details.html">Blog Details</a></li>
+                    <li class="menu-item-has-children mega-menu-wrap">
+                        <a href="{{ route('page','services') }}">Services</a>
+                        <ul class="mega-menu">
+                            @foreach(getCategories() as $key => $category)
+                            <li>
+                                <a href="{{ route('category',$category->slug) }}">
+                                    <span class="mr-5"><img src="{{ url('assets/frontend/img/icon/'.$category->slug.'.png') }}" alt="{{ $category->name }}" > 
+                                    </span><span>{{ $category->name }}</span>
+                                </a>
+                                <ul>
+                                    @foreach(getServices($category->id) as $service)
+                                    <li><a href="{{ route('services',$service->slug) }}">{{ $service->name }} Service</a></li>
+                                    @endforeach
+                                </ul>
+                            </li>
+                            @endforeach
                         </ul>
                     </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
+                    @foreach($primaryMenu as $key => $menuItem)
+                        <li><a target="_blank" href="{{ url($menuItem['url']) }}" >{{ $menuItem['name'] }}</a></li>
+                    @endforeach
                 </ul>
             </div>
         </div>
