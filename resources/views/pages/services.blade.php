@@ -182,7 +182,7 @@
                 </div>
             </div>
             
-            <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1.3},"576":{"slidesPerView":"1.3"},"768":{"slidesPerView":"1.3"},"900":{"slidesPerView":"2.5"},"1200":{"slidesPerView":"3"},"1366":{"slidesPerView":"4.2"},"1400":{"slidesPerView":"5.3"}}}'>
+            <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1.3},"576":{"slidesPerView":"1.3"},"768":{"slidesPerView":"1.3"},"900":{"slidesPerView":"2.5"},"1200":{"slidesPerView":"3"},"1366":{"slidesPerView":"4.3"},"1400":{"slidesPerView":"4.3"}}}'>
                 <div class="swiper-wrapper">
                     @foreach(getServices($category->id) as $value)
                     <div class="swiper-slide">
@@ -197,12 +197,7 @@
                                 <h3 class="box-title"><a href="{{ route('services',$value->slug) }}">{{ $value->name }}</a></h3>
                                 <div class="service-tag">
                                     <div class="available-list">
-                                        <ul>
-                                            <li>Basic Modules</li>
-                                            <li>Tasks, Calls, Events</li>
-                                            <li>Email insights</li>
-                                            <li>Sales forecasting</li>
-                                        </ul>
+                                        {!! $value->usps !!}
                                     </div>
                                 </div>
                                 <div class="bg-shape">

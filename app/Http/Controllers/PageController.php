@@ -16,7 +16,7 @@ class PageController extends Controller
             return view("pages.".$contentMain->template,compact('contentMain'));
 
         } catch(\Illuminate\Database\QueryException $e){
-            print_r($e); exit;
+            var_dump($e->getMessage());
         }
     }
 
@@ -35,7 +35,7 @@ class PageController extends Controller
             return redirect()->back()->with('message', 'Request has been submitted successfully!');
         } catch(\Illuminate\Database\QueryException $e){
             //throw $th;
-            var_dump($e);
+            var_dump($e->getMessage());
         }
     }
 }

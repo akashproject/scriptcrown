@@ -337,12 +337,7 @@
                             <h3 class="box-title"><a href="{{ route('services',$value->slug) }}">{{ $value->name }}</a></h3>
                             <div class="service-tag">
                                 <div class="available-list">
-                                    <ul>
-                                        <li>Basic Modules</li>
-                                        <li>Tasks, Calls, Events</li>
-                                        <li>Email insights</li>
-                                        <li>Sales forecasting</li>
-                                    </ul>
+                                    {!! $value->usps !!}
                                 </div>
                             </div>
                             <div class="bg-shape">

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Service;
+use App\Models\Technology;
 
 class ServiceController extends Controller
 {
@@ -17,6 +18,7 @@ class ServiceController extends Controller
         }
 
         $request->session()->put('serivce_id', $contentMain->id);
+        $technologies = Technology::whereIn('id',json_decode($contentMain->technology_id))->get();
 
         $service_id = $contentMain->id;
         $category_id = $contentMain->category_id;
@@ -25,6 +27,6 @@ class ServiceController extends Controller
 
         $template = ($contentMain->template)?$contentMain->template:'default-template';
 
-        return view("services.".$template,compact('contentMain','service_id'));
+        return view("services.".$template,compact('contentMain','service_id','technologies'));
     }
 }

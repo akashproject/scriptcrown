@@ -29,6 +29,12 @@
 							</div>
 						</div>
 						<div class="form-group row mb-2">
+							<label for="title" class="col-sm-3 control-label col-form-label">Title</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" name="title" id="title" placeholder="Title Here" value="{{ $service->title }}">
+							</div>
+						</div>
+						<div class="form-group row mb-2">
 							<label for="slug" class="col-sm-3 control-label col-form-label">Slug</label>
 							<div class="col-sm-9">
 								<input type="text" class="form-control" name="slug" id="slug" placeholder="Slug Here" value="{{ $service->slug }}" >
@@ -40,7 +46,12 @@
 								<textarea class="form-control editor" name="description"  id="description" placeholder="Enter description Here" >{{ $service->description }}</textarea>
 							</div>
 						</div>
-
+						<div class="form-group row mb-2">
+							<label for="usps" class="col-sm-3 control-label col-form-label">USPS</label>
+							<div class="col-sm-9">
+								<textarea class="form-control editor" name="usps"  id="usps" placeholder="Enter usps Here" >{{ $service->usps }}</textarea>
+							</div>
+						</div>
 						<div class="form-group row mb-2">
 							<label for="excerpt" class="col-sm-3 control-label col-form-label">Exerpt</label>
 							<div class="col-sm-9">
@@ -78,7 +89,17 @@
 								</select>
 							</div>
 						</div>	
-						
+						<div class="form-group row mb-2">
+							<label for="technology_id" class="col-sm-3 text-left control-label col-form-label">Technology</label>
+							<div class="col-sm-9">
+								<select name="technology_id[]" id="technology_id" class="select2 form-control custom-select" style="height:3" multiple>	
+									<option value="">Select Technology</option>
+									@foreach(getTechnologies() as $value)
+									<option value="{{ $value->id }}" > {{ $value->name }}</option>
+									@endforeach
+								<select>
+							</div>
+						</div>
 						<div class="row mb-2">
 							<label for="state" class="col-sm-12 text-left control-label col-form-label">Status</label>
 							<div class="col-sm-12">
@@ -120,9 +141,9 @@
 				<div class="row">
 					<div class="col-md-8" >
 						<div class="form-group row mb-2">
-							<label for="title" class="col-sm-3 control-label col-form-label">Title</label>
+							<label for="meta_title" class="col-sm-3 control-label col-form-label">Meta Title</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" name="title" id="title" placeholder="Title Here" value="{{ $service->title }}" >
+								<input type="text" class="form-control" name="meta_title" id="meta_title" placeholder="Title Here" value="{{ $service->meta_title }}" >
 							</div>
 						</div>
 						<div class="form-group row mb-2">

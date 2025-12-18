@@ -15,7 +15,6 @@ class LeadController extends Controller
             return view("lead.search",compact('search'));
 
         } catch(\Illuminate\Database\QueryException $e){
-            print_r($e); exit;
         }
     }
 
@@ -24,11 +23,12 @@ class LeadController extends Controller
         try {
             $data = $request->all();
             $data['unique_id'] = "127.0.0.1";
+            $data['service_name']= json_encode($data['service_name']);
             Lead::create($data);
             return redirect("/services");
 
         } catch(\Illuminate\Database\QueryException $e){
-            print_r($e); exit;
+             var_dump($e->getMessage());
         }
     }
 }

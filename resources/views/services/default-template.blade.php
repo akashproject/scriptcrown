@@ -326,6 +326,37 @@
             </div>
         </div>
     </section>
+
+    <section class="space" id="business-sec">
+        <div class="container th-container4">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="title-area text-left">
+                        <h2 class="sec-title">Tools we integrate</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="title-area text-left me-xl-5 ms-xl-5">
+                        <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="technogy-wrap text-center">
+                @foreach($technologies as $value)
+                <div class="technogy-content mb-2">
+                    <a href="{{ route('technologies',$value->slug) }}" class="technology-box">
+                        <span>
+                            <img src="{{ url('assets/frontend/img/tech/'.str_replace(' ','-',strtolower($value->name)).'.png') }}">
+                        </span>
+                        <span class="mx-2">
+                            <p> {{ $value->name }} </p>
+                        </span>
+                    </a>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
     
     <section class="space">
       <div class="container">
