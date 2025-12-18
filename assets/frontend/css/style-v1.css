@@ -40277,18 +40277,19 @@ span.select2-selection.select2-selection--single:focus {
 	padding: 0;
 }
 
+.available-list ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .service-tag .available-list li {
     display: inline-flex;
     width: 49%;
     list-style: none;
 	margin: 2px 0;
-}
-
-.available-list ul {
-	padding: 0;
-	margin: 0;
-	list-style: none
 }
 
 .available-list li {

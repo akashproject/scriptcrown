@@ -371,10 +371,7 @@
                                     <div class="service-tag">
                                         <div class="available-list">
                                             <ul>
-                                                <li>Basic Modules</li>
-                                                <li>Tasks, Calls, Events</li>
-                                                <li>Email insights</li>
-                                                <li>Sales forecasting</li>
+                                                {!! $value->usps !!}
                                             </ul>
                                         </div>
                                     </div>

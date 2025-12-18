@@ -326,7 +326,7 @@
             </div>
         </div>
     </section>
-
+    @if(count($technologies) > 0)
     <section class="space" id="business-sec">
         <div class="container th-container4">
             <div class="row justify-content-center">
@@ -357,7 +357,7 @@
             </div>
         </div>
     </section>
-    
+    @endif
     <section class="space">
       <div class="container">
         <h3 class="h4 mb-20">Benefits With Our Service</h3>

@@ -18,7 +18,7 @@ class ServiceController extends Controller
         }
 
         $request->session()->put('serivce_id', $contentMain->id);
-        $technologies = Technology::whereIn('id',json_decode($contentMain->technology_id))->get();
+        $technologies = ($contentMain->technology_id != null)? Technology::whereIn('id',json_decode($contentMain->technology_id))->get() : [];
 
         $service_id = $contentMain->id;
         $category_id = $contentMain->category_id;
