@@ -310,7 +310,7 @@
 
 	.title-area,
 	.sec-title {
-		--section-title-space: 50px
+		--section-title-space: 25px
 	}
 
 	.title-area.mb-45,
@@ -320,7 +320,7 @@
 
 	.sec-btn,
 	.title-line {
-		--section-title-space: 50px
+		--section-title-space: 25px
 	}
 	.header-layout1 .logo-bg {
 		width: 56%

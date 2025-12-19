@@ -12,7 +12,7 @@
                         <h1 class="breadcumb-title">Custom {{ $contentMain->name }} Solutions That Drive Results</h1>
                     </div>
                     <div class="banner-content py-3">
-                        <p>We build high-quality, responsive, and user-friendly websites tailored to your business needs. From modern UI/UX design to powerful backend development, our team delivers fast, secure, and scalable web solutions that help you grow your online presence and convert visitors into customers.</p>
+                        <p>{{ $contentMain->excerpt }}</p>
                         <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2.1},"576":{"slidesPerView":"2.4"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4.5"},"1400":{"slidesPerView":"4.3"}}}'>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -108,7 +108,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -214,6 +213,57 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="position-relative overflow-hidden project-area11 space" id="project-sec">
+      <div class="container th-container4">
+        <div class="row justify-content-lg-between justify-content-center align-items-center">
+          <div class="col-lg-6 col-sm-9 pe-xl-5">
+            <div class="title-area text-center text-lg-start"><span class="sub-title sub-title8">Our Projects</span>
+              <h2 class="sec-title sec-title3">Our <span class="">Recent</span> Projects</h2>
+              <p class="fs-20">Unveiling the extraordinary power. delving into the exceptionally powerfull features of data analysis</p>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="sec-btn"><a href="service.html" class="th-btn btn-gradient2 style-radius">View All Projects</a></div>
+          </div>
+        </div>
+        <div class="slider-area">
+          <div class="swiper th-slider" id="projectSlider10" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1.2},"576":{"slidesPerView":"1.2"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"}}}'>
+            <div class="swiper-wrapper">
+            @foreach(getProjects() as $project)
+              <div class="swiper-slide">
+                <div class="project-card4 text-center">
+                  <div class="project-img"><img src="{{ isset($project->featured_image)?getSizedImage('',$project->featured_image):'assets/frontend/img/project/project_12_1.jpg' }}" alt="project image"></div>
+                  <div class="project-content-wrap">
+                    <div class="project-content">
+                      <h3 class="box-title"><a href="project-details.html">{{ $project->name }} </a></h3>
+                        @if($project->service_id)
+                        <div class="project-service" >
+                            <ul>
+                                @foreach(getServices(null,$project->service_id) as $serve_id )
+                                <li> <a href="" >{{ $serve_id->name }}</a></li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endif
+                        @if($project->technology_id)
+                        <div class="project-tech">
+                            @foreach(getTechnologies(null,$project->technology_id) as $tech_id )
+                            <span> {{ $tech_id->name }}</span>
+                            @endforeach
+                        </div>
+                        @endif
+                    </div>
+                  </div>
+                </div>
+              </div>
+            @endforeach
+            </div>
+            <div class="slider-pagination text-center"></div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="bg-auto space" data-bg-src="{{ url('assets/frontend/img/bg/testi_bg_2.png') }}">

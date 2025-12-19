@@ -421,6 +421,11 @@
                 </div>
                 @endforeach
             </div>
+            <div class="row my-5">
+                <div class="col-12 text-center">
+                    <a href="{{ route('search-keyword') }}" class="th-btn style7 style-radius"> Get Online Presence <i class="far fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -527,6 +532,11 @@
                     </div>
                 </div>
             </div>
+            <div class="row my-5">
+                <div class="col-12 text-center">
+                    <a href="#lead-generate-popup" class="th-btn style7 style-radius open-popup-link"> Hire Dedicated Experts <i class="far fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -549,7 +559,7 @@
                         <h2 class="sec-title text-white">We Help Businesses To Achieve Their <span class="text-theme">Objectives</span></h2>
                     </div>
                     <p class="mt-n2 mb-30 text-white">Authoritatively build ubiquitous models vis-a-vis fully tested mindshare. Conveniently repurpose user friendly paradigms vis-a-vis out-of-the-box portals. Dramatically matrix magnetic schemas for extensive methodologies. Credibly.</p>
-                    <a href="about.html" class="th-btn style3">DISCOVER MORE<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                    <a href="{{ route('page','about-us') }}" class="th-btn style3">DISCOVER MORE<i class="fa-regular fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
         </div>
@@ -737,7 +747,7 @@
                             <h2 class="sec-title text-white">Let’s Here What Are The Customer <span class="text-theme">Saying</span></h2>
                         </div>
                         <p class="mt-n2 mb-35 text-white">Appropriately envisioneer leveraged information through 2.0 communities. Synergistically parallel task inexpensive products whereas cross-media ideas.</p>
-                        <a href="about.html" class="th-btn style3 shadow-none">VIEW MORE<i class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <a href="#lead-generate-popup" class="th-btn style3 shadow-none open-popup-link"> Hire Dedicated Experts <i class="far fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
                 <div class="col-xl-7 mt-40 mt-xl-0">

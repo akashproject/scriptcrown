@@ -178,6 +178,12 @@
                             Choose {{ $category->name }} service
                         </span>
                         <h2 class="sec-title">  {{ $category->name }} For<span class="text-theme fw-normal"> Your Business</span></h2>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-9 pe-xl-5">
+                    <div class="sub-description-area text-lg-start">
+                        <p>{{ $category->excerpt }}</p>
                     </div>
                 </div>
             </div>
@@ -233,7 +239,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-9 pe-xl-5">
-                    <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value.</p>
+                    <div class="sub-description-area text-lg-start">
+                        <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -291,7 +299,7 @@
             </div>
           </div>
           <div class="col-auto">
-            <div class="sec-btn"><a href="service.html" class="th-btn btn-gradient2 style-radius">View All Projects</a></div>
+            <div class="sec-btn"><a href="{{ route('page','projects') }}" class="th-btn style7 style-radius">View All Projects <i class="far fa-arrow-right ms-2"></i></a></div>
           </div>
         </div>
         <div class="slider-area">
@@ -328,6 +336,11 @@
             </div>
             <div class="slider-pagination text-center"></div>
           </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-12 text-center">
+                <a href="{{ route('search-keyword') }}" class="th-btn style7 style-radius">Get An Expert Consultant <i class="far fa-arrow-right ms-2"></i></a>
+            </div>
         </div>
       </div>
     </section>

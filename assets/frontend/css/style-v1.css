@@ -40308,7 +40308,7 @@ span.select2-selection.select2-selection--single:focus {
 	content: "\f058";
 	font-family: var(--icon-font);
 	font-weight: 600;
-	color: var(--theme-color);
+	color: var(--success-color);
 	font-size: 1.1em;
 	position: absolute;
 	top: 1px;

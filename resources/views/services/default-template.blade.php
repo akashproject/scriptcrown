@@ -234,6 +234,11 @@
                     </div>
                 </div>
             </div>
+            <div class="row my-5">
+                <div class="col-12 text-center">
+                    <a href="{{ route('search-keyword') }}" class="th-btn style7 style-radius">Share your Requirement <i class="far fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -341,6 +346,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="technogy-wrap text-center">
                 @foreach($technologies as $value)
                 <div class="technogy-content mb-2">
@@ -354,6 +360,11 @@
                     </a>
                 </div>
                 @endforeach
+            </div>
+            <div class="row my-5">
+                <div class="col-12 text-center">
+                    <a href="{{ route('search-keyword') }}" class="th-btn style7 style-radius"> Hire Dedicated Experts <i class="far fa-arrow-right ms-2"></i></a>
+                </div>
             </div>
         </div>
     </section>
