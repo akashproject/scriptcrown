@@ -306,7 +306,7 @@
                             Our Tech Services
                         </span>
                         <h2 class="sec-title">Choose our expert services to elevate <span class="text-theme ">Your Business</span></h2>
-                        <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value.</p>
+                        <p>We provide complete digital solutions by blending Generative AI, web and mobile development, digital marketing, and creative design—helping businesses innovate, scale faster, and create a powerful digital presence that truly stands out in a competitive market.</p>
                     </div>
                 </div>
                 <div class="col-auto">
@@ -448,8 +448,8 @@
                             <div class="process-card2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_1_1.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Plan &amp; Strategize</h2>
-                            <p class="process-card2_text">Leverage built-in competitor analysis tools to stay ahead of the curve</p>
+                            <h2 class="box-title">Requirement Analysis</h2>
+                            <p class="process-card2_text">We analyze your business goals and technical needs to define clear, actionable project requirements.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3 process-card2-wrap">
@@ -458,8 +458,8 @@
                             <div class="process-card2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_1_2.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Create &amp; Manage</h2>
-                            <p class="process-card2_text">Manage all your marketing assets and campaigns from one central hub.</p>
+                            <h2 class="box-title">Strategic Design</h2>
+                            <p class="process-card2_text">We create a clear, intelligent solution blueprint aligned with your business vision and technical goals.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3 process-card2-wrap">
@@ -468,8 +468,8 @@
                             <div class="process-card2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_1_3.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Optimize &amp; Analyze</h2>
-                            <p class="process-card2_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Agile Development</h2>
+                            <p class="process-card2_text">We build and iterate efficiently using agile practices to deliver high-quality, scalable solutions faster.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3 process-card2-wrap">
@@ -478,8 +478,8 @@
                             <div class="process-card2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_1_4.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Measure &amp; Grow</h2>
-                            <p class="process-card2_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Quality Delivery</h2>
+                            <p class="process-card2_text">We carefully test everything to make sure the final product works smoothly and meets your expectations.</p>
                         </div>
                     </div>
                 </div>
@@ -684,46 +684,47 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-7">
                         <div class="title-area text-center">
-                            <span class="sub-title">Awesome Feature</span>
-                            <h2 class="sec-title">Our Awesome app Features</h2>
+                            <span class="sub-title">What Makes us diffarent</span>
+                            <h2 class="sec-title">Smart Digital Solutions, One Team</h2>
+                            <p>Web, mobile, AI marketing, and creative design—all in one place to grow your business, attract users, and maximize results fast.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row gy-4 justify-content-center">
                     <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
-                        <div class="feature-card style2">
+                        <div class="feature-card style3">
                             <div class="feature-card-icon">
                                 <img src="{{ url('/assets/frontend/img/icon/feature_card_8_1.svg') }}" alt="icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details,html">Note Powerful and Security</a></h3>
-                            <p class="feature-card_text">Incorporate testimonials customer reviews, or social media feeds to build trust and credibility.</p>
+                            <h3 class="box-title mt-3"><a href="service-details,html">End-to-End Web & Mobile Solutions</a></h3>
+                            <p class="feature-card_text">We develop high-performance websites and mobile apps that boost user engagement and drive measurable business growth.</p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
-                        <div class="feature-card style2">
+                        <div class="feature-card style3">
                             <div class="feature-card-icon">
                                 <img src="{{ url('/assets/frontend/img/icon/feature_card_8_2.svg') }}" alt="icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details,html">Easy Sort, Classify and Search</a></h3>
-                            <p class="feature-card_text">Testimonials incorporate customer reviews, or social media feeds to build trust and credibility.</p>
+                            <h3 class="box-title mt-3"><a href="service-details,html">AI-Powered Digital Marketing</a></h3>
+                            <p class="feature-card_text">Leverage advanced digital marketing strategies, including SEO, social media, and PPC, to increase traffic, leads, and sales.</p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
-                        <div class="feature-card style2">
+                        <div class="feature-card style3">
                             <div class="feature-card-icon">
                                 <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details,html">Collaboration and Share</a></h3>
-                            <p class="feature-card_text">Customer testimonials incorporate reviews, or social media feeds to build trust and credibility.</p>
+                            <h3 class="box-title mt-3"><a href="service-details,html">Cutting-Edge Graphics & Media Design</a></h3>
+                            <p class="feature-card_text">Create visually stunning designs and multimedia content that strengthen your brand and attract the right audience.</p>
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
-                        <div class="feature-card style2">
+                        <div class="feature-card style3">
                             <div class="feature-card-icon">
                                 <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details,html">Share your Data to anyone</a></h3>
-                            <p class="feature-card_text">Reviews incorporate testimonials customer, or social media feeds to build trust and credibility.</p>
+                            <h3 class="box-title mt-3"><a href="service-details,html">Scalable, Tech-Driven Solutions</a></h3>
+                            <p class="feature-card_text">We deliver scalable, secure, and innovative digital solutions that grow with your business and maximize ROI.</p>
                         </div>
                     </div>
                 </div>
