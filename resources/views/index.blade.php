@@ -401,14 +401,14 @@
                             <div class="icon-masking me-2">
                                 <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
                                 <img src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}" alt="shape">
-                                Industry we Serve
+                                Industries Served
                             </div>
                         </span>
-                        <h2 class="sec-title">Select Your Business Category <span class="text-theme"></span></h2>
+                        <h2 class="sec-title">Industries We’ve Empowered to Grow <span class="text-theme"></span></h2>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-9 pe-xl-5">
-                    <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value.</p>
+                    <p>Discover how we’ve helped businesses across these key sectors increase engagement, streamline operations, and drive digital revenue.</p>
                 </div>
             </div>
             <div class="business-box-area mt-4">
@@ -499,8 +499,11 @@
                             </div>
                             WHAT WE DO
                         </span>
-                        <h2 class="sec-title">We Provide Exclusive Service For <span class="text-theme ">Your Business</span></h2>
+                        <h2 class="sec-title">Our Technical Expertise <span class="text-theme ">Tools & Frameworks</span></h2>
                     </div>
+                </div>
+                <div class="col-lg-6 col-sm-9 pe-xl-5">
+                    <p>From robust backend architectures to seamless frontend experiences, here are the core technologies our developers use to bring your vision to life.</p>
                 </div>
             </div>  
             <div class="row">
@@ -573,8 +576,8 @@
         <div class="row justify-content-lg-between justify-content-center align-items-center">
           <div class="col-lg-6 col-sm-9 pe-xl-5">
             <div class="title-area text-center text-lg-start"><span class="sub-title sub-title8">Our Projects</span>
-              <h2 class="sec-title sec-title3">Our <span class="">Recent</span> Projects</h2>
-              <p class="fs-20">We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value.</p>
+              <h2 class="sec-title sec-title3">Case Studies &  <span class="">Recent Work</span> </h2>
+              <p class="fs-20">Explore our gallery of recent work, where we combine strategy, design, and code to help brands reach their full potential.</p>
             </div>
           </div>
           <div class="col-auto">

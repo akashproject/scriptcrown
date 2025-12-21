@@ -12,7 +12,7 @@
                         <h1 class="breadcumb-title">Custom {{ $contentMain->name }} Solutions That Drive Results</h1>
                     </div>
                     <div class="banner-content py-3">
-                        <p>We build high-quality, responsive, and user-friendly websites tailored to your business needs. From modern UI/UX design to powerful backend development, our team delivers fast, secure, and scalable web solutions that help you grow your online presence and convert visitors into customers.</p>
+                        <p>Maximize your digital ROI with a team that masters the entire technology lifecycle. We build with AI and Web/Mobile expertise, promote through Data-Driven Marketing, and captivate with Professional Media Services. Whatever your goal, we have the tools and the talent to deliver measurable results under one roof.</p>
                         <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2.1},"576":{"slidesPerView":"2.4"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4.5"},"1400":{"slidesPerView":"4.3"}}}'>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -294,8 +294,8 @@
         <div class="row justify-content-lg-between justify-content-center align-items-center">
           <div class="col-lg-6 col-sm-9 pe-xl-5">
             <div class="title-area text-center text-lg-start"><span class="sub-title sub-title8">Our Projects</span>
-              <h2 class="sec-title sec-title3">Our <span class="">Recent</span> Projects</h2>
-              <p class="fs-20">Unveiling the extraordinary power. delving into the exceptionally powerfull features of data analysis</p>
+              <h2 class="sec-title sec-title3">Case Studies &  <span class="">Recent Work</span> </h2>
+              <p class="fs-20">Explore our gallery of recent work, where we combine strategy, design, and code to help brands reach their full potential.</p>
             </div>
           </div>
           <div class="col-auto">
