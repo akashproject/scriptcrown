@@ -9,7 +9,7 @@
                             <li><a href="index.html">Home</a></li>
                             <li>{{ $contentMain->name }}</li>
                         </ul>
-                        <h1 class="breadcumb-title">Custom {{ $contentMain->name }} Solutions That Drive Results</h1>
+                        <h1 class="breadcumb-title">Hire {{ $contentMain->name }} (SMM) Expert For Your Business Growth</h1>
                     </div>
                     <div class="banner-content py-3">
                         <p>{{ $contentMain->excerpt }}</p>
@@ -371,7 +371,7 @@
     @endif
     <section class="space">
       <div class="container">
-        <h3 class="h4 mb-20">Benefits With Our Service</h3>
+        <h3 class="h4 mb-20">What Sets Our Digital Strategy Apart</h3>
         <div class="service-feature-wrap">
             <div class="service-feature">
                 <div class="service-feature_icon">
@@ -427,9 +427,8 @@
 
                 <div class="col-xl-6 col-lg-8 col-md-6 ">
                     <div class="feature-card style6">
-                        <h2 class="">Core Elements of Our PPC Management Services</h2>
-                        <p class="">The core elements of our PPC management services include research, development, optimization, experimentation, and analysis. From keyword research to creation of ad copies and analysis, we make your ad campaigns effective so that they</p>
-                        <p class="">The core elements of our PPC management services include research, development, optimization, experimentation, and analysis. From keyword research.</p>
+                        <h2 class="">Why Choose SC Technologies for Social Media Marketing Services?</h2>
+                        <p class="">Choosing SC Technologies for your social media marketing means partnering with a team that views social platforms as sophisticated business engines rather than just digital billboards. We stand out by integrating our deep IT roots with creative marketing, ensuring that your social strategy is powered by real-time data and advanced AI insights. Instead of just chasing "likes," we focus on high-intent engagement and conversion-driven storytelling, bridging the gap between your brand’s technical excellence and the human connection your customers crave.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -437,8 +436,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Collaboration and Share</a></h3>
-                        <p class="feature-card_text">Customer testimonials incorporate reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Data-First Strategy</h3>
+                        <p class="feature-card_text"><strong>No Guesswork, Just Growth.</strong> We move beyond "post and pray." Every campaign at SC Technologies starts with deep audience research and competitive auditing, ensuring your content is engineered to meet specific business objectives and measurable KPIs.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -446,8 +445,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Share your Data to anyone</a></h3>
-                        <p class="feature-card_text">Reviews incorporate testimonials customer, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Tech-Integrated Marketing</h3>
+                        <p class="feature-card_text"><strong>Seamless Digital Ecosystems.</strong> Unlike standalone agencies, we bridge the gap between social media and your tech stack. We ensure your social campaigns, pixels, and tracking are perfectly synced with your website and CRM for a frictionless user journey.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -455,8 +454,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_1.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Note Powerful and Security</a></h3>
-                        <p class="feature-card_text">Incorporate testimonials customer reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">AI-Driven Insights</h3>
+                        <p class="feature-card_text"><strong>Predicting the Next Trend.</strong> We leverage advanced AI tools to analyze sentiment and predict viral trends before they peak. This proactive approach allows your brand to lead the conversation rather than just joining it, keeping you ahead of the competition.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -464,8 +463,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_2.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Easy Sort, Classify and Search</a></h3>
-                        <p class="feature-card_text">Testimonials incorporate customer reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Cinematic Media Production</h3>
+                        <p class="feature-card_text"><strong>Thumb-Stopping Visuals. </strong>With our in-house videography and graphics expertise, your social feed becomes a premium experience. We produce high-production-value Reels, TikToks, and designs that capture attention in an era of endless scrolling.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -473,8 +472,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Collaboration and Share</a></h3>
-                        <p class="feature-card_text">Customer testimonials incorporate reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Conversion-Centric Approach</h3>
+                        <p class="feature-card_text"><strong>Beyond the "Like" Button.</strong> Engagement is vanity; conversion is sanity. Our content funnels are designed to nurture followers through the buyer’s journey, turning casual observers into brand advocates and paying customers.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -482,8 +481,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Share your Data to anyone</a></h3>
-                        <p class="feature-card_text">Reviews incorporate testimonials customer, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Radical Transparency</h3>
+                        <p class="feature-card_text">Real Results, Zero Jargon. We believe in total accountability. You’ll receive comprehensive monthly reports that break down exactly how your budget is performing, focusing on the metrics that actually impact your bottom line and ROI.</p>
                     </div>
                 </div>
             </div>
@@ -534,7 +533,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">Strategy & Goal Setting</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -542,7 +541,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Content Creation</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -550,7 +549,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">World Class Support</h3>
+                        <h3 class="box-title">Platform Selection</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -558,7 +557,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">Branding & Visual Identity</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -566,7 +565,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">Community Engagement</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -574,7 +573,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Paid Advertising</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -582,7 +581,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">World Class Support</h3>
+                        <h3 class="box-title">Performance Tracking</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -590,7 +589,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Optimization & Growth</h3>
                     </div>
                 </div>
             </div>

@@ -3248,7 +3248,7 @@ textarea.is-invalid {
 }
 
 .box-title {
-	font-size: 24px;
+	font-size: 21px;
 	line-height: 1.417;
 	font-weight: 700;
 	margin-top: -0.32em
@@ -46516,7 +46516,8 @@ span.select2-selection.select2-selection--single:focus {
 	padding: 20px;
 	overflow: hidden;
 	position: relative;
-	z-index: 1
+	z-index: 1;
+    height: 372px;
 }
 
 @media (max-width: 1299px) {

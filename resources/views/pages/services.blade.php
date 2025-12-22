@@ -9,7 +9,7 @@
                             <li><a href="index.html">Home</a></li>
                             <li>{{ $contentMain->name }}</li>
                         </ul>
-                        <h1 class="breadcumb-title">Custom {{ $contentMain->name }} Solutions That Drive Results</h1>
+                        <h1 class="breadcumb-title">Our Services for Exponential Business Growth</h1>
                     </div>
                     <div class="banner-content py-3">
                         <p>Maximize your digital ROI with a team that masters the entire technology lifecycle. We build with AI and Web/Mobile expertise, promote through Data-Driven Marketing, and captivate with Professional Media Services. Whatever your goal, we have the tools and the talent to deliver measurable results under one roof.</p>
@@ -177,7 +177,7 @@
                             </div>
                             Choose {{ $category->name }} service
                         </span>
-                        <h2 class="sec-title">  {{ $category->name }} For<span class="text-theme fw-normal"> Your Business</span></h2>
+                        <h2 class="sec-title"> {{ $category->name }} Service For <span class="text-theme fw-normal"> Your Business</span></h2>
 
                     </div>
                 </div>
@@ -311,7 +311,7 @@
                   <div class="project-img"><img src="{{ isset($project->featured_image)?getSizedImage('',$project->featured_image):'assets/frontend/img/project/project_12_1.jpg' }}" alt="project image"></div>
                   <div class="project-content-wrap">
                     <div class="project-content">
-                      <h3 class="box-title"><a href="project-details.html">{{ $project->name }} </a></h3>
+                      <h3 class="box-title"><a href="{{ route('projects',$project->slug) }}">{{ $project->name }} </a></h3>
                         @if($project->service_id)
                         <div class="project-service" >
                             <ul>

@@ -49,7 +49,7 @@
 							<td>{{ $value->created_at->format("d M, Y") }}</td>									
 							<td>
 								<div class="d-inline-block text-nowrap">
-									<a href="{{ route('admin-projects',$value->slug) }}" class="btn btn-sm btn-icon">
+									<a href="{{ route('projects',$value->slug) }}" class="btn btn-sm btn-icon">
 										<i class="bx bx-show"></i>
 									</a>
 									@can('update')

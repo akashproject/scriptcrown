@@ -12,7 +12,7 @@
                         <h1 class="breadcumb-title">Custom {{ $contentMain->name }} Solutions That Drive Results</h1>
                     </div>
                     <div class="banner-content py-3">
-                        <p>We build high-quality, responsive, and user-friendly websites tailored to your business needs. From modern UI/UX design to powerful backend development, our team delivers fast, secure, and scalable web solutions that help you grow your online presence and convert visitors into customers.</p>
+                        <p>{{ $contentMain->excerpt }}</p>
                         <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2.1},"576":{"slidesPerView":"2.4"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4.5"},"1400":{"slidesPerView":"4.3"}}}'>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -114,101 +114,120 @@
         </div>
     </div>
 
-    <section class="position-relative overflow-hidden project-area11 space" id="project-sec">
-      <div class="container th-container4">
-        <div class="row justify-content-lg-between justify-content-center align-items-center">
-          <div class="col-lg-6 col-sm-9 pe-xl-5">
-            <div class="title-area text-center text-lg-start"><span class="sub-title sub-title8">Our Projects</span>
-              <h2 class="sec-title sec-title3">Our <span class="">Recent</span> Projects</h2>
-              <p class="fs-20">Unveiling the extraordinary power. delving into the exceptionally powerfull features of data analysis</p>
-            </div>
-          </div>
-          
-        </div>
-        <div class="row">
-            @foreach(getProjects() as $project)   
-            <div class="col-md-4 my-3">
-                <div class="project-card4 text-center">
-                  <div class="project-img"><img src="{{ isset($project->featured_image)?getSizedImage('',$project->featured_image):'assets/frontend/img/project/project_12_1.jpg' }}" alt="project image"></div>
-                  <div class="project-content-wrap">
-                    <div class="project-content">
-                      <h3 class="box-title"><a href="{{ route('projects',$project->slug) }}">{{ $project->name }} </a></h3>
-                        @if($project->service_id)
-                        <div class="project-service" >
-                            <ul>
-                                @foreach(getServices(null,$project->service_id) as $serve_id )
-                                <li> <a href="" >{{ $serve_id->name }}</a></li>
-                                @endforeach
-                            </ul>
-                        </div>
-                        @endif
-                        @if($project->technology_id)
-                        <div class="project-tech">
-                            @foreach(getTechnologies(null,$project->technology_id) as $tech_id )
-                            <span> {{ $tech_id->name }}</span>
-                            @endforeach
-                        </div>
-                        @endif
-                    </div>
-                  </div>
-                </div>
-            </div>
-            @endforeach
-        </div>
-      </div>
-    </section>
-
-    @include('common.embedForm')
-
-    <section class="bg-auto space" data-bg-src="{{ url('assets/frontend/img/bg/testi_bg_2.png') }}">
+    <section class="space-top space-extra-bottom">
         <div class="container">
-            <div class="title-area text-center">
-                <span class="sub-title">
-                    <div class="icon-masking me-2">
-                        <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
-                        <img src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}" alt="shape">
-                    </div>
-                    CUSTOMER FEEDBACK
-                </span>
-                <h2 class="sec-title">What Happy Clients Says <br> <span class="text-theme fw-normal"> About Us?</span></h2>
-            </div>
+            <div class="row">
+                <div class="col-xxl-8 col-lg-8">
+                    <div class="page-single">
+                        <div class="page-img">
+                            <img src="{{ url('assets/frontend/img/project/project_details.jpg') }}" alt="Project Image">
+                        </div>
+                        <div class="page-content">
+                            <h2 class="h3 page-title">IT Consultency</h2>
+                            <p class="">Interactively implement top-line ROI vis-a-vis 24/7 e-markets. Assertively communicate web-enabled catalysts for change through low-risk high-yield functionalities. Quickly optimize maintainable data for virtual interfaces. Phosfluorescently monetize cost effective ROI before leveraged sources. Holisticly envisioneer technically sound imperatives without just in time networks.</p>
 
-            <div class="slider-area">
-                <div class="swiper th-slider has-shadow" id="testiSlider2" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"1"},"1200":{"slidesPerView":"2"}}}'>
-                    <div class="swiper-wrapper">
-                        @foreach(getTestimonials() as $value)
-                        <div class="swiper-slide">
-                            <div class="testi-box">
-                                <div class="testi-box_img">
-                                    <img src="{{ url('assets/frontend/img/testimonial/testi_2_1.jpg') }}" alt="Avater">
-                                    <div class="testi-box_quote">
-                                        <img src="{{ url('assets/frontend/img/icon/quote_left_2.svg') }}" alt="quote">
+                            <div class="project-inner-box mb-40">
+                                <h3 class="box-title">The challenge of project</h3>
+                                <p class="">Authoritatively scale business meta-services before client-based technologies. Collaboratively strategize synergistic scenarios rather than flexible action items. Continually deliver market positioning convergence and mission-critical infrastructures.</p>
+                                <div class="row gy-4 align-items-center">
+                                    <div class="col-md-5">
+                                        <img class="w-100 rounded-3" src="{{ url('assets/frontend/img/project/project_inner_1.jpg') }}" alt="project">
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="checklist">
+                                            <ul>
+                                                <li><i class="fas fa-badge-check"></i> It is a long established fact that reader will</li>
+                                                <li><i class="fas fa-badge-check"></i> There are many variations of passages</li>
+                                                <li><i class="fas fa-badge-check"></i> All the Lorem Ipsum generators</li>
+                                                <li><i class="fas fa-badge-check"></i> Asearch for 'lorem ipsum' will uncover many</li>
+                                                <li><i class="fas fa-badge-check"></i> injected humour words which</li>
+                                                <li><i class="fas fa-badge-check"></i> There are many variations of passages of</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="testi-box_content">
-                                    <div class="testi-box_text">{!! $value->description !!}</div>
-                                    <div class="testi-box_review">
-                                        @for($i = 1; $i <= $value->rating; $i++)
-                                        <i class="fa-solid fa-star-sharp"></i>
-                                        @endfor
+                            </div>
+
+                            <div class="project-inner-box">
+                                <h3 class="box-title">The result of project</h3>
+                                <p class="mb-3">Objectively utilize client-based e-service after corporate niche markets. Dynamically morph compelling channels vis-a-vis multifunctional interfaces. Credibly administrate wireless opportunities after B2B materials. Phosfluorescently engineer flexible "outside the box" thinking through process-centric web services. Progressively target multidisciplinary.</p>
+                                <div class="row gy-4 align-items-center">
+                                    <div class="col-md-6">
+                                        <img class="w-100 rounded-3" src="{{ url('assets/frontend/img/project/project_inner_2.jpg') }}" alt="project">
                                     </div>
-                                    <h3 class="box-title">{{ $value->client_name }}</h3>
-                                    <p class="testi-box_desig">{{ $value->designation }}</p>
+                                    <div class="col-md-6">
+                                        <img class="w-100 rounded-3" src="{{ url('assets/frontend/img/project/project_inner_3.jpg') }}" alt="project">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        @endforeach
                     </div>
                 </div>
-                <button data-slider-prev="#testiSlider2" class="slider-arrow style3 slider-prev"><i class="far fa-arrow-left"></i></button>
-                <button data-slider-next="#testiSlider2" class="slider-arrow style3 slider-next"><i class="far fa-arrow-right"></i></button>
+                <div class="col-xxl-4 col-lg-4">
+                    <aside class="sidebar-area">
+                        <div class="widget widget_info  ">
+                            <h3 class="widget_title">Project Information</h3>
+                            <div class="project-info-list">
+                                <div class="contact-feature">
+                                    <div class="icon-btn">
+                                        <i class="fa-solid fa-user"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="contact-feature_label">Clients:</p>
+                                        <a href="https://www.trustpilot.com/" class="contact-feature_link">David Jackson</a>
+                                    </div>
+                                </div>
+                                <div class="contact-feature">
+                                    <div class="icon-btn">
+                                        <i class="fa-solid fa-folder-open"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="contact-feature_label">Category:</p>
+                                        <a href="project.html" class="contact-feature_link">IT Technology</a>
+                                    </div>
+                                </div>
+                                <div class="contact-feature">
+                                    <div class="icon-btn">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="contact-feature_label">Date</p>
+                                        <span class="contact-feature_link">20 Sep, 2024</span>
+                                    </div>
+                                </div>
+                                <div class="contact-feature">
+                                    <div class="icon-btn">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="media-body">
+                                        <p class="contact-feature_label">Address:</p>
+                                        <a href="project.html" class="contact-feature_link">55 Main Address, USA</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget widget_download  ">
+                            <h4 class="widget_title">Download Brochure</h4>
+                            <div class="download-widget-wrap">
+                                <a href="service-details.html" class="th-btn"><i class="fa-light fa-file-pdf me-2"></i>DOWNLOAD PDF</a>
+                                <a href="service-details.html" class="th-btn style5"><i class="fa-light fa-file-lines me-2"></i>DOWNLOAD DOC</a>
+                            </div>
+                        </div>
+                        <div class="widget widget_banner  " data-bg-src="{{ url('assets/frontend/img/bg/widget_banner.jpg') }}">
+                            <div class="widget-banner">
+                                <span class="text">CONTACT US NOW</span>
+                                <h2 class="title">You Need Help?</h2>
+                                <a href="contact.html" class="th-btn style3">GET A QUOTE<i class="fas fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
             </div>
         </div>
-        <div class="shape-mockup moving d-none d-xl-block" data-bottom="0%" data-left="10%"><img src="{{ url('assets/frontend/img/shape/line_1.png') }}" alt="shape"></div>
-        <div class="shape-mockup jump d-none d-xl-block" data-top="20%" data-right="2%"><img src="{{ url('assets/frontend/img/shape/line_2.png') }}" alt="shape"></div>
     </section>
 
     @include('common.embedForm')
+
     <section class="faq-area th-radius5 position-relative space overflow-hidden" id="faq-sec" data-bg-src="{{ url('/assets/frontend/img/bg/faq_bg_3.jpg') }}">
       <div class="container th-container4">
         <div class="row justify-content-center">
@@ -272,7 +291,7 @@
       <div class="shape-mockup spin d-none d-xl-block" data-top="32%" data-right="7%"><img src="{{ url('/assets/frontend/img/shape/shape_14.png') }}" alt="shape"></div>
       <div class="shape-mockup spin d-none d-xl-block" data-bottom="16%" data-right="6%"><img src="{{ url('/assets/frontend/img/shape/shape_15.png') }}" alt="shape"></div>
     </section>
-
+    
     @endsection
 @section('script')
 @endsection

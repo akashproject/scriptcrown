@@ -595,7 +595,7 @@
                     </div>
                     <div class="project-content-wrap">
                         <div class="project-content">
-                        <h3 class="box-title"><a href="project-details.html">{{ $project->name }} </a></h3>
+                        <h3 class="box-title"><a href="{{ route('projects',$project->slug) }}">{{ $project->name }} </a></h3>
                             @if($project->service_id)
                             <div class="project-service" >
                                 <ul>
@@ -699,7 +699,7 @@
                             <div class="feature-card-icon">
                                 <img src="{{ url('/assets/frontend/img/icon/feature_card_8_1.svg') }}" alt="icon">
                             </div>
-                            <h3 class="box-title mt-3"><a href="service-details,html">End-to-End Web & Mobile Solutions</a></h3>
+                            <h3 class="box-title mt-3">End-to-End Web & Mobile Solutions</h3>
                             <p class="feature-card_text">We develop high-performance websites and mobile apps that boost user engagement and drive measurable business growth.</p>
                         </div>
                     </div>
@@ -708,7 +708,7 @@
                             <div class="feature-card-icon">
                                 <img src="{{ url('/assets/frontend/img/icon/feature_card_8_2.svg') }}" alt="icon">
                             </div>
-                            <h3 class="box-title mt-3"><a href="service-details,html">AI-Powered Digital Marketing</a></h3>
+                            <h3 class="box-title mt-3">AI-Powered Digital Marketing</h3>
                             <p class="feature-card_text">Leverage advanced digital marketing strategies, including SEO, social media, and PPC, to increase traffic, leads, and sales.</p>
                         </div>
                     </div>
@@ -717,7 +717,7 @@
                             <div class="feature-card-icon">
                                 <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
                             </div>
-                            <h3 class="box-title mt-3"><a href="service-details,html">Cutting-Edge Graphics & Media Design</a></h3>
+                            <h3 class="box-title mt-3">Cutting-Edge Graphics & Media Design</h3>
                             <p class="feature-card_text">Create visually stunning designs and multimedia content that strengthen your brand and attract the right audience.</p>
                         </div>
                     </div>
@@ -726,7 +726,7 @@
                             <div class="feature-card-icon">
                                 <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
                             </div>
-                            <h3 class="box-title mt-3"><a href="service-details,html">Scalable, Tech-Driven Solutions</a></h3>
+                            <h3 class="box-title mt-3">Scalable, Tech-Driven Solutions</h3>
                             <p class="feature-card_text">We deliver scalable, secure, and innovative digital solutions that grow with your business and maximize ROI.</p>
                         </div>
                     </div>

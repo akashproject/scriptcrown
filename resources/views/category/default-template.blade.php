@@ -237,7 +237,7 @@
                   <div class="project-img"><img src="{{ isset($project->featured_image)?getSizedImage('',$project->featured_image):'assets/frontend/img/project/project_12_1.jpg' }}" alt="project image"></div>
                   <div class="project-content-wrap">
                     <div class="project-content">
-                      <h3 class="box-title"><a href="project-details.html">{{ $project->name }} </a></h3>
+                      <h3 class="box-title"><a href="{{ route('projects',$project->slug) }}">{{ $project->name }} </a></h3>
                         @if($project->service_id)
                         <div class="project-service" >
                             <ul>
