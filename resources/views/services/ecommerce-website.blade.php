@@ -136,9 +136,9 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_1.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details.html">Mobile Responsive Design</a></h3>
+                            <h3 class="box-title">Mobile Responsive Design</h3>
                             <p class="service-box2_text">Ensuring a seamless shopping experience across all devices, from smartphones to desktops.</p>
-                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>
@@ -149,9 +149,9 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_2.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details.html">Payment Gateway Integration</a></h3>
+                            <h3 class="box-title">Payment Gateway Integration</h3>
                             <p class="service-box2_text">Protecting transactions with trusted, encrypted providers like Stripe, PayPal, and Razorpay.</p>
-                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>
@@ -162,9 +162,9 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_3.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details.html">Search & Product Filtering</a></h3>
+                            <h3 class="box-title">Search & Product Filtering</h3>
                             <p class="service-box2_text">BHelping customers find exactly what they want in seconds with intuitive, lightning-fast filters.</p>
-                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>
@@ -175,9 +175,9 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_4.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details.html">Checkout Flow</a></h3>
+                            <h3 class="box-title">Checkout Flow</h3>
                             <p class="service-box2_text">Reducing cart abandonment through streamlined, one-page checkout and guest login options.</p>
-                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>
@@ -188,9 +188,9 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_5.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details.html">Order Management</a></h3>
+                            <h3 class="box-title">Order Management</h3>
                             <p class="service-box2_text">Providing real-time stock tracking and automated order processing for effortless operations.</p>
-                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>
@@ -201,9 +201,9 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_6.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details.html">Speed Optimization</a></h3>
+                            <h3 class="box-title">Speed Optimization</h3>
                             <p class="service-box2_text">Delivering ultra-fast loading times to improve user retention and boost search engine rankings.</p>
-                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>
@@ -214,9 +214,9 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_7.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details.html">SEO & Marketing Readiness</a></h3>
+                            <h3 class="box-title">SEO & Marketing Readiness</h3>
                             <p class="service-box2_text">Built-in tools for meta-tags, schema markup, and social media integration to drive organic traffic.</p>
-                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>
@@ -227,9 +227,9 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_8.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details.html">Scalable Architecture</a></h3>
+                            <h3 class="box-title">Scalable Architecture</h3>
                             <p class="service-box2_text">A robust backend designed to handle traffic spikes and grow alongside your expanding product catalog.</p>
-                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>

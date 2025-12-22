@@ -446,7 +446,7 @@
                         <div class="process-card2">
                             <div class="process-card2_number">01</div>
                             <div class="process-card2_icon">
-                                <img src="{{ url('assets/frontend/img/icon/process_1_1.svg') }}" alt="icon">
+                                <img src="{{ url('assets/frontend/img/icon/analysis.png') }}" alt="icon">
                             </div>
                             <h2 class="box-title">Requirement Analysis</h2>
                             <p class="process-card2_text">We analyze your business goals and technical needs to define clear, actionable project requirements.</p>
@@ -456,7 +456,7 @@
                         <div class="process-card2">
                             <div class="process-card2_number">02</div>
                             <div class="process-card2_icon">
-                                <img src="{{ url('assets/frontend/img/icon/process_1_2.svg') }}" alt="icon">
+                                <img src="{{ url('assets/frontend/img/icon/design-thinking.png') }}" alt="icon">
                             </div>
                             <h2 class="box-title">Strategic Design</h2>
                             <p class="process-card2_text">We create a clear, intelligent solution blueprint aligned with your business vision and technical goals.</p>
@@ -466,7 +466,7 @@
                         <div class="process-card2">
                             <div class="process-card2_number">03</div>
                             <div class="process-card2_icon">
-                                <img src="{{ url('assets/frontend/img/icon/process_1_3.svg') }}" alt="icon">
+                                <img src="{{ url('assets/frontend/img/icon/web-design.png') }}" alt="icon">
                             </div>
                             <h2 class="box-title">Agile Development</h2>
                             <p class="process-card2_text">We build and iterate efficiently using agile practices to deliver high-quality, scalable solutions faster.</p>
@@ -476,7 +476,7 @@
                         <div class="process-card2">
                             <div class="process-card2_number">04</div>
                             <div class="process-card2_icon">
-                                <img src="{{ url('assets/frontend/img/icon/process_1_4.svg') }}" alt="icon">
+                                <img src="{{ url('assets/frontend/img/icon/teamwork-icon.png') }}" alt="icon">
                             </div>
                             <h2 class="box-title">Quality Delivery</h2>
                             <p class="process-card2_text">We carefully test everything to make sure the final product works smoothly and meets your expectations.</p>

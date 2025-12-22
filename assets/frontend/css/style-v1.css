@@ -44461,9 +44461,10 @@ span.select2-selection.select2-selection--single:focus {
 	background-color: var(--white-color);
 	text-align: center;
 	padding: 30px 20px;
-	max-width: 230px;
+	max-width: 310px;
 	margin-left: auto;
-	margin-right: auto
+	margin-right: auto;
+	height: 240px;
 }
 
 .process-card-area {
@@ -45299,7 +45300,7 @@ span.select2-selection.select2-selection--single:focus {
 .process-card2_icon {
 	width: 134px;
 	height: 134px;
-	line-height: 134px;
+	line-height: 120px;
 	background-color: #EFF1F9;
 	text-align: center;
 	border: 5px solid rgba(28, 28, 37, 0.2);

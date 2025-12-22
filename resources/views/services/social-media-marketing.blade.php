@@ -124,7 +124,7 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="title-area text-left me-xl-5 ms-xl-5">
-                        <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value. </p>
+                        <p>Your Digital Footprint with Strategic Social Marketing Sub-heading: We combine data-driven targeting with creative storytelling to build an active, loyal community around your brand and turn followers into customers.</p>
                     </div>
                 </div>
             </div>
@@ -136,8 +136,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_1.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Social Media Content</h3>
-                            <p class="service-box2_text">Platform-specific posts designed to spark engagement, build community, and drive traffic back to your website.</p>
+                            <h3 class="box-title">Social Media Management</h3>
+                            <p class="service-box2_text">The daily handling of profile updates, community engagement, and brand monitoring across all major platforms.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -149,8 +149,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_2.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Email Newsletters</h3>
-                            <p class="service-box2_text">Nurturing leads and maintaining brand loyalty through curated updates, industry insights, and personalized offers.</p>
+                            <h3 class="box-title">Paid Social Advertising</h3>
+                            <p class="service-box2_text">Creating and optimizing highly targeted ad campaigns on Meta, LinkedIn, and X to drive immediate traffic and conversions.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -162,8 +162,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_3.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Articles & Blog Posts</h3>
-                            <p class="service-box2_text">Informative, SEO-driven long-form content designed to capture search traffic and answer customer pain points.</p>
+                            <h3 class="box-title">Influencer Partnerships</h3>
+                            <p class="service-box2_text">Collaborating with industry voices to build trust and reach new audiences through authentic, third-party endorsements.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -175,8 +175,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_4.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Case Studies & Success Stories</h3>
-                            <p class="service-box2_text">Real-world proof of your impact, detailing how your solutions solved specific challenges for past clients.</p>
+                            <h3 class="box-title">Integrated Shopping</h3>
+                            <p class="service-box2_text">Setting up and managing "in-app" storefronts like Instagram Shops and TikTok Shop to shorten the path to purchase.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -188,8 +188,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_5.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Whitepapers & E-books</h3>
-                            <p class="service-box2_text">In-depth, high-value technical resources used for lead generation and establishing authority in complex industries.</p>
+                            <h3 class="box-title">Video & Short-Form Content</h3>
+                            <p class="service-box2_text">Producing viral-ready reels, shorts, and TikToks designed to capture attention in fast-moving social feeds.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -201,8 +201,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_6.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Video Marketing</h3>
-                            <p class="service-box2_text">Engaging visual storytelling ranging from product demos and "how-to" guides to brand documentaries and interviews.</p>
+                            <h3 class="box-title">Community Building</h3>
+                            <p class="service-box2_text">Developing dedicated spaces like Facebook Groups or Discord servers to foster deep brand loyalty and peer-to-peer discussion.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -214,8 +214,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_7.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Infographics & Data Visualization</h3>
-                            <p class="service-box2_text">Transforming complex data and statistics into easy-to-digest, highly shareable visual assets.</p>
+                            <h3 class="box-title">Social Listening & Analytics</h3>
+                            <p class="service-box2_text">Monitoring brand mentions and industry trends to gain actionable insights into customer sentiment and competitor strategy.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -227,8 +227,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_8.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Podcasts & Audio Content</h3>
-                            <p class="service-box2_text">Building a personal connection with your audience through long-form discussions and industry expert interviews.</p>
+                            <h3 class="box-title">Platform-Specific Giveaways</h3>
+                            <p class="service-box2_text">Launching viral-oriented campaigns to rapidly increase follower count and boost organic brand engagement.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -293,8 +293,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_1.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Select a project</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Keyword Research</h2>
+                            <p class="process-card_text">Identify the Right Users with Intent-Driven Insights</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -303,8 +303,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_2.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Project analysis</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Content Planning</h2>
+                            <p class="process-card_text">Create a Scalable Content Blueprint That Ranks</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -313,8 +313,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_3.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Plan Execute</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Content Creation</h2>
+                            <p class="process-card_text">Produce High-Quality Content and Deliver It at Scale</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -323,8 +323,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_4.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Deliver result</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Performance Tracking & Conversion</h2>
+                            <p class="process-card_text">Measure, Optimize, and Scale What Converts</p>
                         </div>
                     </div>
                 </div>
@@ -378,8 +378,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_1.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">Flexible Solutions</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Bridge the Gap Between Target Audience and your product</h4>
+                    <p class="service-feature_text">While many agencies are purely data-driven, we believe data only tells half the story. We combine deep analytical insights with empathetic storytelling. By understanding the psychology behind the click, we create marketing campaigns that don't just reach people—they resonate with them on a personal level.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -387,8 +387,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_2.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">24/7 Unlimited Support</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">AI-Enhanced, Not AI-Dependent</h4>
+                    <p class="service-feature_text">We leverage cutting-edge AI-powered solutions to automate the mundane and predict market trends, but we never let the machines take the driver's seat. Our human experts curate every output to ensure your brand maintains its Unique soul and Authenticity, giving you the speed of modern tech with the nuance of human creativity.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -396,8 +396,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_1.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">Flexible Solutions</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Full-Spectrum Synergy</h4>
+                    <p class="service-feature_text">Because we are a full-service IT agency, your marketing team sits in the same room as your web developers and app designers. This means your digital strategy isn't a "plug-in"—it’s integrated into your tech stack. We ensure your landing pages are lightning-fast and your user journeys are seamless, eliminating the friction that usually kills conversions.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -405,8 +405,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_2.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">24/7 Unlimited Support</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Radical Transparency & Ownership</h4>
+                    <p class="service-feature_text">We don’t hide behind "vanity metrics" like likes or impressions if they aren't leading to revenue. You get a clear, jargon-free window into exactly where your budget is going and how it’s performing. We treat your business like our own, providing honest advice even when it means pivoting away from a "trendy" tactic that isn't right for your specific goals.</p>
                 </div>
             </div>
         </div>

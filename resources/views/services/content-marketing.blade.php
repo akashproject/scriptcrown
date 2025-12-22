@@ -124,7 +124,7 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="title-area text-left me-xl-5 ms-xl-5">
-                        <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value. </p>
+                        <p>From awareness to conversion, we deploy a diverse mix of content types to ensure your brand reaches your audience wherever they spend their time.</p>
                     </div>
                 </div>
             </div>
@@ -293,8 +293,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_1.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Select a project</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Keyword Research</h2>
+                            <p class="process-card_text">Identify the Right Users with Intent-Driven Insights</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -303,8 +303,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_2.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Project analysis</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Content Planning</h2>
+                            <p class="process-card_text">Create a Scalable Content Blueprint That Ranks</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -313,8 +313,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_3.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Plan Execute</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Content Creation</h2>
+                            <p class="process-card_text">Produce High-Quality Content and Deliver It at Scale</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -323,8 +323,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_4.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Deliver result</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Performance Tracking & Conversion</h2>
+                            <p class="process-card_text">Measure, Optimize, and Scale What Converts</p>
                         </div>
                     </div>
                 </div>
