@@ -6,10 +6,10 @@
                 <div class="col-lg-8">
                     <div class="breadcumb-content py-3">
                         <ul class="breadcumb-menu">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="{{ route('website') }}">Home</a></li>
                             <li>{{ $contentMain->name }}</li>
                         </ul>
-                        <h1 class="breadcumb-title">Custom {{ $contentMain->name }} Solutions That Drive Results</h1>
+                        <h1 class="breadcumb-title mt-2">{{ $contentMain->title }}</h1>
                     </div>
                     <div class="banner-content py-3">
                         <p>{{ $contentMain->excerpt }}</p>
@@ -124,7 +124,7 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="title-area text-left me-xl-5 ms-xl-5">
-                        <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value. </p>
+                        <p>Elevate your brand with our Professional SEO Service, designed to turn search rankings into revenue. We blend technical audits, intent-based keywords, and authority-building content to put you in front of the right customers at the right time. </p>
                     </div>
                 </div>
             </div>
@@ -136,7 +136,7 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_1.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Social Media Content</h3>
+                            <h3 class="box-title">Technical SEO</h3>
                             <p class="service-box2_text">Platform-specific posts designed to spark engagement, build community, and drive traffic back to your website.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
@@ -149,8 +149,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_2.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Email Newsletters</h3>
-                            <p class="service-box2_text">Nurturing leads and maintaining brand loyalty through curated updates, industry insights, and personalized offers.</p>
+                            <h3 class="box-title">On-Page SEO</h3>
+                            <p class="service-box2_text">On-page SEO involves optimizing individual web pages to rank higher and earn more relevant traffic.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -162,8 +162,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_3.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Articles & Blog Posts</h3>
-                            <p class="service-box2_text">Informative, SEO-driven long-form content designed to capture search traffic and answer customer pain points.</p>
+                            <h3 class="box-title">Off-Page SEO</h3>
+                            <p class="service-box2_text">Backlink building, social media signals, influencer outreach, and brand mentions on high-authority sites.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -175,8 +175,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_4.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Case Studies & Success Stories</h3>
-                            <p class="service-box2_text">Real-world proof of your impact, detailing how your solutions solved specific challenges for past clients.</p>
+                            <h3 class="box-title">Local SEO</h3>
+                            <p class="service-box2_text">Google Business Profile (GBP) management, local citations (NAP: Name, Address, Phone), and managing local customer reviews.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -188,8 +188,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_5.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Whitepapers & E-books</h3>
-                            <p class="service-box2_text">In-depth, high-value technical resources used for lead generation and establishing authority in complex industries.</p>
+                            <h3 class="box-title">Content SEO</h3>
+                            <p class="service-box2_text">While related to on-page, this service focuses specifically on the quality and structure of the information provided</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -201,8 +201,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_6.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Video Marketing</h3>
-                            <p class="service-box2_text">Engaging visual storytelling ranging from product demos and "how-to" guides to brand documentaries and interviews.</p>
+                            <h3 class="box-title">E-commerce SEO</h3>
+                            <p class="service-box2_text">Product schema markup (price, reviews, availability), category page optimization, and managing "out of stock" page redirects.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -214,8 +214,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_7.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Infographics & Data Visualization</h3>
-                            <p class="service-box2_text">Transforming complex data and statistics into easy-to-digest, highly shareable visual assets.</p>
+                            <h3 class="box-title">International SEO</h3>
+                            <p class="service-box2_text">Implementing hreflang tags, setting up country-specific subdomains (e.g., .fr or .de), and localized keyword research.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -227,8 +227,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_8.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Podcasts & Audio Content</h3>
-                            <p class="service-box2_text">Building a personal connection with your audience through long-form discussions and industry expert interviews.</p>
+                            <h3 class="box-title">Mobile SEO</h3>
+                            <p class="service-box2_text">Core Web Vitals optimization, touch-element spacing, and ensuring no "intrusive interstitials" (pop-ups) block the mobile view.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -293,8 +293,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_1.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Select a project</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Audit Infrastructure</h2>
+                            <p class="process-card_text">Optimize site speed and crawlability to ensure a healthy technical foundation.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -303,8 +303,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_2.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Project analysis</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Analyze Intent</h2>
+                            <p class="process-card_text">Perform data-driven keyword research to align content with specific user needs.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -313,8 +313,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_3.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Plan Execute</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Execute Content</h2>
+                            <p class="process-card_text">Create and optimize high-value assets mapped to target search terms.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -323,8 +323,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_4.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Deliver result</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Build Authority</h2>
+                            <p class="process-card_text">Secure high-quality backlinks and track conversions to scale measurable growth.</p>
                         </div>
                     </div>
                 </div>
@@ -378,8 +378,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_1.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">Flexible Solutions</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Holistic Technical Optimization</h4>
+                    <p class="service-feature_text">Most agencies only focus on content, but as an IT-service-based agency, we specialize in Technical SEO. We optimize your site’s architecture, improve server response times, and implement advanced schema markups. This ensures that search engines can crawl your site effortlessly, giving you a massive advantage over competitors with slower, poorly structured websites.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -387,8 +387,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_2.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">24/7 Unlimited Support</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">High-Intent Traffic Growth</h4>
+                    <p class="service-feature_text">We don't chase "vanity traffic" that doesn't buy. Our strategy centers on User Intent. By analyzing the psychology behind search queries, we target long-tail keywords that your customers use when they are ready to make a decision. This results in fewer "window shoppers" and a much higher conversion rate for your business.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -396,8 +396,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_1.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">Flexible Solutions</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Integrated Multimedia Authority</h4>
+                    <p class="service-feature_text">Leveraging our in-house Graphics & Videography teams, we create SEO-rich multimedia content that keeps users on your page longer. Search engines love "dwell time," and our high-quality videos and infographics make your site more engaging, signaling to Google that your brand is a top-tier authority in your industry.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -405,8 +405,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_2.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">24/7 Unlimited Support</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Future-Proof AI Insights</h4>
+                    <p class="service-feature_text">The SEO landscape changes every week. We use AI-powered analytics to predict algorithm shifts and monitor competitor moves in real-time. This proactive approach means your rankings don't just "spike" for a month—they stay stable and grow over time, providing you with a sustainable, long-term Return on Investment (ROI).</p>
                 </div>
             </div>
         </div>
@@ -427,9 +427,8 @@
 
                 <div class="col-xl-6 col-lg-8 col-md-6 ">
                     <div class="feature-card style6">
-                        <h2 class="">Core Elements of Our PPC Management Services</h2>
-                        <p class="">The core elements of our PPC management services include research, development, optimization, experimentation, and analysis. From keyword research to creation of ad copies and analysis, we make your ad campaigns effective so that they</p>
-                        <p class="">The core elements of our PPC management services include research, development, optimization, experimentation, and analysis. From keyword research.</p>
+                        <h2 class="">Why Choose SC Technologies for SEO Services?</h2>
+                        <p class="">Choosing SC Technologies for your SEO services means moving beyond basic keyword stuffing and entering a realm of comprehensive digital dominance. As a full-scale IT and media agency, we don’t just look at SEO as a marketing tactic; we treat it as a technical science. We understand that for a website to rank, it must be a perfect blend of lightning-fast code, intuitive user experience, and authoritative content. By choosing us, you gain access to a team that can fix your backend server issues, design high-converting landing pages, and craft viral-ready media—all while ensuring every move aligns with the latest search engine algorithms.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -437,8 +436,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Collaboration and Share</a></h3>
-                        <p class="feature-card_text">Customer testimonials incorporate reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Digital Transformation</h3>
+                        <p class="feature-card_text"><strong>Empowering Businesses Through Future-Ready Technology.</strong> We don't just build websites; we create integrated digital ecosystems that streamline your operations and set the stage for global scaling.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -446,8 +445,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Share your Data to anyone</a></h3>
-                        <p class="feature-card_text">Reviews incorporate testimonials customer, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Strategic Web Development</h3>
+                        <p class="feature-card_text"><strong>High-Performance Code Meets Human-Centric Design.</strong> Our developers build fast, secure, and responsive platforms that look stunning and function flawlessly across every device and browser.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -455,8 +454,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_1.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Note Powerful and Security</a></h3>
-                        <p class="feature-card_text">Incorporate testimonials customer reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Precision Digital Marketing</h3>
+                        <p class="feature-card_text"><strong>Data-Driven Strategies That Convert Scrollers into Customers.</strong> Move beyond vanity metrics. We use deep analytics and psychological insights to create campaigns that drive actual revenue and brand loyalty.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -464,8 +463,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_2.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Easy Sort, Classify and Search</a></h3>
-                        <p class="feature-card_text">Testimonials incorporate customer reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Cinematic Media & Graphics</h3>
+                        <p class="feature-card_text"><strong>Visual Storytelling That Captures Your Brand’s Unique Soul.</strong> From high-definition videography to bespoke graphic design, we create the thumb-stopping content your brand needs to stand out in a crowded feed.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -473,8 +472,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Collaboration and Share</a></h3>
-                        <p class="feature-card_text">Customer testimonials incorporate reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Mobile Innovation</h3>
+                        <p class="feature-card_text"><strong>User-First App Development for the On-the-Go Generation.</strong> We turn your ideas into intuitive iOS and Android applications, ensuring your business is always just one tap away from your customers.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -482,8 +481,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Share your Data to anyone</a></h3>
-                        <p class="feature-card_text">Reviews incorporate testimonials customer, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">AI-Powered Solutions</h3>
+                        <p class="feature-card_text"><strong>Leveraging the Power of Intelligence to Automate Growth.</strong> Stay ahead of the competition by integrating smart automation and predictive analytics into your workflow for smarter, faster decision-making.</p>
                     </div>
                 </div>
             </div>
@@ -495,8 +494,8 @@
             <div class="row my-5">
                 <div class="col-lg-5">
                     <div class="title-area text-left">
-                        <span class="sub-title">Why Choose Us</span>
-                        <h2 class="sec-title">Powerful Software At The Forefront of Digital Excellence & Technology</h2>
+                        <h2 class="sec-title">Key Components of Our Professional SEO Services</h2>
+                        <p> A comprehensive, results-driven SEO approach designed to improve visibility, attract qualified traffic, and drive consistent business growth. </p>
                     </div>
                 </div>
                 <div class="col-xl-7">
@@ -534,7 +533,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">Targeted Intent</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -542,7 +541,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Technical Excellence</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -550,7 +549,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">World Class Support</h3>
+                        <h3 class="box-title">Mobile Priority</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -558,7 +557,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">Semantic Authority</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -566,7 +565,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">Local Dominance</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -574,7 +573,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Quality Backlinks</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -582,7 +581,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">World Class Support</h3>
+                        <h3 class="box-title">User Experience</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -590,8 +589,13 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Conversion Analytics</h3>
                     </div>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-12 text-center">
+                    <a href="{{ route('search-keyword') }}" class="th-btn style7 style-radius">Share your Requirement <i class="far fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
         </div>
@@ -646,7 +650,6 @@
     </section>
 
     @include('common.embedForm')
-
     @if($contentMain->faqs)
     <section class="faq-area th-radius5 position-relative space overflow-hidden" id="faq-sec" data-bg-src="{{ url('/assets/frontend/img/bg/faq_bg_3.jpg') }}">
       <div class="container th-container4">

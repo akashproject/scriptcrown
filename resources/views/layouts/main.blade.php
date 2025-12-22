@@ -1,29 +1,29 @@
 <!DOCTYPE HTML>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <title>{{ isset($contentMain->title)?$contentMain->title:'Web Development | Best Website Designing | ScriptCrown' }}</title>
+    <title>{{ isset($contentMain->meta_title)?$contentMain->meta_title:'Web Development | Best Website Designing | SC Technologies' }}</title>
     <meta name="facebook-domain-verification" content="he9zy5upymc72288m3qpcwda5dygul" />
-    <meta name="description" content="{{ isset($contentMain->meta_description)?$contentMain->meta_description:'Scriptcrown delivers you the best web development in affordable prices including website designing, mobile app development, digital marketing solutions and many more.' }}" />
+    <meta name="description" content="{{ isset($contentMain->meta_description)?$contentMain->meta_description:'SC Technologies delivers you the best web development in affordable prices including website designing, mobile app development, digital marketing solutions and many more.' }}" />
     <link rel="canonical" href="{{url()->current()}}"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="title" content="{{ isset($contentMain->title)?$contentMain->title:'' }}">
+    <meta name="title" content="{{ isset($contentMain->meta_title)?$contentMain->meta_title:'' }}">
     <meta name="robots" content="{{ isset($contentMain->robots)?$contentMain->robots:'' }}" />
     <meta name="google-site-verification" content="_Is7-guFC312LQs0E9yYfc90B7NW6Dx--HQZrLtBeLs" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="Scriptcrown Infotech" />
+    <meta property="og:site_name" content="SC Technologies" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="{{ isset($contentMain->title)?$contentMain->title:'Web Development | Best Website Designing | ScriptCrown' }}" />
-    <meta property="og:description" content="{{ isset($contentMain->meta_description)?$contentMain->meta_description:'Scriptcrown delivers you the best web development in affordable prices including website designing, mobile app development, digital marketing solutions and many more.' }}" />
+    <meta property="og:title" content="{{ isset($contentMain->meta_title)?$contentMain->meta_title:'Web Development | Best Website Designing | SC Technologies' }}" />
+    <meta property="og:description" content="{{ isset($contentMain->meta_description)?$contentMain->meta_description:'SC Technologies delivers you the best web development in affordable prices including website designing, mobile app development, digital marketing solutions and many more.' }}" />
     <meta property="og:url" content="{{url()->current()}}" />
     <meta property="og:image" content="https://www.facebook.com/gtzindiapvtltd" />
     <meta property="og:image:secure_url" content="https://www.facebook.com/gtzindiapvtltd" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@GTZIndiaPvtLtd" />
-    <meta name="twitter:title" content="{{ isset($contentMain->title)?$contentMain->title:'Web Development | Best Website Designing | ScriptCrown' }}" />
-    <meta name="twitter:description" content="{{ isset($contentMain->meta_description)?$contentMain->meta_description:'Scriptcrown delivers you the best web development in affordable prices including website designing, mobile app development, digital marketing solutions and many more.' }}" />
+    <meta name="twitter:title" content="{{ isset($contentMain->meta_title)?$contentMain->meta_title:'Web Development | Best Website Designing | SC Technologies' }}" />
+    <meta name="twitter:description" content="{{ isset($contentMain->meta_description)?$contentMain->meta_description:'SC Technologies delivers you the best web development in affordable prices including website designing, mobile app development, digital marketing solutions and many more.' }}" />
     <meta name="twitter:creator" content="@GTZIndiaPvtLtd" />
     <meta name="twitter:image" content="" />
     <meta name="twitter:label1" content="Written by" />
