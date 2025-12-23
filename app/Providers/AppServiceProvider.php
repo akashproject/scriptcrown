@@ -18,6 +18,7 @@ class AppServiceProvider extends ServiceProvider
      * Register any application services.
      */
     private $primaryMenu;
+    private $footerMenu;
     private $formData;
     public function register(): void
     {
@@ -37,8 +38,31 @@ class AppServiceProvider extends ServiceProvider
             ),
         );
 
+        $this->footerMenu = array(
+            array(
+                'url'=>'/about-us',
+                'name' => "About Company",
+            ),
+            array(
+                'url'=>'/projects',
+                'name' => "Case Studies",
+            ),
+             array(
+                'url'=>'/blogs',
+                'name' => "Read & Learn",
+            ),
+            array(
+                'url'=>'/contact-us',
+                'name' => "Contact Us",
+            ),
+        );
+
         App::singleton('primaryMenu', function () {
             return $this->primaryMenu;
+        });
+
+        App::singleton('footerMenu', function () {
+            return $this->footerMenu;
         });
 
         // $ip = request()->ip();
@@ -70,6 +94,7 @@ class AppServiceProvider extends ServiceProvider
             }
 
             $view->with('primaryMenu', $this->primaryMenu);
+            $view->with('footerMenu', $this->footerMenu);
         });
     }
 }

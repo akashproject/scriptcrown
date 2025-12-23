@@ -6,7 +6,7 @@
                 <div class="col-lg-8">
                     <div class="breadcumb-content py-3">
                         <ul class="breadcumb-menu">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="{{ route('website') }}">Home</a></li>
                             <li>{{ $contentMain->name }}</li>
                         </ul>
                         <h1 class="breadcumb-title">Custom {{ $contentMain->name }} Solutions That Drive Results</h1>

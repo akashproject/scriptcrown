@@ -56,25 +56,20 @@
                         <h3 class="widget_title">Quick Links</h3>
                         <div class="menu-all-pages-container">
                             <ul class="menu">
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="team.html">Meet Our Team</a></li>
-                                <li><a href="project.html">Our Projects</a></li>
-                                <li><a href="faq.html">Help & FAQs</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                            </ul>
+                                @foreach($footerMenu as $menu)
+                                <li><a href="{{ url($menu['url']) }}">{{ $menu['name'] }}</a></li>
+                                @endforeach 
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-auto">
                     <div class="widget widget_nav_menu footer-widget">
-                        <h3 class="widget_title">IT SERVICES</h3>
+                        <h3 class="widget_title">OUR SERVICES</h3>
                         <div class="menu-all-pages-container">
                             <ul class="menu">
-                                <li><a href="service-details.html">Web Development</a></li>
-                                <li><a href="service-details.html">Business Development</a></li>
-                                <li><a href="service-details.html">Product Management</a></li>
-                                <li><a href="service-details.html">UI/UX Design</a></li>
-                                <li><a href="service-details.html">Cloud services</a></li>
+                                @foreach(getCategories() as $key => $category)
+                                <li><a href="{{ route('category',$category->slug) }}"> {{ $category->name }}</a></li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
@@ -85,23 +80,23 @@
                         <div class="recent-post-wrap">
                             <div class="recent-post">
                                 <div class="media-img">
-                                    <a href="blog-details.html"><img src="assets/frontend/img/blog/recent-post-2-1.jpg" alt="Blog Image"></a>
+                                    <a href="javascript:void(0)"><img src="assets/frontend/img/blog/recent-post-2-1.jpg" alt="Blog Image"></a>
                                 </div>
                                 <div class="media-body">
-                                    <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Unsatiable entreaties may collecting Power.</a></h4>
+                                    <h4 class="post-title"><a class="text-inherit" href="javascript:void(0)">Unsatiable entreaties may collecting Power.</a></h4>
                                     <div class="recent-post-meta">
-                                        <a href="blog.html"><i class="fal fa-calendar-days"></i>21 June, 2025</a>
+                                        <a href="javascript:void(0)"><i class="fal fa-calendar-days"></i>21 June, 2025</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="recent-post">
                                 <div class="media-img">
-                                    <a href="blog-details.html"><img src="assets/frontend/img/blog/recent-post-2-2.jpg" alt="Blog Image"></a>
+                                    <a href="javascript:void(0)"><img src="assets/frontend/img/blog/recent-post-2-2.jpg" alt="Blog Image"></a>
                                 </div>
                                 <div class="media-body">
-                                    <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Regional Manager limited time management.</a></h4>
+                                    <h4 class="post-title"><a class="text-inherit" href="javascript:void(0)">Regional Manager limited time management.</a></h4>
                                     <div class="recent-post-meta">
-                                        <a href="blog.html"><i class="fal fa-calendar-days"></i>22 June, 2025</a>
+                                        <a href="javascript:void(0)"><i class="fal fa-calendar-days"></i>22 June, 2025</a>
                                     </div>
                                 </div>
                             </div>
@@ -115,14 +110,14 @@
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-6">
-                    <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2025 <a href="https://themeforest.net/user/themeholy">Themeholy</a>. All Rights Reserved.</p>
+                    <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2025 SC Technologies. All Rights Reserved.</p>
                 </div>
                 <div class="col-lg-6 text-end d-none d-lg-block">
                     <div class="footer-links">
                         <ul>
-                            <li><a href="about.html">Terms & Condition</a></li>
-                            <li><a href="about.html">Careers</a></li>
-                            <li><a href="about.html">Privacy Policy</a></li>
+                            <li><a href="{{ route('page','terms-condition') }}">Terms & Condition</a></li>
+                            <li><a href="{{ route('page','careers') }}">Careers</a></li>
+                            <li><a href="{{ route('page','privacy-policy') }}">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>

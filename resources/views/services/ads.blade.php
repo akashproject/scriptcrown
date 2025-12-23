@@ -9,10 +9,10 @@
                             <li><a href="{{ route('website') }}">Home</a></li>
                             <li>{{ $contentMain->name }}</li>
                         </ul>
-                        <h1 class="breadcumb-title">Custom {{ $contentMain->name }} Solutions That Drive Results</h1>
+                        <h1 class="breadcumb-title mt-2">Hire Performance Marketing Experts to Multiplies Growth</h1>
                     </div>
                     <div class="banner-content py-3">
-                        <p>We build high-quality, responsive, and user-friendly websites tailored to your business needs. From modern UI/UX design to powerful backend development, our team delivers fast, secure, and scalable web solutions that help you grow your online presence and convert visitors into customers.</p>
+                        <p>SC Technologies provides performance marketing services are designed to deliver measurable growth at every stage of the funnel. We combine strategic branding, precision targeting, and data-driven optimization to attract the right audience, generate high-quality leads, and convert them into paying customers. Every campaign is optimized for maximum ROI, ensuring your ad spend translates into real business results.</p>
                         <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2.1},"576":{"slidesPerView":"2.4"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4.5"},"1400":{"slidesPerView":"4.3"}}}'>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -119,19 +119,12 @@
             <div class="row justify-content-center">
                 <div class="col-lg-5">
                     <div class="title-area text-left">
-                        <span class="sub-title">
-                            <div class="icon-masking me-2">
-                                <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
-                                <img src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}" alt="shape">
-                            </div>
-                            Our Tech Services
-                        </span>
                         <h2 class="sec-title">Professional {{ $contentMain->name }} Service</h2>
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <div class="title-area text-left me-xl-5 ms-xl-5">
-                        <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value. </p>
+                        <p>Maximize your ROI with our Professional Google & Facebook Ads Service. We combine intent-based search targeting with precision social demographic data to turn every ad dollar into measurable business growth. </p>
                     </div>
                 </div>
             </div>
@@ -143,9 +136,9 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_1.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details.html">Cyber Security</a></h3>
-                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
-                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                            <h3 class="box-title">Search Engine Marketing (SEM)</h3>
+                            <p class="service-box2_text">We put your solution right in front of people actively searching to buy it, right now.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>
@@ -156,9 +149,9 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_2.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details.html">Data Protection</a></h3>
-                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
-                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                            <h3 class="box-title">Paid Social Media (Ads)</h3>
+                            <p class="service-box2_text">We find your ideal customers on platforms like Facebook, Instagram and LinkedIn, turning their scrolling into serious interest.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>
@@ -169,9 +162,9 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_3.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details.html">Server Security</a></h3>
-                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
-                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                            <h3 class="box-title">Affiliate Marketing</h3>
+                            <p class="service-box2_text">You only pay us (or our partners) when a genuine sale or lead is delivered – pure, results-driven growth.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>
@@ -182,9 +175,9 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_4.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details.html">Network Security</a></h3>
-                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
-                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                            <h3 class="box-title">Remarketing Campaigns</h3>
+                            <p class="service-box2_text">We gently nudge those who showed interest but didn't convert, bringing them back to seal the deal.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>
@@ -195,9 +188,9 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_5.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details.html">Data Encryption</a></h3>
-                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
-                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                            <h3 class="box-title">Programmatic Advertising</h3>
+                            <p class="service-box2_text">Our tech automatically finds the perfect audience across the web, ensuring your ads hit the mark without wasteful spending.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>
@@ -208,9 +201,9 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_6.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details.html">Hacking Protection</a></h3>
-                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
-                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                            <h3 class="box-title">Native Advertising</h3>
+                            <p class="service-box2_text">We create engaging content that blends seamlessly into popular sites, capturing attention naturally before they even realize it's an ad.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>
@@ -221,9 +214,9 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_7.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details.html">Backup & Recovery</a></h3>
-                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
-                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                            <h3 class="box-title">Influencer Marketing</h3>
+                            <p class="service-box2_text">We connect you with trusted voices whose recommendations turn followers into your next loyal customers.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>
@@ -234,12 +227,44 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_8.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title"><a href="service-details.html">Cloud Security</a></h3>
-                            <p class="service-box2_text">Building a cybersecurity culture within organizations is essential to promoting security.</p>
-                            <a href="service-details.html" class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a>
+                            <h3 class="box-title">Performance Email Marketing</h3>
+                            <p class="service-box2_text">We nurture your leads with tailored messages, guiding them step-by-step from curious visitor to happy client.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-12 text-center">
+                    <a href="{{ route('search-keyword') }}" class="th-btn style7 style-radius">Share your Requirement <i class="far fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="space" id="business-sec">
+        <div class="container th-container4">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="title-area text-left">
+                        <h2 class="sec-title">Professional {{ $contentMain->name }} Service</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="title-area text-left me-xl-5 ms-xl-5">
+                        <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="business-box-area mt-4">
+                @foreach(getBusinesses() as $value)
+                <div class="business-box-wrap">
+                    <a href="{{ route('business',$value->slug) }}" class="business-box">
+                        <img src="{{ isset($value->featured_image)?getSizedImage('',$value->featured_image):'https://dummyimage.com/200x100' }}" ></i>
+                        <h6> {{ $value->name }} </h6>
+                    </a>
+                </div>
+                @endforeach
             </div>
         </div>
     </section>
@@ -268,8 +293,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_1.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Select a project</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Creative Engineering</h2>
+                            <p class="process-card_text">We design high-impact, platform-specific visual assets tailored to your target audience.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -278,8 +303,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_2.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Project analysis</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Conversion Architecture</h2>
+                            <p class="process-card_text">We build high-converting, mobile-responsive landing pages optimized for UX and precision tracking.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -288,8 +313,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_3.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Plan Execute</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Campaign Deployment</h2>
+                            <p class="process-card_text">We launch targeted Google and Meta campaigns using advanced bidding and audience layering.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -298,15 +323,52 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_4.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Deliver result</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Performance Optimization</h2>
+                            <p class="process-card_text">We scale growth through rigorous data analysis and creative refining to maximize your ROI.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+    @if(count($technologies) > 0)
+    <section class="space" id="business-sec">
+        <div class="container th-container4">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="title-area text-left">
+                        <h2 class="sec-title">Tools we integrate</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="title-area text-left me-xl-5 ms-xl-5">
+                        <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value. </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="technogy-wrap text-center">
+                @foreach($technologies as $value)
+                <div class="technogy-content mb-2">
+                    <a href="{{ route('technologies',$value->slug) }}" class="technology-box">
+                        <span>
+                            <img src="{{ url('assets/frontend/img/tech/'.str_replace(' ','-',strtolower($value->name)).'.png') }}">
+                        </span>
+                        <span class="mx-2">
+                            <p> {{ $value->name }} </p>
+                        </span>
+                    </a>
+                </div>
+                @endforeach
+            </div>
+            <div class="row my-5">
+                <div class="col-12 text-center">
+                    <a href="{{ route('search-keyword') }}" class="th-btn style7 style-radius"> Hire Dedicated Experts <i class="far fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    @endif
     <section class="space">
       <div class="container">
         <h3 class="h4 mb-20">Benefits With Our Service</h3>
@@ -316,8 +378,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_1.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">Flexible Solutions</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Measurable Growth</h4>
+                    <p class="service-feature_text">Every campaign is tracked with real-time data and clear KPIs. Clients see exactly where their budget goes and how it converts into leads, sales, and revenue—ensuring complete transparency and predictable growth.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -325,8 +387,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_2.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">24/7 Unlimited Support</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Quality Leads</h4>
+                    <p class="service-feature_text">We focus on attracting high-intent audiences using precise targeting and smart optimization. This results in better-quality leads that convert faster and deliver higher lifetime value for your business.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -334,8 +396,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_1.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">Flexible Solutions</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Higher ROI</h4>
+                    <p class="service-feature_text">Our performance-first approach ensures your ad spend works harder. Through continuous testing, optimization, and retargeting, we maximize returns while minimizing wasted spend.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -343,8 +405,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_2.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">24/7 Unlimited Support</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Future-Proof AI Insights</h4>
+                    <p class="service-feature_text">Our strategies are built to scale. As performance improves, we expand winning campaigns, audiences, and channels—helping your business grow consistently and sustainably..</p>
                 </div>
             </div>
         </div>
@@ -365,9 +427,8 @@
 
                 <div class="col-xl-6 col-lg-8 col-md-6 ">
                     <div class="feature-card style6">
-                        <h2 class="">Core Elements of Our PPC Management Services</h2>
-                        <p class="">The core elements of our PPC management services include research, development, optimization, experimentation, and analysis. From keyword research to creation of ad copies and analysis, we make your ad campaigns effective so that they</p>
-                        <p class="">The core elements of our PPC management services include research, development, optimization, experimentation, and analysis. From keyword research.</p>
+                        <h2 class="">Why Choose SC Technologies for {{ $contentMain->name }} Services?</h2>
+                        <p class="">Choosing SC Technologies means moving beyond vanity metrics to focus on what actually drives your business forward: revenue. By integrating Maximized ROI strategies with Precision Targeting, we ensure your budget is never wasted on broad, ineffective reach. Instead, we leverage deep data analytics to place your brand in front of high-intent users at the exact moment they are ready to engage, turning your marketing spend into a predictable growth engine.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -375,8 +436,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Collaboration and Share</a></h3>
-                        <p class="feature-card_text">Customer testimonials incorporate reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">ROI-Driven Strategy</h3>
+                        <p class="feature-card_text">We focus exclusively on conversion-based metrics to ensure your ad spend generates a measurable return on investment.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -384,8 +445,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Share your Data to anyone</a></h3>
-                        <p class="feature-card_text">Reviews incorporate testimonials customer, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Precision Audience Targeting</h3>
+                        <p class="feature-card_text">We utilize advanced demographic, behavioral, and intent-based layering to reach your most profitable customer segments.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -393,8 +454,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_1.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Note Powerful and Security</a></h3>
-                        <p class="feature-card_text">Incorporate testimonials customer reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Conversion Rate Optimization</h3>
+                        <p class="feature-card_text">Our team optimizes landing pages and ad copy simultaneously to minimize friction and maximize the value of every click.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -402,8 +463,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_2.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Easy Sort, Classify and Search</a></h3>
-                        <p class="feature-card_text">Testimonials incorporate customer reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Advanced Data Attribution</h3>
+                        <p class="feature-card_text">We implement server-side tracking and precise pixel management to ensure every lead and sale is accurately recorded.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -411,8 +472,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Collaboration and Share</a></h3>
-                        <p class="feature-card_text">Customer testimonials incorporate reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Continuous Bid Optimization</h3>
+                        <p class="feature-card_text">Through proactive A/B testing and automated bidding adjustments, we lower your cost-per-acquisition while increasing volume.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -420,8 +481,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Share your Data to anyone</a></h3>
-                        <p class="feature-card_text">Reviews incorporate testimonials customer, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Transparent Real-Time Reporting</h3>
+                        <p class="feature-card_text">You get full visibility into your campaign performance through live dashboards that display spending, leads, and growth metrics 24/7.</p>
                     </div>
                 </div>
             </div>
@@ -433,8 +494,8 @@
             <div class="row my-5">
                 <div class="col-lg-5">
                     <div class="title-area text-left">
-                        <span class="sub-title">Why Choose Us</span>
-                        <h2 class="sec-title">Powerful Software At The Forefront of Digital Excellence & Technology</h2>
+                        <h2 class="sec-title">Key Components of Our Professional {{ $contentMain->name }} Services</h2>
+                        <p> A comprehensive, results-driven {{ $contentMain->name }} approach designed to improve visibility, attract qualified traffic, and drive consistent business growth. </p>
                     </div>
                 </div>
                 <div class="col-xl-7">
@@ -472,7 +533,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">Campaign Design</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -480,7 +541,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Creative Design</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -488,7 +549,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">World Class Support</h3>
+                        <h3 class="box-title">Video Content Development</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -496,7 +557,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">Landing Page Optimization</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -504,7 +565,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">Conversion Tracking</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -512,7 +573,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Budget Scaling</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -520,7 +581,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">World Class Support</h3>
+                        <h3 class="box-title">A/B Testing</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -528,8 +589,13 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Performance Analytics</h3>
                     </div>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-12 text-center">
+                    <a href="{{ route('search-keyword') }}" class="th-btn style7 style-radius">Share your Requirement <i class="far fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
         </div>
@@ -584,7 +650,7 @@
     </section>
 
     @include('common.embedForm')
-
+    @if($contentMain->faqs)
     <section class="faq-area th-radius5 position-relative space overflow-hidden" id="faq-sec" data-bg-src="{{ url('/assets/frontend/img/bg/faq_bg_3.jpg') }}">
       <div class="container th-container4">
         <div class="row justify-content-center">
@@ -598,48 +664,23 @@
         <div class="row justify-content-center">
           <div class="col-12">
             <div class="accordion" id="faqAccordion">
+              @foreach(getFaqsById($contentMain->faqs) as $key => $value)
               <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">1. What services does your digital agency offer?</button></div>
-                <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
+                <div class="accordion-header" id="collapse-item-{{ $key }}"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ $key }}" aria-expanded="false" aria-controls="collapse-{{ $key }}">{{ $key + 2 }}. {{ $value->question }}</button></div>
+                <div id="collapse-{{ $key }}" class="accordion-collapse collapse" aria-labelledby="collapse-item-{{ $key }}" data-bs-parent="#faqAccordion">
                   <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
+                    <p class="faq-text">{{ $value->answer }}</p>
                   </div>
                 </div>
               </div>
-              <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">2. What industries do you specilize in?</button></div>
-                <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">3. What services does your digital agency offer?</button></div>
-                <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">4. What services does your digital agency offer?</button></div>
-                <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">5. What services does your digital agency offer?</button></div>
-                <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="collapse-item-5" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
-                  </div>
-                </div>
-              </div>
+              @endforeach
             </div>
           </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-12 text-center">
+                <a href="#lead-generate-popup" class="th-btn style7 style-radius open-popup-link"> Know More <i class="far fa-arrow-right ms-2"></i></a>
+            </div>
         </div>
       </div>
       <div class="shape-mockup spin d-none d-xl-block" data-top="15%" data-left="5%"><img src="{{ url('/assets/frontend/img/shape/shape_11.png') }}" alt="shape"></div>
@@ -648,7 +689,7 @@
       <div class="shape-mockup spin d-none d-xl-block" data-top="32%" data-right="7%"><img src="{{ url('/assets/frontend/img/shape/shape_14.png') }}" alt="shape"></div>
       <div class="shape-mockup spin d-none d-xl-block" data-bottom="16%" data-right="6%"><img src="{{ url('/assets/frontend/img/shape/shape_15.png') }}" alt="shape"></div>
     </section>
-    
+    @endif
     @endsection
 @section('script')
 @endsection

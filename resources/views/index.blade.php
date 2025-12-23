@@ -667,7 +667,7 @@
                     </div>
                 </div>
                 <div class="btn-group style3 mt-40">
-                    <a href="about.html" class="th-btn btn-gradient2 style-radius">Learn More</a>
+                    <a href="{{ route('page','about-us') }}" class="th-btn btn-gradient2 style-radius">Learn More</a>
                     <div class="feature-wrapper style5">
                     <div class="feature-icon"><a href="tel:+2583258235"><i class="fa-solid fa-phone"></i></a></div>
                     <div class="media-body">
