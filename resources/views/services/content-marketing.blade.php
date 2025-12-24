@@ -378,8 +378,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_1.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">Flexible Solutions</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Authority-Driven Brand Growth</h4>
+                    <p class="service-feature_text">Establish yourself as an industry leader through high-impact, expert storytelling. In the competitive US market, trust is your most valuable currency. Our content marketing service isn't just about publishing posts; it’s about positioning your brand as the go-to authority. By creating deeply researched, high-value content, we help you earn the "Expert" badge in your niche, making it a no-brainer for customers to choose you over the competition.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -387,8 +387,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_2.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">24/7 Unlimited Support</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Sustainable Compound Traffic</h4>
+                    <p class="service-feature_text">Build a long-term digital asset that drives organic leads while you sleep. Unlike paid ads that stop the moment the budget runs out, our strategic content creates a "snowball effect." By targeting high-intent keywords with evergreen articles and guides, we build a traffic engine that grows in value over time. This means your cost-per-acquisition drops significantly as your organic reach expands, providing a stable foundation for your sales funnel.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -396,8 +396,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_1.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">Flexible Solutions</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Enhanced Lead Nurturing</h4>
+                    <p class="service-feature_text">Move prospects through the funnel with content that solves real-world problems. American consumers are savvy and often require multiple touchpoints before making a purchase. We map out a content journey that meets your prospects where they are—whether they are just identifying a problem or comparing final solutions. By providing the right answers at the right time, we reduce sales friction and warm up leads before they ever talk to your sales team.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -405,8 +405,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_2.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">24/7 Unlimited Support</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Data-Backed Content Strategy</h4>
+                    <p class="service-feature_text">Eliminate guesswork with performance metrics that prove your content’s value. We treat content as a science, not just an art. At SC Technologies, every topic we select and every whitepaper we write is backed by rigorous search data and competitor analysis. We track engagement, scroll depth, and conversion rates to ensure your content isn't just "pretty"—it's a high-performing tool designed to move the needle on your bottom line.</p>
                 </div>
             </div>
         </div>
@@ -427,9 +427,8 @@
 
                 <div class="col-xl-6 col-lg-8 col-md-6 ">
                     <div class="feature-card style6">
-                        <h2 class="">Core Elements of Our PPC Management Services</h2>
-                        <p class="">The core elements of our PPC management services include research, development, optimization, experimentation, and analysis. From keyword research to creation of ad copies and analysis, we make your ad campaigns effective so that they</p>
-                        <p class="">The core elements of our PPC management services include research, development, optimization, experimentation, and analysis. From keyword research.</p>
+                        <h2 class="">Why Choose SC Technologies for {{ $contentMain->name }} Services?</h2>
+                        <p class="">Choosing SC Technologies for content marketing ensures your brand transitions from simply "creating posts" to building a high-value digital asset that drives measurable revenue. We distinguish ourselves by blending editorial excellence with technical SEO precision, ensuring that every piece of content—from whitepapers to blog posts—is engineered to rank on search engines while establishing your brand as a dominant industry authority. Our data-backed approach eliminates the guesswork of traditional blogging by mapping content directly to your customer’s journey</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -437,8 +436,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Collaboration and Share</a></h3>
-                        <p class="feature-card_text">Customer testimonials incorporate reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Strategy Before Content</h3>
+                        <p class="feature-card_text">We don’t create content just to fill space. Every blog, post, or campaign starts with a clear strategy—aligned with your business goals, audience behavior, and growth targets—so your content works harder and delivers real results.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -446,8 +445,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Share your Data to anyone</a></h3>
-                        <p class="feature-card_text">Reviews incorporate testimonials customer, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Advanced Marketing Tools</h3>
+                        <p class="feature-card_text">SC Technologies uses premium paid tools for keyword research, competitor analysis, content optimization, and performance tracking. This ensures your content is not only creative but also data-backed, SEO-strong, and market-ready.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -455,8 +454,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_1.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Note Powerful and Security</a></h3>
-                        <p class="feature-card_text">Incorporate testimonials customer reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">AI-Powered Content Intelligence</h3>
+                        <p class="feature-card_text">We blend human creativity with AI-powered insights to identify trending topics, optimize readability, improve engagement, and predict what content will perform best—giving you a competitive edge in your industry.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -464,8 +463,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_2.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Easy Sort, Classify and Search</a></h3>
-                        <p class="feature-card_text">Testimonials incorporate customer reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Human-First, Brand-Focused Writing</h3>
+                        <p class="feature-card_text">Our content is written for people, not algorithms. We maintain your brand voice, tone, and messaging while crafting content that feels natural, relatable, and trustworthy—helping you connect with your audience emotionally.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -473,8 +472,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Collaboration and Share</a></h3>
-                        <p class="feature-card_text">Customer testimonials incorporate reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Performance-Driven Approach</h3>
+                        <p class="feature-card_text">Every piece of content is tracked and optimized for performance. We analyze engagement, traffic, leads, and conversions, then refine the strategy continuously to improve ROI and long-term growth.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -482,8 +481,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Share your Data to anyone</a></h3>
-                        <p class="feature-card_text">Reviews incorporate testimonials customer, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">End-to-End Content Marketing Support</h3>
+                        <p class="feature-card_text">From planning and creation to distribution and optimization, SC Technologies manages the complete content marketing cycle—so you can focus on your business while we build your brand authority and visibility.</p>
                     </div>
                 </div>
             </div>
@@ -495,8 +494,8 @@
             <div class="row my-5">
                 <div class="col-lg-5">
                     <div class="title-area text-left">
-                        <span class="sub-title">Why Choose Us</span>
-                        <h2 class="sec-title">Powerful Software At The Forefront of Digital Excellence & Technology</h2>
+                        <h2 class="sec-title">Key Components of Our Professional {{ $contentMain->name }} Services</h2>
+                        <p> Our comprehensive content marketing services encompass a range of strategic components designed to elevate your brand's online presence and drive measurable results. Here's what sets our approach apart:</p>
                     </div>
                 </div>
                 <div class="col-xl-7">
@@ -534,7 +533,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">Content Strategy</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -542,15 +541,15 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Audience Research</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
-                    <div class="feature-card style3  px-0">
+                    <div class="feature-card style3 px-0">
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">World Class Support</h3>
+                        <h3 class="box-title">Keyword Planning</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -558,7 +557,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">SEO Optimization</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -566,7 +565,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">Creative Storytelling</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -574,7 +573,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Content Distribution</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -582,7 +581,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">World Class Support</h3>
+                        <h3 class="box-title">Performance Tracking</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -590,8 +589,13 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Conversion Focus</h3>
                     </div>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-12 text-center">
+                    <a href="{{ route('search-keyword') }}" class="th-btn style7 style-radius">Share your Requirement <i class="far fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
         </div>
@@ -647,6 +651,7 @@
 
     @include('common.embedForm')
 
+    @if($contentMain->faqs)
     <section class="faq-area th-radius5 position-relative space overflow-hidden" id="faq-sec" data-bg-src="{{ url('/assets/frontend/img/bg/faq_bg_3.jpg') }}">
       <div class="container th-container4">
         <div class="row justify-content-center">
@@ -660,48 +665,23 @@
         <div class="row justify-content-center">
           <div class="col-12">
             <div class="accordion" id="faqAccordion">
+              @foreach(getFaqsById($contentMain->faqs) as $key => $value)
               <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">1. What services does your digital agency offer?</button></div>
-                <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
+                <div class="accordion-header" id="collapse-item-{{ $key }}"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ $key }}" aria-expanded="false" aria-controls="collapse-{{ $key }}">{{ $key + 2 }}. {!! $value->question !!}</button></div>
+                <div id="collapse-{{ $key }}" class="accordion-collapse collapse" aria-labelledby="collapse-item-{{ $key }}" data-bs-parent="#faqAccordion">
                   <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
+                    <p class="faq-text">{!! $value->answer !!}</p>
                   </div>
                 </div>
               </div>
-              <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">2. What industries do you specilize in?</button></div>
-                <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">3. What services does your digital agency offer?</button></div>
-                <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">4. What services does your digital agency offer?</button></div>
-                <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">5. What services does your digital agency offer?</button></div>
-                <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="collapse-item-5" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
-                  </div>
-                </div>
-              </div>
+              @endforeach
             </div>
           </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-12 text-center">
+                <a href="#lead-generate-popup" class="th-btn style7 style-radius open-popup-link"> Know More <i class="far fa-arrow-right ms-2"></i></a>
+            </div>
         </div>
       </div>
       <div class="shape-mockup spin d-none d-xl-block" data-top="15%" data-left="5%"><img src="{{ url('/assets/frontend/img/shape/shape_11.png') }}" alt="shape"></div>
@@ -710,6 +690,7 @@
       <div class="shape-mockup spin d-none d-xl-block" data-top="32%" data-right="7%"><img src="{{ url('/assets/frontend/img/shape/shape_14.png') }}" alt="shape"></div>
       <div class="shape-mockup spin d-none d-xl-block" data-bottom="16%" data-right="6%"><img src="{{ url('/assets/frontend/img/shape/shape_15.png') }}" alt="shape"></div>
     </section>
+    @endif
     
     @endsection
 @section('script')

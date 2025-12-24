@@ -669,7 +669,7 @@
                 <div class="accordion-header" id="collapse-item-{{ $key }}"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ $key }}" aria-expanded="false" aria-controls="collapse-{{ $key }}">{{ $key + 2 }}. {{ $value->question }}</button></div>
                 <div id="collapse-{{ $key }}" class="accordion-collapse collapse" aria-labelledby="collapse-item-{{ $key }}" data-bs-parent="#faqAccordion">
                   <div class="accordion-body">
-                    <p class="faq-text">{{ $value->answer }}</p>
+                    <p class="faq-text">{!! $value->answer !!}</p>
                   </div>
                 </div>
               </div>
