@@ -15,7 +15,7 @@
         <div class="th-menu-area text-center">
             <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
             <div class="mobile-logo">
-                <a class="icon-masking" href="{{ url('/') }}"><span data-mask-src="{{ url('/assets/logo/logo-small.png') }}" class="mask-icon"></span><img src="{{ url('/assets/logo/logo-small.png') }}" alt="Webteck"></a>
+                <a class="icon-masking" href="{{ url('/') }}"><span data-mask-src="{{ url('/assets/logo/logo.png') }}" class="mask-icon"></span><img src="{{ url('/assets/logo/logo.png') }}" alt="Webteck"></a>
             </div>
             <div class="th-mobile-menu">
                 <ul>
@@ -78,7 +78,7 @@
                     <div class="row align-items-center justify-content-between">
                         <div class="col-auto header-left d-flex align-items-center">
                             <div class="header-logo">
-                                <a class="icon-masking" href="{{ url('/') }}"><span data-mask-src="{{ url('/assets/logo/logo.png') }}" class="mask-icon"></span><img src="{{ url('/assets/logo/logo-small.png') }}" alt="Webteck"></a>
+                                <a class="icon-masking" href="{{ url('/') }}"><span data-mask-src="{{ url('/assets/logo/logo.png') }}" class="mask-icon"></span><img src="{{ url('/assets/logo/logo.png') }}" alt="Webteck"></a>
                             </div>
                         </div>
                         <div class="col-auto">

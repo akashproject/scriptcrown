@@ -5,7 +5,7 @@
             <div class="row align-items-center">
                 <div class="col-xl-3">
                     <div class="footer-logo">
-                        <a class="icon-masking" href="{{ url('/') }}"><span data-mask-src="{{ url('/assets/logo/logo-small.png') }}" class="mask-icon"></span><img src="{{ url('/assets/logo/logo-small.png') }}" alt="Webteck"></a>
+                        <a class="icon-masking" href="{{ url('/') }}"><span data-mask-src="{{ url('/assets/logo/logo.png') }}" class="mask-icon"></span><img src="{{ url('/assets/logo/logo.png') }}" alt="Webteck"></a>
                     </div>
                 </div>
                 <div class="col-xl-9">

@@ -97,7 +97,7 @@
 									@foreach(getTechnologies() as $value)
 									<option value="{{ $value->id }}" > {{ $value->name }}</option>
 									@endforeach
-								<select>
+								</select>
 							</div>
 						</div>
 						<div class="row mb-2">
