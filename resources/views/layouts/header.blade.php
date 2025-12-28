@@ -84,13 +84,14 @@
                         <div class="col-auto">
                             <nav class="main-menu d-none d-lg-inline-block">
                                 <ul>
+                                    <li><a target="_blank" href="{{ route('category','generative-ai-solution') }}" >Empowerd With AI</a></li>
                                     <li class="menu-item-has-children mega-menu-wrap">
                                         <a href="{{ route('page','services') }}">Services</a>
                                         <ul class="mega-menu">
-                                            @foreach(getCategories() as $key => $category)
+                                            @foreach(getCategoryMenu() as $key => $category)
                                             <li>
                                                 <a href="{{ route('category',$category->slug) }}">
-                                                    <span class="mr-5"><img src="{{ url('assets/frontend/img/icon/'.$category->slug.'.png') }}" alt="{{ $category->name }}" > 
+                                                    <span class="mr-5"><img src="{{ url('assets/frontend/img/icon/'.strtolower(str_replace(' ', '-', $category->name)).'.png') }}" alt="{{ $category->name }}" > 
                                                     </span><span>{{ $category->name }}</span>
                                                 </a>
                                                 <ul>

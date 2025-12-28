@@ -79,9 +79,9 @@
 						</div>	
 
 						<div class="row mb-2">
-							<label for="type_id" class="col-sm-12 text-left control-label col-form-label">Select Category</label>
+							<label for="category_id" class="col-sm-12 text-left control-label col-form-label">Select Category</label>
 							<div class="col-sm-12">
-								<select name="type_id[]" id="type_id" class="select2 form-control custom-select">	
+								<select name="category_id" id="category_id" class="select2 form-control custom-select">	
 									<option value="">Select Category</option>
 									@foreach($categories as $value)
 									<option value="{{ $value->id }}" {{ ($service->category_id == $value->id)?'selected':'' }}> {{ $value->name }}</option>

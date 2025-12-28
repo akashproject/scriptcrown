@@ -9,7 +9,7 @@
                             <li><a href="{{ route('website') }}">Home</a></li>
                             <li>{{ $contentMain->name }}</li>
                         </ul>
-                        <h1 class="breadcumb-title">Custom {{ $contentMain->name }} Solutions That Drive Results</h1>
+                        <h1 class="breadcumb-title">{{ $contentMain->title }}</h1>
                     </div>
                     <div class="banner-content py-3">
                         <p>{{ $contentMain->excerpt }}</p>
@@ -372,6 +372,7 @@
     <section class="space">
       <div class="container">
         <h3 class="h4 mb-20">Benefits With Our Service</h3>
+        <p>At SC Technologies, we build e-commerce websites designed to sell—not just look good. Our custom online stores combine fast performance, secure architecture, and conversion-driven design to turn visitors into loyal customers. From seamless user experience to scalable technology and SEO-ready structure, we create e-commerce platforms that help your business grow revenue with confidence.</p>
         <div class="service-feature-wrap">
             <div class="service-feature">
                 <div class="service-feature_icon">

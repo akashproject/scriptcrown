@@ -101,6 +101,13 @@ if (! function_exists('getCommunicationMedium')) {
     }
 }
 
+if (! function_exists('getCategoryMenu')) {
+    function getCategoryMenu($params = null){
+        $categories = DB::table('categories')->where('id','!=' , "5")->get();
+        return $categories;
+    }
+}
+
 if (! function_exists('getCategories')) {
     function getCategories($params = null){
         $categories = DB::table('categories')->get();

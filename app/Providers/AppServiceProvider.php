@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Media;
-use App\Models\CourseType;
+use App\Models\Category;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Cookie;
 use View;
@@ -17,6 +17,7 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Register any application services.
      */
+    private $categoryMenu;
     private $primaryMenu;
     private $footerMenu;
     private $formData;
@@ -57,6 +58,10 @@ class AppServiceProvider extends ServiceProvider
             ),
         );
 
+        App::singleton('categoryMenu', function () {
+            return $this->categoryMenu;
+        });
+
         App::singleton('primaryMenu', function () {
             return $this->primaryMenu;
         });
@@ -95,6 +100,7 @@ class AppServiceProvider extends ServiceProvider
 
             $view->with('primaryMenu', $this->primaryMenu);
             $view->with('footerMenu', $this->footerMenu);
+            $view->with('categoryMenu', $this->categoryMenu);
         });
     }
 }

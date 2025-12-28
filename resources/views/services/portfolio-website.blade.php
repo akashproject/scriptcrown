@@ -293,8 +293,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_1.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Audit Infrastructure</h2>
-                            <p class="process-card_text">Optimize site speed and crawlability to ensure a healthy technical foundation.</p>
+                            <h2 class="box-title">Design Flowchart</h2>
+                            <p class="process-card_text">We understand your goals, target audience, brand style, and content needs to define a clear project roadmap.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -303,8 +303,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_2.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Analyze Intent</h2>
-                            <p class="process-card_text">Perform data-driven keyword research to align content with specific user needs.</p>
+                            <h2 class="box-title">Database Design</h2>
+                            <p class="process-card_text">Custom UI/UX designs and layouts are created to reflect your brand and showcase work effectively.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -313,8 +313,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_3.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Execute Content</h2>
-                            <p class="process-card_text">Create and optimize high-value assets mapped to target search terms.</p>
+                            <h2 class="box-title">Development</h2>
+                            <p class="process-card_text">Developed with clean, responsive code and thoroughly tested for performance, speed, and compatibility.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -323,14 +323,15 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_4.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Build Authority</h2>
-                            <p class="process-card_text">Secure high-quality backlinks and track conversions to scale measurable growth.</p>
+                            <h2 class="box-title">Bug Free Deployment</h2>
+                            <p class="process-card_text">Deployed live with security, SEO basics, and performance optimization in place.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     @if(count($technologies) > 0)
     <section class="space" id="business-sec">
         <div class="container th-container4">
@@ -369,6 +370,7 @@
         </div>
     </section>
     @endif
+    
     <section class="space">
       <div class="container">
         <h3 class="h4 mb-20">Benefits With Our Service</h3>
@@ -378,8 +380,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_1.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">Holistic Technical Optimization</h4>
-                    <p class="service-feature_text">Most agencies only focus on content, but as an IT-service-based agency, we specialize in Technical SEO. We optimize your site’s architecture, improve server response times, and implement advanced schema markups. This ensures that search engines can crawl your site effortlessly, giving you a massive advantage over competitors with slower, poorly structured websites.</p>
+                    <h4 class="service-feature_title">Scalable Digital Solutions</h4>
+                    <p class="service-feature_text">SC Technologies builds websites that grow with your business, not against it. Our development approach focuses on performance, flexibility, and future-ready architecture, ensuring your website can handle increased traffic, new features, and evolving business needs without costly rebuilds.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -387,8 +389,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_2.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">High-Intent Traffic Growth</h4>
-                    <p class="service-feature_text">We don't chase "vanity traffic" that doesn't buy. Our strategy centers on User Intent. By analyzing the psychology behind search queries, we target long-tail keywords that your customers use when they are ready to make a decision. This results in fewer "window shoppers" and a much higher conversion rate for your business.</p>
+                    <h4 class="service-feature_title">Conversion-Driven Design</h4>
+                    <p class="service-feature_text">Every website we develop is designed to turn visitors into customers. From intuitive user journeys to fast-loading pages and clear call-to-actions, we align design and functionality to maximize engagement, leads, and sales.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -396,8 +398,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_1.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">Integrated Multimedia Authority</h4>
-                    <p class="service-feature_text">Leveraging our in-house Graphics & Videography teams, we create SEO-rich multimedia content that keeps users on your page longer. Search engines love "dwell time," and our high-quality videos and infographics make your site more engaging, signaling to Google that your brand is a top-tier authority in your industry.</p>
+                    <h4 class="service-feature_title">Complete SEO Readiness</h4>
+                    <p class="service-feature_text">Every website we develop at SC Technologies is built with SEO at its core, not added later. From clean code structure and fast load speeds to mobile optimization, schema integration, and on-page SEO best practices, we ensure your website is fully search-engine friendly and ready to rank from day one.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -405,8 +407,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_2.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">Future-Proof AI Insights</h4>
-                    <p class="service-feature_text">The SEO landscape changes every week. We use AI-powered analytics to predict algorithm shifts and monitor competitor moves in real-time. This proactive approach means your rankings don't just "spike" for a month—they stay stable and grow over time, providing you with a sustainable, long-term Return on Investment (ROI).</p>
+                    <h4 class="service-feature_title">Results-Focused Partnership</h4>
+                    <p class="service-feature_text">SC Technologies works as your growth partner, not just a service provider. We continuously optimize performance, apply best practices, and align technology decisions with your business goals to deliver measurable, long-term results.</p>
                 </div>
             </div>
         </div>
@@ -428,7 +430,7 @@
                 <div class="col-xl-6 col-lg-8 col-md-6 ">
                     <div class="feature-card style6">
                         <h2 class="">Why Choose SC Technologies for SEO Services?</h2>
-                        <p class="">Choosing SC Technologies for your SEO services means moving beyond basic keyword stuffing and entering a realm of comprehensive digital dominance. As a full-scale IT and media agency, we don’t just look at SEO as a marketing tactic; we treat it as a technical science. We understand that for a website to rank, it must be a perfect blend of lightning-fast code, intuitive user experience, and authoritative content. By choosing us, you gain access to a team that can fix your backend server issues, design high-converting landing pages, and craft viral-ready media—all while ensuring every move aligns with the latest search engine algorithms.</p>
+                        <p class="">Choosing SC Technologies for your business portfolio website means partnering with a team that understands branding, performance, and growth. We design visually refined, high-performing portfolio websites that clearly showcase your expertise, build trust, and convert visitors into opportunities. With a strategy-driven approach, SEO-ready development, and attention to detail, we create portfolio websites that strengthen your brand presence and support long-term business success.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -436,8 +438,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Digital Transformation</h3>
-                        <p class="feature-card_text"><strong>Empowering Businesses Through Future-Ready Technology.</strong> We don't just build websites; we create integrated digital ecosystems that streamline your operations and set the stage for global scaling.</p>
+                        <h3 class="box-title">Brand-Focused Design</h3>
+                        <p class="feature-card_text">We design portfolio websites that reflect your brand identity with clarity and elegance. Every layout, color, and interaction is crafted to communicate trust, professionalism, and credibility. Your portfolio becomes a strong brand asset, not just a showcase.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -445,8 +447,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Strategic Web Development</h3>
-                        <p class="feature-card_text"><strong>High-Performance Code Meets Human-Centric Design.</strong> Our developers build fast, secure, and responsive platforms that look stunning and function flawlessly across every device and browser.</p>
+                        <h3 class="box-title">Performance-Driven Development</h3>
+                        <p class="feature-card_text">Our websites are built for speed, responsiveness, and smooth user experience across all devices. Clean code and optimized architecture ensure fast loading and stable performance. This keeps users engaged and reduces bounce rates.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -454,8 +456,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_1.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Precision Digital Marketing</h3>
-                        <p class="feature-card_text"><strong>Data-Driven Strategies That Convert Scrollers into Customers.</strong> Move beyond vanity metrics. We use deep analytics and psychological insights to create campaigns that drive actual revenue and brand loyalty.</p>
+                        <h3 class="box-title">Conversion-Ready Structure</h3>
+                        <p class="feature-card_text">We structure portfolio websites to guide visitors toward meaningful actions. Strategic content placement, clear navigation, and strong CTAs help turn interest into inquiries. Your portfolio works as a lead-generating tool.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -463,8 +465,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_2.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Cinematic Media & Graphics</h3>
-                        <p class="feature-card_text"><strong>Visual Storytelling That Captures Your Brand’s Unique Soul.</strong> From high-definition videography to bespoke graphic design, we create the thumb-stopping content your brand needs to stand out in a crowded feed.</p>
+                        <h3 class="box-title">SEO-Optimized Build</h3>
+                        <p class="feature-card_text">Every portfolio website is developed with SEO best practices from the ground up. From mobile optimization and site structure to schema and on-page elements, we ensure your site is search-engine friendly and visible online.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -472,8 +474,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Mobile Innovation</h3>
-                        <p class="feature-card_text"><strong>User-First App Development for the On-the-Go Generation.</strong> We turn your ideas into intuitive iOS and Android applications, ensuring your business is always just one tap away from your customers.</p>
+                        <h3 class="box-title">Scalable Architecture Setup</h3>
+                        <p class="feature-card_text">We build future-ready portfolio websites that can grow with your business. Whether you add new projects, services, or features, the site scales smoothly without performance issues. This saves time and long-term development costs.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -481,8 +483,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">AI-Powered Solutions</h3>
-                        <p class="feature-card_text"><strong>Leveraging the Power of Intelligence to Automate Growth.</strong> Stay ahead of the competition by integrating smart automation and predictive analytics into your workflow for smarter, faster decision-making.</p>
+                        <h3 class="box-title">End-to-End Execution</h3>
+                        <p class="feature-card_text">SC Technologies manages the entire process—from strategy and design to development and deployment. You get a seamless experience with consistent quality and timely delivery. One team, one vision, complete execution.</p>
                     </div>
                 </div>
             </div>
@@ -494,8 +496,8 @@
             <div class="row my-5">
                 <div class="col-lg-5">
                     <div class="title-area text-left">
-                        <h2 class="sec-title">Key Components of Our Professional SEO Services</h2>
-                        <p> A comprehensive, results-driven SEO approach designed to improve visibility, attract qualified traffic, and drive consistent business growth. </p>
+                        <h2 class="sec-title">Key Components of Our Professional {{ $contentMain->name }} Services</h2>
+                        <p> Our business portfolio website services are built to showcase your expertise with clarity and impact. We combine strategic design, performance-driven development, and SEO-ready structure. Every component works together to strengthen your brand presence and drive business growth. </p>
                     </div>
                 </div>
                 <div class="col-xl-7">
@@ -533,7 +535,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Targeted Intent</h3>
+                        <h3 class="box-title">Responsive Design</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -541,7 +543,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Technical Excellence</h3>
+                        <h3 class="box-title">Visual Gallery</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -549,7 +551,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Mobile Priority</h3>
+                        <h3 class="box-title">SEO Optimization</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -557,7 +559,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Semantic Authority</h3>
+                        <h3 class="box-title">PSD Mockup Design</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -565,7 +567,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Local Dominance</h3>
+                        <h3 class="box-title">Exellent Page Speed </h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -573,7 +575,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Quality Backlinks</h3>
+                        <h3 class="box-title">CRM Integrated</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -581,7 +583,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">User Experience</h3>
+                        <h3 class="box-title">SSL/SMTP Setup</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -589,7 +591,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Conversion Analytics</h3>
+                        <h3 class="box-title">Dynamic Admin Panel</h3>
                     </div>
                 </div>
             </div>
