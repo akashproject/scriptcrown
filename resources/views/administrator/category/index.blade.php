@@ -38,6 +38,12 @@
 								</div>
 							</div>
 							<div class="form-group row mb-2">
+								<label for="title" class="col-sm-3 text-right control-label col-form-label">Title</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" name="title" id="title" placeholder="Title Here" >
+								</div>
+							</div>
+							<div class="form-group row mb-2">
 								<label for="excerpt" class="col-sm-3 text-right control-label col-form-label">Excerpt</label>
 								<div class="col-sm-9">
 									<textarea class="form-control" name="excerpt" id="excerpt" placeholder="Enter Excerpt Here" ></textarea>
@@ -73,9 +79,9 @@
 							</div>
 							<h4 class="card-title"> Search Engine Options </h4>
 							<div class="form-group row mb-2">
-								<label for="title" class="col-sm-3 text-right control-label col-form-label">Title</label>
+								<label for="meta_title" class="col-sm-3 text-right control-label col-form-label">Meta Title</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="title" id="title" placeholder="Title Here" >
+									<input type="text" class="form-control" name="meta_title" id="meta_title" placeholder="Meta Title Here" >
 								</div>
 							</div>
 							<div class="form-group row mb-2">

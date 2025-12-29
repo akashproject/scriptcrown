@@ -27,7 +27,7 @@ class CategoryController extends Controller
         try {
             $category = Category::find($id);
             $listCategory = Category::all();
-
+            $category->faqs = json_decode($category->faqs);
             return view('administrator.category.show',compact('category','listCategory'));
         } catch(\Illuminate\Database\QueryException $e){
             var_dump($e->getMessage()); 

@@ -9,7 +9,7 @@
                             <li><a href="{{ route('website') }}">Home</a></li>
                             <li>{{ $contentMain->name }}</li>
                         </ul>
-                        <h1 class="breadcumb-title">Hire {{ $contentMain->name }} Services from SC Technologies for Extreme Business Growth</h1>
+                        <h1 class="breadcumb-title">{{ $contentMain->title }}</h1>
                     </div>
                     <div class="banner-content py-3">
                         <p>{{ $contentMain->excerpt }}</p>
@@ -112,6 +112,7 @@
             </div>
         </div>
     </div>
+
     <section class="service-sec space bg-white" id="service-sec" >
         <div class="brand-area bg-white space-bottom">
             <div class="container th-container5">
@@ -215,6 +216,336 @@
         </div>
     </section>
 
+    <section class="bg-auto space" data-bg-src="{{ url('assets/frontend/img/bg/testi_bg_2.png') }}">
+        <div class="container">
+            <div class="row justify-content-lg-between justify-content-center align-items-center">
+                <div class="col-lg-6 col-sm-9 pe-xl-5">
+                    <div class="title-area text-center text-lg-start">
+                        <span class="sub-title">
+                            <div class="icon-masking me-2">
+                                <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
+                                <img src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}" alt="shape">
+                                 Our Brand Value
+                            </div>
+                        </span>
+                        <h2 class="sec-title">Expertise to transform business with  <span class="text-theme">Technology and Marketing</span></h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-9 pe-xl-5">
+                    <div class="sub-description-area text-lg-start">
+                        <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="counter-area-9 overflow-hidden space-extra2" >
+            <div class="container">
+                <div class="row justify-content-md-between justify-content-center gy-40">
+                    <div class="col-xl-auto col-sm-6">
+                        <div class="counter-card6 text-center">
+                            <img src="{{ url('assets/frontend/img/responsive.png') }}" alt="Clients Worlwide" class="mb-3">
+                            <h3 class="box-number"><span class="counter-number">5500</span>+</h3>
+                            <div class="media-body">
+                                <p class=" counter-text mb-n2"> World Wide Projects Delivered </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-auto col-sm-6">
+                        <div class="counter-card6 text-center">
+                            <img src="{{ url('assets/frontend/img/international.png') }}" alt="Clients Worlwide" class="mb-3">
+                            <h3 class="box-number"><span class="counter-number">1500</span>+</h3>
+                            <div class="media-body">
+                                <p class=" counter-text mb-n2">Clients Worlwide</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-auto col-sm-6">
+                        <div class="counter-card6 text-center">
+                            <img src="{{ url('assets/frontend/img/residential.png') }}" alt="Years In IT Industries" class="mb-3">
+                            <h3 class="box-number"><span class="counter-number">15</span>+</h3>
+                            <div class="media-body">
+                                <p class=" counter-text mb-n2">Years In IT Industries.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-auto col-sm-6">
+                        <div class="counter-card6 text-center">
+                            <img src="{{ url('assets/frontend/img/leadership.png') }}" alt="Experts Team Members" class="mb-3">
+                            <h3 class="box-number"><span class="counter-number">50</span>+</h3>
+                            <div class="media-body">
+                                <p class=" counter-text mb-n2">Experts Team Members.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-area4 th-radius5 space" id="service-sec">
+        <div class="container th-container4">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="title-area text-left">
+                        <h2 class="sec-title">Our Professional {{ $contentMain->name }} Service</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="title-area text-left me-xl-5 ms-xl-5">
+                        <p>SC Technologies provides end-to-end mobile app development services to bring your ideas to life. Our team builds apps that are scalable, secure, and optimized for both Android and iOS platforms. Every solution is designed to engage users, enhance brand presence, and drive business growth.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-3 justify-content-between align-items-center">
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 wow fadeInRight">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_1.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title">Business Apps</h3>
+                            <p class="service-box2_text">Streamline operations, enhance client engagement, and improve productivity.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 wow fadeInRight">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_2.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title">E-commerce Apps</h3>
+                            <p class="service-box2_text">Build secure, scalable online stores for mobile shopping experiences.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 wow fadeInRight">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_3.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title">Appointments Booking</h3>
+                            <p class="service-box2_text">Schedule appointments, manage reservations, and streamline service bookings.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 wow fadeInRight">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_4.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title">Mobile Games</h3>
+                            <p class="service-box2_text">Enter the world of interactive entertainment with engaging mobile games.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 ">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_5.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title">SaaS Apps</h3>
+                            <p class="service-box2_text">Promote software products with onboarding, subscriptions, and analytics.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_6.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title">LMS Apps</h3>
+                            <p class="service-box2_text">Deliver online courses, training, and educational programs via mobile.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_7.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title">CRM Apps</h3>
+                            <p class="service-box2_text">Manage customer relationships, sales pipelines, and client data efficiently.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_8.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title">Marketplace Apps</h3>
+                            <p class="service-box2_text">Connect buyers and sellers with secure and scalable mobile platforms.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-12 text-center">
+                    <a href="{{ route('search-keyword') }}" class="th-btn style7 style-radius">Share your Requirement <i class="far fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-smoke" id="process-sec" data-bg-src="{{ url('assets/frontend/img/bg/process_bg_1.png') }}">
+        <div class="container space  th-container4">
+            <div class="title-area text-center">
+                <div class="shadow-title">PROCESS</div>
+                <span class="sub-title">
+                    <div class="icon-masking me-2">
+                        <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
+                        <img src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}" alt="shape">
+                    </div>
+                    WORK PROCESS
+                </span>
+                <h2 class="sec-title">How to work <span class="text-theme">it!</span></h2>
+            </div>
+            <div class="process-card-area">
+                <div class="process-line">
+                    <img src="{{ url('assets/frontend/img/bg/process_line.svg') }}" alt="line">
+                </div>
+                <div class="row gy-40">
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">01</div>
+                            <div class="process-card_icon">
+                                <img src="{{ url('assets/frontend/img/icon/process_card_1.svg') }}" alt="icon">
+                            </div>
+                            <h2 class="box-title">Requirement Analysis</h2>
+                            <p class="process-card_text">Understand client goals, user needs, and app features to create a clear roadmap.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">02</div>
+                            <div class="process-card_icon">
+                                <img src="{{ url('assets/frontend/img/icon/process_card_2.svg') }}" alt="icon">
+                            </div>
+                            <h2 class="box-title">UI/UX Design</h2>
+                            <p class="process-card_text">Craft intuitive, user-friendly interfaces that provide an engaging mobile experience.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">03</div>
+                            <div class="process-card_icon">
+                                <img src="{{ url('assets/frontend/img/icon/process_card_3.svg') }}" alt="icon">
+                            </div>
+                            <h2 class="box-title">App Development</h2>
+                            <p class="process-card_text">Build apps with modern frameworks, clean code, and cross-platform capabilities for high performance.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">04</div>
+                            <div class="process-card_icon">
+                                <img src="{{ url('assets/frontend/img/icon/process_card_4.svg') }}" alt="icon">
+                            </div>
+                            <h2 class="box-title">Testing & Launch</h2>
+                            <p class="process-card_text">Conduct thorough QA, optimize performance, and deploy a secure, bug-free mobile app.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-area4 th-radius5 space" id="service-sec">
+        <div class="container th-container4">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="title-area text-left">
+                        <h2 class="sec-title">Benefits of Hiring SC Technologies for Mobile App Development</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="title-area text-left me-xl-5 ms-xl-5">
+                        <p>Leading companies trust SC Technologies for our reliable delivery, technical expertise, and business-focused approach. We build scalable, high-performance digital solutions that solve real challenges and drive measurable results. Our commitment to quality and long-term partnerships makes us a trusted technology partner.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-3 justify-content-center">
+                <div class="col-md-4">
+                    <div class="service_card4 active text-left">
+                        <div class="box-icon">
+                            <img src="{{ url('assets/frontend/img/icon/service_7_1.svg') }}" alt="Icon">
+                        </div>
+                        <h3 class="box-title">Proven Expertise</h3>
+                        <p class="service_card4_text">Experienced developers using the latest frameworks and technologies.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="service_card4 text-left">
+                        <div class="box-icon">
+                            <img src="{{ url('assets/frontend/img/icon/service_7_1.svg') }}" alt="Icon">
+                        </div>
+                        <h3 class="box-title">Custom Solutions</h3>
+                        <p class="service_card4_text">Apps tailored to your business needs and target audience.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service_card4 active text-left">
+                        <div class="box-icon">
+                            <img src="{{ url('assets/frontend/img/icon/service_7_1.svg') }}" alt="Icon">
+                        </div>
+                        <h3 class="box-title">High Performance</h3>
+                        <p class="service_card4_text">Optimized for speed, security, and smooth user experience.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service_card4 text-left">
+                        <div class="box-icon">
+                            <img src="{{ url('assets/frontend/img/icon/service_7_1.svg') }}" alt="Icon">
+                        </div>
+                        <h3 class="box-title">End-to-End Support</h3>
+                        <p class="service_card4_text">From concept to launch and post-launch maintenance.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="service_card4 active text-left">
+                        <div class="box-icon">
+                            <img src="{{ url('assets/frontend/img/icon/service_7_1.svg') }}" alt="Icon">
+                        </div>
+                        <h3 class="box-title">Global Reach</h3>
+                        <p class="service_card4_text">Delivering mobile apps for clients worldwide across industries.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-12 text-center">
+                    <a href="{{ route('search-keyword') }}" class="th-btn style7 style-radius"> Request a Project Quote <i class="far fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="position-relative overflow-hidden project-area11 space" id="project-sec">
       <div class="container th-container4">
         <div class="row justify-content-lg-between justify-content-center align-items-center">
@@ -225,7 +556,7 @@
             </div>
           </div>
           <div class="col-auto">
-            <div class="sec-btn"><a href="service.html" class="th-btn btn-gradient2 style-radius">View All Projects</a></div>
+            <div class="sec-btn"><a href="{{ route('page','projects') }}" class="th-btn btn-gradient2 style-radius">View All Projects</a></div>
           </div>
         </div>
         <div class="slider-area">
@@ -320,6 +651,7 @@
 
     @include('common.embedForm')
 
+    @if($contentMain->faqs)
     <section class="faq-area th-radius5 position-relative space overflow-hidden" id="faq-sec" data-bg-src="{{ url('/assets/frontend/img/bg/faq_bg_3.jpg') }}">
       <div class="container th-container4">
         <div class="row justify-content-center">
@@ -333,48 +665,23 @@
         <div class="row justify-content-center">
           <div class="col-12">
             <div class="accordion" id="faqAccordion">
+              @foreach(getFaqsById($contentMain->faqs) as $key => $value)
               <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">1. What services does your digital agency offer?</button></div>
-                <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
+                <div class="accordion-header" id="collapse-item-{{ $key }}"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ $key }}" aria-expanded="false" aria-controls="collapse-{{ $key }}">{{ $key + 2 }}. {{ $value->question }}</button></div>
+                <div id="collapse-{{ $key }}" class="accordion-collapse collapse" aria-labelledby="collapse-item-{{ $key }}" data-bs-parent="#faqAccordion">
                   <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
+                    <p class="faq-text">{!! $value->answer !!}</p>
                   </div>
                 </div>
               </div>
-              <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">2. What industries do you specilize in?</button></div>
-                <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">3. What services does your digital agency offer?</button></div>
-                <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">4. What services does your digital agency offer?</button></div>
-                <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">5. What services does your digital agency offer?</button></div>
-                <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="collapse-item-5" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
-                  </div>
-                </div>
-              </div>
+              @endforeach
             </div>
           </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-12 text-center">
+                <a href="#lead-generate-popup" class="th-btn style7 style-radius open-popup-link"> Know More <i class="far fa-arrow-right ms-2"></i></a>
+            </div>
         </div>
       </div>
       <div class="shape-mockup spin d-none d-xl-block" data-top="15%" data-left="5%"><img src="{{ url('/assets/frontend/img/shape/shape_11.png') }}" alt="shape"></div>
@@ -383,6 +690,8 @@
       <div class="shape-mockup spin d-none d-xl-block" data-top="32%" data-right="7%"><img src="{{ url('/assets/frontend/img/shape/shape_14.png') }}" alt="shape"></div>
       <div class="shape-mockup spin d-none d-xl-block" data-bottom="16%" data-right="6%"><img src="{{ url('/assets/frontend/img/shape/shape_15.png') }}" alt="shape"></div>
     </section>
+    @endif
+
     @endsection
 @section('script')
 @endsection

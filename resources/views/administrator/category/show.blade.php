@@ -32,6 +32,12 @@
 								</div>
 							</div>
 							<div class="form-group row mb-2">
+								<label for="title" class="col-sm-3 text-right control-label col-form-label">Title</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" name="title" id="title" placeholder="Title Here" value="{{ $category->title }}">
+								</div>
+							</div>
+							<div class="form-group row mb-2">
 								<label for="excerpt" class="col-sm-3 text-right control-label col-form-label">Excerpt</label>
 								<div class="col-sm-9">
 									<textarea class="form-control" name="excerpt" id="excerpt" placeholder="Enter Excerpt Here" >{{ $category->excerpt }}</textarea>
@@ -56,10 +62,8 @@
 									</a>	
 									@if(isset($category->featured_image))
 										<a href="javascript:void(0)" class="removeImage" style="color: #c90f0f;font-weight: 600;"> Remove Image </a>	
-									@endif					
-
+									@endif
 								</div>
-
 							</div>
 
 							<div class="form-group row mb-2">
@@ -72,6 +76,12 @@
 									@if(isset($category->banner_image))
 										<a href="javascript:void(0)" class="removeImage" style="color: #c90f0f;font-weight: 600;"> Remove Image </a>	
 									@endif					
+								</div>
+							</div>
+							<div class="form-group row mb-2">
+								<label for="template" class="col-sm-3 text-right control-label col-form-label">Template</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" name="template" id="template" placeholder="Template Here" value="{{ $category->template }}">
 								</div>
 							</div>
 
@@ -99,11 +109,22 @@
 								</div>
 							</div>
 
+							<div class="form-group row mb-2">
+							<label for="faqs" class="col-sm-3 text-left control-label col-form-label">Faqs</label>
+								<div class="col-sm-9">
+									<select name="faqs[]" id="faqs" class="select2 form-control custom-select" style="width: 100%; height:100px;" multiple>	
+										@foreach (getFaqs() as $faq)
+										<option value="{{ $faq->id }}" {{ ($category->faqs != null && in_array($faq->id,  $category->faqs))?'selected' : '' }}> {{  $faq->question }} </option>
+										@endforeach
+									</select>
+								</div>
+							</div>
+
 							<h4 class="card-title"> Search Engine Options </h4>
 							<div class="form-group row mb-2">
-								<label for="title" class="col-sm-3 text-right control-label col-form-label">Title</label>
+								<label for="meta_title" class="col-sm-3 text-right control-label col-form-label">Meta Title</label>
 								<div class="col-sm-9">
-									<input type="text" class="form-control" name="title" id="title" placeholder="Title Here" value="{{ $category->title }}">
+									<input type="text" class="form-control" name="meta_title" id="meta_title" placeholder="Meta Title Here" value="{{ $category->meta_title }}">
 								</div>
 							</div>
 

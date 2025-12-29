@@ -12,7 +12,7 @@ class Category extends Model
     protected $primaryKey = 'id';
 
     protected $fillable = [
-        'id','parent_id','name','slug','excerpt','description','banner_image','featured_image','title','meta_description','schema','robots','utm_campaign','utm_source','status','created_at',
+        'id','parent_id','name','slug','excerpt','description','banner_image','featured_image','template','faqs','title','meta_title','meta_description','schema','robots','utm_campaign','utm_source','status','created_at',
     ];
 
 

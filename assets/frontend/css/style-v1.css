@@ -319,6 +319,10 @@ h6 {
   width: 49%;
 }
 
+.text-left {
+	text-align: left !important;
+}
+
 .justify-content-center {
     justify-content: center;
 }
@@ -38478,6 +38482,10 @@ span.select2-selection.select2-selection--single:focus {
 
 .service_card4_text {
 	margin-bottom: 15px
+}
+
+.service_card4.active {
+	background-color: #EFF1F9
 }
 
 .service_card4:hover {
