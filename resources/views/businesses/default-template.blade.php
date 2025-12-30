@@ -110,6 +110,17 @@
                     </div>
 
                 </div>
+                <div class="col-lg-4">
+                    <div class="inner-cta-banner banner-content pt-3">
+                        <div class="widget widget_banner background-image" >
+                            <div class="widget-banner">
+                                <span class="text">CONTACT US NOW</span>
+                                <h2 class="title">You Need Help?</h2>
+                                <a href="contact.html" class="th-btn style3">GET A QUOTE<i class="fas fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -9,7 +9,7 @@
                             <li><a href="{{ route('website') }}">Home</a></li>
                             <li>{{ $contentMain->name }}</li>
                         </ul>
-                        <h1 class="breadcumb-title">Hire {{ $contentMain->name }} Services from SC Technologies for Extreme Business Growth</h1>
+                        <h1 class="breadcumb-title">{{ $contentMain->title }}</h1>
                     </div>
                     <div class="banner-content py-3">
                         <p>{{ $contentMain->excerpt }}</p>
