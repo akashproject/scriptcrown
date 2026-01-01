@@ -84,7 +84,7 @@
                         <div class="col-auto">
                             <nav class="main-menu d-none d-lg-inline-block">
                                 <ul>
-                                    <li><a target="_blank" href="{{ route('category','generative-ai-solution') }}" >Empowerd With AI</a></li>
+                                    <li><a target="_blank" href="{{ route('category','empowered-with-ai-solution') }}" >Empowerd With AI</a></li>
                                     <li class="menu-item-has-children mega-menu-wrap">
                                         <a href="{{ route('page','services') }}">Services</a>
                                         <ul class="mega-menu">
