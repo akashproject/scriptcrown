@@ -9,10 +9,10 @@
                             <li><a href="{{ route('website') }}">Home</a></li>
                             <li>{{ $contentMain->name }}</li>
                         </ul>
-                        <h1 class="breadcumb-title">Custom {{ $contentMain->name }} Solutions That Drive Results</h1>
+                        <h1 class="breadcumb-title">About Our Company</h1>
                     </div>
                     <div class="banner-content py-3">
-                        <p>We build high-quality, responsive, and user-friendly websites tailored to your business needs. From modern UI/UX design to powerful backend development, our team delivers fast, secure, and scalable web solutions that help you grow your online presence and convert visitors into customers.</p>
+                        <p>SC Technologies is a technology-driven organization delivering end-to-end digital, AI, and software solutions for businesses worldwide. With a strong focus on innovation, scalability, and performance, we help organizations streamline operations, enhance customer experiences, and achieve sustainable growth through reliable and future-ready technology.</p>
                         <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2.1},"576":{"slidesPerView":"2.4"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4.5"},"1400":{"slidesPerView":"4.3"}}}'>
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -165,6 +165,101 @@
         </div>
     </section>
 
+    <div class="overflow-hidden space-extra2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="usp-box row justify-content-md-between justify-content-center gy-4">
+                        <div class="col-6">
+                            <div class="usp-card text-center">
+                                <img src="{{ url('assets/frontend/img/responsive-primary.png') }}" alt="Clients Worlwide" class="mb-1">
+                                <h3 class="box-number"><span class="counter-number">5500</span>+</h3>
+                                <div class="media-body">
+                                    <p class=" counter-text mb-n2"> World Wide Projects Delivered </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-5">
+                            <div class="usp-card text-center">
+                                <img src="{{ url('assets/frontend/img/international-primary.png') }}" alt="Clients Worlwide" class="mb-1">
+                                <h3 class="box-number"><span class="counter-number">1500</span>+</h3>
+                                <div class="media-body">
+                                    <p class=" counter-text mb-n2">Clients Worlwide</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-n6">
+                            <div class="usp-card text-center">
+                                <img src="{{ url('assets/frontend/img/residential-primary.png') }}" alt="Years In IT Industries" class="mb-1">
+                                <h3 class="box-number"><span class="counter-number">15</span>+</h3>
+                                <div class="media-body">
+                                    <p class=" counter-text mb-n2">Years In IT Industries.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-4">
+                            <div class="usp-card text-center">
+                                <img src="{{ url('assets/frontend/img/leadership-primary.png') }}" alt="Experts Team Members" class="mb-1">
+                                <h3 class="box-number"><span class="counter-number">50</span>+</h3>
+                                <div class="media-body">
+                                    <p class=" counter-text mb-n2">Experts Team Members.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="title-area text-center text-lg-start">
+                        <h2 class="sec-title sec-title3">Drive <span class="">Business Growth</span> with High-Performance Mobile And Web Apps from the #1 Software Development Company</h2>
+                        
+                        <ul class="list-unstyled usp-list">
+                            <li>
+                                <h5 class="mb-0">Enhanced Customer Engagement</h5>
+                                <p>We build intuitive, user-friendly apps that keep customers engaged, improve retention, and increase repeat interactions.</p>
+                            </li>
+                            <li>
+                                <h5 class="mb-0">Process Automation & Operational Efficiency</h5>
+                                <p>Custom apps streamline workflows, reduce manual tasks, and improve overall productivity, saving time and costs.</p>
+                            </li>
+                            <li>
+                                <h5 class="mb-0">Data-Driven Insights for Smarter Decisions</h5>
+                                <p>Integrated analytics help track user behavior, sales trends, and performance metrics to optimize business strategies.</p>
+                            </li>
+                            <li>
+                                <h5 class="mb-0">Increased Revenue & Market Reach</h5>
+                                <p>Mobile and web applications expand your digital presence, open new sales channels, and boost conversions globally.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="position-relative overflow-hidden space">
+        <div class="container th-container4">
+            <div class="feature-wrap9 style2">
+                <div class="row gy-5 justify-content-center justify-content-lg-between align-items-center">
+                    
+                    <div class="col-12">
+                        <div class="feature9-content pe-xl-5">
+                            <h1 class="feature-content-title mb-20">OUR STORY</h1>
+                            <div class="col-12 pt-20 pb-20">
+                                <hr class="feature-line mt-0">
+                            </div>
+                            <p class="mb-0">SC Technologies was founded with a simple vision: to help businesses grow through reliable, future-ready technology. What began as a focused IT services initiative has evolved into a full-scale digital, AI, and software solutions company trusted by clients across industries. From the very beginning, our goal has been to build solutions that are not only technically strong but also aligned with real business needs.</p>
+                            <p class="mb-0">As technology rapidly evolved, we grew with it. We expanded our expertise from web and mobile development into digital marketing, AI consulting, generative AI, data science, and intelligent automation. Each step in our journey was driven by one belief—technology should simplify operations, enhance customer experiences, and create measurable business value. This belief continues to shape every solution we deliver.</p>
+                            <p class="mb-0">Our team brings together strategists, designers, developers, marketers, and AI specialists who collaborate closely with clients. We take time to understand business challenges, industry dynamics, and growth objectives before building solutions. This consultative, client-first approach has helped us deliver scalable, secure, and performance-driven systems that stand the test of time.</p>
+                            <p class="mb-0">Today, SC Technologies partners with startups, growing enterprises, and global organizations to drive digital transformation. Whether it’s building robust platforms, launching data-driven marketing strategies, or deploying advanced AI solutions, we focus on long-term success rather than short-term wins. Transparency, quality, and continuous innovation remain at the core of our work.</p>
+                            <p class="mb-0">Our story is still being written. As technologies evolve and new possibilities emerge, we remain committed to helping businesses adapt, innovate, and lead in their industries. At SC Technologies, we don’t just build technology—we build long-term partnerships that power sustainable growth.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="overflow-hidden space" id="about-sec">
         <div class="container">
             <div class="row align-items-center">
@@ -234,14 +329,6 @@
     
     <div class="position-relative overflow-hidden space">
         <div class="container th-container4">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="title-area text-center">
-                        <span class="sub-title">our Feature</span>
-                        <h2 class="sec-title">Explore the defining attributes</h2>
-                    </div>
-                </div>
-            </div>
             <div class="feature-wrap9 style2">
                 <div class="row gy-5 justify-content-center justify-content-lg-between align-items-center">
                     <div class="col-xl-6">
@@ -256,12 +343,10 @@
                     </div>
                     <div class="col-xl-6">
                         <div class="feature9-content pe-xl-5">
-                            <h1 class="feature-content-title mb-20">Comprehensive Analytics Integration</h1>
-                            <p class="mb-40">We seamlessly integrate industry-leading analytics tools like Google Analytics
-                                to track website traffic, user behavior, and conversions.We seamlessly integrate
-                                industry-leading analytics tools like Google Analytics to track website traffic.</p>
+                            <h1 class="feature-content-title mb-20">Who We Are as an Organization</h1>
+                            <p class="mb-40">SC Technologies is a full-service IT, AI, and digital solutions company delivering scalable, secure, and performance-driven technology for modern businesses. We help organizations innovate faster, optimize operations, and achieve long-term growth through reliable and future-ready solutions.</p>
                             <div class="btn-wrap">
-                                <a href="about.html" class="th-btn style-radius text-capitalize">view details</a>
+                                <a href="#lead-generate-popup" class="th-btn style-radius text-capitalize open-popup-link">Know More</a>
                             </div>
                         </div>
                     </div>
@@ -280,12 +365,10 @@
                     </div>
                     <div class="col-xl-6">
                         <div class="feature9-content pe-xl-5">
-                            <h1 class="feature-content-title mb-20">Tailored reports for diverse analytical needs</h1>
-                            <p class="mb-40">Creating captivating content that resonates with target audiences, while
-                                strategically aligning with brand objectives and values. Utilizing data-driven insights to
-                                optimize content performance and drive meaningful audience interactions.</p>
+                            <h1 class="feature-content-title mb-20">WHAT WE DO</h1>
+                            <p class="mb-40">We deliver end-to-end IT, digital, and AI solutions designed to solve complex business challenges. From strategy and development to deployment and growth, SC Technologies helps organizations build scalable, secure, and high-performance technology that drives measurable results.</p>
                             <div class="btn-wrap">
-                                <a href="about.html" class="th-btn style-radius text-capitalize">view details</a>
+                                <a href="#lead-generate-popup" class="th-btn style-radius text-capitalize open-popup-link">Know More</a>
                             </div>
                         </div>
                     </div>
@@ -483,104 +566,8 @@
         <div class="shape-mockup" data-bottom="0" data-left="0">
             <div class="particle-2" id="particle-2"></div>
         </div>
-    </section><!--==============================
-Counter Area  
-==============================-->
-    <div class="bg-theme space-extra" data-bg-src="{{ url('assets/frontend/img/bg/counter_bg_1.png') }}">
-        <div class="container py-2">
-            <div class="row gy-40 justify-content-between">
-                <div class="col-6 col-lg-auto">
-                    <div class="counter-card">
-                        <div class="counter-card_icon">
-                            <img src="{{ url('assets/frontend/img/icon/counter_1_1.svg') }}" alt="Icon">
-                        </div>
-                        <div class="media-body">
-                            <h2 class="counter-card_number"><span class="counter-number">986</span>+</h2>
-                            <p class="counter-card_text">Finished Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-auto">
-                    <div class="counter-card">
-                        <div class="counter-card_icon">
-                            <img src="{{ url('assets/frontend/img/icon/counter_1_2.svg') }}" alt="Icon">
-                        </div>
-                        <div class="media-body">
-                            <h2 class="counter-card_number"><span class="counter-number">896</span>+</h2>
-                            <p class="counter-card_text">Happy Clients</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-auto">
-                    <div class="counter-card">
-                        <div class="counter-card_icon">
-                            <img src="{{ url('assets/frontend/img/icon/counter_1_3.svg') }}" alt="Icon">
-                        </div>
-                        <div class="media-body">
-                            <h2 class="counter-card_number"><span class="counter-number">396</span>+</h2>
-                            <p class="counter-card_text">Skilled Experts</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-lg-auto">
-                    <div class="counter-card">
-                        <div class="counter-card_icon">
-                            <img src="{{ url('assets/frontend/img/icon/counter_1_4.svg') }}" alt="Icon">
-                        </div>
-                        <div class="media-body">
-                            <h2 class="counter-card_number"><span class="counter-number">496</span>+</h2>
-                            <p class="counter-card_text">Honorable Awards</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!--==============================
-Feature Area  
-==============================-->
-    <div class="space" data-bg-src="{{ url('assets/frontend/img/bg/why_bg_1.png') }}">
-        <div class="container">
-            <div class="row align-items-center flex-row-reverse">
-                <div class="col-xxl-7 col-xl-6 mb-30 mb-xl-0">
-                    <div class="img-box2">
-                        <div class="img1">
-                            <img src="{{ url('assets/frontend/img/normal/why_1_1.jpg') }}" alt="Why">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-5 col-xl-6">
-                    <div class="title-area mb-35">
-                        <span class="sub-title">
-                            <div class="icon-masking me-2">
-                                <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_1.svg') }}"></span>
-                                <img src="{{ url('assets/frontend/img/theme-img/title_shape_1.svg') }}" alt="shape">
-                            </div>
-                            WHY CHOOSE US
-                        </span>
-                        <h2 class="sec-title">We Deal With The Aspects Professional <span class="text-theme">IT Services</span></h2>
-                    </div>
-                    <p class="mt-n2 mb-30">Collaboratively envisioneer user friendly supply chains and cross unit imperative. Authoritativel fabricate competitive resource and holistic.</p>
-                    <div class="two-column">
-                        <div class="checklist style2">
-                            <ul>
-                                <li><i class="far fa-check"></i> Big Data Analysis</li>
-                                <li><i class="far fa-check"></i> 24/7 Online Support</li>
-                                <li><i class="far fa-check"></i> Business Improvement</li>
-                            </ul>
-                        </div>
-                        <div class="checklist style2">
-                            <ul>
-                                <li><i class="far fa-check"></i> High Quality Sicurity</li>
-                                <li><i class="far fa-check"></i> 24/7 Support Team</li>
-                                <li><i class="far fa-check"></i> Easy Solutions</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
+    </section>
+   
 
     <section class="bg-auto space" data-bg-src="{{ url('assets/frontend/img/bg/testi_bg_2.png') }}">
         <div class="container">
@@ -598,6 +585,7 @@ Feature Area
             <div class="slider-area">
                 <div class="swiper th-slider has-shadow" id="testiSlider2" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"1"},"1200":{"slidesPerView":"2"}}}'>
                     <div class="swiper-wrapper">
+                        @foreach(getTestimonials() as $value)
                         <div class="swiper-slide">
                             <div class="testi-box">
                                 <div class="testi-box_img">
@@ -607,105 +595,18 @@ Feature Area
                                     </div>
                                 </div>
                                 <div class="testi-box_content">
-                                    <p class="testi-box_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.</p>
+                                    <div class="testi-box_text">{!! $value->description !!}</div>
                                     <div class="testi-box_review">
-                                        <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                        @for($i = 1; $i <= $value->rating; $i++)
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        @endfor
                                     </div>
-                                    <h3 class="box-title">David Farnandes</h3>
-                                    <p class="testi-box_desig">CEO at Anaton</p>
+                                    <h3 class="box-title">{{ $value->client_name }}</h3>
+                                    <p class="testi-box_desig">{{ $value->designation }}</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="testi-box">
-                                <div class="testi-box_img">
-                                    <img src="{{ url('assets/frontend/img/testimonial/testi_2_2.jpg') }}" alt="Avater">
-                                    <div class="testi-box_quote">
-                                        <img src="{{ url('assets/frontend/img/icon/quote_left_2.svg') }}" alt="quote">
-                                    </div>
-                                </div>
-                                <div class="testi-box_content">
-                                    <p class="testi-box_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.</p>
-                                    <div class="testi-box_review">
-                                        <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-                                    </div>
-                                    <h3 class="box-title">Jackline Techie</h3>
-                                    <p class="testi-box_desig">CEO at Kormola</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testi-box">
-                                <div class="testi-box_img">
-                                    <img src="{{ url('assets/frontend/img/testimonial/testi_2_3.jpg') }}" alt="Avater">
-                                    <div class="testi-box_quote">
-                                        <img src="{{ url('assets/frontend/img/icon/quote_left_2.svg') }}" alt="quote">
-                                    </div>
-                                </div>
-                                <div class="testi-box_content">
-                                    <p class="testi-box_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.</p>
-                                    <div class="testi-box_review">
-                                        <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-                                    </div>
-                                    <h3 class="box-title">Abraham Khalil</h3>
-                                    <p class="testi-box_desig">CEO at Rimasu</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testi-box">
-                                <div class="testi-box_img">
-                                    <img src="{{ url('assets/frontend/img/testimonial/testi_2_1.jpg') }}" alt="Avater">
-                                    <div class="testi-box_quote">
-                                        <img src="{{ url('assets/frontend/img/icon/quote_left_2.svg') }}" alt="quote">
-                                    </div>
-                                </div>
-                                <div class="testi-box_content">
-                                    <p class="testi-box_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.</p>
-                                    <div class="testi-box_review">
-                                        <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-                                    </div>
-                                    <h3 class="box-title">David Farnandes</h3>
-                                    <p class="testi-box_desig">CEO at Anaton</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testi-box">
-                                <div class="testi-box_img">
-                                    <img src="{{ url('assets/frontend/img/testimonial/testi_2_2.jpg') }}" alt="Avater">
-                                    <div class="testi-box_quote">
-                                        <img src="{{ url('assets/frontend/img/icon/quote_left_2.svg') }}" alt="quote">
-                                    </div>
-                                </div>
-                                <div class="testi-box_content">
-                                    <p class="testi-box_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.</p>
-                                    <div class="testi-box_review">
-                                        <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-                                    </div>
-                                    <h3 class="box-title">Jackline Techie</h3>
-                                    <p class="testi-box_desig">CEO at Kormola</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testi-box">
-                                <div class="testi-box_img">
-                                    <img src="{{ url('assets/frontend/img/testimonial/testi_2_3.jpg') }}" alt="Avater">
-                                    <div class="testi-box_quote">
-                                        <img src="{{ url('assets/frontend/img/icon/quote_left_2.svg') }}" alt="quote">
-                                    </div>
-                                </div>
-                                <div class="testi-box_content">
-                                    <p class="testi-box_text">Objectively visualize error-free technology for B2B alignment. Monotonectally harness an expanded array of models via effective collaboration.</p>
-                                    <div class="testi-box_review">
-                                        <i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
-                                    </div>
-                                    <h3 class="box-title">Abraham Khalil</h3>
-                                    <p class="testi-box_desig">CEO at Rimasu</p>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
                 <button data-slider-prev="#testiSlider2" class="slider-arrow style3 slider-prev"><i class="far fa-arrow-left"></i></button>
