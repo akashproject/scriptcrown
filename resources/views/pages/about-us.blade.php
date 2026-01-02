@@ -334,10 +334,10 @@
                     <div class="col-xl-6">
                         <div class="feature-thumb12_wrapp">
                             <div class="feature-thumb12-1">
-                                <img src="{{ url('assets/frontend/img/normal/feature-img-12-1.png') }}" alt="img">
+                                <img src="{{ url('assets/frontend/img/who-we-are.webp') }}" alt="img">
                             </div>
                             <div class="feature-thumb12-2 movingX">
-                                <img src="{{ url('assets/frontend/img/normal/feature-img-12-2.png') }}" alt="img">
+                                <img src="{{ url('assets/frontend/img/handshake.webp') }}" alt="img">
                             </div>
                         </div>
                     </div>
@@ -356,10 +356,10 @@
                     <div class="col-xl-6 order-lg-4">
                         <div class="feature-thumb12_wrapp">
                             <div class="feature-thumb12-3">
-                                <img src="{{ url('assets/frontend/img/normal/feature-img-12-3.png') }}" alt="img">
+                                <img src="{{ url('assets/frontend/img/work-station.webp') }}" alt="img">
                             </div>
                             <div class="feature-thumb12-4 movingX">
-                                <img src="{{ url('assets/frontend/img/normal/feature-img-12-4.png') }}" alt="img">
+                                <img src="{{ url('assets/frontend/img/meeting.webp') }}" alt="img">
                             </div>
                         </div>
                     </div>
