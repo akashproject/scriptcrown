@@ -9,7 +9,7 @@
                             <li><a href="{{ route('website') }}">Home</a></li>
                             <li>{{ $contentMain->name }}</li>
                         </ul>
-                        <h1 class="breadcumb-title">About Our Company</h1>
+                        <h1 class="breadcumb-title">A Leading IT, AI & Digital Solutions Company Driving Scalable Business</h1>
                     </div>
                     <div class="banner-content py-3">
                         <p>SC Technologies is a technology-driven organization delivering end-to-end digital, AI, and software solutions for businesses worldwide. With a strong focus on innovation, scalability, and performance, we help organizations streamline operations, enhance customer experiences, and achieve sustainable growth through reliable and future-ready technology.</p>
@@ -380,6 +380,64 @@
             <h4 class="shepe-text style3">Feature</h4>
         </div>
     </div>
+
+    <section class="process-area4 th-radius3 space background-image" id="process-sec" style="background-image: url({{ url('assets/frontend/img/bg/process_bg_3.jpg') }});">
+        <div class="container th-container4">
+            <div class="title-area text-center">
+                <span class="sub-title text-white">
+                    <div class="icon-masking me-2">
+                        <img src="{{ url('assets/frontend/img/theme-img/title_shape_4.1.svg') }}" alt="shape">
+                    </div>
+                    Working PROCES
+                </span>
+                <h2 class="sec-title text-white">Know Our Working Process</h2>
+            </div>
+            <div class="process-card-area">
+                <div class="row gy-40">
+                    <div class="col-md-6 col-lg-3 process-card2-wrap">
+                        <div class="process-card2">
+                            <div class="process-card2_number">01</div>
+                            <div class="process-card2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/analysis.png') }}" alt="icon">
+                            </div>
+                            <h2 class="box-title">Requirement Analysis</h2>
+                            <p class="process-card2_text">We analyze your business goals and technical needs to define clear, actionable project requirements.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 process-card2-wrap">
+                        <div class="process-card2">
+                            <div class="process-card2_number">02</div>
+                            <div class="process-card2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/design-thinking.png') }}" alt="icon">
+                            </div>
+                            <h2 class="box-title">Strategic Design</h2>
+                            <p class="process-card2_text">We create a clear, intelligent solution blueprint aligned with your business vision and technical goals.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 process-card2-wrap">
+                        <div class="process-card2">
+                            <div class="process-card2_number">03</div>
+                            <div class="process-card2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/web-design.png') }}" alt="icon">
+                            </div>
+                            <h2 class="box-title">Agile Development</h2>
+                            <p class="process-card2_text">We build and iterate efficiently using agile practices to deliver high-quality, scalable solutions faster.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 process-card2-wrap">
+                        <div class="process-card2">
+                            <div class="process-card2_number">04</div>
+                            <div class="process-card2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/teamwork-icon.png') }}" alt="icon">
+                            </div>
+                            <h2 class="box-title">Quality Delivery</h2>
+                            <p class="process-card2_text">We carefully test everything to make sure the final product works smoothly and meets your expectations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="team-sec space">
         <div class="container z-index-common">
