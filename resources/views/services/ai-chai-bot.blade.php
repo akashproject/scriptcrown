@@ -1,0 +1,695 @@
+@extends('layouts.main')
+    @section('content')
+    <div class="breadcumb-wrapper " data-bg-src="{{ url('assets/frontend/img/service/service-inner-banner.webp') }}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="breadcumb-content py-3">
+                        <ul class="breadcumb-menu">
+                            <li><a href="{{ route('website') }}">Home</a></li>
+                            <li>{{ $contentMain->name }}</li>
+                        </ul>
+                        <h1 class="breadcumb-title mt-2">{{ $contentMain->title }}</h1>
+                    </div>
+                    <div class="banner-content py-3">
+                        <p>{{ $contentMain->excerpt }}</p>
+                        <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2.1},"576":{"slidesPerView":"2.4"},"768":{"slidesPerView":"3"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"4.5"},"1400":{"slidesPerView":"4.3"}}}'>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="award-icon">
+                                        <div class="varified-by"> <span> Verified By </span> </div>
+                                        <div>
+                                            <img src="{{ url('assets/frontend/img/award/clutch.webp') }}" alt="Verifed by clutch Review">
+                                        </div>
+                                        <div class="rating-stars">
+                                            <span class="rating-count"> 5.0 </span> 
+                                            <span> 
+                                                <i class="fa-solid fa-star-sharp"></i>
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                            </span> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="award-icon">
+                                        <div class="varified-by"> <span> Verified By </span> </div>
+                                        <div>
+                                            <img src="{{ url('assets/frontend/img/award/google.webp') }}" alt="Verifed by Google Review"  >
+                                        </div>
+                                        <div class="rating-stars">
+                                            <span class="rating-count"> 5.0 </span> 
+                                            <span> 
+                                                <i class="fa-solid fa-star-sharp"></i>
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                            </span> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="award-icon">
+                                        <div class="varified-by"> <span> Verified By </span> </div>
+                                        <div>
+                                            <img src="{{ url('assets/frontend/img/award/upwork.webp') }}" alt="Verifed by upwork Review" >
+                                        </div>
+                                        <div class="rating-stars">
+                                            <span class="rating-count"> 5.0 </span> 
+                                            <span> 
+                                                <i class="fa-solid fa-star-sharp"></i>
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                            </span> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="award-icon">
+                                        <div class="varified-by"> <span> Verified By </span> </div>
+                                        <div>
+                                            <img src="{{ url('assets/frontend/img/award/goodfirms.webp') }}" alt="Verifed by goodfirms Review" >
+                                        </div>
+                                        <div class="rating-stars">
+                                            <span class="rating-count"> 5.0 </span> 
+                                            <span> 
+                                                <i class="fa-solid fa-star-sharp"></i>
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                            </span> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="award-icon">
+                                        <div class="varified-by"> <span> Verified By </span> </div>
+                                        <div>
+                                            <img src="{{ url('assets/frontend/img/award/freelancer.webp') }}" alt="Verifed by freelancer Review">
+                                        </div>
+                                        <div class="rating-stars">
+                                            <span class="rating-count"> 5.0 </span> 
+                                            <span> 
+                                                <i class="fa-solid fa-star-sharp"></i>
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                                <i class="fa-solid fa-star-sharp"></i> 
+                                            </span> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="service-area4 th-radius5 space" id="service-sec">
+        <div class="container th-container4">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="title-area text-left">
+                        <h2 class="sec-title">Types of AI Chatbots We Build</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="title-area text-left me-xl-5 ms-xl-5">
+                        <p>SC Technologies designs and develops intelligent AI chatbots tailored to different business needs and industries. From customer support and sales to healthcare and finance, our chatbots automate conversations, improve engagement, and scale seamlessly with your operations.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-3 justify-content-between align-items-center">
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 wow fadeInRight">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_1.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title">Customer Support Chatbots</h3>
+                            <p class="service-box2_text">Automate customer queries, ticket resolution, and 24/7 support with intelligent, always-available chatbots.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 wow fadeInRight">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_2.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title">Sales Chatbots</h3>
+                            <p class="service-box2_text">Qualify leads, answer product questions, and guide users through the buying journey to boost conversions.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 wow fadeInRight">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_3.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title">E-commerce Chatbots</h3>
+                            <p class="service-box2_text">Assist shoppers with product discovery, order tracking, and personalized recommendations across platforms.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 wow fadeInRight">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_4.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title">AI Virtual Assistants</h3>
+                            <p class="service-box2_text">Handle scheduling, reminders, internal queries, and workflow automation for teams and executives.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2 ">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_5.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title">HR & Recruitment Chatbots</h3>
+                            <p class="service-box2_text">Streamline hiring, employee onboarding, policy queries, and HR support with smart automation.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_6.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title">Healthcare Chatbots</h3>
+                            <p class="service-box2_text">Support appointment booking, patient engagement, and health-related queries while maintaining data security.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_7.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title">Finance Chatbots</h3>
+                            <p class="service-box2_text">Enable secure account inquiries, transaction assistance, and financial guidance with compliance-focused AI.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="service-box2">
+                        <div class="service-box2_shape" data-bg-src="{{ url('assets/frontend/img/shape/ser_shape_1.png') }}"></div>
+                        <div class="service-box2_content">
+                            <div class="service-box2_icon">
+                                <img src="{{ url('assets/frontend/img/icon/service_3_8.svg') }}" alt="Icon">
+                            </div>
+                            <h3 class="box-title">Multilingual Chatbots</h3>
+                            <p class="service-box2_text">Engage global audiences by delivering real-time conversations in multiple languages across channels.</p>
+                            <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-12 text-center">
+                    <a href="{{ route('search-keyword') }}" class="th-btn style7 style-radius">Share your Requirement <i class="far fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="space" id="business-sec">
+        <div class="container th-container4">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="title-area text-left">
+                        <h2 class="sec-title">Professional {{ $contentMain->name }} Service</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="title-area text-left me-xl-5 ms-xl-5">
+                        <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="business-box-area mt-4">
+                @foreach(getBusinesses() as $value)
+                <div class="business-box-wrap">
+                    <a href="{{ route('business',$value->slug) }}" class="business-box">
+                        <img src="{{ isset($value->featured_image)?getSizedImage('',$value->featured_image):'https://dummyimage.com/200x100' }}" ></i>
+                        <h6> {{ $value->name }} </h6>
+                    </a>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-smoke" id="process-sec" data-bg-src="{{ url('assets/frontend/img/bg/process_bg_1.png') }}">
+        <div class="container space  th-container4">
+            <div class="title-area text-center">
+                <div class="shadow-title">PROCESS</div>
+                <span class="sub-title">
+                    <div class="icon-masking me-2">
+                        <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
+                        <img src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}" alt="shape">
+                    </div>
+                    WORK PROCESS
+                </span>
+                <h2 class="sec-title">How to work <span class="text-theme">it!</span></h2>
+            </div>
+            <div class="process-card-area">
+                <div class="process-line">
+                    <img src="{{ url('assets/frontend/img/bg/process_line.svg') }}" alt="line">
+                </div>
+                <div class="row gy-40">
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">01</div>
+                            <div class="process-card_icon">
+                                <img src="{{ url('assets/frontend/img/icon/process_card_1.svg') }}" alt="icon">
+                            </div>
+                            <h2 class="box-title">Requirement Analysis</h2>
+                            <p class="process-card_text">We understand your business goals, use cases, and technical needs to define the right chatbot strategy.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">02</div>
+                            <div class="process-card_icon">
+                                <img src="{{ url('assets/frontend/img/icon/process_card_2.svg') }}" alt="icon">
+                            </div>
+                            <h2 class="box-title">AI Design</h2>
+                            <p class="process-card_text">Our experts design conversation flows, intents, and AI models tailored to your audience and processes.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">03</div>
+                            <div class="process-card_icon">
+                                <img src="{{ url('assets/frontend/img/icon/process_card_3.svg') }}" alt="icon">
+                            </div>
+                            <h2 class="box-title">Development & Training</h2>
+                            <p class="process-card_text">We build, train, and integrate the chatbot with your systems to ensure accurate and intelligent responses.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">04</div>
+                            <div class="process-card_icon">
+                                <img src="{{ url('assets/frontend/img/icon/process_card_4.svg') }}" alt="icon">
+                            </div>
+                            <h2 class="box-title">Testing & Deployment</h2>
+                            <p class="process-card_text">The chatbot is rigorously tested, optimized, and deployed live to deliver smooth. real-world performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @if(count($technologies) > 0)
+    <section class="space" id="business-sec">
+        <div class="container th-container4">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="title-area text-left">
+                        <h2 class="sec-title">Tools we integrate</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="title-area text-left me-xl-5 ms-xl-5">
+                        <p>We build high-performance, responsive, and visually stunning websites tailored to your business goals. From modern UI/UX design to secure backend development, we deliver scalable, SEO-friendly, and conversion-focused websites that drive growth and brand value. </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="technogy-wrap text-center">
+                @foreach($technologies as $value)
+                <div class="technogy-content mb-2">
+                    <a href="{{ route('technologies',$value->slug) }}" class="technology-box">
+                        <span>
+                            <img src="{{ url('assets/frontend/img/tech/'.str_replace(' ','-',strtolower($value->name)).'.png') }}">
+                        </span>
+                        <span class="mx-2">
+                            <p> {{ $value->name }} </p>
+                        </span>
+                    </a>
+                </div>
+                @endforeach
+            </div>
+            <div class="row my-5">
+                <div class="col-12 text-center">
+                    <a href="{{ route('search-keyword') }}" class="th-btn style7 style-radius"> Hire Dedicated Experts <i class="far fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    @endif
+    <section class="space">
+      <div class="container">
+        <h3 class="h4 mb-20">Advantages of Choosing Our Services</h3>
+        <div class="service-feature-wrap">
+            <div class="service-feature">
+                <div class="service-feature_icon">
+                    <img src="{{ url('assets/frontend/img/icon/service_feature_1.svg') }}" alt="icon">
+                </div>
+                <div class="media-body">
+                    <h4 class="service-feature_title">Business-Driven Approach</h4>
+                    <p class="service-feature_text">At SC Technologies, we start with a deep understanding of your business goals and customer journeys. Our AI chatbot solutions are strategically designed to improve engagement, streamline operations, and deliver measurable outcomes. Every feature is aligned with real use cases to ensure practical value and long-term impact.</p>
+                </div>
+            </div>
+            <div class="service-feature">
+                <div class="service-feature_icon">
+                    <img src="{{ url('assets/frontend/img/icon/service_feature_2.svg') }}" alt="icon">
+                </div>
+                <div class="media-body">
+                    <h4 class="service-feature_title">Fully Customized Solutions</h4>
+                    <p class="service-feature_text">We build fully customized AI chatbots that reflect your brand voice, workflows, and industry requirements. Instead of using generic templates, we create intelligent conversation flows that feel natural and relevant. This ensures better user adoption and more meaningful interactions.</p>
+                </div>
+            </div>
+            <div class="service-feature">
+                <div class="service-feature_icon">
+                    <img src="{{ url('assets/frontend/img/icon/service_feature_1.svg') }}" alt="icon">
+                </div>
+                <div class="media-body">
+                    <h4 class="service-feature_title">Scalable & Secure Solutions</h4>
+                    <p class="service-feature_text">Our chatbots are developed on secure, enterprise-grade architectures that support growth and evolving business needs. We prioritize data privacy, compliance, and performance to ensure your chatbot remains reliable as usage scales. Security and stability are built into every layer of development.</p>
+                </div>
+            </div>
+            <div class="service-feature">
+                <div class="service-feature_icon">
+                    <img src="{{ url('assets/frontend/img/icon/service_feature_2.svg') }}" alt="icon">
+                </div>
+                <div class="media-body">
+                    <h4 class="service-feature_title">Smooth Integration & Support</h4>
+                    <p class="service-feature_text">We ensure seamless integration of AI chatbots with your existing systems, including CRM, ERP, websites, and messaging platforms. Beyond deployment, we provide continuous monitoring, optimization, and support to keep your chatbot accurate, efficient, and future-ready.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="service-sec space background-image" id="service-sec">
+        <div class="container th-container4">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="title-area text-center">
+                        <span class="sub-title">Awesome Feature</span>
+                        <h2 class="sec-title">Our Awesome app Features</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4 justify-content-center">
+
+                <div class="col-xl-6 col-lg-8 col-md-6 ">
+                    <div class="feature-card style6">
+                        <h2 class="">Why Choose SC Technologies for {{ $contentMain->name }} Services?</h2>
+                        <p class="">Choosing SC Technologies for AI chatbot services means partnering with a team that understands both technology and business outcomes. We design AI chatbots that go beyond basic automation—focused on improving customer engagement, streamlining operations, and delivering measurable results. Our consultative approach ensures every chatbot aligns with your goals, industry needs, and user expectations.We build fully customized, secure, and scalable chatbot solutions using advanced AI, NLP, and machine learning technologies. From seamless integration with your existing systems to smooth deployment across platforms, our chatbots are designed to grow with your business while maintaining reliability and data security.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
+                    <div class="feature-card style2">
+                        <div class="feature-card-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title">Business-First AI Design</h3>
+                        <p class="feature-card_text">We design AI chatbots with a strong focus on business goals, ensuring every interaction drives efficiency, engagement, and measurable results rather than just automation.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
+                    <div class="feature-card style2">
+                        <div class="feature-card-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title">Custom Conversation Flows</h3>
+                        <p class="feature-card_text">Our chatbots are fully customized to match your brand voice, user journeys, and workflows, delivering natural, relevant, and human-like conversations.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
+                    <div class="feature-card style2">
+                        <div class="feature-card-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_8_1.svg') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title">Advanced AI Models</h3>
+                        <p class="feature-card_text">We use modern NLP, machine learning, and generative AI techniques to build intelligent chatbots that understand context and improve over time.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
+                    <div class="feature-card style2">
+                        <div class="feature-card-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_8_2.svg') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title">Scalable & Secure Build</h3>
+                        <p class="feature-card_text">Our chatbot solutions are built on secure, scalable architectures that support growth while protecting sensitive business and customer data.
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
+                    <div class="feature-card style2">
+                        <div class="feature-card-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title">Seamless Integrations</h3>
+                        <p class="feature-card_text">We integrate AI chatbots smoothly with your CRM, ERP, websites, apps, and messaging platforms for unified and efficient operations.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
+                    <div class="feature-card style2">
+                        <div class="feature-card-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title">Continuous Optimization</h3>
+                        <p class="feature-card_text">Post-deployment, we monitor performance, refine AI models, and optimize conversations to ensure your chatbot delivers long-term value and accuracy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="about-sec-v4 space-bottom" id="about-sec">
+        <div class="container th-container4">
+            <div class="row my-5">
+                <div class="col-lg-5">
+                    <div class="title-area text-left">
+                        <h2 class="sec-title">Key Components of Our Professional {{ $contentMain->name }} Services</h2>
+                        <p> Our AI chatbot services are built on a structured, end-to-end development approach that ensures accuracy, scalability, and security. From requirement analysis and intelligent conversation design to seamless integration and continuous optimization, every component works together to deliver high-performing, business-ready chatbot solutions. </p>
+                    </div>
+                </div>
+                <div class="col-xl-7">
+                    <div class="skill-circle-wrap">
+                        <div class="skill-circle">
+                            <div class="progressbar" data-path-color="#3E66F3">
+                                <div class="circle" data-percent="100">
+                                    <div class="circle-num"></div>
+                                    <span class="box-text">Client Satisfaction</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-circle">
+                            <div class="progressbar" data-path-color="#3E66F3">
+                                <div class="circle" data-percent="99">
+                                    <div class="circle-num"></div>
+                                    <span class="box-text">Success Rate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-circle">
+                            <div class="progressbar" data-path-color="#3E66F3">
+                                <div class="circle" data-percent="60">
+                                    <div class="circle-num"></div>
+                                    <span class="box-text">Yearly Growth</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4 justify-content-center">
+                <div class="col-xl-3 col-md-6">
+                    <div class="feature-card style3  px-0">
+                        <div class="shape-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title">Requirement Analysis</h3>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="feature-card  px-0">
+                        <div class="shape-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title">Conversation Design</h3>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="feature-card style3  px-0">
+                        <div class="shape-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title">NLP Processing</h3>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="feature-card  px-0">
+                        <div class="shape-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title">Model Training</h3>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="feature-card px-0">
+                        <div class="shape-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title">Custom Development</h3>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="feature-card style3 px-0">
+                        <div class="shape-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title">System Integration</h3>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="feature-card px-0">
+                        <div class="shape-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title">Security Compliance</h3>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="feature-card style3 px-0">
+                        <div class="shape-icon">
+                            <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
+                        </div>
+                        <h3 class="box-title">Performance Optimization</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-12 text-center">
+                    <a href="{{ route('search-keyword') }}" class="th-btn style7 style-radius">Share your Requirement <i class="far fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-auto space" data-bg-src="{{ url('assets/frontend/img/bg/testi_bg_2.png') }}">
+        <div class="container">
+            <div class="title-area text-center">
+                <span class="sub-title">
+                    <div class="icon-masking me-2">
+                        <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
+                        <img src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}" alt="shape">
+                    </div>
+                    CUSTOMER FEEDBACK
+                </span>
+                <h2 class="sec-title">What Happy Clients Says <br> <span class="text-theme fw-normal"> About Us?</span></h2>
+            </div>
+
+            <div class="slider-area">
+                <div class="swiper th-slider has-shadow" id="testiSlider2" data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"1"},"1200":{"slidesPerView":"2"}}}'>
+                    <div class="swiper-wrapper">
+                        @foreach(getTestimonials() as $value)
+                        <div class="swiper-slide">
+                            <div class="testi-box">
+                                <div class="testi-box_img">
+                                    <img src="{{ url('assets/frontend/img/testimonial/testi_2_1.jpg') }}" alt="Avater">
+                                    <div class="testi-box_quote">
+                                        <img src="{{ url('assets/frontend/img/icon/quote_left_2.svg') }}" alt="quote">
+                                    </div>
+                                </div>
+                                <div class="testi-box_content">
+                                    <div class="testi-box_text">{!! $value->description !!}</div>
+                                    <div class="testi-box_review">
+                                        @for($i = 1; $i <= $value->rating; $i++)
+                                        <i class="fa-solid fa-star-sharp"></i>
+                                        @endfor
+                                    </div>
+                                    <h3 class="box-title">{{ $value->client_name }}</h3>
+                                    <p class="testi-box_desig">{{ $value->designation }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+                <button data-slider-prev="#testiSlider2" class="slider-arrow style3 slider-prev"><i class="far fa-arrow-left"></i></button>
+                <button data-slider-next="#testiSlider2" class="slider-arrow style3 slider-next"><i class="far fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="shape-mockup moving d-none d-xl-block" data-bottom="0%" data-left="10%"><img src="{{ url('assets/frontend/img/shape/line_1.png') }}" alt="shape"></div>
+        <div class="shape-mockup jump d-none d-xl-block" data-top="20%" data-right="2%"><img src="{{ url('assets/frontend/img/shape/line_2.png') }}" alt="shape"></div>
+    </section>
+
+    @include('common.embedForm')
+    @if($contentMain->faqs)
+    <section class="faq-area th-radius5 position-relative space overflow-hidden" id="faq-sec" data-bg-src="{{ url('/assets/frontend/img/bg/faq_bg_3.jpg') }}">
+      <div class="container th-container4">
+        <div class="row justify-content-center">
+          <div class="col-xl-7">
+            <div class="title-area text-center pe-xl-4 ps-xl-4"><span class="sub-title sub-title8 style2">FAQ</span>
+              <h2 class="sec-title sec-title3">Frequently <span>Asked</span> Have Any Questions?</h2>
+              <p class="fs-20 pe-xl-4 ps-xl-4">Unveiling the extraordinary power. delving into the exceptionally powerfull features of data analysis</p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div class="accordion" id="faqAccordion">
+              @foreach(getFaqsById($contentMain->faqs) as $key => $value)
+              <div class="accordion-card style8">
+                <div class="accordion-header" id="collapse-item-{{ $key }}"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ $key }}" aria-expanded="false" aria-controls="collapse-{{ $key }}">{{ $key + 2 }}. {{ $value->question }}</button></div>
+                <div id="collapse-{{ $key }}" class="accordion-collapse collapse" aria-labelledby="collapse-item-{{ $key }}" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    <p class="faq-text">{!! $value->answer !!}</p>
+                  </div>
+                </div>
+              </div>
+              @endforeach
+            </div>
+          </div>
+        </div>
+        <div class="row my-5">
+            <div class="col-12 text-center">
+                <a href="#lead-generate-popup" class="th-btn style7 style-radius open-popup-link"> Know More <i class="far fa-arrow-right ms-2"></i></a>
+            </div>
+        </div>
+      </div>
+      <div class="shape-mockup spin d-none d-xl-block" data-top="15%" data-left="5%"><img src="{{ url('/assets/frontend/img/shape/shape_11.png') }}" alt="shape"></div>
+      <div class="shape-mockup movingX d-none d-xl-block" data-top="6%" data-right="10%"><img src="{{ url('/assets/frontend/img/shape/shape_12.png') }}" alt="shape"></div>
+      <div class="shape-mockup movingX d-none d-xl-block" data-bottom="22%" data-left="4%"><img src="{{ url('/assets/frontend/img/shape/shape_13.png') }}" alt="shape"></div>
+      <div class="shape-mockup spin d-none d-xl-block" data-top="32%" data-right="7%"><img src="{{ url('/assets/frontend/img/shape/shape_14.png') }}" alt="shape"></div>
+      <div class="shape-mockup spin d-none d-xl-block" data-bottom="16%" data-right="6%"><img src="{{ url('/assets/frontend/img/shape/shape_15.png') }}" alt="shape"></div>
+    </section>
+    @endif
+    @endsection
+@section('script')
+@endsection
