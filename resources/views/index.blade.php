@@ -489,23 +489,6 @@
 
     <section class="space" id="technology-sec">
         <div class="container z-index-common">
-            <div class="row justify-content-lg-between justify-content-center align-items-center">
-                <div class="col-lg-6 col-sm-9 pe-xl-5">
-                    <div class="title-area text-center text-lg-start">
-                        <span class="sub-title">
-                            <div class="icon-masking me-2">
-                                <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
-                                <img src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}" alt="shape">
-                            </div>
-                            WHAT WE DO
-                        </span>
-                        <h2 class="sec-title">Our Technical Expertise <span class="text-theme ">Tools & Frameworks</span></h2>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-9 pe-xl-5">
-                    <p>From robust backend architectures to seamless frontend experiences, here are the core technologies our developers use to bring your vision to life.</p>
-                </div>
-            </div>  
             <div class="row">
                 <div class="col-md-5 col-lg-4 col-xl-3">
                     <div class="tech-tab-container">
@@ -517,8 +500,25 @@
                     </div>
                 </div>
                 <div class="col-md-7 col-lg-8 col-xl-9">
+                    <div class="row justify-content-lg-between justify-content-center align-items-center">
+                    <div class="col-12 text-center text-lg-start">
+                        <div class="title-area text-center text-lg-start m-0">
+                            <span class="sub-title">
+                                <div class="icon-masking me-2">
+                                    <span class="mask-icon" data-mask-src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}"></span>
+                                    <img src="{{ url('assets/frontend/img/theme-img/title_shape_2.svg') }}" alt="shape">
+                                </div>
+                                Technical Expertise
+                            </span>
+                            <h2 class="sec-title">Our Technical Expertise <span class="text-theme ">Tools & Frameworks</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-12 pe-xl-5 text-center text-lg-start">
+                        <p>From robust backend architectures to seamless frontend experiences, here are the core technologies our developers use to bring your vision to life.</p>
+                    </div>
+                </div>  
                     <div class="technogy-wrap text-center">
-                    @foreach(getTechTypes() as $type)
+                        @foreach(getTechTypes() as $type)
                         @foreach(getTechnologies($type->id) as $value)
                         <div class="technogy-content mb-2 tech_{{ $type->id }}">
                             <a href="{{ route('technologies',$value->slug) }}" class="technology-box">
@@ -533,7 +533,6 @@
                         @endforeach
                     @endforeach
                     </div>
-                </div>
             </div>
             <div class="row my-5">
                 <div class="col-12 text-center">
