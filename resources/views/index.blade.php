@@ -824,42 +824,42 @@
             <div class="accordion" id="faqAccordion">
                 
               <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">1. What services does your digital agency offer?</button></div>
+                <div class="accordion-header" id="collapse-item-1"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">1. What services does SC Technologies provide?</button></div>
                 <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
                   <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
+                    <p class="faq-text">SC Technologies offers end-to-end IT, digital, and AI solutions, including web and mobile app development, digital marketing, AI consulting, generative AI, chatbot development, data science, and custom software solutions tailored to business needs.</p>
                   </div>
                 </div>
               </div>
               <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">2. What industries do you specilize in?</button></div>
+                <div class="accordion-header" id="collapse-item-2"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">2. Which industries do you serve?</button></div>
                 <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
                   <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
+                    <p class="faq-text">We serve a wide range of industries such as healthcare, e-commerce, finance, education, real estate, manufacturing, startups, and enterprises, delivering scalable solutions designed for industry-specific challenges.</p>
                   </div>
                 </div>
               </div>
               <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">3. What services does your digital agency offer?</button></div>
+                <div class="accordion-header" id="collapse-item-3"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">3. Do you offer customized technology solutions?</button></div>
                 <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
                   <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
+                    <p class="faq-text">Yes, all our solutions are fully customized based on your business goals, industry requirements, and technical needs. We focus on building scalable, secure, and performance-driven systems rather than one-size-fits-all solutions.</p>
                   </div>
                 </div>
               </div>
               <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">4. What services does your digital agency offer?</button></div>
+                <div class="accordion-header" id="collapse-item-4"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">4. Do you work with global clients?</button></div>
                 <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion">
                   <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
+                    <p class="faq-text">Yes, SC Technologies works with clients worldwide. Our remote-first delivery model allows us to serve startups and enterprises across different regions with consistent quality and timely project delivery.</p>
                   </div>
                 </div>
               </div>
               <div class="accordion-card style8">
-                <div class="accordion-header" id="collapse-item-5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">5. What services does your digital agency offer?</button></div>
+                <div class="accordion-header" id="collapse-item-5"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">5. How do I get started with SC Technologies?</button></div>
                 <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="collapse-item-5" data-bs-parent="#faqAccordion">
                   <div class="accordion-body">
-                    <p class="faq-text">IT companies stay abreast of emerging technologies and industry trends to remain competitive and provide innovative solutions to their clients. This includes trends such as artificial intelligence.</p>
+                    <p class="faq-text">Getting started is simple. Contact us through our website, share your requirements, and our experts will analyze your needs and propose the right solution to help your business grow.</p>
                   </div>
                 </div>
               </div>
