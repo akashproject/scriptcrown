@@ -809,7 +809,7 @@
 
     @include('common.embedForm')
 
-    <section class="faq-area th-radius5 position-relative space overflow-hidden" id="faq-sec" data-bg-src="{{ url('/assets/frontend/img/bg/faq_bg_3.jpg') }}">
+    <section class="faq-area th-radius5 position-relative space overflow-hidden" id="faq" data-bg-src="{{ url('/assets/frontend/img/bg/faq_bg_3.jpg') }}">
       <div class="container th-container4">
         <div class="row justify-content-center">
           <div class="col-xl-7">
