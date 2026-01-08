@@ -22,7 +22,7 @@
                                     </div>
                                     <div class="media-body">
                                         <p class="contact-feature_label">Text us on:</p>
-                                        <a href="tel:+19088000393" class="contact-feature_link">+190-8800-0393</a>
+                                        <a href="tel:+{{ get_theme_setting('mobile') }}" class="contact-feature_link">+91-629-056-5997</a>
                                     </div>
                                 </div>
                             </li>
@@ -33,7 +33,7 @@
                                     </div>
                                     <div class="media-body">
                                         <p class="contact-feature_label">Call Us On:</p>
-                                        <a href="tel:+19088000393" class="contact-feature_link">+190-8800-0393</a>
+                                        <a href="tel:+{{ get_theme_setting('mobile') }}" class="contact-feature_link">+19-983-655-5023</a>
                                     </div>
                                 </div>
                             </li>
@@ -45,7 +45,7 @@
                                     </div>
                                     <div class="media-body">
                                         <p class="contact-feature_label">Quick Mail Us:</p>
-                                        <a href="mailto:info@webteck.com" class="contact-feature_link">info@webteck.com</a>
+                                        <a href="mailto:{{ get_theme_setting('email') }}" class="contact-feature_link">{{ get_theme_setting('email') }}</a>
                                     </div>
                                 </div>
                             </li>
