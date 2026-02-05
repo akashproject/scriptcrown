@@ -293,8 +293,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_1.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Select a project</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Store Strategy</h2>
+                            <p class="process-card_text">We define your product catalog structure, pricing logic, target customers, and sales funnels to maximize online conversions.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -303,8 +303,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_2.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Project analysis</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Conversion Design</h2>
+                            <p class="process-card_text">Our team designs a mobile-first, UX-optimized storefront with clear CTAs, fast navigation, and trust-building elements.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -313,8 +313,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_3.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Plan Execute</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Commerce Development</h2>
+                            <p class="process-card_text">We develop a secure, high-performance eCommerce platform with payment gateways, cart optimization, inventory, and order management.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -323,8 +323,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_4.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Deliver result</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Launch & Scale</h2>
+                            <p class="process-card_text">We launch your store and optimize it for speed, SEO, and scalability to support continuous sales growth.</p>
                         </div>
                     </div>
                 </div>
@@ -430,9 +430,8 @@
 
                 <div class="col-xl-6 col-lg-8 col-md-6 ">
                     <div class="feature-card style6">
-                        <h2 class="">Core Elements of Our PPC Management Services</h2>
-                        <p class="">The core elements of our PPC management services include research, development, optimization, experimentation, and analysis. From keyword research to creation of ad copies and analysis, we make your ad campaigns effective so that they</p>
-                        <p class="">The core elements of our PPC management services include research, development, optimization, experimentation, and analysis. From keyword research.</p>
+                        <h2 class="">Key Components of Our Professional {{ $contentMain->name }} Services</h2>
+                        <p class="">Our professional eCommerce website services are built to create seamless and engaging online shopping experiences that help businesses grow faster. We focus on building user-friendly storefronts, smart product categorization, secure payment integrations, and mobile-responsive designs to ensure customers can browse and purchase effortlessly. Every eCommerce website we develop is designed to enhance customer trust, improve usability, and increase conversion rates.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">

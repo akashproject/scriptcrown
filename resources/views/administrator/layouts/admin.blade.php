@@ -116,7 +116,9 @@
 <!--Wave Effects -->
 <script src="{{ url('assets/administrator/js/own.js') }}"></script>
 <script>
-    $('#zero_config').DataTable();
+    $('#zero_config').DataTable({
+        pageLength: 50
+    });
     tinymce.init({
         selector : ".editor",
         plugins: 'emoticons wordcount help code lists',
