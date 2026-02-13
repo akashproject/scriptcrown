@@ -381,8 +381,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_1.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">Flexible Solutions</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Conversion-Focused Development</h4>
+                    <p class="service-feature_text">We build eCommerce websites designed to maximize sales with optimized user journeys, fast checkout processes, and engaging product displays that turn visitors into loyal customers.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -390,8 +390,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_2.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">24/7 Unlimited Support</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Scalable & Secure Platform</h4>
+                    <p class="service-feature_text">SC Technologies develops high-performance eCommerce solutions with advanced security, SSL protection, and scalable architecture to support your business growth.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -399,8 +399,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_1.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">Flexible Solutions</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Custom Business Solutions</h4>
+                    <p class="service-feature_text">We build custom eCommerce websites tailored to your specific business needs, ensuring seamless integration with existing systems and optimized performance for maximum ROI.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -408,8 +408,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_2.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">24/7 Unlimited Support</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Ongoing Support & Optimization</h4>
+                    <p class="service-feature_text">Our team provides continuous maintenance, performance monitoring, and upgrade support to ensure your online store stays updated, secure, and competitive.</p>
                 </div>
             </div>
         </div>
@@ -439,8 +439,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Collaboration and Share</a></h3>
-                        <p class="feature-card_text">Customer testimonials incorporate reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Product Management</h3>
+                        <p class="feature-card_text">Organized product listings with categories, filters, pricing details, and descriptions to help customers easily find and compare products.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -448,8 +448,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Share your Data to anyone</a></h3>
-                        <p class="feature-card_text">Reviews incorporate testimonials customer, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">User-Friendly Design</h3>
+                        <p class="feature-card_text">Responsive and intuitive website design that ensures smooth navigation, fast loading, and seamless shopping across all devices.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -457,8 +457,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_1.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Note Powerful and Security</a></h3>
-                        <p class="feature-card_text">Incorporate testimonials customer reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Secure Payment Integration</h3>
+                        <p class="feature-card_text">Integration of trusted payment gateways with multiple payment options to provide safe and convenient checkout experiences.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -466,8 +466,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_2.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Easy Sort, Classify and Search</a></h3>
-                        <p class="feature-card_text">Testimonials incorporate customer reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Shopping Cart System</h3>
+                        <p class="feature-card_text">Advanced cart functionality that allows users to add, remove, and manage products while supporting discount codes and order summaries.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -475,8 +475,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Collaboration and Share</a></h3>
-                        <p class="feature-card_text">Customer testimonials incorporate reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Order & Inventory Management</h3>
+                        <p class="feature-card_text">Automated system to track orders, manage stock levels, and streamline fulfillment processes for better operational efficiency.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -484,8 +484,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Share your Data to anyone</a></h3>
-                        <p class="feature-card_text">Reviews incorporate testimonials customer, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">SEO & Performance Optimization</h3>
+                        <p class="feature-card_text">Search engine optimized structure with fast-loading pages to improve visibility, traffic, and overall user experience.</p>
                     </div>
                 </div>
             </div>
@@ -497,8 +497,8 @@
             <div class="row my-5">
                 <div class="col-lg-5">
                     <div class="title-area text-left">
-                        <span class="sub-title">Why Choose Us</span>
-                        <h2 class="sec-title">Powerful Software At The Forefront of Digital Excellence & Technology</h2>
+                        <h2 class="sec-title">Key Components of Our Professional {{ $contentMain->name }} Development Services</h2>
+                        <p> A comprehensive, results-driven {{ $contentMain->name }} approach designed to improve visibility, attract qualified traffic, and drive consistent business growth. </p>
                     </div>
                 </div>
                 <div class="col-xl-7">
@@ -536,7 +536,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">Product Catalog</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -544,7 +544,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Secure Checkout</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -552,7 +552,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">World Class Support</h3>
+                        <h3 class="box-title">Payment Gateway</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -560,7 +560,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">Inventory Management</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -568,7 +568,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">Order Tracking</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -576,7 +576,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Mobile Optimization</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -584,7 +584,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">World Class Support</h3>
+                        <h3 class="box-title">Payment Integration</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -592,7 +592,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Invoice Management System</h3>
                     </div>
                 </div>
             </div>
