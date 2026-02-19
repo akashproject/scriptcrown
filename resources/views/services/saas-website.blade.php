@@ -427,9 +427,8 @@
 
                 <div class="col-xl-6 col-lg-8 col-md-6 ">
                     <div class="feature-card style6">
-                        <h2 class="">Core Elements of Our PPC Management Services</h2>
-                        <p class="">The core elements of our PPC management services include research, development, optimization, experimentation, and analysis. From keyword research to creation of ad copies and analysis, we make your ad campaigns effective so that they</p>
-                        <p class="">The core elements of our PPC management services include research, development, optimization, experimentation, and analysis. From keyword research.</p>
+                        <h2 class="">Why Choose SC Technologies for Saas Development Services</h2>
+                        <p class="">Choosing SC Technologies for SaaS development means partnering with a team that understands both technology and business strategy. We build secure, scalable, and cloud-ready SaaS platforms designed to deliver seamless user experiences and long-term growth. From product planning and UI/UX design to development, deployment, and continuous optimization, our approach focuses on performance, security, and market competitiveness—helping startups and enterprises launch faster, scale smarter, and stay ahead in the digital landscape.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -437,8 +436,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Collaboration and Share</a></h3>
-                        <p class="feature-card_text">Customer testimonials incorporate reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Custom SaaS Architecture</h3>
+                        <p class="feature-card_text">We design scalable, multi-tenant SaaS architectures tailored to your business model, ensuring flexibility, performance, and future growth.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -446,8 +445,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Share your Data to anyone</a></h3>
-                        <p class="feature-card_text">Reviews incorporate testimonials customer, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Cloud-Native Development</h3>
+                        <p class="feature-card_text">Our team builds cloud-ready SaaS platforms optimized for high availability, seamless deployment, and efficient resource management.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -455,8 +454,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_1.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Note Powerful and Security</a></h3>
-                        <p class="feature-card_text">Incorporate testimonials customer reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Secure Application Framework</h3>
+                        <p class="feature-card_text">We implement strong data protection, encrypted communication, and secure authentication systems to safeguard your platform and users.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -464,8 +463,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_2.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Easy Sort, Classify and Search</a></h3>
-                        <p class="feature-card_text">Testimonials incorporate customer reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">API & Third-Party Integration</h3>
+                        <p class="feature-card_text">We seamlessly integrate payment gateways, CRMs, analytics tools, and other third-party services to enhance platform functionality.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -473,8 +472,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_3.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Collaboration and Share</a></h3>
-                        <p class="feature-card_text">Customer testimonials incorporate reviews, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Performance Optimization</h3>
+                        <p class="feature-card_text">Our SaaS solutions are developed with clean code and optimized infrastructure to ensure fast loading, smooth user experience, and high reliability.</p>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 feature-card-wrap2">
@@ -482,8 +481,8 @@
                         <div class="feature-card-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_8_4.svg') }}" alt="icon">
                         </div>
-                        <h3 class="box-title"><a href="service-details,html">Share your Data to anyone</a></h3>
-                        <p class="feature-card_text">Reviews incorporate testimonials customer, or social media feeds to build trust and credibility.</p>
+                        <h3 class="box-title">Ongoing Support & Scaling</h3>
+                        <p class="feature-card_text">Beyond development, we provide continuous maintenance, feature upgrades, and scalability support to help your SaaS platform evolve with market demands.</p>
                     </div>
                 </div>
             </div>
@@ -495,8 +494,8 @@
             <div class="row my-5">
                 <div class="col-lg-5">
                     <div class="title-area text-left">
-                        <span class="sub-title">Why Choose Us</span>
-                        <h2 class="sec-title">Powerful Software At The Forefront of Digital Excellence & Technology</h2>
+                        <h2 class="sec-title">Key Components of Our Professional SaaS Development Services</h2>
+                        <p class="sec-text">We build robust, scalable SaaS platforms with a focus on user experience, security, and performance.</p>
                     </div>
                 </div>
                 <div class="col-xl-7">
@@ -534,7 +533,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">User Authentication</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -542,7 +541,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Role Management</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -550,7 +549,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">World Class Support</h3>
+                        <h3 class="box-title">Subscription Billing</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -558,7 +557,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">Payment Integration</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -566,7 +565,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">API Integration</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -574,7 +573,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Analytics Dashboard</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -582,7 +581,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">World Class Support</h3>
+                        <h3 class="box-title">Data Encryption</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -590,7 +589,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Cloud Hosting</h3>
                     </div>
                 </div>
             </div>
