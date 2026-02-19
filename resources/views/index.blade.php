@@ -171,58 +171,8 @@
         <div class="shape-mockup z-index-3 d-none d-xxl-block" data-top="40%" data-right="34%"><img src="{{ url('assets/frontend/img/shape/shape_6.png') }}" alt="shape">
         </div>
     </div>
-    
-    <section class="service-sec space bg-white" id="service-sec" >
-        <div class="brand-area bg-white space-bottom">
-            <div class="container th-container5">
-                <div class="title-area mb-30 text-center">
-                    <h2 class="brand-title">Trusted by innovators, big and small, across 30+ countries</h2>
-                </div>
-                <div class="swiper th-slider" id="brandSlider1" data-slider-options='{"breakpoints":{"0":{"slidesPerView":2},"576":{"slidesPerView":"2"},"768":{"slidesPerView":"4"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"6"},"1400":{"slidesPerView":"5"}}}'>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="brand-box1-1">
-                                <img src="{{ url('assets/frontend/img/brand/brand-logo.webp') }}" alt="Brand Logo">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box1-1">
-                                <img src="{{ url('assets/frontend/img/brand/brand-logo.webp') }}" alt="Brand Logo">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box1-1">
-                                <img src="{{ url('assets/frontend/img/brand/brand-logo.webp') }}" alt="Brand Logo">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box1-1">
-                                <img src="{{ url('assets/frontend/img/brand/brand_1_4.png') }}" alt="Brand Logo">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box1-1">
-                                <img src="{{ url('assets/frontend/img/brand/brand_1_5.png') }}" alt="Brand Logo">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box1-1">
-                                <img src="{{ url('assets/frontend/img/brand/brand_1_1.png') }}" alt="Brand Logo">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box1-1">
-                                <img src="{{ url('assets/frontend/img/brand/brand_1_2.png') }}" alt="Brand Logo">
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="overflow-hidden space-extra2">
+    <div class="overflow-hidden space">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -336,9 +286,11 @@
                             </div>
                             <h3 class="box-title"><a href="{{ route('services',$value->slug) }}">{{ $value->name }}</a></h3>
                             <div class="service-tag">
+                                @if(isset($value->usps))
                                 <div class="available-list">
                                     {!! $value->usps !!}
                                 </div>
+                                @endif
                             </div>
                             <div class="bg-shape">
                                 <img src="{{ url('assets/frontend/img/bg/service_box_bg.png') }}" alt="bg">
