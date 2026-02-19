@@ -1,7 +1,7 @@
 @extends('layouts.main')
     @section('content')
     <div class="breadcumb-wrapper " data-bg-src="{{ url('assets/frontend/img/service/service-inner-banner.webp') }}">
-        <div class="container">
+        <div class="container th-container-4">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="breadcumb-content py-3">
@@ -494,8 +494,8 @@
             <div class="row my-5">
                 <div class="col-lg-5">
                     <div class="title-area text-left">
-                        <span class="sub-title">Why Choose Us</span>
-                        <h2 class="sec-title">Powerful Software At The Forefront of Digital Excellence & Technology</h2>
+                        <span class="sub-title">Key Elements</span>
+                        <h2 class="sec-title">Essential Features of a High-Performance Content Website</h2>
                     </div>
                 </div>
                 <div class="col-xl-7">
@@ -533,7 +533,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">Search Functionality</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -541,7 +541,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Comment System</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -549,7 +549,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">World Class Support</h3>
+                        <h3 class="box-title">Social Sharing</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -557,7 +557,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">Email Subscription</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -565,7 +565,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_1.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">Data Management Service</h3>
+                        <h3 class="box-title">Content Filtering</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -573,7 +573,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">User Registration Module</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -581,7 +581,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_3.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">World Class Support</h3>
+                        <h3 class="box-title">Analytics Tracking</h3>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -589,7 +589,7 @@
                         <div class="shape-icon">
                             <img src="{{ url('/assets/frontend/img/icon/feature_card_2.png') }}" alt="icon">
                         </div>
-                        <h3 class="box-title">IT Strategy & Consultancy</h3>
+                        <h3 class="box-title">Ad Integration</h3>
                     </div>
                 </div>
             </div>
