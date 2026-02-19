@@ -136,8 +136,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_1.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Social Media Content</h3>
-                            <p class="service-box2_text">Platform-specific posts designed to spark engagement, build community, and drive traffic back to your website.</p>
+                            <h3 class="box-title">CRM SaaS Solutions</h3>
+                            <p class="service-box2_text">Customer relationship management platforms to manage sales, leads, and customer interactions efficiently.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -149,8 +149,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_2.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Email Newsletters</h3>
-                            <p class="service-box2_text">Nurturing leads and maintaining brand loyalty through curated updates, industry insights, and personalized offers.</p>
+                            <h3 class="box-title">ERP SaaS Solutions</h3>
+                            <p class="service-box2_text">Cloud-based enterprise resource planning systems to streamline operations, finance, and inventory management.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -162,8 +162,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_3.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Articles & Blog Posts</h3>
-                            <p class="service-box2_text">Informative, SEO-driven long-form content designed to capture search traffic and answer customer pain points.</p>
+                            <h3 class="box-title">HRM SaaS Solutions</h3>
+                            <p class="service-box2_text">Human resource management platforms to streamline recruitment, onboarding, performance tracking, and employee engagement.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -175,8 +175,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_4.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Case Studies & Success Stories</h3>
-                            <p class="service-box2_text">Real-world proof of your impact, detailing how your solutions solved specific challenges for past clients.</p>
+                            <h3 class="box-title">Project Management SaaS</h3>
+                            <p class="service-box2_text">Tools for task management, collaboration, workflow automation, and team productivity enhancement.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -188,8 +188,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_5.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Whitepapers & E-books</h3>
-                            <p class="service-box2_text">In-depth, high-value technical resources used for lead generation and establishing authority in complex industries.</p>
+                            <h3 class="box-title">Accounting SaaS Solutions</h3>
+                            <p class="service-box2_text">Online accounting platforms for invoicing, tax management, expense tracking, and financial reporting.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -201,8 +201,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_6.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Video Marketing</h3>
-                            <p class="service-box2_text">Engaging visual storytelling ranging from product demos and "how-to" guides to brand documentaries and interviews.</p>
+                            <h3 class="box-title">E-Learning SaaS Platforms</h3>
+                            <p class="service-box2_text">Cloud-based learning management systems for online courses, training programs, and certifications.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -214,8 +214,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_7.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Infographics & Data Visualization</h3>
-                            <p class="service-box2_text">Transforming complex data and statistics into easy-to-digest, highly shareable visual assets.</p>
+                            <h3 class="box-title">Marketing Automation SaaS</h3>
+                            <p class="service-box2_text">Tools for campaign management, lead nurturing, email automation, and customer journey optimization.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -227,8 +227,8 @@
                             <div class="service-box2_icon">
                                 <img src="{{ url('assets/frontend/img/icon/service_3_8.svg') }}" alt="Icon">
                             </div>
-                            <h3 class="box-title">Podcasts & Audio Content</h3>
-                            <p class="service-box2_text">Building a personal connection with your audience through long-form discussions and industry expert interviews.</p>
+                            <h3 class="box-title">Healthcare SaaS Solutions</h3>
+                            <p class="service-box2_text">Secure, compliant platforms for telemedicine, patient management, electronic health records (EHR), and healthcare data analytics.</p>
                             <span class="icon-btn"><i class="fa-regular fa-arrow-right"></i></span>
                         </div>
                     </div>
@@ -293,8 +293,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_1.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Select a project</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Strategy & Product Planning</h2>
+                            <p class="process-card_text">We define your product vision, target audience, and key features to ensure alignment with your business goals.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -303,8 +303,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_2.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Project analysis</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">UI/UX Design & Architecture Setup</h2>
+                            <p class="process-card_text">We create intuitive, user-friendly interfaces and robust technical architecture to support seamless functionality and scalability.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -313,8 +313,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_3.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Plan Execute</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Development & Integration</h2>
+                            <p class="process-card_text">We build and integrate your SaaS platform with third-party tools, APIs, and databases to ensure seamless functionality and scalability.</p>
                         </div>
                     </div>
                     <div class="col-sm-6 col-xl-3 process-card-wrap">
@@ -323,8 +323,8 @@
                             <div class="process-card_icon">
                                 <img src="{{ url('assets/frontend/img/icon/process_card_4.svg') }}" alt="icon">
                             </div>
-                            <h2 class="box-title">Deliver result</h2>
-                            <p class="process-card_text">Continua scale empowered metrics with cost effective innovation.</p>
+                            <h2 class="box-title">Testing, Deployment & Scaling</h2>
+                            <p class="process-card_text">We conduct thorough testing, deploy your SaaS platform securely, and scale it to meet growing demands and user needs.</p>
                         </div>
                     </div>
                 </div>
@@ -378,8 +378,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_1.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">Flexible Solutions</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Scalable Cloud Architecture</h4>
+                    <p class="service-feature_text">SC Technologies builds SaaS solutions with flexible and scalable infrastructure that grows seamlessly with your users and business demands.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -387,8 +387,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_2.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">24/7 Unlimited Support</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Faster Time-to-Market</h4>
+                    <p class="service-feature_text">We deliver SaaS solutions faster by leveraging modern development practices, reusable components, and streamlined workflows.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -396,8 +396,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_1.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">Flexible Solutions</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Secure & Reliable Systems</h4>
+                    <p class="service-feature_text">We implement advanced security protocols, data protection standards, and performance monitoring to ensure long-term platform stability.</p>
                 </div>
             </div>
             <div class="service-feature">
@@ -405,8 +405,8 @@
                     <img src="{{ url('assets/frontend/img/icon/service_feature_2.svg') }}" alt="icon">
                 </div>
                 <div class="media-body">
-                    <h4 class="service-feature_title">24/7 Unlimited Support</h4>
-                    <p class="service-feature_text">Completely grow multimedia based content before global scenarios.</p>
+                    <h4 class="service-feature_title">Cost-Effective Development</h4>
+                    <p class="service-feature_text">Our optimized development strategy reduces operational costs while delivering high-quality, feature-rich SaaS solutions tailored to your business goals.</p>
                 </div>
             </div>
         </div>
