@@ -8,6 +8,7 @@
 			</div>
 			<div class="d-flex justify-content-md-end align-items-center gap-3 flex-wrap mb-3" >
 				<div class="dt-buttons btn-group flex-wrap mb-0">
+					@can('create')
 					<a class="btn create-new btn-primary" href="{{ route('admin-add-page') }} ">
 						<span>
 							<span class="d-flex align-items-center gap-2">
@@ -16,6 +17,7 @@
 							</span>
 						</span>
 					</a> 
+					@endcan
 				</div>
 			</div>
 		</div>
